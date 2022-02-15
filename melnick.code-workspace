@@ -1,0 +1,25 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "extensions": {
+    "recommendations": [
+      // Share etiding configurations like identation, end of line, charset and more
+      "editorconfig.editorconfig",
+      // Code Formatter
+      "esbenp.prettier-vscode"
+    ]
+  },
+  "settings": {
+    // Enable formating when saving files
+    "editor.formatOnSave": true,
+    // Change default code formatter to Prettier
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // HTML auto formatting options
+    "html.format.maxPreserveNewLines": 1,
+    "html.format.wrapAttributes": "preserve",
+    "html.autoClosingTags": false
+  }
+}

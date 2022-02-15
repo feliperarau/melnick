@@ -1,0 +1,9 @@
+// Assets
+@import "../../assets/scss/main.scss";
+
+// Components
+@import "../../components/header/";
+
+body {
+  background-color: $bg-color;
+}
