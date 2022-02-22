@@ -1,3 +1,205 @@
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/webfonts-loader/index.js!./icons.font.js ***!
+  \*************************************************************************************************************************************/
+@font-face {
+	font-family: "icon";
+	src: url("/icons/icon.c6c284f1bab290ef20d8.eot?#iefix") format("embedded-opentype"),
+url("/icons/icon.c6c284f1bab290ef20d8.woff") format("woff"),
+url("/icons/icon.c6c284f1bab290ef20d8.woff2") format("woff2"),
+url("/icons/icon.c6c284f1bab290ef20d8.ttf") format("truetype"),
+url("/icons/icon.c6c284f1bab290ef20d8.svg#icon") format("svg");
+}
+
+.icon {
+	line-height: 1;
+}
+
+.icon:before {
+	font-family: icon !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.icon-arrow_down:before {
+	content: "\f101";
+}
+.icon-chevron_down:before {
+	content: "\f102";
+}
+.icon-menu_black_24dp:before {
+	content: "\f103";
+}
+.icon-place_black:before {
+	content: "\f104";
+}
+
+/*!********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./assets/fonts/tt-norms-pro/stylesheet.css ***!
+  \********************************************************************************************/
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url(/fonts/TTNormsPro-BlackItalic.woff2) format('woff2'),
+        url(/fonts/TTNormsPro-BlackItalic.woff) format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url(/fonts/TTNormsPro-Black.woff2) format('woff2'),
+        url(/fonts/TTNormsPro-Black.woff) format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url(/fonts/TTNormsPro-BoldItalic.woff2) format('woff2'),
+        url(/fonts/TTNormsPro-BoldItalic.woff) format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url(/fonts/TTNormsPro-Bold.woff2) format('woff2'),
+        url(/fonts/TTNormsPro-Bold.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url(/fonts/TTNormsPro-ExtraBoldItalic.woff2) format('woff2'),
+        url(/fonts/TTNormsPro-ExtraBoldItalic.woff) format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url(/fonts/TTNormsPro-ExtraLightItalic.woff2) format('woff2'),
+        url(/fonts/TTNormsPro-ExtraLightItalic.woff) format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro ExtraBlack';
+    src: url(/fonts/TTNormsPro-ExtraBlack.woff2) format('woff2'),
+        url(/fonts/TTNormsPro-ExtraBlack.woff) format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro ExtraBlack';
+    src: url(/fonts/TTNormsPro-ExtraBlackItalic.woff2) format('woff2'),
+        url(/fonts/TTNormsPro-ExtraBlackItalic.woff) format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url(/fonts/TTNormsPro-ExtraBold.woff2) format('woff2'),
+        url(/fonts/TTNormsPro-ExtraBold.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url(/fonts/TTNormsPro-ExtraLight.woff2) format('woff2'),
+        url(/fonts/TTNormsPro-ExtraLight.woff) format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url(/fonts/TTNormsPro-LightItalic.woff2) format('woff2'),
+        url(/fonts/TTNormsPro-LightItalic.woff) format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url(/fonts/TTNormsPro-Italic.woff2) format('woff2'),
+        url(/fonts/TTNormsPro-Italic.woff) format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url(/fonts/TTNormsPro-Medium.woff2) format('woff2'),
+        url(/fonts/TTNormsPro-Medium.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url(/fonts/TTNormsPro-MediumItalic.woff2) format('woff2'),
+        url(/fonts/TTNormsPro-MediumItalic.woff) format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url(/fonts/TTNormsPro-Light.woff2) format('woff2'),
+        url(/fonts/TTNormsPro-Light.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url(/fonts/TTNormsPro-Thin.woff2) format('woff2'),
+        url(/fonts/TTNormsPro-Thin.woff) format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url(/fonts/TTNormsPro-ThinItalic.woff2) format('woff2'),
+        url(/fonts/TTNormsPro-ThinItalic.woff) format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url(/fonts/TTNormsPro-Regular.woff2) format('woff2'),
+        url(/fonts/TTNormsPro-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 /*!*****************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./pages/home/styles.scss ***!
   \*****************************************************************************************************************/
@@ -51,7 +253,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "TT Norms Pro";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -11121,6 +11323,205 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+body {
+  padding-left: 28px;
+  padding-right: 28px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.icon {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._navbar {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+._navbar li {
+  list-style: none;
+}
+._navbar .nav-link {
+  color: white;
+}
+._navbar .nav-link.active {
+  position: relative;
+}
+._navbar .nav-link.active:after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 30px;
+  right: 30px;
+  height: 1px;
+  background: #fff;
+}
+._navbar .navbar-brand {
+  padding: 0;
+}
+._navbar .navbar-toggler {
+  color: white;
+  font-size: 24px;
+  padding: 0;
+  border: 0;
+}
+._navbar .nav-menu.center {
+  font-size: 14px;
+}
+._navbar .nav-menu.secondary {
+  font-size: 12px;
+}
+
+._header-alt {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  top: 40px;
+  z-index: 40;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+._button {
+  padding: 11px 32px;
+  border-radius: 4px;
+  background: #002541;
+  color: white;
+  border: none;
+  line-height: 18px;
+}
+
+._select .select-box {
+  display: flex;
+  width: 174px;
+  flex-direction: column;
+  margin-bottom: -8px;
+}
+._select .select-box .options-container {
+  background: white;
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s;
+  border-radius: 4px;
+  overflow: hidden;
+  order: 1;
+}
+._select .toggler {
+  cursor: pointer;
+  background: white;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  color: #002541;
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 0;
+}
+._select .toggler .icon:first-child {
+  flex-grow: 0;
+  color: #d7d7d7;
+  font-size: 20px;
+  margin-right: 10px;
+}
+._select .toggler .icon:last-child {
+  margin-left: 8px;
+  font-size: 8px;
+}
+._select .select-box .options-container.active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+._select .select-box .options-container.active + .selected::after {
+  transform: rotateX(180deg);
+  top: -6px;
+}
+._select .select-box .options-container::-webkit-scrollbar {
+  width: 8px;
+  background: #002541;
+  border-radius: 0 4px 4px 0;
+}
+._select .select-box .options-container::-webkit-scrollbar-thumb {
+  background: #002541;
+  color: white;
+  border-radius: 0 4px 4px 0;
+}
+._select .select-box .option,
+._select .selected {
+  padding: 12px 24px;
+  cursor: pointer;
+}
+._select .select-box .option:hover {
+  color: #fff;
+  background: #002541;
+}
+._select .select-box .option .radio {
+  display: none;
+}
+
+._hero-search {
+  margin-top: 80px;
+}
+._hero-search ._select .toggler {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+._hero-search .search {
+  border-left: 1px solid #d7d7d7;
+}
+._hero-search .search input {
+  height: 40px;
+  border: 0;
+  width: 470px;
+  padding: 0px 20px;
+  color: #002541;
+}
+._hero-search .search input:active, ._hero-search .search input:focus {
+  outline: none;
+}
+._hero-search ._button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  font-weight: 500;
+}
+
+._hero {
+  margin-top: 40px;
+  min-height: 577px;
+  display: flex;
+}
+._hero .inner {
+  flex: 1;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+._hero .inner::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  background: rgba(0, 0, 0, 0.4);
+}
+._hero .foreground {
+  position: relative;
+}
+
 body {
   background-color: #e5e5e5;
 }

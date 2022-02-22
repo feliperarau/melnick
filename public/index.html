@@ -5,54 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Melnick</title>
-  <script defer src="home.js"></script><link href="home.css" rel="stylesheet"></head>
+  <script defer src="/home.js"></script><link href="/home.css" rel="stylesheet"></head>
   <body>
     <!-- Header Component-->
-<header class="_header">
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarTogglerDemo03"
-        aria-controls="navbarTogglerDemo03"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#">Melnick</a>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/real-estate">Empreendimentos</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
+<header class="_header-alt overlay">
+  <nav class="navbar _navbar">
+  <div class="collapse navbar-collapse d-flex align-items-center" id="main-nav">
+    <a class="navbar-brand" href="#"
+      ><img src="/media/images/Logo-PB.bc0eda4f.svg" alt="Melnick"
+    /></a>
+    <ul
+      class="nav-menu center d-flex px-2 flex-grow-1 justify-content-center mb-0"
+    >
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/residencial"
+          >Residencial</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/comercial">Comercial</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/comercial">Terrenos</a>
+      </li>
+    </ul>
+    <ul class="nav-menu secondary d-flex px-2 mb-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/contato"
+          >Contato</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/acessibilidade">Acessibilidade</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/investidores">Relação com Investidores</a>
+      </li>
+    </ul>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#main-nav"
+      aria-controls="main-nav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="icon icon-menu_black_24dp"></span>
+    </button>
   </div>
+</nav>
+
 </header>
 
-    <main class="site-wrapper">
-      <!-- Hero Component-->
+
+    <!-- Hero Component-->
 <section class="_hero container-fluid">
-  <h1>Hero</h1>
+  <div class="inner d-flex" style="background-image:url(/media/images/hero-bg.23065cb8.jpeg);">
+  <div
+    class="foreground d-flex justify-content-center align-items-center flex-grow-1"
+  >
+    <form class="_hero-search d-flex">
+  <div class="_select">
+    <div class="select-box">
+      <div class="options-container">
+        <div class="option selected">
+          <input type="radio" class="radio" id="pa" name="place" />
+          <label for="pa">Porto Alegre</label>
+        </div>
+
+        <div class="option">
+          <input type="radio" class="radio" id="rj" name="place" />
+          <label for="rj">Rio de Janeiro</label>
+        </div>
+
+        <div class="option">
+          <input type="radio" class="radio" id="sp" name="place" />
+          <label for="sp">São Paulo</label>
+        </div>
+      </div>
+
+      <div class="toggler">
+        <i class="icon icon-place_black"></i>
+        <span class="label">Região</span>
+        <i class="icon icon-arrow_down"></i>
+      </div>
+    </div>
+  </div>
+  <div class="search">
+    <input type="text" placeholder="Busque por bairro ou zona" />
+  </div>
+  <div class="search">
+    <button type="button" class="_button">Buscar</button>
+  </div>
+</form>
+
+  </div>
 </section>
 
-    </main>
+
     <!-- Footer Component-->
 <footer class="_footer">
   <div class="footer-inner container-fluid">
@@ -64,5 +115,7 @@
   </div>
 </footer>
 
+
+    <main class="site-wrapper"></main>
   </body>
-</html>
+</html

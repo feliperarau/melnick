@@ -1,0 +1,10 @@
+<!-- Hero Component-->
+<section class="_hero container-fluid">
+  <div class="inner d-flex" <%-"style=\"background-image:url(" +
+  require("../../assets/img/hero-bg.jpeg") +");\"" %>>
+  <div
+    class="foreground d-flex justify-content-center align-items-center flex-grow-1"
+  >
+    <%- require('ejs-webpack-loader!../hero-search/template.ejs')() %>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+@import "../../assets/scss/modules/button";
+@import "../../assets/scss/modules/select";
+
+._hero-search {
+  margin-top: 80px;
+
+  ._select {
+    .toggler {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+  .search {
+    border-left: 1px solid $accent;
+    input {
+      height: 40px;
+      border: 0;
+      width: 470px;
+      padding: 0px 20px;
+      color: $azul-melnick;
+
+      &:active,
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  ._button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: 500;
+  }
+}

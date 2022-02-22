@@ -1,0 +1,42 @@
+._navbar {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  li {
+    list-style: none;
+  }
+  .nav-link {
+    color: white;
+
+    &.active {
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 3px;
+        left: 30px;
+        right: 30px;
+        height: 1px;
+        background: #fff;
+      }
+    }
+  }
+  .navbar-brand {
+    padding: 0;
+  }
+  .navbar-toggler {
+    color: white;
+    font-size: 24px;
+    padding: 0;
+    border: 0;
+  }
+  .nav-menu {
+    &.center {
+      font-size: 14px;
+    }
+    &.secondary {
+      font-size: 12px;
+    }
+  }
+}

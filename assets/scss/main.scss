@@ -1,2 +1,20 @@
+@import "../../assets/fonts/tt-norms-pro/stylesheet.css";
 @import "variables";
 @import "bootstrap";
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+body {
+  padding-left: 28px;
+  padding-right: 28px;
+  font-weight: 300;
+  font-size: 14px;
+}
+.icon {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

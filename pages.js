@@ -14,14 +14,14 @@ function getWebpackPages() {
   const pageFolders = fs.readdirSync(pagesDirectoryPath);
 
   pageFolders.forEach(function (page) {
-    const templatePath = path.join(__dirname, "pages", page, "template.html");
+    const templatePath = path.join(__dirname, "pages", page, "template.ejs");
 
     if (fs.existsSync(templatePath)) {
       var chunkName = "home" === page ? page : `${page}/${page}`;
       var fileName = "home" === page ? "index.html" : `${page}/index.html`;
       var params = {
         filename: fileName,
-        template: `pages/${page}/template.html`,
+        template: `ejs-webpack-loader!pages/${page}/template.ejs`,
         chunks: [chunkName],
       };
 

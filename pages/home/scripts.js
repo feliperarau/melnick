@@ -2,7 +2,8 @@
 import "../../assets/js/main";
 
 // Components
-import "../../components/header";
+import "../../components/header-alt";
+import "../../components/hero";
 
 const home = () => {
   console.log("home");

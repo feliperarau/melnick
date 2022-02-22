@@ -1,8 +1,6 @@
-/**
- * Hero Component
- *
- * @returns void
- */
+//Components
+import "../hero-search/";
+
 const hero = () => {
   const ref = document.querySelectorAll("._hero");
 

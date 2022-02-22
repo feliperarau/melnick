@@ -1,0 +1,85 @@
+._select {
+  .select-box {
+    display: flex;
+    width: 174px;
+    flex-direction: column;
+    margin-bottom: -8px;
+  }
+
+  .select-box .options-container {
+    background: white;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 4px;
+    overflow: hidden;
+
+    order: 1;
+  }
+
+  .toggler {
+    cursor: pointer;
+    background: white;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    color: $azul-melnick;
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 0;
+
+    .icon {
+      &:first-child {
+        flex-grow: 0;
+        color: $accent;
+        font-size: 20px;
+        margin-right: 10px;
+      }
+      &:last-child {
+        margin-left: 8px;
+        font-size: 8px;
+      }
+    }
+  }
+
+  .select-box .options-container.active {
+    max-height: 240px;
+    opacity: 1;
+    overflow-y: scroll;
+  }
+
+  .select-box .options-container.active + .selected::after {
+    transform: rotateX(180deg);
+    top: -6px;
+  }
+
+  .select-box .options-container::-webkit-scrollbar {
+    width: 8px;
+    background: $azul-melnick;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .select-box .options-container::-webkit-scrollbar-thumb {
+    background: $azul-melnick;
+    color: white;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .select-box .option,
+  .selected {
+    padding: 12px 24px;
+    cursor: pointer;
+  }
+
+  .select-box .option:hover {
+    color: #fff;
+    background: $azul-melnick;
+  }
+
+  .select-box .option .radio {
+    display: none;
+  }
+}
