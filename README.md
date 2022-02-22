@@ -19,6 +19,4 @@ Para instalar o <nome_do_projeto>, siga estas etapas:
 
 Feito isto, o projeto irá abrir no seu navegador em `localhost:5000`, e prontinho, agora você pode começar a desenvolver.
 
-```
-PS: Este projeto ainda não possui otimização de assets, apenas a versão dev. Irei implementar em breve a compilação para produção.
-```
+`PS: Este projeto ainda não possui otimização de assets, apenas a versão dev. Irei implementar em breve a compilação para produção.`
