@@ -12318,7 +12318,6 @@ button.swiper-pagination-bullet {
 
 ._hero {
   margin-top: 40px;
-  display: flex;
   position: relative;
 }
 ._hero .search-bar {
@@ -12332,15 +12331,14 @@ button.swiper-pagination-bullet {
 }
 ._hero .inner {
   flex: 1;
-  overflow: hidden;
-  display: flex;
   flex-direction: column;
-  position: relative;
   padding-bottom: 24px;
 }
 ._hero .inner .slider {
+  display: flex;
   flex: 1;
-  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
 }
 ._hero .inner .swiper-slide {
   display: flex;
@@ -12348,8 +12346,6 @@ button.swiper-pagination-bullet {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 577px;
-  border-radius: 4px;
-  overflow: hidden;
 }
 ._hero .inner .swiper-slide::before {
   content: "";
