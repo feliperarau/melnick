@@ -1,5 +1,4 @@
 // Modules
-@import "../../assets/scss/modules/slider";
 @import "swiper/css/bundle";
 
 //Components
@@ -8,6 +7,7 @@
 
 ._hero {
   margin-top: 40px;
+  min-height: 577px;
   display: flex;
   position: relative;
 
@@ -23,12 +23,11 @@
 
   .inner {
     flex: 1;
+    border-radius: 4px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     position: relative;
-
-    padding-bottom: 24px;
 
     .slider {
       //display: flex;
@@ -40,9 +39,6 @@
       align-items: flex-end;
       background-repeat: no-repeat;
       background-size: cover;
-      min-height: 577px;
-      border-radius: 4px;
-      overflow: hidden;
 
       &::before {
         content: "";
@@ -53,7 +49,6 @@
         right: 0%;
         z-index: 5;
         background: rgba(black, 0.4);
-        border-radius: 4px;
       }
     }
   }

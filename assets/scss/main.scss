@@ -1,14 +1,16 @@
 @import "../../assets/fonts/tt-norms-pro/stylesheet.css";
+@import "~bootstrap";
 @import "variables";
-@import "bootstrap";
+@import "typography";
+@import "layout";
 
 img {
   max-width: 100%;
   vertical-align: middle;
 }
 body {
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-weight: 300;
   font-size: 14px;
 }

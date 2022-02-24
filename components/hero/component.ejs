@@ -1,10 +1,26 @@
-<!-- Hero Component-->
-<section class="_hero container-fluid">
-  <div class="inner d-flex" <%-"style=\"background-image:url(" +
-  require("../../assets/img/hero-bg.jpeg") +");\"" %>>
-  <div
-    class="foreground d-flex justify-content-center align-items-center flex-grow-1"
-  >
-    <%- require('ejs-webpack-loader!../hero-search/template.ejs')() %>
+<div class="_hero container-fluid position-relative">
+  <div class="inner">
+    <div class="search-bar">
+      <%- require('ejs-webpack-loader!../hero-search/template.ejs')() %>
+    </div>
+    <div class="slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" <%-"style=\"background-image:url(" +
+        require("../../assets/img/hero-bg.jpeg") +");\"" %>>
+          <div class="foreground flex-grow-1">
+            <%- require('ejs-webpack-loader!../hero-details/template.ejs')() %>
+          </div>
+        </div>
+        
+        <div class="swiper-slide" <%-"style=\"background-image:url(" +
+        require("../../assets/img/hero-bg-2.jpeg") +");\"" %>>
+          <div class="foreground flex-grow-1">
+            <%- require('ejs-webpack-loader!../hero-details/template.ejs')() %>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
   </div>
-</section>
+</div>

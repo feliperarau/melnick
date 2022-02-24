@@ -1,0 +1,21 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 300;
+  color: $azul-melnick;
+}
+
+.title-display {
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+@for $i from 10 through 60 {
+  @if $i % 2 == 0 {
+    .text-#{$i} {
+      font-size: #{$i}px;
+    }
+  }
+}

@@ -16,12 +16,7 @@ const hero = () => {
     const sliderContainer = component.querySelector(".slider");
 
     window.onload = function (e) {
-      const swiper = new Swiper(sliderContainer, {
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
+      const swiper = new Swiper(sliderContainer, {});
     };
   }
 };

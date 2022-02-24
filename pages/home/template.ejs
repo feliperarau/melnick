@@ -9,10 +9,15 @@
   <body>
     <%- require('ejs-webpack-loader!../../components/header-alt/component.ejs')() %>
 
-    <%- require('ejs-webpack-loader!../../components/hero/component.ejs')() %>
+    <section class="mb-5">
+      <%- require('ejs-webpack-loader!../../components/hero/component.ejs')() %>
+    </section>
+
+    <section class="mb-4">
+      <%- require('ejs-webpack-loader!../../components/home-cards/component.ejs')() %>
+    </section>
 
     <%- require('ejs-webpack-loader!../../components/footer/component.ejs')() %>
-
     <main class="site-wrapper"></main>
   </body>
 </html
