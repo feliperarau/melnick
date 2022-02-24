@@ -4,9 +4,12 @@
     width: 174px;
     flex-direction: column;
     margin-bottom: -8px;
+    position: relative;
   }
 
   .select-box .options-container {
+    position: absolute;
+    top: 100%;
     background: white;
     max-height: 0;
     width: 100%;
