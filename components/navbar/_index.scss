@@ -8,19 +8,7 @@
   .nav-link {
     color: white;
 
-    &.active {
-      position: relative;
-
-      &:after {
-        content: "";
-        position: absolute;
-        bottom: 3px;
-        left: 30px;
-        right: 30px;
-        height: 1px;
-        background: #fff;
-      }
-    }
+    @include nav-decoration;
   }
   .navbar-brand {
     padding: 0;

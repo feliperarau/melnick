@@ -1,0 +1,16 @@
+<% const realEstates = JSON.parse(include('../../data/realEstates.json') ) %>
+<div class="_carousel-real-estate container-fluid">
+  <div class="carousel-tabs">
+    <ul></ul>
+  </div>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <% realEstates.forEach(function(realEstate) { %>
+      <div class="swiper-slide">
+        <%- include('../entry-real-estate/component.ejs', {realEstate}) -%>
+      </div>
+      <% }); %>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>

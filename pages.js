@@ -2,6 +2,7 @@
 const path = require("path");
 const fs = require("fs");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const data = require("./data");
 
 function getWebpackPages() {
   /**
@@ -21,8 +22,12 @@ function getWebpackPages() {
       var fileName = "home" === page ? "index.html" : `${page}/index.html`;
       var params = {
         filename: fileName,
-        template: `ejs-webpack-loader!pages/${page}/template.ejs`,
+        template: `./pages/${page}/template.ejs`,
         chunks: [chunkName],
+        uaii: "edfsifsd",
+        templateParameters: {
+          title: " testttt",
+        },
       };
 
       pages.push(new HtmlWebpackPlugin(params));

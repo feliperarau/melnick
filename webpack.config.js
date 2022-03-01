@@ -37,11 +37,9 @@ module.exports = {
       },
       {
         test: /\.(gif|jpe?g|png|svg|webp)$/,
-        loader: "file-loader",
-        options: {
-          limit: 8192,
-          name: "media/images/[name].[hash:8].[ext]",
-          esModule: false,
+        type: "asset",
+        generator: {
+          filename: "./media/images/[name].[hash:8][ext]",
         },
       },
       {
@@ -50,6 +48,10 @@ module.exports = {
         generator: {
           filename: "./fonts/[name][ext]",
         },
+      },
+      {
+        test: /\.ejs$/i,
+        use: ["html-loader", "template-ejs-loader"],
       },
     ],
   },

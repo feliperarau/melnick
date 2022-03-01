@@ -1,4 +1,4 @@
-.row {
+.row:not([class*="g-"]) {
   --bs-gutter-x: 1.25rem;
   --bs-gutter-y: 1.25rem;
 }

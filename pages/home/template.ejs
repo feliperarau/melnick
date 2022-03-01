@@ -7,17 +7,23 @@
     <title>Melnick</title>
   </head>
   <body>
-    <%- require('ejs-webpack-loader!../../components/header-alt/component.ejs')() %>
+
+    <%- include('../../components/header-alt/component.ejs') %>
 
     <section class="mb-5">
-      <%- require('ejs-webpack-loader!../../components/hero/component.ejs')() %>
+      <%- include('../../components/hero/component.ejs') %>
     </section>
 
     <section class="mb-4">
-      <%- require('ejs-webpack-loader!../../components/home-cards/component.ejs')() %>
+      <h1 class="title-display text-28 text-center">
+        Conheça nossos empreendimentos <strong>Residenciais</strong>
+      </h1>
+
+      <%- include('../../components/carousel-real-estate/component.ejs') %>
+
     </section>
 
-    <%- require('ejs-webpack-loader!../../components/footer/component.ejs')() %>
+    <%- include('../../components/footer/component.ejs') %>
     <main class="site-wrapper"></main>
   </body>
 </html

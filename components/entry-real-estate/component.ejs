@@ -1,0 +1,34 @@
+<div class="_entry-real-estate">
+  <% if ( realEstate.thumbnail ) { %>
+  <div class="thumbnail thumb-1">
+    <img src="../../assets/img/<%= realEstate.thumbnail %>" />
+  </div>
+  <% } %>
+  <div class="inner bg-white">
+    <div class="top">
+      <strong class="category text-10"><%= realEstate.category %></strong>
+      <h2 class="title"><%= realEstate.title %></h2>
+      <strong class="location text-10"><%= realEstate.location %></strong>
+      <div class="description"><%= realEstate.description %></div>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span><%= realEstate.dorms %></span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span><%= realEstate.size %></span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <% if( realEstate.showPrice ) { %>
+      <span class="price-label">A partir de</span>
+      <span class="price"><%= realEstate.price %></span>
+      <% } else { %>
+      <span class="price">Consulte valores</span>
+      <% } %>
+    </div>
+  </div>
+</div>

@@ -20,6 +20,7 @@
     // HTML auto formatting options
     "html.format.maxPreserveNewLines": 1,
     "html.format.wrapAttributes": "preserve",
-    "html.autoClosingTags": false
+    "html.autoClosingTags": false,
+    "html.format.unformatted": "wbr"
   }
 }

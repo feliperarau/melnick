@@ -14,18 +14,16 @@ const hero = () => {
   for (let c = 0; c < ref.length; c++) {
     const component = ref[c];
     const sliderContainer = component.querySelector(".slider");
+    const sliderPagination = component.querySelector(".swiper-pagination");
 
-    window.onload = function (e) {
-      const swiper = new Swiper(sliderContainer, {
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    };
+    const swiper = new Swiper(sliderContainer, {
+      pagination: {
+        el: sliderPagination,
+        clickable: true,
+      },
+    });
   }
 };
-
 hero();
 
 export default hero;

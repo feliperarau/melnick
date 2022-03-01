@@ -1,0 +1,26 @@
+// Modules
+@import "swiper/css/bundle";
+
+//Components
+@import "../entry-real-estate/";
+
+._carousel-real-estate {
+  .swiper-slide {
+    width: 305px;
+    height: auto;
+    display: flex;
+
+    ._entry-real-estate {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+  }
+  .swiper {
+    padding-bottom: 54px;
+
+    .swiper-pagination {
+      text-align: right;
+    }
+  }
+}
