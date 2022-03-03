@@ -10,11 +10,14 @@ module.exports = {
   context: __dirname,
   entry,
   mode: "development",
-  devtool: "eval-source-map",
+  devtool: false,
   output: {
     path: path.resolve(__dirname, "public"),
     publicPath: "/",
     filename: "[name].js",
+  },
+  optimization: {
+    minimize: false,
   },
   module: {
     rules: [
@@ -34,6 +37,11 @@ module.exports = {
       {
         test: /\.(s(a|c)ss)$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: "babel-loader",
       },
       {
         test: /\.(gif|jpe?g|png|svg|webp)$/,

@@ -15,6 +15,9 @@
     "webfonts-loader": "^7.4.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
     "browser-sync": "^2.27.7",
     "browser-sync-webpack-plugin": "^2.3.0",
     "css-loader": "^6.6.0",
@@ -39,7 +42,8 @@
   "scripts": {
     "serve": "webpack-dev-server",
     "dev": "webpack --watch",
-    "start": "npm-run-all --parallel dev serve"
+    "start": "npm-run-all --parallel dev serve",
+    "build": "webpack --mode=production"
   },
   "license": "ISC"
 }

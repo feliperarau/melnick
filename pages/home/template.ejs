@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Melnick</title>
-  </head>
-  <body>
 
-    <%- include('../../components/header-alt/component.ejs') %>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melnick</title>
+</head>
 
-    <section class="mb-5">
-      <%- include('../../components/hero/component.ejs') %>
-    </section>
+<body>
 
-    <section class="mb-4">
-      <h1 class="title-display text-28 text-center">
-        Conheça nossos empreendimentos <strong>Residenciais</strong>
-      </h1>
+  <%- include('../../components/header-alt/component.ejs') %>
 
-      <%- include('../../components/carousel-real-estate/component.ejs') %>
+  <section class="mb-5">
+    <%- include('../../components/hero/component.ejs') %>
+  </section>
 
-    </section>
+  <section class="mb-4">
+    <h1 class="title-display text-28 text-center mb-3">
+      Conheça nossos empreendimentos <strong>Residenciais</strong> <i class="icon icon-arrow_down text-16 align-middle mb-2"></i>
+    </h1>
 
-    <%- include('../../components/footer/component.ejs') %>
-    <main class="site-wrapper"></main>
-  </body>
-</html
+    <%- include('../../components/carousel-real-estate/component.ejs') %>
+  </section>
+
+  <%- include('../../components/footer/component.ejs') %>
+  <main class="site-wrapper"></main>
+</body>
+
+</html>

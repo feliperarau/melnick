@@ -1,0 +1,22 @@
+[
+  {
+    "id": "pre-release",
+    "label": "Pré-lançamento",
+    "active": false
+  },
+  {
+    "id": "releases",
+    "label": "Lançamentos",
+    "active": true
+  },
+  {
+    "id": "in-construction",
+    "label": "Em obras",
+    "active": false
+  },
+  {
+    "id": "ready-to-move",
+    "label": "Prontos para morar",
+    "active": false
+  }
+]

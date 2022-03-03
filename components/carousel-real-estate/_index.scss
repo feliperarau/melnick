@@ -5,6 +5,31 @@
 @import "../entry-real-estate/";
 
 ._carousel-real-estate {
+  .carousel-tabs {
+    margin-bottom: 24px;
+    ul {
+      margin: -10px;
+
+      li {
+        padding: 0;
+        list-style: none;
+        margin-right: 10px;
+
+        a {
+          display: block;
+          text-decoration: none;
+          padding: 10px;
+          font-size: 16px;
+
+          @include nav-decoration;
+
+          &:after {
+            background-color: $azul-melnick;
+          }
+        }
+      }
+    }
+  }
   .swiper-slide {
     width: 305px;
     height: auto;

@@ -6,9 +6,12 @@
       content: "";
       position: absolute;
       bottom: 3px;
-      left: 30px;
-      right: 30px;
+      left: 0;
+      right: 0;
+      max-width: 30px;
+      margin: 0 auto;
       height: 1px;
+      max-width: 30px;
       background: #fff;
       opacity: 0;
       transform: scale(0);
@@ -17,6 +20,7 @@
 
     &:hover,
     &.active {
+      font-weight: 500;
       &:after {
         opacity: 1;
         transform: scale(1);

@@ -4,7 +4,7 @@ import Swiper from "swiper/bundle";
 //Components
 import "../entry-real-estate";
 
-const carouselRealEstate = () => {
+export const carouselRealEstate = () => {
   const ref = document.querySelectorAll("._carousel-real-estate");
 
   if (!ref.length) return;
@@ -12,12 +12,12 @@ const carouselRealEstate = () => {
   // For every component on the page...
   for (let c = 0; c < ref.length; c++) {
     const component = ref[c];
-    const sliderContainer = component.querySelector(".swiper");
-    const sliderPagination =
-      sliderContainer.querySelector(".swiper-pagination");
+    const sliderContainer = component.querySelectorAll(".swiper");
 
-    window.onload = function (e) {
-      var swiper = new Swiper(sliderContainer, {
+    sliderContainer.forEach((slider) => {
+      const sliderPagination = slider.querySelector(".swiper-pagination");
+
+      var swiper = new Swiper(slider, {
         slidesPerView: "auto",
         spaceBetween: 20,
         freeMode: true,
@@ -27,10 +27,8 @@ const carouselRealEstate = () => {
           clickable: true,
         },
       });
-    };
+    });
   }
 };
 
 carouselRealEstate();
-
-export default carouselRealEstate;

@@ -1,0 +1,90 @@
+[
+  {
+    "thumbnail": "real-estate-3.jpeg",
+    "title": "Arte Country Club",
+    "category": "Lançamentos",
+    "location": "Bairro boa vista",
+    "description": "A leveza da vida no campo na cidade.",
+    "dorms": "3 a 4 dorms",
+    "size": "246 a 321 m²",
+    "showPrice": false,
+    "price": "R$ 690.00"
+  },
+  {
+    "thumbnail": "real-estate.jpeg",
+    "title": "Bairro Cidade Baixa",
+    "category": "Lançamentos",
+    "location": "Bairro Cidade Baixa",
+    "description": "A cidade baixa no ritmo da sua vida.",
+    "dorms": "1, 2 e 3 dorms",
+    "size": "46 a 90m²",
+    "showPrice": true,
+    "price": "R$ 690.000"
+  },
+  {
+    "thumbnail": "real-estate-2.jpeg",
+    "title": "Nilo Square",
+    "category": "Lançamentos",
+    "location": "Bairro boa vista",
+    "description": "Um novo conceito de modernidade.",
+    "dorms": "3 dorms",
+    "size": "175 a 245 m²",
+    "showPrice": true,
+    "price": "R$ 690.000"
+  },
+  {
+    "thumbnail": "real-estate-2.jpeg",
+    "title": "Nilo Square",
+    "category": "Lançamentos",
+    "location": "Bairro boa vista",
+    "description": "Um novo conceito de modernidade.",
+    "dorms": "3 dorms",
+    "size": "175 a 245 m²",
+    "showPrice": true,
+    "price": "R$ 690.000"
+  },
+  {
+    "thumbnail": "real-estate.jpeg",
+    "title": "GO Carlos Gomes",
+    "category": "Lançamentos",
+    "location": "Bairro boa vista",
+    "description": "Seu ritmo na cidade.",
+    "dorms": "1 e 2 dorms",
+    "size": "25 a 50 m²",
+    "showPrice": false,
+    "price": "R$ 690.00"
+  },
+  {
+    "thumbnail": "real-estate.jpeg",
+    "title": "Bairro Cidade Baixa",
+    "category": "Lançamentos",
+    "location": "Bairro Cidade Baixa",
+    "description": "A cidade baixa no ritmo da sua vida.",
+    "dorms": "1, 2 e 3 dorms",
+    "size": "46 a 90m²",
+    "showPrice": true,
+    "price": "R$ 690.000"
+  },
+  {
+    "thumbnail": "real-estate.jpeg",
+    "title": "GO Carlos Gomes",
+    "category": "Lançamentos",
+    "location": "Bairro boa vista",
+    "description": "Seu ritmo na cidade.",
+    "dorms": "1 e 2 dorms",
+    "size": "25 a 50 m²",
+    "showPrice": false,
+    "price": "R$ 690.00"
+  },
+  {
+    "thumbnail": "real-estate-3.jpeg",
+    "title": "Arte Country Club",
+    "category": "Lançamentos",
+    "location": "Bairro boa vista",
+    "description": "A leveza da vida no campo na cidade.",
+    "dorms": "3 a 4 dorms",
+    "size": "246 a 321 m²",
+    "showPrice": false,
+    "price": "R$ 690.00"
+  }
+]

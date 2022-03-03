@@ -1,15 +1,17 @@
 <div class="_entry-real-estate">
   <% if ( realEstate.thumbnail ) { %>
   <div class="thumbnail thumb-1">
-    <img src="../../assets/img/<%= realEstate.thumbnail %>" />
+    <a href="#"><img src="../../assets/img/<%= realEstate.thumbnail %>" /></a>
   </div>
   <% } %>
   <div class="inner bg-white">
     <div class="top">
-      <strong class="category text-10"><%= realEstate.category %></strong>
-      <h2 class="title"><%= realEstate.title %></h2>
-      <strong class="location text-10"><%= realEstate.location %></strong>
-      <div class="description"><%= realEstate.description %></div>
+      <a href="#">
+        <strong class="category text-10"><%= realEstate.category %></strong>
+        <h2 class="title"><%= realEstate.title %></h2>
+        <strong class="location text-10"><%= realEstate.location %></strong>
+        <div class="description"><%= realEstate.description %></div>
+      </a>
     </div>
 
     <div class="middle">
