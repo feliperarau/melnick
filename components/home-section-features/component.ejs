@@ -1,0 +1,20 @@
+<%
+// Data
+const cards = JSON.parse(include('../../data/home-cards.json') );
+// Defaults
+const paramClass = typeof cssClass !== 'undefined' ? cssClass : ''
+%>
+
+
+<section class="_home-section-features <%= paramClass %>">
+    <h2 class="title-display text-28 text-center mb-3">
+        Confira o que a <strong>Melnick</strong> oferece
+    </h2>
+    <div class="row">
+        <% cards.forEach(function(card) { %>
+        <div class="col">
+            <%- include( '../card-home/component.ejs', card ); %>
+        </div>
+        <% }); %>
+    </div>
+</section>

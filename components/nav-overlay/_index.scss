@@ -1,0 +1,50 @@
+@import "../menu-list/";
+
+._nav-overlay {
+    @import "../navbar/nav";
+
+    padding: 68px 105px;
+    background: rgba($azul-melnick, 0.96);
+
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    .nav-menu {
+        margin-right: 45px;
+    }
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .bottom {
+        margin-top: 100px;
+        height: 100%;
+        overflow: auto;
+
+        .menu-title {
+            color: $sec-azul-claro;
+            margin-bottom: 42px;
+        }
+
+        .menu {
+            margin-bottom: -22px;
+        }
+
+        .menu-item {
+            margin-bottom: 22px;
+
+            a {
+                color: #fff;
+                font-size: 18px;
+                font-weight: 200;
+            }
+            .icon {
+                display: none;
+            }
+        }
+    }
+}

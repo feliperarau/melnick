@@ -1,0 +1,30 @@
+@import "../button-default/";
+
+._card-cta {
+    border-radius: 4px;
+    min-height: 265px;
+    background-color: #fff;
+    display: flex;
+
+    .inner-content {
+        flex: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 30px;
+        color: $sec-cinza-claro;
+    }
+
+    .subtitle {
+        color: $sec-azul-claro;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .title {
+        font-weight: 400;
+        font-size: 28px;
+    }
+}

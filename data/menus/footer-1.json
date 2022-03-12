@@ -1,0 +1,37 @@
+[
+  {
+    "href": "sobre-nos",
+    "label": "A Melnick",
+    "external": false
+  },
+  {
+    "href": "blog",
+    "label": "Blog",
+    "external": false
+  },
+  {
+    "href": "contato",
+    "label": "Contato",
+    "external": false
+  },
+  {
+    "href": "acessibilidade",
+    "label": "Acessibilidade",
+    "external": false
+  },
+  {
+    "href": "trabalhe-conosco",
+    "label": "Trabalhe Conosco",
+    "external": false
+  },
+  {
+    "href": "imprensa",
+    "label": "Imprensa",
+    "external": false
+  },
+  {
+    "href": "revista-me",
+    "label": "Revista ME",
+    "external": false
+  }
+]

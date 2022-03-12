@@ -5,47 +5,50 @@
 @import "../entry-real-estate/";
 
 ._carousel-real-estate {
-  .carousel-tabs {
-    margin-bottom: 24px;
-    ul {
-      margin: -10px;
+    .nav-tabs {
+        border-bottom: 0;
+    }
+    .carousel-tabs {
+        margin-bottom: 24px;
+        ul {
+            margin: -10px;
 
-      li {
-        padding: 0;
-        list-style: none;
-        margin-right: 10px;
+            li {
+                padding: 0;
+                list-style: none;
+                margin-right: 10px;
 
-        a {
-          display: block;
-          text-decoration: none;
-          padding: 10px;
-          font-size: 16px;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    padding: 10px;
+                    font-size: 16px;
 
-          @include nav-decoration;
+                    @include nav-decoration;
 
-          &:after {
-            background-color: $azul-melnick;
-          }
+                    &:after {
+                        background-color: $azul-melnick;
+                    }
+                }
+            }
         }
-      }
     }
-  }
-  .swiper-slide {
-    width: 305px;
-    height: auto;
-    display: flex;
+    .swiper-slide {
+        width: 305px;
+        height: auto;
+        display: flex;
 
-    ._entry-real-estate {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
+        ._entry-real-estate {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
     }
-  }
-  .swiper {
-    padding-bottom: 54px;
+    .swiper {
+        padding-bottom: 54px;
 
-    .swiper-pagination {
-      text-align: right;
+        .swiper-pagination {
+            text-align: right;
+        }
     }
-  }
 }

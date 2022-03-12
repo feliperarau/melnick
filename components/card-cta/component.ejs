@@ -1,0 +1,20 @@
+<% 
+const paramCssClass = typeof cssClass !== 'undefined' ? cssClass : '';
+const paramSubtitle = typeof subtitle !== 'undefined' ? subtitle : '';
+const paramTitle = typeof title !== 'undefined' ? title : '';
+const paramDescription = typeof description !== 'undefined' ? description : '';
+const paramLink = typeof link !== 'undefined' ? link : '';
+const paramButtonLabel = typeof buttonLabel !== 'undefined' ? buttonLabel : '';
+%>
+
+<div class="_card-cta <%= paramCssClass %>">
+    <div class="inner-content">
+        <% if ( paramSubtitle ) { %>
+        <span class="subtitle mb-2"><%- paramSubtitle %></span>
+        <% } %>
+        <h2 class="title mb-3"><%- paramTitle %></h2>
+        <div class="description mb-3"><%- paramDescription %></div>
+
+        <%- include( '../button-default/component.ejs', {label: paramButtonLabel, link: paramLink, cssClass: ''} ); %>
+    </div>
+</div>

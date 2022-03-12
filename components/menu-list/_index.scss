@@ -1,0 +1,48 @@
+._menu-list {
+    .menu-title {
+        font-size: 10px;
+        font-weight: 500;
+        color: $sec-cinzinha;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        display: block;
+        margin-bottom: 12px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    a {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 12px;
+        text-decoration: none;
+
+        &:hover {
+            span {
+                text-decoration: underline;
+            }
+        }
+    }
+    .icon {
+        text-decoration: none;
+    }
+    .icon-before {
+        margin-right: 12px;
+    }
+    .icon-after {
+        font-size: 10px;
+        margin-left: 4px;
+        position: relative;
+        bottom: 1px;
+    }
+}

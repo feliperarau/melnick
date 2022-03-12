@@ -1,0 +1,13 @@
+<%
+// Defaults
+const paramTag = typeof tag !== 'undefined' ? tag : 'a'
+const paramType = typeof type !== 'undefined' ? type : 'button'
+const paramLink = typeof link !== 'undefined' ? link : '#' 
+const paramCssClass = typeof cssClass !== 'undefined' ? cssClass : '' %>
+
+<% if( paramTag === 'button' ) { %>
+<<%= paramTag %> type="<%= paramType %>" class="_button-default <%= paramCssClass %>"><%= label %></<%= paramTag %>>
+
+<% } else { %>
+<<%= paramTag %> href="<%= paramLink %>" class="_button-default <%= paramCssClass %>"><%= label %></<%= paramTag %>>
+<% } %>

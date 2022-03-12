@@ -3,9 +3,15 @@
 
 // Components
 @import "../../components/header-alt/";
+@import "../../components/footer/";
 @import "../../components/hero/";
 @import "../../components/carousel-real-estate";
+@import "../../components/button-default/";
+@import "../../components/home-section-features/";
+@import "../../components/home-section-features-wide/";
+@import "../../components/home-section-initiative/";
+@import "../../components/whatsapp-balloon/";
 
 body {
-  background-color: $bg-color;
+    background-color: $bg-color;
 }

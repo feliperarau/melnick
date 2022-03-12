@@ -1,0 +1,27 @@
+& {
+    li {
+        list-style: none;
+    }
+    .nav-link {
+        color: white;
+        text-decoration: none;
+        @include nav-decoration;
+    }
+    .navbar-brand {
+        padding: 0;
+    }
+    .navbar-toggler {
+        color: white;
+        font-size: 24px;
+        padding: 0;
+        border: 0;
+    }
+    .nav-menu {
+        &.center {
+            font-size: 14px;
+        }
+        &.secondary {
+            font-size: 12px;
+        }
+    }
+}

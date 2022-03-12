@@ -1,0 +1,17 @@
+[
+    {
+        "subtitle": "Iniciativa social",
+        "title": "Melnick<br>Urbanizadora",
+        "description": "Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.",
+        "buttonLabel": "Saiba Mais",
+        "url": "http://#",
+        "bgImage": "lobby.png"
+    },
+    {
+        "title": "Open",
+        "description": "A Open nasce para operar na faixa mais alta do Minha Casa Minha Vida  oferecendo projetos diferenciados para esta faixa de renda.",
+        "buttonLabel": "Conheça a Open",
+        "url": "http://#",
+        "bgImage": "couple.jpeg"
+    }
+]

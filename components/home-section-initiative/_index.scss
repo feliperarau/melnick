@@ -1,0 +1,21 @@
+@import "../card-cta-bg/";
+
+._home-section-initiative {
+    padding-bottom: 70px;
+
+    ._card-cta-bg {
+        //padding-top: 110px;
+        //padding-left: 65px;
+        min-height: 390px;
+        padding: 0;
+        padding-left: 65px;
+    }
+    ._card-cta {
+        max-width: 370px;
+        bottom: -110px;
+
+        .inner-content {
+            padding: 69px 60px;
+        }
+    }
+}

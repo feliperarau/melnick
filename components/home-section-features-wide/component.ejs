@@ -1,0 +1,17 @@
+<%
+// Data
+const cards = JSON.parse(include('../../data/home-cards-2.json') );
+// Defaults
+const paramClass = typeof cssClass !== 'undefined' ? cssClass : ''
+%>
+
+
+<section class="_home-section-features-wide <%= paramClass %>">
+    <div class="row">
+        <% cards.forEach(function(card) { %>
+        <div class="col">
+            <%- include( '../card-cta-bg/component.ejs', { params: card } ); %>
+        </div>
+        <% }); %>
+    </div>
+</section>

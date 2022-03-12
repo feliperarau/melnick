@@ -1,0 +1,11 @@
+.fade-toggle {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 200ms;
+
+    &.hide {
+        opacity: 0;
+        visibility: hidden;
+        transition: visibility 200ms 200ms, opacity 200ms;
+    }
+}

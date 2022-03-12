@@ -1,0 +1,40 @@
+<%
+const menu1 = JSON.parse(include('../../data/menus/footer-1.json') );
+const menu2 = JSON.parse(include('../../data/menus/footer-2.json') );
+const menu3 = JSON.parse(include('../../data/menus/footer-3.json') );
+%>
+
+<nav class="_nav-overlay fade-toggle hide">
+    <div class="collapse navbar-collapse d-flex align-items-center" id="main-nav-overlay">
+        <div class="brand flex-grow-1">
+            <a class="navbar-brand" href="#"><img src="../../assets/img/Logo-PB.svg" alt="Melnick" /></a>
+        </div>
+        <ul class="nav-menu secondary d-flex px-2 mb-0">
+            <li class="nav-item">
+                <a class="nav-link" href="/contato">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/acessibilidade">Acessibilidade</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/investidores">Relação com Investidores</a>
+            </li>
+        </ul>
+        <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+            <span class="icon icon-close"></span>
+        </button>
+    </div>
+    <div class="bottom">
+        <div class="row">
+            <div class="col">
+                <%- include( '../menu-list/component.ejs', { title: 'Sobre Nós', menuItems: menu1} ); %>
+            </div>
+            <div class="col">
+                <%- include( '../menu-list/component.ejs', { title: 'Empreendimentos', menuItems: menu2} ); %>
+            </div>
+            <div class="col">
+                <%- include( '../menu-list/component.ejs', { title: 'Canais Melnick', menuItems: menu3} ); %>
+            </div>
+        </div>
+    </div>
+</nav>

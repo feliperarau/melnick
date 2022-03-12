@@ -1,0 +1,14 @@
+<%
+const networks = JSON.parse(include('../../data/social-networks.json') );
+// Defaults
+const paramClass = typeof cssClass !== 'undefined' ? cssClass : ''
+%>
+
+
+<div class="_social-icons <%= paramClass %>">
+  <% networks.forEach(function(network) { %>
+  <a class="social-icon" href="<%= network.url %>">
+    <i class="icon icon-<%= network.id %>"></i>
+  </a>
+  <% }); %>
+</div>

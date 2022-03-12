@@ -1,0 +1,17 @@
+<%
+// Data
+var slides = JSON.parse(include('../../data/home-initiative.json') );
+// Defaults
+const paramClass = typeof cssClass !== 'undefined' ? cssClass : ''
+%>
+
+
+<section class="_home-section-initiative <%= paramClass %>">
+    <div class="row">
+        <% slides.forEach(function(slide) { %>
+        <div class="col">
+            <%- include( '../card-cta-bg/component.ejs', { params: slide } ); %>
+        </div>
+        <% }); %>
+    </div>
+</section>

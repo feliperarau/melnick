@@ -1,31 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('../../components/header-alt/component.ejs') %>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Melnick</title>
-</head>
+<main class="site-wrapper">
+    <section class="mb-5">
+        <%- include('../../components/hero/component.ejs') %>
+    </section>
 
-<body>
+    <section class="mb-5">
+        <h1 class="title-display text-28 text-center mb-3">
+            Conheça nossos empreendimentos <strong>Residenciais</strong> <i class="icon icon-arrow_down text-16 align-middle mb-2"></i>
+        </h1>
 
-  <%- include('../../components/header-alt/component.ejs') %>
+        <%- include('../../components/carousel-real-estate/component.ejs') %>
 
-  <section class="mb-5">
-    <%- include('../../components/hero/component.ejs') %>
-  </section>
+        <div class="d-flex justify-content-center">
+            <%- include('../../components/button-default/component.ejs', { label: 'Ver mais empreendimentos'}) %>
+        </div>
+    </section>
 
-  <section class="mb-4">
-    <h1 class="title-display text-28 text-center mb-3">
-      Conheça nossos empreendimentos <strong>Residenciais</strong> <i class="icon icon-arrow_down text-16 align-middle mb-2"></i>
-    </h1>
+    <%- include('../../components/home-section-features/component.ejs', { cssClass: 'mb-5'}) %>
 
-    <%- include('../../components/carousel-real-estate/component.ejs') %>
-  </section>
+    <%- include('../../components/home-section-features-wide/component.ejs', { cssClass: 'mb-5'}) %>
 
-  <%- include('../../components/footer/component.ejs') %>
-  <main class="site-wrapper"></main>
-</body>
+    <%- include('../../components/home-section-initiative/component.ejs', { cssClass: 'mb-5'}) %>
+</main>
 
-</html>
+<%- include( '../../components/whatsapp-balloon/component.ejs' ); %>
+
+<%- include('../../components/footer/component.ejs') %>

@@ -1,0 +1,22 @@
+[
+  {
+    "href": "residencial",
+    "label": "Residencial",
+    "external": false
+  },
+  {
+    "href": "comercial",
+    "label": "Comercial",
+    "external": false
+  },
+  {
+    "href": "terrenos",
+    "label": "Terrenos",
+    "external": false
+  },
+  {
+    "href": "aluguel-reversivel",
+    "label": "Aluguel Reversível",
+    "external": false
+  }
+]

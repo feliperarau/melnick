@@ -1,33 +1,34 @@
 @import "../../assets/fonts/tt-norms-pro/stylesheet.css";
 @import "variables";
+@import "transitions";
 @import "mixins";
 @import "~bootstrap";
 @import "layout";
 @import "typography";
 
 img {
-  max-width: 100%;
-  vertical-align: middle;
+    max-width: 100%;
+    vertical-align: middle;
 }
 body {
-  padding-left: 20px;
-  padding-right: 20px;
-  font-weight: 300;
-  font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 300;
+    font-size: 14px;
 }
 a {
-  text-decoration: none;
-  color: $azul-melnick;
-  transition: 200ms color;
-
-  &:hover {
+    text-decoration: none;
     color: $azul-melnick;
-    text-decoration: underline;
-  }
+    transition: 200ms color;
+
+    &:hover {
+        color: $azul-melnick;
+        text-decoration: underline;
+    }
 }
 .icon {
-  display: inline-block;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

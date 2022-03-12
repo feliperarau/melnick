@@ -1,10 +1,68 @@
-<!-- Footer Component-->
+<%
+const menu1 = JSON.parse(include('../../data/menus/footer-1.json') );
+const menu2 = JSON.parse(include('../../data/menus/footer-2.json') );
+const menu3 = JSON.parse(include('../../data/menus/footer-3.json') );
+const menu4 = JSON.parse(include('../../data/menus/footer-4.json') );
+%>
+
 <footer class="_footer">
-  <div class="footer-inner container-fluid">
-    <div class="row">
-      <div class="col">Coluna 1</div>
-      <div class="col">Coluna 2</div>
-      <div class="col">Coluna 3</div>
+    <div class="footer-top container-fluid">
+        <div class="top-inner">
+            <div class="row">
+                <div class="col about">
+                    <a class="footer-logo" href="/">
+                        <img src="../../assets/img/Logo-colorida.svg" alt="melnick" />
+                    </a>
+                    <p class="address">
+                        Rua Carlos Trein Filho, 551 Auxiliadora<br>
+                        CEP: 90450-120 - Porto Alegre/RS
+                    </p>
+
+                    <%- include( '../social-icons/component.ejs' ); %>
+                </div>
+                <div class="col">
+                    <%- include( '../menu-list/component.ejs', { title: 'Sobre Nós', menuItems: menu1} ); %>
+                </div>
+                <div class="col">
+                    <%- include( '../menu-list/component.ejs', { title: 'Empreendimentos', menuItems: menu2} ); %>
+                </div>
+                <div class="col">
+                    <%- include( '../menu-list/component.ejs', { title: 'Canais Melnick', menuItems: menu3} ); %>
+                </div>
+                <div class="col">
+                    <%- 
+                    include( '../menu-list/component.ejs', { 
+                        cssClass: 'canal-de-vendas',
+                        title: 'Canais de Venda',
+                        menuItems: menu4
+                    }); 
+                    %>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="footer-bottom container-fluid">
+        <div class="row">
+            <div class="col copy">
+                <span class="copy-text">©2022 - Melnick Incorp. E Const. SA - Todos os direitos reservados.</span>
+            </div>
+
+            <div class="col policy">
+                <a href="#">Política de privacidade</a> • <a href="#">Política de Cookies</a> • <a href="#">EGS</a> • <a href="#">Código de conduta e ética</a> • <a href="#">Uso de dados pessoais</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom-bar">
+        <%- 
+        include( '../menu-list/component.ejs', { 
+            cssClass: 'bottom-menu canal-de-vendas mx-n20',
+            title: 'Canais de venda',
+            menuItems: menu4
+        }); 
+        %>
+    </div>
 </footer>
+
+</body>
+
+</html>

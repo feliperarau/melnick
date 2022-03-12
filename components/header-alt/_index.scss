@@ -1,12 +1,13 @@
 @import "../navbar/";
+@import "../nav-overlay/";
 
 ._header-alt {
-  position: absolute;
-  left: 40px;
-  right: 40px;
-  top: 40px;
-  z-index: 40;
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    top: 40px;
+    z-index: 40;
 
-  padding-left: 65px;
-  padding-right: 65px;
+    padding-left: 65px;
+    padding-right: 65px;
 }

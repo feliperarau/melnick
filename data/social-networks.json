@@ -1,0 +1,22 @@
+[
+  {
+    "id": "instagram",
+    "label": "Facebook",
+    "url": "http://#"
+  },
+  {
+    "id": "linkedin",
+    "label": "LinkedIn",
+    "url": "http://#"
+  },
+  {
+    "id": "facebook",
+    "label": "Facebook",
+    "url": "http://#"
+  },
+  {
+    "id": "youtube",
+    "label": "Youtube",
+    "url": "http://#"
+  }
+]

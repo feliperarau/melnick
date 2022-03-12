@@ -1,0 +1,19 @@
+<% 
+var cssClass = params.cssClass ?? '';
+var title = params.title ?? '';
+var subtitle = params.subtitle ?? '';
+var description = params.description ?? '';
+var bgImage = params.bgImage ?? '';
+var link = params.link ?? '';
+var buttonLabel = params.buttonlabel ?? '';
+%>
+
+<div class="_card-cta-bg <%= cssClass %>">
+    <% if ( bgImage ) { %>
+    <div class="bg-image">
+        <img src="../../assets/img/<%= bgImage %>" />
+    </div>
+    <% } %>
+
+    <%- include( '../card-cta/component.ejs', params ); %>
+</div>

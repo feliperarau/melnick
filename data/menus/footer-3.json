@@ -1,0 +1,42 @@
+[
+  {
+    "href": "melnick-day",
+    "label": "Melnick Day",
+    "external": true
+  },
+  {
+    "href": "portal-do-cliente",
+    "label": "Portal do Cliente",
+    "external": true
+  },
+  {
+    "href": "relacoes-com-investidores",
+    "label": "Relações com Investidores",
+    "external": true
+  },
+  {
+    "href": "portal-do-corretor",
+    "label": "Portal do Corretor",
+    "external": true
+  },
+  {
+    "href": "projetista",
+    "label": "Projetista",
+    "external": true
+  },
+  {
+    "href": "tramitacoes",
+    "label": "Tramitações",
+    "external": true
+  },
+  {
+    "href": "melnick-vendas",
+    "label": "Melnick Vendas",
+    "external": true
+  },
+  {
+    "href": "lojas-spot",
+    "label": "Lojas Spot",
+    "external": true
+  }
+]

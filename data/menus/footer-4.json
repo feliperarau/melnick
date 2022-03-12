@@ -1,0 +1,26 @@
+[
+    {
+        "href": "canal-email",
+        "label": "Fale por e-mail",
+        "icon": "envelope",
+        "external": false
+    },
+    {
+        "href": "canal-telefones",
+        "label": "Telefones",
+        "icon": "telephone",
+        "external": false
+    },
+    {
+        "href": "canal-mensagem",
+        "label": "Fale por mensagem",
+        "icon": "chat-balloon",
+        "external": false
+    },
+    {
+        "href": "canal-ligamos",
+        "label": "Ligamos para você",
+        "icon": "telephone-2",
+        "external": false
+    }
+]

@@ -1,2 +1,98 @@
+@import "../menu-list/";
+@import "../social-icons/";
+
 ._footer {
+    /** Footer Top */
+    .footer-top {
+        .top-inner {
+            padding-top: 40px;
+            padding-bottom: 35px;
+            border-bottom: 1px solid rgba($sec-cinzinha, 0.25);
+        }
+    }
+    .footer-logo {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .address {
+        margin-bottom: 34px;
+        color: $sec-cinzinha;
+    }
+    .canal-de-vendas {
+        background-color: $azul-melnick;
+        border-radius: 4px;
+        color: #fff;
+        padding: 40px;
+        margin-top: -40px;
+
+        .menu-title {
+            color: #fff;
+        }
+
+        .menu {
+            margin-bottom: -22px;
+        }
+
+        .menu-item {
+            margin-bottom: 22px;
+
+            a {
+                color: #fff;
+                text-transform: none;
+                font-size: inherit;
+            }
+            .icon {
+                color: $amarelo-melnick;
+                font-size: 24px;
+            }
+        }
+    }
+
+    /** Footer Bottom */
+    .footer-bottom {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 60px;
+
+        .copy {
+            color: $sec-cinzinha;
+        }
+        .policy {
+            text-align: right;
+        }
+    }
+    /** Footer Bottom Bar */
+    .footer-bottom-bar {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 50;
+
+        ._menu-list {
+            margin-top: auto;
+            border-radius: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+
+            .menu-title {
+                margin-bottom: 0px;
+                margin-right: 14px;
+                text-transform: none;
+                font-size: 18px;
+                font-weight: 300;
+            }
+            .menu {
+                display: flex;
+                margin-bottom: -10px;
+
+                .menu-item {
+                    padding: 0px 14px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
 }
