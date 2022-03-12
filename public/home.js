@@ -3198,6 +3198,22 @@ function withinMaxClamp(min, value, max) {
 
 /***/ }),
 
+/***/ "./assets/js/helpers.js":
+/*!******************************!*\
+  !*** ./assets/js/helpers.js ***!
+  \******************************/
+/***/ (() => {
+
+HTMLElement.prototype.trigger = function (type) {
+  var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  var evt = new CustomEvent(type, {
+    detail: data
+  });
+  this.dispatchEvent(evt);
+};
+
+/***/ }),
+
 /***/ "./assets/js/main.js":
 /*!***************************!*\
   !*** ./assets/js/main.js ***!
@@ -3207,7 +3223,10 @@ function withinMaxClamp(min, value, max) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
-/* harmony import */ var _icons_font__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../icons.font */ "./icons.font.js");
+/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./helpers */ "./assets/js/helpers.js");
+/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_helpers__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _icons_font__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../icons.font */ "./icons.font.js");
+
 
 
 
@@ -3338,23 +3357,33 @@ entryRealEstate();
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "headerAlt": () => (/* binding */ headerAlt)
 /* harmony export */ });
 /* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../navbar */ "./components/navbar/index.js");
-/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_navbar__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _nav_overlay__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../nav-overlay */ "./components/nav-overlay/index.js");
 
 
 var headerAlt = function headerAlt() {
   var ref = document.querySelectorAll("._header-alt");
-  if (!ref.length) return; // For every component on the page...
+  ref.forEach(function (component) {
+    var navbar = component.querySelector("._navbar");
+    var navOverlay = component.nextElementSibling;
 
-  for (var c = 0; c < ref.length; c++) {
-    var component = ref[c];
-  }
+    if (!navOverlay.classList.contains("_nav-overlay")) {
+      return;
+    }
+
+    navbar.addEventListener("navOverlayShow", function (e) {
+      navOverlay.classList.remove("hide");
+      navbar.classList.add("hide");
+    });
+    navOverlay.addEventListener("navOverlayHide", function (e) {
+      navOverlay.classList.add("hide");
+      navbar.classList.remove("hide");
+    });
+  });
 };
-
 headerAlt();
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (headerAlt);
 
 /***/ }),
 
@@ -3424,13 +3453,55 @@ hero();
 
 /***/ }),
 
+/***/ "./components/nav-overlay/index.js":
+/*!*****************************************!*\
+  !*** ./components/nav-overlay/index.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "navOverlay": () => (/* binding */ navOverlay)
+/* harmony export */ });
+/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../navbar */ "./components/navbar/index.js");
+
+var navOverlay = function navOverlay() {
+  var ref = document.querySelectorAll("._nav-overlay");
+  ref.forEach(function (component) {
+    var toggler = component.querySelector(".navbar-toggler");
+    toggler.addEventListener("click", function (e) {
+      e.preventDefault();
+      component.trigger("navOverlayHide");
+    });
+  });
+};
+navOverlay();
+
+/***/ }),
+
 /***/ "./components/navbar/index.js":
 /*!************************************!*\
   !*** ./components/navbar/index.js ***!
   \************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "navbar": () => (/* binding */ navbar)
+/* harmony export */ });
+var navbar = function navbar() {
+  var ref = document.querySelectorAll("._navbar");
+  ref.forEach(function (component) {
+    var toggler = component.querySelector(".navbar-toggler");
+    toggler.addEventListener("click", function (e) {
+      e.preventDefault();
+      component.trigger("navOverlayShow");
+    });
+  });
+};
+navbar();
 
 /***/ }),
 
