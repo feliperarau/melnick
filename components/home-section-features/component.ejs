@@ -2,18 +2,20 @@
 // Data
 const cards = JSON.parse(include('../../data/home-cards.json') );
 // Defaults
-const paramClass = typeof cssClass !== 'undefined' ? cssClass : ''
+var args = typeof args !== 'undefined' ? args : {};
+
+var cssClass = args.cssClass ?? '';
 %>
 
 
-<section class="_home-section-features <%= paramClass %>">
+<section class="_home-section-features container-fluid <%= cssClass %>">
     <h2 class="title-display text-28 text-center mb-3">
         Confira o que a <strong>Melnick</strong> oferece
     </h2>
     <div class="row">
         <% cards.forEach(function(card) { %>
         <div class="col">
-            <%- include( '../card-home/component.ejs', card ); %>
+            <%- include( '../card-home/component.ejs', { ...card, cssClass: '' } ); %>
         </div>
         <% }); %>
     </div>

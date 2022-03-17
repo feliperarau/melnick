@@ -5,9 +5,10 @@ import "../../assets/js/main";
 import "../../components/header-alt";
 import "../../components/hero";
 import "../../components/carousel-real-estate";
+import "../../components/home-section-initiative";
 
 const home = () => {
-  console.log("home");
+    console.log("home");
 };
 home();
 

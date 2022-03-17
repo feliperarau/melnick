@@ -1,34 +1,34 @@
 <form class="_hero-search d-flex">
-  <div class="_select">
-    <div class="select-box">
-      <div class="options-container">
-        <div class="option selected">
-          <input type="radio" class="radio" id="pa" name="place" />
-          <label for="pa">Porto Alegre</label>
-        </div>
+    <div class="_select">
+        <div class="select-box">
+            <div class="options-container">
+                <div class="option selected">
+                    <input type="radio" class="radio" id="pa" name="place" />
+                    <label for="pa">Porto Alegre</label>
+                </div>
 
-        <div class="option">
-          <input type="radio" class="radio" id="rj" name="place" />
-          <label for="rj">Rio de Janeiro</label>
-        </div>
+                <div class="option">
+                    <input type="radio" class="radio" id="rj" name="place" />
+                    <label for="rj">Rio de Janeiro</label>
+                </div>
 
-        <div class="option">
-          <input type="radio" class="radio" id="sp" name="place" />
-          <label for="sp">São Paulo</label>
-        </div>
-      </div>
+                <div class="option">
+                    <input type="radio" class="radio" id="sp" name="place" />
+                    <label for="sp">São Paulo</label>
+                </div>
+            </div>
 
-      <div class="toggler">
-        <i class="icon icon-place_black"></i>
-        <span class="label">Região</span>
-        <i class="icon icon-arrow_down"></i>
-      </div>
+            <div class="toggler">
+                <i class="icon icon-place_black"></i>
+                <span class="label">Região</span>
+                <i class="icon icon-arrow_down"></i>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="search">
-    <input type="text" placeholder="Busque por bairro ou zona" />
-  </div>
-  <div class="submit">
-    <%- include('../../components/button-default/component.ejs', { label: 'Buscar', tag: 'button'}) %>
-  </div>
+    <div class="search">
+        <input type="text" placeholder="Busque por bairro ou zona" />
+    </div>
+    <div class="submit">
+        <%- include('../../components/button-default/component.ejs', { args: {label: 'Buscar', tag: 'button' } }) %>
+    </div>
 </form>

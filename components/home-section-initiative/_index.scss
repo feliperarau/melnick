@@ -1,8 +1,7 @@
 @import "../card-cta-bg/";
+@import "../button-icon/";
 
 ._home-section-initiative {
-    padding-bottom: 70px;
-
     ._card-cta-bg {
         //padding-top: 110px;
         //padding-left: 65px;
@@ -16,6 +15,16 @@
 
         .inner-content {
             padding: 69px 60px;
+        }
+    }
+    .swiper-nav-container {
+        display: flex;
+        gap: 10px;
+        justify-content: end;
+        margin-top: 30px;
+
+        .swiper-nav {
+            position: static;
         }
     }
 }

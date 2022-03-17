@@ -1,0 +1,16 @@
+@import "../button-default/";
+
+._button-icon {
+    &._button-default {
+        padding: 0px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

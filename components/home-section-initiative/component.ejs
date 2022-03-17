@@ -2,16 +2,36 @@
 // Data
 var slides = JSON.parse(include('../../data/home-initiative.json') );
 // Defaults
-const paramClass = typeof cssClass !== 'undefined' ? cssClass : ''
+
+var args = typeof args !== 'undefined' ? args : {};
+var cssClass = args.cssClass ?? '';
 %>
 
 
-<section class="_home-section-initiative <%= paramClass %>">
-    <div class="row">
-        <% slides.forEach(function(slide) { %>
-        <div class="col">
-            <%- include( '../card-cta-bg/component.ejs', { params: slide } ); %>
+<section class="_home-section-initiative container-fluid <%= cssClass %>">
+    <h2 class="title-display text-28 text-center mb-3">
+        Iniciativas <strong>Melnick</strong>
+    </h2>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <% slides.forEach(function(slide) { %>
+            <div class="swiper-slide">
+                <%- include( '../card-cta-bg/component.ejs', { params: slide } ); %> </div>
+            <% }); %>
         </div>
-        <% }); %>
+        <div class="swiper-nav-container">
+            <%- 
+            include( '../button-icon/component.ejs', { args: {
+                icon: 'chevron-left',
+                cssClass: 'swiper-nav swiper-prev'
+            } } );
+            %>
+            <%- 
+            include( '../button-icon/component.ejs', { args: {
+                icon: 'chevron-right',
+                cssClass: 'swiper-nav swiper-next'
+            } } );
+            %>
+        </div>
     </div>
 </section>

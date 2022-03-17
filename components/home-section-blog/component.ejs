@@ -1,0 +1,16 @@
+<%
+var args = typeof args !== 'undefined' ? args : {};
+
+var cssClass = args.cssClass ?? ''
+%>
+
+<section class="_home-section-blog container-fluid <%= cssClass %>">
+
+    <%- include( '../card-home-cta/component.ejs', { args: {
+        title: 'Blog Melnick',
+        description: 'Fique por dentro das novidades sobre a empresa, lançamentos e tendências do mercado.',
+        bgImage: 'seats-2.jpeg',
+        btnLabel: 'Visite nosso blog',
+        btnLink: '/blog'
+    } } ); %>
+</section>

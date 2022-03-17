@@ -1,0 +1,13 @@
+<%
+// Defaults
+var args = typeof args !== 'undefined' ? args : {};
+
+var icon = args.icon ?? '';
+var cssClass = args.cssClass ?? '';
+%>
+
+<%- include( '../button-default/component.ejs', { args: {
+    label: `<i class="icon icon-${icon}"></i>`,
+    cssClass: `_button-icon ${cssClass}`,
+    tag: 'button',
+} } ); %>

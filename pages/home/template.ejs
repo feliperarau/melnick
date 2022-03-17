@@ -13,15 +13,17 @@
         <%- include('../../components/carousel-real-estate/component.ejs') %>
 
         <div class="d-flex justify-content-center">
-            <%- include('../../components/button-default/component.ejs', { label: 'Ver mais empreendimentos'}) %>
+            <%- include('../../components/button-default/component.ejs', {args: { label: 'Ver mais empreendimentos' }}) %>
         </div>
     </section>
 
-    <%- include('../../components/home-section-features/component.ejs', { cssClass: 'mb-5'}) %>
+    <%- include('../../components/home-section-features/component.ejs', {args: { cssClass: 'mb-5' }}) %>
 
-    <%- include('../../components/home-section-features-wide/component.ejs', { cssClass: 'mb-5'}) %>
+    <%- include('../../components/home-section-features-wide/component.ejs', {args: { cssClass: 'mb-5'}}) %>
 
-    <%- include('../../components/home-section-initiative/component.ejs', { cssClass: 'mb-5'}) %>
+    <%- include('../../components/home-section-initiative/component.ejs',  {args: { cssClass: 'mb-5'}}) %>
+
+    <%- include('../../components/home-section-blog/component.ejs') %>
 </main>
 
 <%- include( '../../components/whatsapp-balloon/component.ejs' ); %>

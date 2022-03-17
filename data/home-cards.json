@@ -1,19 +1,19 @@
 [
     {
         "title": "Para Morar",
-        "description": "Porque você merece muito mais que morar.",
+        "description": "Porque você merece<br> muito mais que morar.",
         "url": "http://#",
         "bgImage": "landscape.jpeg"
     },
     {
         "title": "Para Investir",
-        "description": "Oportunidades para aumentar seu patrimônio.",
+        "description": "Oportunidades para<br> aumentar seu patrimônio.",
         "url": "http://#",
         "bgImage": "mall.jpeg"
     },
     {
         "title": "Para Trabalhar",
-        "description": "Os melhores ambientes de trabalho para sua empresa.",
+        "description": "Os melhores ambientes de<br> trabalho para sua empresa.",
         "url": "http://#",
         "bgImage": "office.jpeg"
     }

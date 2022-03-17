@@ -1,13 +1,17 @@
 <%
 // Defaults
-const paramTag = typeof tag !== 'undefined' ? tag : 'a'
-const paramType = typeof type !== 'undefined' ? type : 'button'
-const paramLink = typeof link !== 'undefined' ? link : '#' 
-const paramCssClass = typeof cssClass !== 'undefined' ? cssClass : '' %>
+var args = typeof args !== 'undefined' ? args : {};
 
-<% if( paramTag === 'button' ) { %>
-<<%= paramTag %> type="<%= paramType %>" class="_button-default <%= paramCssClass %>"><%= label %></<%= paramTag %>>
+var cssClass = args.cssClass ?? '';
+var tag = args.tag ?? 'a';
+var type = args.type ?? 'button';
+var label = args.label ?? '';
+var link = args.link ?? '#';
+%>
+
+<% if( tag === 'button' ) { %>
+<<%= tag %> type="<%= tag %>" class="_button-default <%= cssClass %>"><%- label %></<%= tag %>>
 
 <% } else { %>
-<<%= paramTag %> href="<%= paramLink %>" class="_button-default <%= paramCssClass %>"><%= label %></<%= paramTag %>>
+<<%= tag %> href="<%= link %>" class="_button-default <%= cssClass %>"><%- label %></<%= tag %>>
 <% } %>

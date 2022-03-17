@@ -1,0 +1,31 @@
+<% 
+var args = typeof args !== 'undefined' ? args : '';
+var  cssClass = args.cssClass ?? '';
+var  title = args.title ?? '';
+var  description = args.description ?? '';
+var  bgImage = args.bgImage ?? '';
+var  btnLabel = args.btnLabel ?? '';
+var  btnLink = args.btnLink ?? '';
+%>
+
+<div class="_card-home-cta <%= cssClass %>">
+    <% if ( bgImage ) { %>
+    <div class="bg-image">
+        <img src="../../assets/img/<%= bgImage %>" />
+    </div>
+    <% } %>
+
+    <div class="inner-content">
+        <h2 class="title"><%= title %></h2>
+        <div class="description"><%= description %></div>
+
+        <%- 
+        include( '../button-default/component.ejs', { args: {
+            icon: 'chevron-right',
+            cssClass: '',
+            link: btnLink,
+            label: btnLabel,
+        } } );
+        %>
+    </div>
+</div>
