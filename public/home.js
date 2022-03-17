@@ -3453,6 +3453,47 @@ hero();
 
 /***/ }),
 
+/***/ "./components/home-section-initiative/index.js":
+/*!*****************************************************!*\
+  !*** ./components/home-section-initiative/index.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "homeSectionInitiative": () => (/* binding */ homeSectionInitiative)
+/* harmony export */ });
+/* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.esm.js");
+/* harmony import */ var _entry_real_estate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../entry-real-estate */ "./components/entry-real-estate/index.js");
+// Modules
+ //Components
+
+
+var homeSectionInitiative = function homeSectionInitiative() {
+  var ref = document.querySelectorAll("._home-section-initiative");
+  ref.forEach(function (component) {
+    var slider = component.querySelector(".swiper");
+    var navigationPrev = slider.querySelector(".swiper-prev");
+    var navigationNext = slider.querySelector(".swiper-next");
+    var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
+      grabCursor: true,
+      loop: true,
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true
+      },
+      navigation: {
+        nextEl: navigationNext,
+        prevEl: navigationPrev
+      }
+    });
+  });
+};
+homeSectionInitiative();
+
+/***/ }),
+
 /***/ "./components/nav-overlay/index.js":
 /*!*****************************************!*\
   !*** ./components/nav-overlay/index.js ***!
@@ -21458,8 +21499,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_header_alt__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/header-alt */ "./components/header-alt/index.js");
 /* harmony import */ var _components_hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/hero */ "./components/hero/index.js");
 /* harmony import */ var _components_carousel_real_estate__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/carousel-real-estate */ "./components/carousel-real-estate/index.js");
+/* harmony import */ var _components_home_section_initiative__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/home-section-initiative */ "./components/home-section-initiative/index.js");
 // Assets
  // Components
+
 
 
 
