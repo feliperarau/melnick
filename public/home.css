@@ -11595,12 +11595,6 @@ a:hover {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (max-width: 767.98px) {
-  .leaked {
-    margin-right: -20px;
-  }
-}
-
 ._navbar li {
   list-style: none;
 }
