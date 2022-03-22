@@ -1,29 +1,29 @@
 <% const tabs = JSON.parse(include('../../data/real-estates/tabs.json') ) %>
 
 <div class="_carousel-real-estate container-fluid">
-  <div class="carousel-tabs">
-    <ul class="d-flex justify-content-center nav nav-tabs" data-bs-tabs="tabs">
-      <% tabs.forEach(function(tab) { %>
-      <li><a class="<%= tab.active ? 'active': '' %>" href="#<%= tab.id %>" aria-current="<%= tab.active %>" data-bs-toggle="tab"><%= tab.label %></a></li>
-      <% }); %>
-    </ul>
-  </div>
-  <div class="tab-content">
-    <% tabs.forEach(function(tab) { %>
-    <% const realEstates = JSON.parse(include('../../data/real-estates/carousel/'+ tab.id +'.json') ) %>
-
-    <div id="<%= tab.id %>" class="tab-pane fade <%= tab.active ? 'show active': '' %>" role="tabpanel">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <% realEstates.forEach(function(realEstate) { %>
-          <div class="swiper-slide">
-            <%- include('../entry-real-estate/component.ejs', {realEstate}) -%>
-          </div>
-          <% }); %>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
+    <div class="carousel-tabs">
+        <ul class="d-flex justify-content-center nav nav-tabs" data-bs-tabs="tabs">
+            <% tabs.forEach(function(tab) { %>
+            <li><a class="<%= tab.active ? 'active': '' %>" href="#<%= tab.id %>" aria-current="<%= tab.active %>" data-bs-toggle="tab"><%= tab.label %></a></li>
+            <% }); %>
+        </ul>
     </div>
-    <% }); %>
-  </div>
+    <div class="tab-content">
+        <% tabs.forEach(function(tab) { %>
+        <% const realEstates = JSON.parse(include('../../data/real-estates/carousel/'+ tab.id +'.json') ) %>
+
+        <div id="<%= tab.id %>" class="tab-pane fade <%= tab.active ? 'show active': '' %>" role="tabpanel">
+            <div class="swiper leaked">
+                <div class="swiper-wrapper">
+                    <% realEstates.forEach(function(realEstate) { %>
+                    <div class="swiper-slide">
+                        <%- include('../entry-real-estate/component.ejs', {realEstate}) -%>
+                    </div>
+                    <% }); %>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <% }); %>
+    </div>
 </div>

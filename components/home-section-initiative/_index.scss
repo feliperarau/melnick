@@ -3,18 +3,65 @@
 
 ._home-section-initiative {
     ._card-cta-bg {
-        //padding-top: 110px;
-        //padding-left: 65px;
-        min-height: 390px;
         padding: 0;
-        padding-left: 65px;
+
+        @include media-breakpoint-down(md) {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include media-breakpoint-up(md) {
+            min-height: 390px;
+            padding-left: 65px;
+        }
+
+        .bg-image {
+            @include media-breakpoint-down(md) {
+                height: 140px;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                position: static;
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
     }
     ._card-cta {
-        max-width: 370px;
-        bottom: -110px;
+        flex: 1;
+
+        @include media-breakpoint-up(md) {
+            max-width: 370px;
+            bottom: -110px;
+        }
 
         .inner-content {
-            padding: 69px 60px;
+            @include media-breakpoint-up(md) {
+                padding: 69px 60px;
+            }
+            @include media-breakpoint-down(md) {
+                justify-content: stretch;
+
+                ._button-default {
+                    margin-top: auto;
+                }
+            }
+        }
+    }
+    .swiper {
+        @include media-breakpoint-down(md) {
+            padding-bottom: 30px;
+        }
+    }
+    .swiper-slide {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+        @include media-breakpoint-down(md) {
+            max-width: 280px;
         }
     }
     .swiper-nav-container {
@@ -22,6 +69,10 @@
         gap: 10px;
         justify-content: end;
         margin-top: 30px;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
 
         .swiper-nav {
             position: static;

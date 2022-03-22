@@ -1,40 +1,32 @@
 // Modules
 import Swiper from "swiper/bundle";
 
-//Components
-import "../entry-real-estate";
-
-export const homeSectionInitiative = () => {
-    const ref = document.querySelectorAll("._home-section-initiative");
+export const homeSectionFeatures = () => {
+    const ref = document.querySelectorAll("._home-section-features");
 
     ref.forEach((component) => {
+        console.log(component);
         const slider = component.querySelector(".swiper");
-
-        const navigationPrev = slider.querySelector(".swiper-prev");
-        const navigationNext = slider.querySelector(".swiper-next");
         const sliderPagination = slider.querySelector(".swiper-pagination");
 
         var swiper = new Swiper(slider, {
-            grabCursor: true,
             spaceBetween: 10,
             slidesPerView: "auto",
             freeMode: true,
-            loop: false,
-            navigation: {
-                nextEl: navigationNext,
-                prevEl: navigationPrev,
-            },
+            grabCursor: true,
             pagination: {
                 el: sliderPagination,
                 clickable: true,
             },
             breakpoints: {
+                // when window width is >= 320px
                 767: {
-                    loop: true,
+                    spaceBetween: 20,
+                    slidesPerView: 3,
                 },
             },
         });
     });
 };
 
-homeSectionInitiative();
+homeSectionFeatures();

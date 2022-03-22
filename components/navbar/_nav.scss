@@ -17,6 +17,8 @@
         border: 0;
     }
     .nav-menu {
+        flex-wrap: wrap;
+
         &.center {
             font-size: 14px;
         }

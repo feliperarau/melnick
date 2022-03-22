@@ -1,4 +1,14 @@
 @import "../card-home/";
 
 ._home-section-features {
+    .swiper {
+        @include media-breakpoint-down("md") {
+            padding-bottom: 30px;
+        }
+    }
+    .swiper-slide {
+        @include media-breakpoint-down("md") {
+            max-width: 280px;
+        }
+    }
 }

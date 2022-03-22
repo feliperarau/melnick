@@ -14,7 +14,17 @@
     --bs-gutter-y: 1.25rem;
 }
 
-.mx-n20 {
-    margin-left: -20px;
-    margin-right: -20px;
+@each $bp, $width in $grid-breakpoints {
+    @include media-breakpoint-up($bp) {
+        .mx-#{$bp}-n20 {
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+    }
+}
+
+.leaked {
+    @include media-breakpoint-down(md) {
+        margin-right: -20px !important;
+    }
 }

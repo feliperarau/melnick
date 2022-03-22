@@ -7,70 +7,84 @@
 @import "../hero-details/";
 
 ._hero {
-  margin-top: 40px;
-  //display: flex;
-  position: relative;
-
-  .search-bar {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    left: 0;
-    right: 0;
-    top: 120px;
-    z-index: 100;
-  }
-
-  .inner {
-    flex: 1;
-    // overflow: hidden;
     //display: flex;
-    flex-direction: column;
-    //position: relative;
-
-    padding-bottom: 24px;
-
-    .slider {
-      display: flex;
-      flex: 1;
-      overflow: hidden;
-      border-radius: 4px;
-    }
-    .swiper-slide {
-      display: flex;
-      align-items: flex-end;
-      background-repeat: no-repeat;
-      background-size: cover;
-      min-height: 577px;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0%;
-        bottom: 0%;
-        left: 0%;
-        right: 0%;
-        z-index: 5;
-        background: rgba(black, 0.4);
-        border-radius: 4px;
-      }
-    }
-  }
-  .foreground {
     position: relative;
-    z-index: 10;
-    padding-top: 70px;
-    padding-bottom: 33px;
-    background: linear-gradient(
-      360deg,
-      rgba(#090909, 0.75) 0%,
-      rgba(9, 9, 9, 0) 100%
-    );
-  }
-  .slide-1 {
-    background-image: url("./../../assets/img/hero-bg.jpeg");
-  }
-  .slide-2 {
-    background-image: url("./../../assets/img/hero-bg-2.jpeg");
-  }
+
+    @include media-breakpoint-down(md) {
+        padding: 0 !important;
+    }
+    @include media-breakpoint-up(md) {
+        margin-top: 40px;
+    }
+
+    .search-bar {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        top: 120px;
+        z-index: 100;
+    }
+
+    .inner {
+        flex: 1;
+        // overflow: hidden;
+        //display: flex;
+        flex-direction: column;
+        //position: relative;
+
+        padding-bottom: 24px;
+
+        .slider {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+            border-radius: 4px;
+
+            @include media-breakpoint-down(md) {
+                border-radius: 0;
+            }
+        }
+        .swiper-slide {
+            display: flex;
+            align-items: flex-end;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 577px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0%;
+                bottom: 0%;
+                left: 0%;
+                right: 0%;
+                z-index: 5;
+                background: rgba(black, 0.4);
+                border-radius: 4px;
+
+                @include media-breakpoint-down(md) {
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+    .foreground {
+        position: relative;
+        z-index: 10;
+        padding-top: 70px;
+        padding-bottom: 33px;
+        background: linear-gradient(
+            360deg,
+            rgba(#090909, 0.75) 0%,
+            rgba(9, 9, 9, 0) 100%
+        );
+    }
+    .slide-1 {
+        background-image: url("./../../assets/img/hero-bg.jpeg");
+    }
+    .slide-2 {
+        background-image: url("./../../assets/img/hero-bg-2.jpeg");
+    }
 }

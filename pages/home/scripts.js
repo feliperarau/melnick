@@ -5,6 +5,7 @@ import "../../assets/js/main";
 import "../../components/header-alt";
 import "../../components/hero";
 import "../../components/carousel-real-estate";
+import "../../components/home-section-features";
 import "../../components/home-section-initiative";
 
 const home = () => {

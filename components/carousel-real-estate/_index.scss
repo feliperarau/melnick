@@ -45,10 +45,19 @@
         }
     }
     .swiper {
-        padding-bottom: 54px;
+        padding-bottom: 30px;
+
+        @include media-breakpoint-up(md) {
+            padding-bottom: 54px;
+        }
 
         .swiper-pagination {
+            display: none;
             text-align: right;
+
+            @include media-breakpoint-up(md) {
+                display: block;
+            }
         }
     }
 }

@@ -1,6 +1,11 @@
 ._navbar {
-    padding-top: 30px;
-    padding-bottom: 30px;
-
     @import "nav";
+
+    @include media-breakpoint-up(md) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .collapse {
+        justify-content: space-between;
+    }
 }

@@ -12,11 +12,14 @@ var cssClass = args.cssClass ?? '';
     <h2 class="title-display text-28 text-center mb-3">
         Confira o que a <strong>Melnick</strong> oferece
     </h2>
-    <div class="row">
-        <% cards.forEach(function(card) { %>
-        <div class="col">
-            <%- include( '../card-home/component.ejs', { ...card, cssClass: '' } ); %>
+    <div class="swiper leaked">
+        <div class="swiper-wrapper">
+            <% cards.forEach(function(card) { %>
+            <div class="swiper-slide">
+                <%- include( '../card-home/component.ejs', { ...card, cssClass: '' } ); %>
+            </div>
+            <% }); %>
         </div>
-        <% }); %>
+        <div class="swiper-pagination"></div>
     </div>
 </section>
