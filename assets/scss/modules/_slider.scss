@@ -1,16 +1,23 @@
 .swiper-pagination {
-  &.swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 0px;
-    line-height: 1;
-  }
-  .swiper-pagination-bullet {
-    width: 30px;
-    border-radius: 20px;
-    height: 4px;
-    background-color: rgba($azul-melnick, 0.5);
+    position: static !important;
+    margin-top: 20px;
 
-    &.swiper-pagination-bullet-active {
-      background-color: $azul-melnick;
+    @include media-breakpoint-down(md) {
+        margin-bottom: 30px;
     }
-  }
+
+    &.swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 0px;
+        line-height: 1;
+    }
+    .swiper-pagination-bullet {
+        width: 30px;
+        border-radius: 20px;
+        height: 4px;
+        background-color: rgba($azul-melnick, 0.5);
+
+        &.swiper-pagination-bullet-active {
+            background-color: $azul-melnick;
+        }
+    }
 }

@@ -1,6 +1,12 @@
 <nav class="_navbar navbar fade-toggle">
     <div class="collapse navbar-collapse d-flex align-items-center" id="main-nav">
-        <a class="navbar-brand" href="#"><img src="../../assets/img/Logo-PB.svg" alt="Melnick" /></a>
+        <div class="navbar-brand">
+            <a href="/">
+                <img class="logo-desktop d-none d-md-block" src="../../assets/img/Logo-PB.svg" alt="Melnick" />
+                <img class="logo-mobile d-md-none" src="../../assets/img/Logo-mobile.svg" alt="Melnick" />
+            </a>
+        </div>
+
         <ul class="nav-menu center d-none d-md-flex px-2 flex-grow-1 justify-content-center mb-0">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/residencial">Residencial</a>
@@ -23,6 +29,9 @@
                 <a class="nav-link" href="/investidores">Relação com Investidores</a>
             </li>
         </ul>
+        <button class="search-toggler d-md-none" type="button" aria-label="Toggle search">
+            <span class="icon icon-search"></span>
+        </button>
         <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
             <span class="icon icon-menu_black_24dp"></span>
         </button>

@@ -2,7 +2,16 @@
 
 ._card-cta-bg {
     position: relative;
-    padding: 30px;
+    padding: 40px;
+    display: flex;
+
+    @include media-breakpoint-down(md) {
+        border-radius: 4px;
+        box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.1);
+        padding: 0;
+        flex: 1;
+        flex-direction: column;
+    }
 
     .bg-image {
         position: absolute;
@@ -12,6 +21,17 @@
         bottom: 0;
         border-radius: 4px;
         overflow: hidden;
+
+        @include media-breakpoint-down(md) {
+            height: 140px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            position: static;
+
+            &::before {
+                display: none;
+            }
+        }
 
         &:before {
             content: "";
@@ -27,9 +47,25 @@
             object-fit: cover;
         }
     }
+
     ._card-cta {
         position: relative;
         z-index: 20;
-        max-width: 325px;
+
+        @include media-breakpoint-up(md) {
+            flex-basis: 325px;
+        }
+
+        .inner-content {
+            @include media-breakpoint-down(md) {
+                justify-content: stretch;
+
+                ._button-default {
+                    margin-top: auto;
+                    align-self: stretch;
+                    justify-content: center;
+                }
+            }
+        }
     }
 }

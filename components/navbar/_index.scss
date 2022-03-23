@@ -5,7 +5,13 @@
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    .collapse {
-        justify-content: space-between;
+    @include media-breakpoint-down(md) {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .navbar-collapse {
+        gap: 12px;
     }
 }

@@ -1,0 +1,15 @@
+._button {
+    padding: 11px 32px;
+    border-radius: 4px;
+    background: black;
+    color: white;
+    border: none;
+    line-height: 18px;
+    display: inline-flex;
+    font-weight: 500;
+
+    &:hover {
+        text-decoration: underline;
+        color: #fff;
+    }
+}

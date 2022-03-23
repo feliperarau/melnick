@@ -1,15 +1,13 @@
-._button-default {
-    padding: 11px 32px;
-    border-radius: 4px;
-    background: $azul-melnick;
-    color: white;
-    border: none;
-    line-height: 18px;
-    display: inline-flex;
-    font-weight: 500;
+@import "../button/";
 
-    &:hover {
-        text-decoration: underline;
-        color: #fff;
+._button-default {
+    &._button {
+        background: $azul-melnick;
+    }
+
+    &.variation {
+        &-light {
+            @import "./variations/light";
+        }
     }
 }

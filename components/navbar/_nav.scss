@@ -8,13 +8,23 @@
         @include nav-decoration;
     }
     .navbar-brand {
+        flex: 1;
         padding: 0;
+
+        a {
+            display: inline-block;
+        }
+        img {
+            display: block;
+        }
     }
-    .navbar-toggler {
+    .navbar-toggler,
+    .search-toggler {
         color: white;
         font-size: 24px;
         padding: 0;
         border: 0;
+        background: none;
     }
     .nav-menu {
         flex-wrap: wrap;

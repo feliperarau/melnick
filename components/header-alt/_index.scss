@@ -3,13 +3,16 @@
 
 ._header-alt {
     position: absolute;
-    left: 40px;
-    right: 40px;
-    top: 40px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
     z-index: 40;
 
     @include media-breakpoint-up(md) {
         padding-left: 65px;
         padding-right: 65px;
+        left: 40px;
+        right: 40px;
+        top: 40px;
     }
 }

@@ -5,6 +5,9 @@
 @import "../entry-real-estate/";
 
 ._carousel-real-estate {
+    @include media-breakpoint-down(md) {
+        margin-bottom: 20px;
+    }
     .nav-tabs {
         border-bottom: 0;
     }
@@ -45,10 +48,8 @@
         }
     }
     .swiper {
-        padding-bottom: 30px;
-
         @include media-breakpoint-up(md) {
-            padding-bottom: 54px;
+            padding-bottom: 10px;
         }
 
         .swiper-pagination {

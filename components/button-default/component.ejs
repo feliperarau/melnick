@@ -7,11 +7,12 @@ var tag = args.tag ?? 'a';
 var type = args.type ?? 'button';
 var label = args.label ?? '';
 var link = args.link ?? '#';
+var variation = args.variation ?? 'default';
 %>
 
 <% if( tag === 'button' ) { %>
-<<%= tag %> type="<%= tag %>" class="_button-default <%= cssClass %>"><%- label %></<%= tag %>>
+<<%= tag %> type="<%= tag %>" class="_button _button-default variation-<%= variation %> <%= cssClass %>"><%- label %></<%= tag %>>
 
 <% } else { %>
-<<%= tag %> href="<%= link %>" class="_button-default <%= cssClass %>"><%- label %></<%= tag %>>
+<<%= tag %> href="<%= link %>" class="_button _button-default <%= cssClass %>"><%- label %></<%= tag %>>
 <% } %>

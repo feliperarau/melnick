@@ -23,8 +23,21 @@
     }
 }
 
+.sitw-wrapper {
+    overflow-x: hidden;
+}
 .leaked {
     @include media-breakpoint-down(md) {
         margin-right: -20px !important;
+    }
+}
+._slider-cards {
+    @include media-breakpoint-down(md) {
+        .shadow-wrapper {
+            margin: -60px;
+        }
+        .swiper {
+            padding: 60px;
+        }
     }
 }
