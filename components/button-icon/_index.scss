@@ -1,7 +1,7 @@
 @import "../button-default/";
 
 ._button-icon {
-    &._button-default {
+    &._button-default._button {
         padding: 0px;
         width: 40px;
         height: 40px;
@@ -11,6 +11,9 @@
 
         &:hover {
             text-decoration: none;
+        }
+        .icon {
+            margin: 0;
         }
     }
 }

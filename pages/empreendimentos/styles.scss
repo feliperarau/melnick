@@ -1,0 +1,57 @@
+// Assets
+@import "../../assets/scss/main.scss";
+
+// Components
+@import "../../components/header/";
+@import "../../components/footer/";
+@import "../../components/real-estate-filters/";
+@import "../../components/entry-real-estate-list/";
+@import "../../components/page-title/";
+@import "../../components/button-default/";
+@import "../../components/whatsapp-balloon/";
+
+body {
+    background: #f6f6f6;
+}
+#page-empreendimentos {
+    padding-bottom: 150px;
+
+    ._page-title {
+        margin-top: 10px;
+    }
+    .page-inner {
+        margin-top: 20px;
+        display: flex;
+        gap: 40px;
+
+        & > {
+            .left,
+            .right {
+                flex: 1;
+            }
+        }
+    }
+    .map {
+        margin-right: -20px;
+
+        iframe {
+            width: 100%;
+            border-radius: 15px 0px 0px 15px;
+        }
+    }
+    .real-estates {
+        ._entry-real-estate-list {
+            margin-top: 20px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    .see-more {
+        margin-top: 40px;
+    }
+}
+.site-wrapper {
+    margin-top: 97px;
+}

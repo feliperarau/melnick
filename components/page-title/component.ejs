@@ -1,0 +1,15 @@
+<% 
+// Params
+var args = typeof args !== 'undefined' ? args : '';
+let cssClass = args.cssClass ?? '';
+let title = args.title ?? '';
+let description = args.description ?? '';
+%>
+
+<div class="_page-title <%= cssClass %>">
+    <h1 class="headline"><%- title %></h1>
+
+    <% if( description ) { %>
+    <p class="description"><%- description %></p>
+    <% } %>
+</div>

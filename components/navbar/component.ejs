@@ -1,9 +1,20 @@
-<nav class="_navbar navbar fade-toggle">
+<%
+// Defaults
+var args = typeof args !== 'undefined' ? args : {};
+var scheme = args.scheme ?? 'light';
+
+%>
+<nav class="_navbar navbar fade-toggle <%= scheme %>">
     <div class="collapse navbar-collapse d-flex align-items-center" id="main-nav">
         <div class="navbar-brand">
             <a href="/">
+                <% if( 'light' === scheme ) { %>
                 <img class="logo-desktop d-none d-md-block" src="../../assets/img/Logo-PB.svg" alt="Melnick" />
                 <img class="logo-mobile d-md-none" src="../../assets/img/Logo-mobile.svg" alt="Melnick" />
+                <% } else { %>
+                <img class="logo-desktop d-none d-md-block" src="../../assets/img/Logo-colorida.svg" alt="Melnick" />
+                <img class="logo-mobile d-md-none" src="../../assets/img/Logo-mobile-colorida.svg" alt="Melnick" />
+                <% } %>
             </a>
         </div>
 

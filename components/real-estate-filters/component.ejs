@@ -1,0 +1,22 @@
+<% 
+// Data
+let filters = JSON.parse(include('../../data/real-estates/filters.json') );
+
+// Params
+var args = typeof args !== 'undefined' ? args : '';
+var cssClass = args.cssClass ?? '';
+%>
+
+<div class="_real-estate-filters <%= cssClass %>">
+    <% filters.forEach(function(filter) { %>
+        <%- 
+        include( '../button-default/component.ejs', { args: {
+            icon: filter.icon ?? '',
+            iconClass: 'color-amarelo-melnick text-24',
+            cssClass: 'fw-normal',
+            variation: filter.variation ?? '',
+            label: filter.label ?? '',
+        } } );
+        %>
+    <% }); %>
+</div>

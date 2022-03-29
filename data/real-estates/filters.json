@@ -1,0 +1,37 @@
+[
+    {
+        "label": "Porto Alegre",
+        "icon": "place",
+        "variation": "default"
+    },
+    {
+        "label": "Zona sul, região",
+        "icon": "place",
+        "variation": "default"
+    },
+    {
+        "label": "Dormitórios",
+        "icon": "",
+        "variation": "outline"
+    },
+    {
+        "label": "Estágio do empreendimento",
+        "variation": "outline"
+    },
+    {
+        "label": "Valor",
+        "variation": "outline"
+    },
+    {
+        "label": "Metragem",
+        "variation": "outline"
+    },
+    {
+        "label": "Características",
+        "variation": "outline"
+    },
+    {
+        "label": "Mais filtros",
+        "variation": "outline"
+    }
+]

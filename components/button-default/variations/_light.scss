@@ -1,4 +1,8 @@
 & {
     background: white;
     color: $azul-melnick;
+
+    &:hover {
+        background: darken(white, 5%);
+    }
 }

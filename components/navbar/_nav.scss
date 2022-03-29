@@ -36,4 +36,8 @@
             font-size: 12px;
         }
     }
+
+    &.dark {
+        @import "./variations/dark";
+    }
 }

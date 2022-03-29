@@ -3,11 +3,23 @@
 ._button-default {
     &._button {
         background: $azul-melnick;
+
+        &:hover {
+            background-color: lighten($azul-melnick, 5%);
+        }
+
+        .icon {
+            margin-right: 10px;
+        }
     }
 
     &.variation {
         &-light {
             @import "./variations/light";
+        }
+
+        &-outline {
+            @import "./variations/outline";
         }
     }
 }

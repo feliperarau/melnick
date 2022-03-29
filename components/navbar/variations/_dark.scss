@@ -1,0 +1,13 @@
+& {
+    .nav-link {
+        color: $azul-melnick;
+
+        &::after {
+            background-color: $azul-melnick;
+        }
+    }
+    .navbar-toggler,
+    .search-toggler {
+        color: $azul-melnick;
+    }
+}

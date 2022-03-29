@@ -1,0 +1,12 @@
+@import "../button-default/";
+
+._real-estate-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    ._button {
+        height: 40px;
+        padding: 0 23px;
+    }
+}

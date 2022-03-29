@@ -1,0 +1,9 @@
+& {
+    background: none;
+    color: $azul-melnick;
+
+    &:hover {
+        color: white;
+        background-color: $azul-melnick;
+    }
+}

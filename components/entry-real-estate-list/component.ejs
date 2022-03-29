@@ -1,0 +1,38 @@
+<div class="_entry-real-estate-list">
+    <a href="#" class="entry-inner">
+        <% if ( realEstate.thumbnail ) { %>
+        <div class="thumbnail thumb-1">
+            <img src="../../assets/img/<%= realEstate.thumbnail %>" />
+        </div>
+        <% } %>
+        <div class="inner bg-white">
+            <div class="left">
+                <div class="top">
+                    <strong class="category text-10"><%= realEstate.category %></strong>
+                    <h2 class="title"><%= realEstate.title %></h2>
+                    <strong class="location text-10"><%= realEstate.location %></strong>
+                    <div class="description"><%= realEstate.description %></div>
+                </div>
+
+                <div class="middle">
+                    <div class="features d-flex g-3">
+                        <div class="feature-item">
+                            <i class="icon icon-bed"></i> <span><%= realEstate.dorms %></span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="icon icon-straighten"></i> <span><%= realEstate.size %></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <%- 
+                include( '../button-icon/component.ejs', { args: {
+                    icon: 'chevron-right',
+                    cssClass: 'swiper-nav swiper-next'
+                } } );
+                %>
+            </div>
+        </div>
+    </a>
+</div>

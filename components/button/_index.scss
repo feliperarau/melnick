@@ -1,15 +1,19 @@
 ._button {
-    padding: 11px 32px;
+    padding: 10px 31px;
     border-radius: 4px;
     background: black;
     color: white;
     border: none;
     line-height: 18px;
     display: inline-flex;
+    align-items: center;
     font-weight: 500;
+    transition: 200ms all;
+    border: 1px solid;
+    border-color: $azul-melnick;
 
     &:hover {
-        text-decoration: underline;
+        text-decoration: none;
         color: #fff;
     }
 }

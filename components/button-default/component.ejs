@@ -7,12 +7,22 @@ var tag = args.tag ?? 'a';
 var type = args.type ?? 'button';
 var label = args.label ?? '';
 var link = args.link ?? '#';
+var icon = args.icon ?? '';
+var iconClass = args.iconClass ?? '';
 var variation = args.variation ?? 'default';
+
+var btnIcon = ! icon ? '' : `<i class="icon icon-${icon} ${iconClass}"></i>`;
 %>
 
 <% if( tag === 'button' ) { %>
-<<%= tag %> type="<%= tag %>" class="_button _button-default variation-<%= variation %> <%= cssClass %>"><%- label %></<%= tag %>>
+<<%= tag %> type="<%= tag %>" class="_button _button-default variation-<%= variation %> <%= cssClass %>">
+    <%- btnIcon %>
+    <%- label %>
+</<%= tag %>>
 
 <% } else { %>
-<<%= tag %> href="<%= link %>" class="_button _button-default <%= cssClass %>"><%- label %></<%= tag %>>
+<<%= tag %> href="<%= link %>" class="_button _button-default variation-<%= variation %> <%= cssClass %>">
+    <%- btnIcon %>
+    <%- label %>
+</<%= tag %>>
 <% } %>
