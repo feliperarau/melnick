@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Melnick</title>
+        <script defer src="/empreendimentos/empreendimentos.js"></script>
+        <link href="/empreendimentos/empreendimentos.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header class="_header overlay">
+            <nav class="_navbar navbar fade-toggle dark">
+                <div class="collapse navbar-collapse d-flex align-items-center" id="main-nav">
+                    <div class="navbar-brand">
+                        <a href="/">
+                            <img class="logo-desktop d-none d-md-block" src="/./media/images/Logo-colorida.b388bf13.svg" alt="Melnick" />
+                            <img
+                                class="logo-mobile d-md-none"
+                                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAyMiAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIuNTkyOSA4LjU2MTAzQzIuNTkzNDUgNy4wMzE0IDMuMTY3MDEgNS41NjQ1MSA0LjE4NzYzIDQuNDgyNDlDNS4yMDgyNSAzLjQwMDQ2IDYuNTkyNSAyLjc5MTc1IDguMDM2NDIgMi43OTAwMlYxLjAwODY5QzguMDM2NzkgMC44NzI2ODcgOC4wMTAwMSAwLjczODEzNSA3Ljk1NzgzIDAuNjEzODc0QzcuOTA1NjQgMC40ODk2MTIgNy44MjkyMyAwLjM3ODQ1MiA3LjczMzYyIDAuMjg3Njg3QzcuNjM4MDEgMC4xOTY5MjEgNy41MjUzNiAwLjEyODYwNSA3LjQwMzA2IDAuMDg3MjI0OEM3LjI4MDc2IDAuMDQ1ODQ0NSA3LjE1MTU5IDAuMDMyMzM1OSA3LjAyNDAxIDAuMDQ3NTg1QzYuODExMDEgMC4wNjk1MzY4IDYuNTk5NTcgMC4xMDYwMTggNi4zOTEgMC4xNTY4MDJDNC44ODA2NCAwLjQ5MTkwMiAzLjQ5MTY5IDEuMjc1OTkgMi4zODY4NCAyLjQxNzIxQzEuMjgxOTkgMy41NTg0NCAwLjUwNjk4NSA1LjAwOTU2IDAuMTUyNjAyIDYuNjAwNTlDMC4wODQ1NTc4IDYuOTA4NTggMC4wNjYwMDE4IDcuMTA0MDcgMC4wMTIzOTE1IDcuNDIxODlDLTAuMDA5NTMxMTUgNy41NjIwMiAtMC4wMDIzMDIzNiA3LjcwNTUyIDAuMDMzNTc4NCA3Ljg0MjM4QzAuMDY5NDU5MiA3Ljk3OTIzIDAuMTMzMTI1IDguMTA2MTMgMC4yMjAxMjEgOC4yMTQyQzAuMzA3MTE3IDguMzIyMjggMC40MTUzNDQgOC40MDg5MiAwLjUzNzIzOSA4LjQ2ODA3QzAuNjU5MTM1IDguNTI3MjIgMC43OTE3NTYgOC41NTc0NiAwLjkyNTgyOSA4LjU1NjY2SDIuNTkyOSIgZmlsbD0iI0Y4QTYzRSIvPgo8cGF0aCBkPSJNMjEuODIyNSA5LjY2MDcyQzIxLjgyMyA4Ljk2NTQ1IDIxLjc2ODggOC4yNzEzNiAyMS42NjA3IDcuNTg1NkMyMS4zNjE3IDUuODA2NDYgMjAuNDg2NCA0LjQ2MzA5IDE4LjgwOSAzLjg5NzM1QzE2LjkwMjcgMy4yNTQwNiAxNC40NTIxIDMuMjQ4NiAxMi42NDM4IDQuMDg1MkMxMi42MDM5IDQuMDk3MTUgMTIuNTYyNiA0LjEwMzAzIDEyLjUyMTEgNC4xMDI2OEMxMi40NzkzIDQuMTAyODUgMTIuNDM3NyA0LjA5Njk3IDEyLjM5NzQgNC4wODUyQzExLjMzNzYgMy41OTQ4MiAxMC4wNTgxIDMuNDUwNjUgOC43OTUyMSAzLjQ0MDgyQzYuMTM4NCAzLjQyMDA3IDQuMDI2OTcgNC43MTg2NiAzLjQxMzU1IDcuNDAxMDJDMy4yNTk5MyA4LjA3MjcgMy4yMjQ4OCA4Ljk2NzIgMy4yMTg2OSA5LjY1OTYzQzMuMjAwMTMgMTIuMDAxMiAzLjIxMjUxIDE0LjU0MDUgMy4yMTI1MSAxNi44ODIxQzMuMjEyNSAxNy4xNjYgMy4zMTg3NCAxNy40MzgzIDMuNTA3OTQgMTcuNjM5NEMzLjY5NzE0IDE3Ljg0MDQgMy45NTM4NSAxNy45NTM4IDQuMjIxODIgMTcuOTU0Nkg1Ljg2NTE5QzUuOTk3OTggMTcuOTU0OSA2LjEyOTUzIDE3LjkyNzQgNi4yNTIyNCAxNy44NzM2QzYuMzc0OTUgMTcuODE5OSA2LjQ4NjQyIDE3Ljc0MDkgNi41ODAyMyAxNy42NDEzQzYuNjc0MDMgMTcuNTQxOCA2Ljc0ODMyIDE3LjQyMzUgNi43OTg4MyAxNy4yOTM0QzYuODQ5MzMgMTcuMTYzMyA2Ljg3NTA1IDE3LjAyMzkgNi44NzQ1MSAxNi44ODMyQzYuODc0NTEgMTYuNjE1NiA2Ljg3NDUxIDExLjkyMjYgNi44ODk5NyA5Ljc2ODg1QzYuODg3NjcgOS4yODM4MiA2LjkzMTE5IDguNzk5NzYgNy4wMTk4NyA4LjMyMzlDNy4yMjYwNyA3LjI5MDcxIDcuNzQxNTUgNi43NDEzNiA4LjczODUgNi42MzQzMkM5LjI5NjAyIDYuNTU4ODEgOS44NjI0NCA2LjY0NDQ3IDEwLjM3NzcgNi44ODIyNEMxMC40Mjg4IDYuOTEwNzIgMTAuNDcyMiA2Ljk1MjU2IDEwLjUwMzggNy4wMDM3OEMxMC41MzU0IDcuMDU1MDEgMTAuNTU0MSA3LjExMzkyIDEwLjU1ODIgNy4xNzQ5NUMxMC41NTgyIDcuMTc0OTUgMTAuNjAyNSAxNi4yNTk2IDEwLjYwMjUgMTYuODgzMkMxMC42MDI0IDE3LjAyMzkgMTAuNjI4NCAxNy4xNjMzIDEwLjY3OTEgMTcuMjkzM0MxMC43Mjk4IDE3LjQyMzQgMTAuODA0MiAxNy41NDE2IDEwLjg5OCAxNy42NDEyQzEwLjk5MTggMTcuNzQwNyAxMS4xMDMyIDE3LjgxOTggMTEuMjI1OSAxNy44NzM4QzExLjM0ODUgMTcuOTI3NyAxMS40OCAxNy45NTU2IDExLjYxMjggMTcuOTU1N0gxMy40MjczQzEzLjU2MDcgMTcuOTU3MyAxMy42OTMxIDE3LjkzMDcgMTMuODE2NiAxNy44Nzc0QzEzLjk0MDEgMTcuODI0IDE0LjA1MjMgMTcuNzQ1MSAxNC4xNDY2IDE3LjY0NTJDMTQuMjQwOSAxNy41NDUzIDE0LjMxNTUgMTcuNDI2NCAxNC4zNjU4IDE3LjI5NTZDMTQuNDE2MSAxNy4xNjQ3IDE0LjQ0MTMgMTcuMDI0NSAxNC40Mzk4IDE2Ljg4MzJDMTQuNDM5OCAxNi4zOTgzIDE0LjQ1MTEgOC43NTUzMSAxNC40NTExIDcuMTk2NzlDMTQuNDUxMSA3LjAxODc2IDE0LjQ4NTEgNi45MTcxOSAxNC41Nzg5IDYuODY5MTRDMTUuMTI5OCA2LjY1NTUyIDE1LjcxODUgNi41NzM4MyAxNi4zMDI3IDYuNjI5OTVDMTcuMjk1NSA2LjczOTE3IDE3LjgxNDEgNy4yODUyNSAxOC4wMjEzIDguMzE5NTRDMTguMTExIDguNzk1MjMgMTguMTU0NiA5LjI3OTM5IDE4LjE1MTIgOS43NjQ0N0MxOC4xNTEyIDEwLjI0NjEgMTguMTU4NSAxMS41NDI1IDE4LjE1ODUgMTEuNTQyNVYxNi44Nzg5QzE4LjE1NjcgMTcuMDIxIDE4LjE4MTcgMTcuMTYyIDE4LjIzMjEgMTcuMjkzN0MxOC4yODI1IDE3LjQyNTQgMTguMzU3MyAxNy41NDUxIDE4LjQ1MiAxNy42NDU3QzE4LjU0NjcgMTcuNzQ2MyAxOC42NTk1IDE3LjgyNTkgMTguNzgzNiAxNy44Nzk3QzE4LjkwNzggMTcuOTMzNSAxOS4wNDA5IDE3Ljk2MDUgMTkuMTc1IDE3Ljk1OUgyMC44MjQ2QzIwLjk1NzMgMTcuOTU4NyAyMS4wODg2IDE3LjkzMDcgMjEuMjExMSAxNy44NzY2QzIxLjMzMzYgMTcuODIyNCAyMS40NDQ4IDE3Ljc0MzIgMjEuNTM4NCAxNy42NDM1QzIxLjYzMTkgMTcuNTQzOCAyMS43MDYgMTcuNDI1NSAyMS43NTY0IDE3LjI5NTRDMjEuODA2NyAxNy4xNjUzIDIxLjgzMjMgMTcuMDI2IDIxLjgzMTggMTYuODg1NEMyMS44MzE4IDE0LjU0MzggMjEuODQ1MiAxMi4wMDQ1IDIxLjgyNTYgOS42NjI5IiBmaWxsPSIjMDAyNTQxIi8+Cjwvc3ZnPgo="
+                                alt="Melnick" />
+                        </a>
+                    </div>
+
+                    <ul class="nav-menu center d-none d-md-flex px-2 flex-grow-1 justify-content-center mb-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/residencial">Residencial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/comercial">Comercial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/comercial">Terrenos</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-menu secondary px-2 mb-0 d-none d-md-flex">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/contato">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/acessibilidade">Acessibilidade</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/investidores">Relação com Investidores</a>
+                        </li>
+                    </ul>
+                    <button class="search-toggler d-md-none" type="button" aria-label="Toggle search">
+                        <span class="icon icon-search"></span>
+                    </button>
+                    <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                        <span class="icon icon-menu_black_24dp"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <nav class="_nav-overlay fade-toggle hide">
+            <div class="collapse navbar-collapse d-flex align-items-center" id="main-nav-overlay">
+                <div class="brand flex-grow-1">
+                    <a class="navbar-brand" href="#"><img src="/./media/images/Logo-PB.bc0eda4f.svg" alt="Melnick" /></a>
+                </div>
+                <ul class="nav-menu secondary d-flex px-2 mb-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contato">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/acessibilidade">Acessibilidade</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/investidores">Relação com Investidores</a>
+                    </li>
+                </ul>
+                <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                    <span class="icon icon-close"></span>
+                </button>
+            </div>
+            <div class="bottom">
+                <div class="row">
+                    <div class="col">
+                        <nav class="_menu-list">
+                            <h2 class="menu-title">Sobre Nós</h2>
+
+                            <ul class="menu">
+                                <li class="menu-item">
+                                    <a href="sobre-nos" target="">
+                                        <span class="menu-label">A Melnick</span>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="blog" target="">
+                                        <span class="menu-label">Blog</span>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="contato" target="">
+                                        <span class="menu-label">Contato</span>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="acessibilidade" target="">
+                                        <span class="menu-label">Acessibilidade</span>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="trabalhe-conosco" target="">
+                                        <span class="menu-label">Trabalhe Conosco</span>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="imprensa" target="">
+                                        <span class="menu-label">Imprensa</span>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="revista-me" target="">
+                                        <span class="menu-label">Revista ME</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <nav class="_menu-list">
+                            <h2 class="menu-title">Empreendimentos</h2>
+
+                            <ul class="menu">
+                                <li class="menu-item">
+                                    <a href="residencial" target="">
+                                        <span class="menu-label">Residencial</span>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="comercial" target="">
+                                        <span class="menu-label">Comercial</span>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="terrenos" target="">
+                                        <span class="menu-label">Terrenos</span>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="aluguel-reversivel" target="">
+                                        <span class="menu-label">Aluguel Reversível</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <nav class="_menu-list">
+                            <h2 class="menu-title">Canais Melnick</h2>
+
+                            <ul class="menu">
+                                <li class="menu-item">
+                                    <a href="melnick-day" target="_blank">
+                                        <span class="menu-label">Melnick Day</span>
+
+                                        <i class="icon icon-after icon-external"></i>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="portal-do-cliente" target="_blank">
+                                        <span class="menu-label">Portal do Cliente</span>
+
+                                        <i class="icon icon-after icon-external"></i>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="relacoes-com-investidores" target="_blank">
+                                        <span class="menu-label">Relações com Investidores</span>
+
+                                        <i class="icon icon-after icon-external"></i>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="portal-do-corretor" target="_blank">
+                                        <span class="menu-label">Portal do Corretor</span>
+
+                                        <i class="icon icon-after icon-external"></i>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="projetista" target="_blank">
+                                        <span class="menu-label">Projetista</span>
+
+                                        <i class="icon icon-after icon-external"></i>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="tramitacoes" target="_blank">
+                                        <span class="menu-label">Tramitações</span>
+
+                                        <i class="icon icon-after icon-external"></i>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="melnick-vendas" target="_blank">
+                                        <span class="menu-label">Melnick Vendas</span>
+
+                                        <i class="icon icon-after icon-external"></i>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="lojas-spot" target="_blank">
+                                        <span class="menu-label">Lojas Spot</span>
+
+                                        <i class="icon icon-after icon-external"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="site-wrapper" id="page-empreendimentos">
+            <div class="_real-estate-filters">
+                <a href="#" class="_button _button-default variation-default fw-normal">
+                    <i class="icon icon-place color-amarelo-melnick text-24"></i>
+                    Porto Alegre
+                </a>
+
+                <a href="#" class="_button _button-default variation-default fw-normal">
+                    <i class="icon icon-place color-amarelo-melnick text-24"></i>
+                    Zona sul, região
+                </a>
+
+                <a href="#" class="_button _button-default variation-outline fw-normal"> Dormitórios </a>
+
+                <a href="#" class="_button _button-default variation-outline fw-normal"> Estágio do empreendimento </a>
+
+                <a href="#" class="_button _button-default variation-outline fw-normal"> Valor </a>
+
+                <a href="#" class="_button _button-default variation-outline fw-normal"> Metragem </a>
+
+                <a href="#" class="_button _button-default variation-outline fw-normal"> Características </a>
+
+                <a href="#" class="_button _button-default variation-outline fw-normal"> Mais filtros </a>
+            </div>
+
+            <div class="page-inner">
+                <div class="left">
+                    <div class="_page-title">
+                        <h1 class="headline">Empreendimentos Residenciais</h1>
+
+                        <p class="description">Conheça os empreendimentos Residenciais da Melnick</p>
+                    </div>
+                    <div class="real-estates">
+                        <div class="_entry-real-estate-list">
+                            <a href="#" class="entry-inner">
+                                <div class="thumbnail thumb-1">
+                                    <img src="/./media/images/real-estate.c213f877.jpeg" />
+                                </div>
+
+                                <div class="inner bg-white">
+                                    <div class="left">
+                                        <div class="top">
+                                            <strong class="category text-10">Lançamentos</strong>
+                                            <h2 class="title">Bairro Cidade Baixa</h2>
+                                            <strong class="location text-10">Bairro Cidade Baixa</strong>
+                                            <div class="description">A cidade baixa no ritmo da sua vida.</div>
+                                        </div>
+
+                                        <div class="middle">
+                                            <div class="features d-flex g-3">
+                                                <div class="feature-item"><i class="icon icon-bed"></i> <span>1, 2 e 3 dorms</span></div>
+                                                <div class="feature-item"><i class="icon icon-straighten"></i> <span>46 a 90m²</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
+                                            <i class="icon icon-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="_entry-real-estate-list">
+                            <a href="#" class="entry-inner">
+                                <div class="thumbnail thumb-1">
+                                    <img src="/./media/images/real-estate-3.7b9dc9d4.jpeg" />
+                                </div>
+
+                                <div class="inner bg-white">
+                                    <div class="left">
+                                        <div class="top">
+                                            <strong class="category text-10">Lançamentos</strong>
+                                            <h2 class="title">Arte Country Club</h2>
+                                            <strong class="location text-10">Bairro boa vista</strong>
+                                            <div class="description">A leveza da vida no campo na cidade.</div>
+                                        </div>
+
+                                        <div class="middle">
+                                            <div class="features d-flex g-3">
+                                                <div class="feature-item"><i class="icon icon-bed"></i> <span>3 a 4 dorms</span></div>
+                                                <div class="feature-item"><i class="icon icon-straighten"></i> <span>246 a 321 m²</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
+                                            <i class="icon icon-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="_entry-real-estate-list">
+                            <a href="#" class="entry-inner">
+                                <div class="thumbnail thumb-1">
+                                    <img src="/./media/images/real-estate.c213f877.jpeg" />
+                                </div>
+
+                                <div class="inner bg-white">
+                                    <div class="left">
+                                        <div class="top">
+                                            <strong class="category text-10">Lançamentos</strong>
+                                            <h2 class="title">GO Carlos Gomes</h2>
+                                            <strong class="location text-10">Bairro boa vista</strong>
+                                            <div class="description">Seu ritmo na cidade.</div>
+                                        </div>
+
+                                        <div class="middle">
+                                            <div class="features d-flex g-3">
+                                                <div class="feature-item"><i class="icon icon-bed"></i> <span>1 e 2 dorms</span></div>
+                                                <div class="feature-item"><i class="icon icon-straighten"></i> <span>25 a 50 m²</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
+                                            <i class="icon icon-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="_entry-real-estate-list">
+                            <a href="#" class="entry-inner">
+                                <div class="thumbnail thumb-1">
+                                    <img src="/./media/images/real-estate-2.e126367e.jpeg" />
+                                </div>
+
+                                <div class="inner bg-white">
+                                    <div class="left">
+                                        <div class="top">
+                                            <strong class="category text-10">Lançamentos</strong>
+                                            <h2 class="title">Nilo Square</h2>
+                                            <strong class="location text-10">Bairro boa vista</strong>
+                                            <div class="description">Um novo conceito de modernidade.</div>
+                                        </div>
+
+                                        <div class="middle">
+                                            <div class="features d-flex g-3">
+                                                <div class="feature-item"><i class="icon icon-bed"></i> <span>3 dorms</span></div>
+                                                <div class="feature-item"><i class="icon icon-straighten"></i> <span>175 a 245 m²</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
+                                            <i class="icon icon-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="_entry-real-estate-list">
+                            <a href="#" class="entry-inner">
+                                <div class="thumbnail thumb-1">
+                                    <img src="/./media/images/real-estate.c213f877.jpeg" />
+                                </div>
+
+                                <div class="inner bg-white">
+                                    <div class="left">
+                                        <div class="top">
+                                            <strong class="category text-10">Lançamentos</strong>
+                                            <h2 class="title">Bairro Cidade Baixa</h2>
+                                            <strong class="location text-10">Bairro Cidade Baixa</strong>
+                                            <div class="description">A cidade baixa no ritmo da sua vida.</div>
+                                        </div>
+
+                                        <div class="middle">
+                                            <div class="features d-flex g-3">
+                                                <div class="feature-item"><i class="icon icon-bed"></i> <span>1, 2 e 3 dorms</span></div>
+                                                <div class="feature-item"><i class="icon icon-straighten"></i> <span>46 a 90m²</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
+                                            <i class="icon icon-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="_entry-real-estate-list">
+                            <a href="#" class="entry-inner">
+                                <div class="thumbnail thumb-1">
+                                    <img src="/./media/images/real-estate-2.e126367e.jpeg" />
+                                </div>
+
+                                <div class="inner bg-white">
+                                    <div class="left">
+                                        <div class="top">
+                                            <strong class="category text-10">Lançamentos</strong>
+                                            <h2 class="title">Nilo Square</h2>
+                                            <strong class="location text-10">Bairro boa vista</strong>
+                                            <div class="description">Um novo conceito de modernidade.</div>
+                                        </div>
+
+                                        <div class="middle">
+                                            <div class="features d-flex g-3">
+                                                <div class="feature-item"><i class="icon icon-bed"></i> <span>3 dorms</span></div>
+                                                <div class="feature-item"><i class="icon icon-straighten"></i> <span>175 a 245 m²</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
+                                            <i class="icon icon-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="_entry-real-estate-list">
+                            <a href="#" class="entry-inner">
+                                <div class="thumbnail thumb-1">
+                                    <img src="/./media/images/real-estate.c213f877.jpeg" />
+                                </div>
+
+                                <div class="inner bg-white">
+                                    <div class="left">
+                                        <div class="top">
+                                            <strong class="category text-10">Lançamentos</strong>
+                                            <h2 class="title">GO Carlos Gomes</h2>
+                                            <strong class="location text-10">Bairro boa vista</strong>
+                                            <div class="description">Seu ritmo na cidade.</div>
+                                        </div>
+
+                                        <div class="middle">
+                                            <div class="features d-flex g-3">
+                                                <div class="feature-item"><i class="icon icon-bed"></i> <span>1 e 2 dorms</span></div>
+                                                <div class="feature-item"><i class="icon icon-straighten"></i> <span>25 a 50 m²</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
+                                            <i class="icon icon-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="_entry-real-estate-list">
+                            <a href="#" class="entry-inner">
+                                <div class="thumbnail thumb-1">
+                                    <img src="/./media/images/real-estate-3.7b9dc9d4.jpeg" />
+                                </div>
+
+                                <div class="inner bg-white">
+                                    <div class="left">
+                                        <div class="top">
+                                            <strong class="category text-10">Lançamentos</strong>
+                                            <h2 class="title">Arte Country Club</h2>
+                                            <strong class="location text-10">Bairro boa vista</strong>
+                                            <div class="description">A leveza da vida no campo na cidade.</div>
+                                        </div>
+
+                                        <div class="middle">
+                                            <div class="features d-flex g-3">
+                                                <div class="feature-item"><i class="icon icon-bed"></i> <span>3 a 4 dorms</span></div>
+                                                <div class="feature-item"><i class="icon icon-straighten"></i> <span>246 a 321 m²</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
+                                            <i class="icon icon-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center see-more">
+                        <a href="#" class="_button _button-default variation-default"> Ver mais </a>
+                    </div>
+                </div>
+                <div class="right map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14631.833095016229!2d-46.580476709856434!3d-23.534003132182693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ee7acdd50f5%3A0x3eeaf24eff368507!2sTatuap%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1648523393120!5m2!1sen!2sbr"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </main>
+
+        <div class="_whatsapp-balloon">
+            <a href="#">
+                <div class="inner">
+                    <i class="icon icon-whatsapp"></i>
+                </div>
+            </a>
+        </div>
+    </body>
+</html>
