@@ -17,12 +17,16 @@ var btnIcon = ! icon ? '' : `<i class="icon icon-${icon} ${iconClass}"></i>`;
 <% if( tag === 'button' ) { %>
 <<%= tag %> type="<%= tag %>" class="_button _button-default variation-<%= variation %> <%= cssClass %>">
     <%- btnIcon %>
-    <%- label %>
+    <% if ( label ) { %>
+    <span><%- label %></span>
+    <% } %>
 </<%= tag %>>
 
 <% } else { %>
 <<%= tag %> href="<%= link %>" class="_button _button-default variation-<%= variation %> <%= cssClass %>">
     <%- btnIcon %>
-    <%- label %>
+    <% if ( label ) { %>
+    <span><%- label %></span>
+    <% } %>
 </<%= tag %>>
 <% } %>

@@ -1,0 +1,21 @@
+<% 
+// Params
+var args = typeof args !== 'undefined' ? args : '';
+let cssClass = args.cssClass ?? '';
+let image = ! args.image ? '' : `../../assets/img/${args.image}`;
+let label = args.label ?? '';
+
+%>
+
+<div class="_real-estate-action <%= cssClass %>">
+    <a class="action-inner" href="#">
+        <div class="action-card">
+            <% if ( image ) { %>
+            <img src="<%= image %>" />
+            <% } %>
+
+            <div class="overlay"><i class="icon icon-download"></i></div>
+        </div>
+    </a>
+    <p><%= label %></p>
+</div>

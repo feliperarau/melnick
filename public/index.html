@@ -1,1812 +1,2394 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Melnick</title>
-        <script defer src="/home.js"></script>
-        <link href="/home.css" rel="stylesheet" />
-    </head>
 
-    <body>
-        <header class="_header-alt overlay">
-            <nav class="_navbar navbar fade-toggle light">
-                <div class="collapse navbar-collapse d-flex align-items-center" id="main-nav">
-                    <div class="navbar-brand">
-                        <a href="/">
-                            <img class="logo-desktop d-none d-md-block" src="/./media/images/Logo-PB.bc0eda4f.svg" alt="Melnick" />
-                            <img
-                                class="logo-mobile d-md-none"
-                                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAyMiAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIuNTkyOSA4LjUxOTUzQzIuNTkzNDUgNi45ODk4OSAzLjE2NzAxIDUuNTIzMDEgNC4xODc2MyA0LjQ0MDk4QzUuMjA4MjUgMy4zNTg5NiA2LjU5MjUgMi43NTAyNSA4LjAzNjQyIDIuNzQ4NTFWMC45NjcxODdDOC4wMzY3OSAwLjgzMTE4MyA4LjAxMDAxIDAuNjk2NjMxIDcuOTU3ODMgMC41NzIzN0M3LjkwNTY0IDAuNDQ4MTA4IDcuODI5MjMgMC4zMzY5NDggNy43MzM2MiAwLjI0NjE4M0M3LjYzODAxIDAuMTU1NDE3IDcuNTI1MzYgMC4wODcxMDExIDcuNDAzMDYgMC4wNDU3MjA5QzcuMjgwNzYgMC4wMDQzNDA1OSA3LjE1MTU5IC0wLjAwOTE2Nzk4IDcuMDI0MDEgMC4wMDYwODExNEM2LjgxMTAxIDAuMDI4MDMyOSA2LjU5OTU3IDAuMDY0NTE0MiA2LjM5MSAwLjExNTI5OEM0Ljg4MDY0IDAuNDUwMzk4IDMuNDkxNjkgMS4yMzQ0OCAyLjM4Njg0IDIuMzc1NzFDMS4yODE5OSAzLjUxNjk0IDAuNTA2OTg1IDQuOTY4MDUgMC4xNTI2MDIgNi41NTkwOEMwLjA4NDU1NzggNi44NjcwOCAwLjA2NjAwMTggNy4wNjI1NyAwLjAxMjM5MTUgNy4zODAzOUMtMC4wMDk1MzExNSA3LjUyMDUxIC0wLjAwMjMwMjM2IDcuNjY0MDIgMC4wMzM1Nzg0IDcuODAwODdDMC4wNjk0NTkyIDcuOTM3NzMgMC4xMzMxMjUgOC4wNjQ2MiAwLjIyMDEyMSA4LjE3MjdDMC4zMDcxMTcgOC4yODA3NyAwLjQxNTM0NCA4LjM2NzQyIDAuNTM3MjM5IDguNDI2NTdDMC42NTkxMzUgOC40ODU3MiAwLjc5MTc1NiA4LjUxNTk1IDAuOTI1ODI5IDguNTE1MTVIMi41OTI5IiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMjEuODIyMSA5LjYxOTA5QzIxLjgyMjUgOC45MjM4MyAyMS43Njg0IDguMjI5NzMgMjEuNjYwMiA3LjU0Mzk3QzIxLjM2MTIgNS43NjQ4MyAyMC40ODU5IDQuNDIxNDcgMTguODA4NSAzLjg1NTcyQzE2LjkwMjMgMy4yMTI0NCAxNC40NTE3IDMuMjA2OTcgMTIuNjQzNCA0LjA0MzU3QzEyLjYwMzQgNC4wNTU1MiAxMi41NjIxIDQuMDYxNCAxMi41MjA3IDQuMDYxMDVDMTIuNDc4OSA0LjA2MTIyIDEyLjQzNzIgNC4wNTUzNCAxMi4zOTcgNC4wNDM1N0MxMS4zMzcxIDMuNTUzMTkgMTAuMDU3NyAzLjQwOTAzIDguNzk0NzUgMy4zOTkyQzYuMTM3OTQgMy4zNzg0NCA0LjAyNjUxIDQuNjc3MDMgMy40MTMwOSA3LjM1OTM5QzMuMjU5NDcgOC4wMzEwOCAzLjIyNDQyIDguOTI1NTcgMy4yMTgyMyA5LjYxOEMzLjE5OTY4IDExLjk1OTYgMy4yMTIwNSAxNC40OTg5IDMuMjEyMDUgMTYuODQwNUMzLjIxMjA1IDE3LjEyNDQgMy4zMTgyOSAxNy4zOTY3IDMuNTA3NDggMTcuNTk3N0MzLjY5NjY4IDE3Ljc5ODggMy45NTMzOSAxNy45MTIxIDQuMjIxMzYgMTcuOTEzSDUuODY0NzNDNS45OTc1MiAxNy45MTMzIDYuMTI5MDcgMTcuODg1OCA2LjI1MTc4IDE3LjgzMkM2LjM3NDUgMTcuNzc4MiA2LjQ4NTk2IDE3LjY5OTMgNi41Nzk3NyAxNy41OTk3QzYuNjczNTcgMTcuNTAwMSA2Ljc0Nzg3IDE3LjM4MTkgNi43OTgzNyAxNy4yNTE4QzYuODQ4ODggMTcuMTIxNyA2Ljg3NDYgMTYuOTgyMyA2Ljg3NDA1IDE2Ljg0MTZDNi44NzQwNSAxNi41NzQgNi44NzQwNSAxMS44ODEgNi44ODk1MSA5LjcyNzIyQzYuODg3MjEgOS4yNDIxOSA2LjkzMDczIDguNzU4MTMgNy4wMTk0MiA4LjI4MjI4QzcuMjI1NjEgNy4yNDkwOSA3Ljc0MTA5IDYuNjk5NzMgOC43MzgwNCA2LjU5MjdDOS4yOTU1NiA2LjUxNzE5IDkuODYxOTggNi42MDI4NSAxMC4zNzczIDYuODQwNjFDMTAuNDI4NCA2Ljg2OTEgMTAuNDcxOCA2LjkxMDkzIDEwLjUwMzQgNi45NjIxNkMxMC41MzQ5IDcuMDEzMzggMTAuNTUzNiA3LjA3MjMgMTAuNTU3NyA3LjEzMzMyQzEwLjU1NzcgNy4xMzMzMiAxMC42MDIgMTYuMjE4IDEwLjYwMiAxNi44NDE2QzEwLjYwMTkgMTYuOTgyMyAxMC42Mjc5IDE3LjEyMTYgMTAuNjc4NiAxNy4yNTE3QzEwLjcyOTMgMTcuMzgxNyAxMC44MDM3IDE3LjQ5OTkgMTAuODk3NSAxNy41OTk1QzEwLjk5MTQgMTcuNjk5MSAxMS4xMDI4IDE3Ljc3ODIgMTEuMjI1NCAxNy44MzIxQzExLjM0ODEgMTcuODg2MSAxMS40Nzk2IDE3LjkxNCAxMS42MTI0IDE3LjkxNDFIMTMuNDI2OUMxMy41NjAzIDE3LjkxNTcgMTMuNjkyNiAxNy44ODkxIDEzLjgxNjEgMTcuODM1N0MxMy45Mzk2IDE3Ljc4MjQgMTQuMDUxOCAxNy43MDM1IDE0LjE0NjIgMTcuNjAzNkMxNC4yNDA1IDE3LjUwMzcgMTQuMzE1IDE3LjM4NDggMTQuMzY1MyAxNy4yNTM5QzE0LjQxNTcgMTcuMTIzMSAxNC40NDA4IDE2Ljk4MjkgMTQuNDM5MyAxNi44NDE2QzE0LjQzOTMgMTYuMzU2NyAxNC40NTA2IDguNzEzNjggMTQuNDUwNiA3LjE1NTE2QzE0LjQ1MDYgNi45NzcxNCAxNC40ODQ3IDYuODc1NTYgMTQuNTc4NSA2LjgyNzUxQzE1LjEyOTMgNi42MTM4OSAxNS43MTggNi41MzIyIDE2LjMwMjMgNi41ODgzMkMxNy4yOTUxIDYuNjk3NTQgMTcuODEzNyA3LjI0MzYzIDE4LjAyMDkgOC4yNzc5MUMxOC4xMTA2IDguNzUzNiAxOC4xNTQxIDkuMjM3NzcgMTguMTUwOCA5LjcyMjg1QzE4LjE1MDggMTAuMjA0NSAxOC4xNTggMTEuNTAwOSAxOC4xNTggMTEuNTAwOVYxNi44MzcyQzE4LjE1NjIgMTYuOTc5MyAxOC4xODEzIDE3LjEyMDQgMTguMjMxNyAxNy4yNTIxQzE4LjI4MjEgMTcuMzgzOCAxOC4zNTY4IDE3LjUwMzQgMTguNDUxNiAxNy42MDQxQzE4LjU0NjMgMTcuNzA0NyAxOC42NTkgMTcuNzg0MyAxOC43ODMyIDE3LjgzODFDMTguOTA3MyAxNy44OTE5IDE5LjA0MDQgMTcuOTE4OSAxOS4xNzQ1IDE3LjkxNzRIMjAuODI0MUMyMC45NTY4IDE3LjkxNzEgMjEuMDg4MiAxNy44ODkxIDIxLjIxMDcgMTcuODM1QzIxLjMzMzIgMTcuNzgwOCAyMS40NDQ0IDE3LjcwMTYgMjEuNTM3OSAxNy42MDE5QzIxLjYzMTUgMTcuNTAyMiAyMS43MDU2IDE3LjM4MzkgMjEuNzU1OSAxNy4yNTM4QzIxLjgwNjMgMTcuMTIzNyAyMS44MzE5IDE2Ljk4NDQgMjEuODMxMyAxNi44NDM4QzIxLjgzMTMgMTQuNTAyMiAyMS44NDQ3IDExLjk2MjkgMjEuODI1MiA5LjYyMTI4IiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K"
-                                alt="Melnick" />
-                        </a>
-                    </div>
-
-                    <ul class="nav-menu center d-none d-md-flex px-2 flex-grow-1 justify-content-center mb-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/residencial">Residencial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/comercial">Comercial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/comercial">Terrenos</a>
-                        </li>
-                    </ul>
-                    <ul class="nav-menu secondary px-2 mb-0 d-none d-md-flex">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/contato">Contato</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/acessibilidade">Acessibilidade</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/investidores">Relação com Investidores</a>
-                        </li>
-                    </ul>
-                    <button class="search-toggler d-md-none" type="button" aria-label="Toggle search">
-                        <span class="icon icon-search"></span>
-                    </button>
-                    <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
-                        <span class="icon icon-menu_black_24dp"></span>
-                    </button>
-                </div>
-            </nav>
-        </header>
-
-        <nav class="_nav-overlay fade-toggle hide">
-            <div class="collapse navbar-collapse d-flex align-items-center" id="main-nav-overlay">
-                <div class="brand flex-grow-1">
-                    <a class="navbar-brand" href="#"><img src="/./media/images/Logo-PB.bc0eda4f.svg" alt="Melnick" /></a>
-                </div>
-                <ul class="nav-menu secondary d-flex px-2 mb-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contato">Contato</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/acessibilidade">Acessibilidade</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/investidores">Relação com Investidores</a>
-                    </li>
-                </ul>
-                <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
-                    <span class="icon icon-close"></span>
-                </button>
-            </div>
-            <div class="bottom">
-                <div class="row">
-                    <div class="col">
-                        <nav class="_menu-list">
-                            <h2 class="menu-title">Sobre Nós</h2>
-
-                            <ul class="menu">
-                                <li class="menu-item">
-                                    <a href="sobre-nos" target="">
-                                        <span class="menu-label">A Melnick</span>
-                                    </a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="blog" target="">
-                                        <span class="menu-label">Blog</span>
-                                    </a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="contato" target="">
-                                        <span class="menu-label">Contato</span>
-                                    </a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="acessibilidade" target="">
-                                        <span class="menu-label">Acessibilidade</span>
-                                    </a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="trabalhe-conosco" target="">
-                                        <span class="menu-label">Trabalhe Conosco</span>
-                                    </a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="imprensa" target="">
-                                        <span class="menu-label">Imprensa</span>
-                                    </a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="revista-me" target="">
-                                        <span class="menu-label">Revista ME</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col">
-                        <nav class="_menu-list">
-                            <h2 class="menu-title">Empreendimentos</h2>
-
-                            <ul class="menu">
-                                <li class="menu-item">
-                                    <a href="residencial" target="">
-                                        <span class="menu-label">Residencial</span>
-                                    </a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="comercial" target="">
-                                        <span class="menu-label">Comercial</span>
-                                    </a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="terrenos" target="">
-                                        <span class="menu-label">Terrenos</span>
-                                    </a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="aluguel-reversivel" target="">
-                                        <span class="menu-label">Aluguel Reversível</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col">
-                        <nav class="_menu-list">
-                            <h2 class="menu-title">Canais Melnick</h2>
-
-                            <ul class="menu">
-                                <li class="menu-item">
-                                    <a href="melnick-day" target="_blank">
-                                        <span class="menu-label">Melnick Day</span>
-
-                                        <i class="icon icon-after icon-external"></i>
-                                    </a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="portal-do-cliente" target="_blank">
-                                        <span class="menu-label">Portal do Cliente</span>
-
-                                        <i class="icon icon-after icon-external"></i>
-                                    </a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="relacoes-com-investidores" target="_blank">
-                                        <span class="menu-label">Relações com Investidores</span>
-
-                                        <i class="icon icon-after icon-external"></i>
-                                    </a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="portal-do-corretor" target="_blank">
-                                        <span class="menu-label">Portal do Corretor</span>
-
-                                        <i class="icon icon-after icon-external"></i>
-                                    </a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="projetista" target="_blank">
-                                        <span class="menu-label">Projetista</span>
-
-                                        <i class="icon icon-after icon-external"></i>
-                                    </a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="tramitacoes" target="_blank">
-                                        <span class="menu-label">Tramitações</span>
-
-                                        <i class="icon icon-after icon-external"></i>
-                                    </a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="melnick-vendas" target="_blank">
-                                        <span class="menu-label">Melnick Vendas</span>
-
-                                        <i class="icon icon-after icon-external"></i>
-                                    </a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="lojas-spot" target="_blank">
-                                        <span class="menu-label">Lojas Spot</span>
-
-                                        <i class="icon icon-after icon-external"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-        <main class="site-wrapper">
-            <section class="mb-5">
-                <div class="_hero container-fluid position-relative">
-                    <div class="inner">
-                        <div class="search-bar">
-                            <form class="_hero-search d-flex">
-                                <div class="_select">
-                                    <div class="select-box">
-                                        <div class="options-container">
-                                            <div class="option selected">
-                                                <input type="radio" class="radio" id="pa" name="place" />
-                                                <label for="pa">Porto Alegre</label>
-                                            </div>
-
-                                            <div class="option">
-                                                <input type="radio" class="radio" id="rj" name="place" />
-                                                <label for="rj">Rio de Janeiro</label>
-                                            </div>
-
-                                            <div class="option">
-                                                <input type="radio" class="radio" id="sp" name="place" />
-                                                <label for="sp">São Paulo</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="toggler">
-                                            <i class="icon icon-place"></i>
-                                            <span class="label">Região</span>
-                                            <i class="icon icon-arrow_down d-none d-md-block"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="search">
-                                    <i class="icon icon-search d-md-none"></i>
-
-                                    <input type="text" placeholder="Busque por bairro ou zona" />
-                                </div>
-                                <div class="submit">
-                                    <button type="button" class="_button _button-default variation-light">Buscar</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="slider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide slide-1">
-                                    <div class="foreground flex-grow-1">
-                                        <div class="_hero-details text-white flex-grow-1 d-flex flex-column align-items-center">
-                                            <h2 class="title title-display text-center text-white">Arte Country Club</h2>
-
-                                            <div class="featues row g-custom">
-                                                <div class="feature-item col d-flex">
-                                                    <i class="icon icon-bed"></i>
-                                                    <span class="description">3 e 4 dorms</span>
-                                                </div>
-                                                <div class="feature-item col d-flex">
-                                                    <i class="icon icon-straighten"></i>
-                                                    <span class="description">256 a 321m²</span>
-                                                </div>
-                                                <div class="feature-item col d-flex">
-                                                    <i class="icon icon-holiday_village"></i>
-                                                    <span class="description">Boa Vista</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide slide-2">
-                                    <div class="foreground flex-grow-1">
-                                        <div class="_hero-details text-white flex-grow-1 d-flex flex-column align-items-center">
-                                            <h2 class="title title-display text-center text-white">Arte Country Club</h2>
-
-                                            <div class="featues row g-custom">
-                                                <div class="feature-item col d-flex">
-                                                    <i class="icon icon-bed"></i>
-                                                    <span class="description">3 e 4 dorms</span>
-                                                </div>
-                                                <div class="feature-item col d-flex">
-                                                    <i class="icon icon-straighten"></i>
-                                                    <span class="description">256 a 321m²</span>
-                                                </div>
-                                                <div class="feature-item col d-flex">
-                                                    <i class="icon icon-holiday_village"></i>
-                                                    <span class="description">Boa Vista</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mb-5">
-                <h1 class="title-display text-center mb-3">
-                    Conheça nossos empreendimentos <strong>Residenciais</strong> <i class="icon icon-arrow_down text-16 align-middle mb-2"></i>
-                </h1>
-
-                <div class="_carousel-real-estate container-fluid">
-                    <div class="carousel-tabs">
-                        <ul class="d-flex justify-content-center nav nav-tabs" data-bs-tabs="tabs">
-                            <li><a class="" href="#pre-release" aria-current="false" data-bs-toggle="tab">Pré-lançamento</a></li>
-
-                            <li><a class="active" href="#releases" aria-current="true" data-bs-toggle="tab">Lançamentos</a></li>
-
-                            <li><a class="" href="#in-construction" aria-current="false" data-bs-toggle="tab">Em obras</a></li>
-
-                            <li><a class="" href="#ready-to-move" aria-current="false" data-bs-toggle="tab">Prontos para morar</a></li>
-                        </ul>
-                    </div>
-                    <div class="tab-content">
-                        <div id="pre-release" class="tab-pane fade" role="tabpanel">
-                            <div class="swiper leaked">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">GO Carlos Gomes</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">Seu ritmo na cidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>1 e 2 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>25 a 50 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price">Consulte valores</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate-2.e126367e.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Nilo Square</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">Um novo conceito de modernidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>3 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>175 a 245 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price-label">A partir de</span>
-                                                    <span class="price">R$ 690.000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate-3.7b9dc9d4.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Arte Country Club</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">A leveza da vida no campo na cidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>3 a 4 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>246 a 321 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price">Consulte valores</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate-3.7b9dc9d4.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Arte Country Club</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">A leveza da vida no campo na cidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>3 a 4 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>246 a 321 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price">Consulte valores</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Bairro Cidade Baixa</h2>
-                                                        <strong class="location text-10">Bairro Cidade Baixa</strong>
-                                                        <div class="description">A cidade baixa no ritmo da sua vida.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>1, 2 e 3 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>46 a 90m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price-label">A partir de</span>
-                                                    <span class="price">R$ 690.000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate-2.e126367e.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Nilo Square</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">Um novo conceito de modernidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>3 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>175 a 245 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price-label">A partir de</span>
-                                                    <span class="price">R$ 690.000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Bairro Cidade Baixa</h2>
-                                                        <strong class="location text-10">Bairro Cidade Baixa</strong>
-                                                        <div class="description">A cidade baixa no ritmo da sua vida.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>1, 2 e 3 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>46 a 90m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price-label">A partir de</span>
-                                                    <span class="price">R$ 690.000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">GO Carlos Gomes</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">Seu ritmo na cidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>1 e 2 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>25 a 50 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price">Consulte valores</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-
-                        <div id="releases" class="tab-pane fade show active" role="tabpanel">
-                            <div class="swiper leaked">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate-3.7b9dc9d4.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Arte Country Club</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">A leveza da vida no campo na cidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>3 a 4 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>246 a 321 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price">Consulte valores</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Bairro Cidade Baixa</h2>
-                                                        <strong class="location text-10">Bairro Cidade Baixa</strong>
-                                                        <div class="description">A cidade baixa no ritmo da sua vida.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>1, 2 e 3 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>46 a 90m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price-label">A partir de</span>
-                                                    <span class="price">R$ 690.000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate-2.e126367e.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Nilo Square</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">Um novo conceito de modernidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>3 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>175 a 245 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price-label">A partir de</span>
-                                                    <span class="price">R$ 690.000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate-2.e126367e.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Nilo Square</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">Um novo conceito de modernidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>3 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>175 a 245 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price-label">A partir de</span>
-                                                    <span class="price">R$ 690.000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">GO Carlos Gomes</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">Seu ritmo na cidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>1 e 2 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>25 a 50 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price">Consulte valores</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Bairro Cidade Baixa</h2>
-                                                        <strong class="location text-10">Bairro Cidade Baixa</strong>
-                                                        <div class="description">A cidade baixa no ritmo da sua vida.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>1, 2 e 3 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>46 a 90m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price-label">A partir de</span>
-                                                    <span class="price">R$ 690.000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">GO Carlos Gomes</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">Seu ritmo na cidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>1 e 2 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>25 a 50 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price">Consulte valores</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate-3.7b9dc9d4.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Arte Country Club</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">A leveza da vida no campo na cidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>3 a 4 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>246 a 321 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price">Consulte valores</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-
-                        <div id="in-construction" class="tab-pane fade" role="tabpanel">
-                            <div class="swiper leaked">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate-2.e126367e.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Nilo Square</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">Um novo conceito de modernidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>3 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>175 a 245 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price-label">A partir de</span>
-                                                    <span class="price">R$ 690.000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Bairro Cidade Baixa</h2>
-                                                        <strong class="location text-10">Bairro Cidade Baixa</strong>
-                                                        <div class="description">A cidade baixa no ritmo da sua vida.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>1, 2 e 3 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>46 a 90m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price-label">A partir de</span>
-                                                    <span class="price">R$ 690.000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Bairro Cidade Baixa</h2>
-                                                        <strong class="location text-10">Bairro Cidade Baixa</strong>
-                                                        <div class="description">A cidade baixa no ritmo da sua vida.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>1, 2 e 3 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>46 a 90m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price-label">A partir de</span>
-                                                    <span class="price">R$ 690.000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">GO Carlos Gomes</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">Seu ritmo na cidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>1 e 2 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>25 a 50 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price">Consulte valores</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate-3.7b9dc9d4.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Arte Country Club</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">A leveza da vida no campo na cidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>3 a 4 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>246 a 321 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price">Consulte valores</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">GO Carlos Gomes</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">Seu ritmo na cidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>1 e 2 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>25 a 50 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price">Consulte valores</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate-2.e126367e.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Nilo Square</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">Um novo conceito de modernidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>3 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>175 a 245 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price-label">A partir de</span>
-                                                    <span class="price">R$ 690.000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate-3.7b9dc9d4.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Arte Country Club</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">A leveza da vida no campo na cidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>3 a 4 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>246 a 321 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price">Consulte valores</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-
-                        <div id="ready-to-move" class="tab-pane fade" role="tabpanel">
-                            <div class="swiper leaked">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">GO Carlos Gomes</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">Seu ritmo na cidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>1 e 2 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>25 a 50 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price">Consulte valores</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate-3.7b9dc9d4.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Arte Country Club</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">A leveza da vida no campo na cidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>3 a 4 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>246 a 321 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price">Consulte valores</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate-2.e126367e.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Nilo Square</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">Um novo conceito de modernidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>3 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>175 a 245 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price-label">A partir de</span>
-                                                    <span class="price">R$ 690.000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Bairro Cidade Baixa</h2>
-                                                        <strong class="location text-10">Bairro Cidade Baixa</strong>
-                                                        <div class="description">A cidade baixa no ritmo da sua vida.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>1, 2 e 3 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>46 a 90m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price-label">A partir de</span>
-                                                    <span class="price">R$ 690.000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Bairro Cidade Baixa</h2>
-                                                        <strong class="location text-10">Bairro Cidade Baixa</strong>
-                                                        <div class="description">A cidade baixa no ritmo da sua vida.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>1, 2 e 3 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>46 a 90m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price-label">A partir de</span>
-                                                    <span class="price">R$ 690.000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate-3.7b9dc9d4.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Arte Country Club</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">A leveza da vida no campo na cidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>3 a 4 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>246 a 321 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price">Consulte valores</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate-2.e126367e.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">Nilo Square</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">Um novo conceito de modernidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>3 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>175 a 245 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price-label">A partir de</span>
-                                                    <span class="price">R$ 690.000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_entry-real-estate">
-                                            <div class="thumbnail thumb-1">
-                                                <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
-                                            </div>
-
-                                            <div class="inner bg-white">
-                                                <div class="top">
-                                                    <a href="#">
-                                                        <strong class="category text-10">Lançamentos</strong>
-                                                        <h2 class="title">GO Carlos Gomes</h2>
-                                                        <strong class="location text-10">Bairro boa vista</strong>
-                                                        <div class="description">Seu ritmo na cidade.</div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="middle">
-                                                    <div class="features row align-items-center g-3">
-                                                        <div class="feature-item col"><i class="icon icon-bed"></i> <span>1 e 2 dorms</span></div>
-                                                        <div class="feature-item col"><i class="icon icon-straighten"></i> <span>25 a 50 m²</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <span class="price">Consulte valores</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-md-center container-fluid">
-                    <a href="#" class="_button _button-default variation-default flex-grow-1 flex-md-grow-0 justify-content-center">
-                        Ver mais empreendimentos
-                    </a>
-                </div>
-            </section>
-
-            <section class="_home-section-features container-fluid mb-5">
-                <h2 class="title-display text-center mb-3">Confira o que a <strong>Melnick</strong> oferece</h2>
-                <div class="swiper leaked">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="_card-home">
-                                <a class="inner" href="">
-                                    <div class="bg-image">
-                                        <img src="/./media/images/landscape.784403b0.jpeg" />
-                                    </div>
-
-                                    <div class="inner-content">
-                                        <h2 class="title">Para Morar</h2>
-                                        <div class="description">
-                                            Porque você merece<br />
-                                            muito mais que morar.
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="_card-home">
-                                <a class="inner" href="">
-                                    <div class="bg-image">
-                                        <img src="/./media/images/mall.04e0beff.jpeg" />
-                                    </div>
-
-                                    <div class="inner-content">
-                                        <h2 class="title">Para Investir</h2>
-                                        <div class="description">
-                                            Oportunidades para<br />
-                                            aumentar seu patrimônio.
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="_card-home">
-                                <a class="inner" href="">
-                                    <div class="bg-image">
-                                        <img src="/./media/images/office.5df6125e.jpeg" />
-                                    </div>
-
-                                    <div class="inner-content">
-                                        <h2 class="title">Para Trabalhar</h2>
-                                        <div class="description">
-                                            Os melhores ambientes de<br />
-                                            trabalho para sua empresa.
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-
-            <section class="_home-section-features-wide mx-md-n20 mb-5">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col">
-                            <div class="_card-cta-bg">
-                                <div class="bg-image">
-                                    <img src="/./media/images/lobby.87f9f905.png" />
-                                </div>
-
-                                <div class="_card-cta">
-                                    <div class="inner-content">
-                                        <h2 class="title mb-3">Melnick<br />Urbanizadora</h2>
-                                        <div class="description mb-3">
-                                            Lorem ipsum dolor sit amet,<br />
-                                            consectetur adipiscing elit.
-                                        </div>
-
-                                        <a href="" class="_button _button-default variation-default"> Saiba Mais </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="_card-cta-bg">
-                                <div class="bg-image">
-                                    <img src="/./media/images/couple.62fa302a.jpeg" />
-                                </div>
-
-                                <div class="_card-cta">
-                                    <div class="inner-content">
-                                        <h2 class="title mb-3">Open</h2>
-                                        <div class="description mb-3">
-                                            A Open nasce para operar na faixa mais alta do Minha Casa Minha Vida oferecendo projetos diferenciados para esta
-                                            faixa de renda.
-                                        </div>
-
-                                        <a href="" class="_button _button-default variation-default"> Conheça a Open </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="_home-section-initiative container-fluid mb-5">
-                <h2 class="title-display text-center mb-3">Iniciativas <strong>Melnick</strong></h2>
-
-                <div class="_slider-cards">
-                    <div class="shadow-container">
-                        <div class="shadow-wrapper">
-                            <div class="swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="_card-cta-bg">
-                                            <div class="bg-image">
-                                                <img src="/./media/images/poa.bb0593b0.png" />
-                                            </div>
-
-                                            <div class="_card-cta">
-                                                <div class="inner-content">
-                                                    <span class="subtitle mb-2">Iniciativa social</span>
-
-                                                    <h2 class="title mb-3">I Love POA</h2>
-                                                    <div class="description mb-3">
-                                                        O projeto I Love POA foi criado para levar arte aos espaços públicos e fazer com que desperte nos
-                                                        porto-alegrenses o desejo de cuidar da cidade.
-                                                    </div>
-
-                                                    <a href="" class="_button _button-default variation-default"> Saiba Mais </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="_card-cta-bg">
-                                            <div class="bg-image">
-                                                <img src="/./media/images/office.5df6125e.jpeg" />
-                                            </div>
-
-                                            <div class="_card-cta">
-                                                <div class="inner-content">
-                                                    <span class="subtitle mb-2">Iniciativa social</span>
-
-                                                    <h2 class="title mb-3">Lorem Ipsum</h2>
-                                                    <div class="description mb-3">
-                                                        Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed,
-                                                        convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada
-                                                        feugiat.
-                                                    </div>
-
-                                                    <a href="" class="_button _button-default variation-default"> Saiba Mais </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-nav-container">
-                                    <button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-prev">
-                                        <i class="icon icon-chevron-left"></i>
-                                    </button>
-
-                                    <button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
-                                        <i class="icon icon-chevron-right"></i>
-                                    </button>
-                                </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="_home-section-blog container-fluid">
-                <div class="_card-home-cta">
-                    <div class="bg-image">
-                        <img src="/./media/images/seats-2.2714d75c.jpeg" />
-                    </div>
-
-                    <div class="inner-content">
-                        <h2 class="title">Blog Melnick</h2>
-                        <div class="description">Fique por dentro das novidades sobre a empresa, lançamentos e tendências do mercado.</div>
-
-                        <a href="/blog" class="_button _button-default variation-default">
-                            <i class="icon icon-chevron-right"></i>
-                            Visite nosso blog
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <div class="_whatsapp-balloon">
-            <a href="#">
-                <div class="inner">
-                    <i class="icon icon-whatsapp"></i>
-                </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melnick</title>
+<script defer src="/home.js"></script><link href="/home.css" rel="stylesheet"></head>
+
+<body>
+
+<header class="_header-alt overlay">
+    
+<nav class="_navbar navbar fade-toggle light">
+    <div class="collapse navbar-collapse d-flex align-items-center" id="main-nav">
+        <div class="navbar-brand">
+            <a href="/">
+                
+                <img class="logo-desktop d-none d-md-block" src="/./media/images/Logo-PB.bc0eda4f.svg" alt="Melnick" />
+                <img class="logo-mobile d-md-none" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAyMiAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIuNTkyOSA4LjUxOTUzQzIuNTkzNDUgNi45ODk4OSAzLjE2NzAxIDUuNTIzMDEgNC4xODc2MyA0LjQ0MDk4QzUuMjA4MjUgMy4zNTg5NiA2LjU5MjUgMi43NTAyNSA4LjAzNjQyIDIuNzQ4NTFWMC45NjcxODdDOC4wMzY3OSAwLjgzMTE4MyA4LjAxMDAxIDAuNjk2NjMxIDcuOTU3ODMgMC41NzIzN0M3LjkwNTY0IDAuNDQ4MTA4IDcuODI5MjMgMC4zMzY5NDggNy43MzM2MiAwLjI0NjE4M0M3LjYzODAxIDAuMTU1NDE3IDcuNTI1MzYgMC4wODcxMDExIDcuNDAzMDYgMC4wNDU3MjA5QzcuMjgwNzYgMC4wMDQzNDA1OSA3LjE1MTU5IC0wLjAwOTE2Nzk4IDcuMDI0MDEgMC4wMDYwODExNEM2LjgxMTAxIDAuMDI4MDMyOSA2LjU5OTU3IDAuMDY0NTE0MiA2LjM5MSAwLjExNTI5OEM0Ljg4MDY0IDAuNDUwMzk4IDMuNDkxNjkgMS4yMzQ0OCAyLjM4Njg0IDIuMzc1NzFDMS4yODE5OSAzLjUxNjk0IDAuNTA2OTg1IDQuOTY4MDUgMC4xNTI2MDIgNi41NTkwOEMwLjA4NDU1NzggNi44NjcwOCAwLjA2NjAwMTggNy4wNjI1NyAwLjAxMjM5MTUgNy4zODAzOUMtMC4wMDk1MzExNSA3LjUyMDUxIC0wLjAwMjMwMjM2IDcuNjY0MDIgMC4wMzM1Nzg0IDcuODAwODdDMC4wNjk0NTkyIDcuOTM3NzMgMC4xMzMxMjUgOC4wNjQ2MiAwLjIyMDEyMSA4LjE3MjdDMC4zMDcxMTcgOC4yODA3NyAwLjQxNTM0NCA4LjM2NzQyIDAuNTM3MjM5IDguNDI2NTdDMC42NTkxMzUgOC40ODU3MiAwLjc5MTc1NiA4LjUxNTk1IDAuOTI1ODI5IDguNTE1MTVIMi41OTI5IiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMjEuODIyMSA5LjYxOTA5QzIxLjgyMjUgOC45MjM4MyAyMS43Njg0IDguMjI5NzMgMjEuNjYwMiA3LjU0Mzk3QzIxLjM2MTIgNS43NjQ4MyAyMC40ODU5IDQuNDIxNDcgMTguODA4NSAzLjg1NTcyQzE2LjkwMjMgMy4yMTI0NCAxNC40NTE3IDMuMjA2OTcgMTIuNjQzNCA0LjA0MzU3QzEyLjYwMzQgNC4wNTU1MiAxMi41NjIxIDQuMDYxNCAxMi41MjA3IDQuMDYxMDVDMTIuNDc4OSA0LjA2MTIyIDEyLjQzNzIgNC4wNTUzNCAxMi4zOTcgNC4wNDM1N0MxMS4zMzcxIDMuNTUzMTkgMTAuMDU3NyAzLjQwOTAzIDguNzk0NzUgMy4zOTkyQzYuMTM3OTQgMy4zNzg0NCA0LjAyNjUxIDQuNjc3MDMgMy40MTMwOSA3LjM1OTM5QzMuMjU5NDcgOC4wMzEwOCAzLjIyNDQyIDguOTI1NTcgMy4yMTgyMyA5LjYxOEMzLjE5OTY4IDExLjk1OTYgMy4yMTIwNSAxNC40OTg5IDMuMjEyMDUgMTYuODQwNUMzLjIxMjA1IDE3LjEyNDQgMy4zMTgyOSAxNy4zOTY3IDMuNTA3NDggMTcuNTk3N0MzLjY5NjY4IDE3Ljc5ODggMy45NTMzOSAxNy45MTIxIDQuMjIxMzYgMTcuOTEzSDUuODY0NzNDNS45OTc1MiAxNy45MTMzIDYuMTI5MDcgMTcuODg1OCA2LjI1MTc4IDE3LjgzMkM2LjM3NDUgMTcuNzc4MiA2LjQ4NTk2IDE3LjY5OTMgNi41Nzk3NyAxNy41OTk3QzYuNjczNTcgMTcuNTAwMSA2Ljc0Nzg3IDE3LjM4MTkgNi43OTgzNyAxNy4yNTE4QzYuODQ4ODggMTcuMTIxNyA2Ljg3NDYgMTYuOTgyMyA2Ljg3NDA1IDE2Ljg0MTZDNi44NzQwNSAxNi41NzQgNi44NzQwNSAxMS44ODEgNi44ODk1MSA5LjcyNzIyQzYuODg3MjEgOS4yNDIxOSA2LjkzMDczIDguNzU4MTMgNy4wMTk0MiA4LjI4MjI4QzcuMjI1NjEgNy4yNDkwOSA3Ljc0MTA5IDYuNjk5NzMgOC43MzgwNCA2LjU5MjdDOS4yOTU1NiA2LjUxNzE5IDkuODYxOTggNi42MDI4NSAxMC4zNzczIDYuODQwNjFDMTAuNDI4NCA2Ljg2OTEgMTAuNDcxOCA2LjkxMDkzIDEwLjUwMzQgNi45NjIxNkMxMC41MzQ5IDcuMDEzMzggMTAuNTUzNiA3LjA3MjMgMTAuNTU3NyA3LjEzMzMyQzEwLjU1NzcgNy4xMzMzMiAxMC42MDIgMTYuMjE4IDEwLjYwMiAxNi44NDE2QzEwLjYwMTkgMTYuOTgyMyAxMC42Mjc5IDE3LjEyMTYgMTAuNjc4NiAxNy4yNTE3QzEwLjcyOTMgMTcuMzgxNyAxMC44MDM3IDE3LjQ5OTkgMTAuODk3NSAxNy41OTk1QzEwLjk5MTQgMTcuNjk5MSAxMS4xMDI4IDE3Ljc3ODIgMTEuMjI1NCAxNy44MzIxQzExLjM0ODEgMTcuODg2MSAxMS40Nzk2IDE3LjkxNCAxMS42MTI0IDE3LjkxNDFIMTMuNDI2OUMxMy41NjAzIDE3LjkxNTcgMTMuNjkyNiAxNy44ODkxIDEzLjgxNjEgMTcuODM1N0MxMy45Mzk2IDE3Ljc4MjQgMTQuMDUxOCAxNy43MDM1IDE0LjE0NjIgMTcuNjAzNkMxNC4yNDA1IDE3LjUwMzcgMTQuMzE1IDE3LjM4NDggMTQuMzY1MyAxNy4yNTM5QzE0LjQxNTcgMTcuMTIzMSAxNC40NDA4IDE2Ljk4MjkgMTQuNDM5MyAxNi44NDE2QzE0LjQzOTMgMTYuMzU2NyAxNC40NTA2IDguNzEzNjggMTQuNDUwNiA3LjE1NTE2QzE0LjQ1MDYgNi45NzcxNCAxNC40ODQ3IDYuODc1NTYgMTQuNTc4NSA2LjgyNzUxQzE1LjEyOTMgNi42MTM4OSAxNS43MTggNi41MzIyIDE2LjMwMjMgNi41ODgzMkMxNy4yOTUxIDYuNjk3NTQgMTcuODEzNyA3LjI0MzYzIDE4LjAyMDkgOC4yNzc5MUMxOC4xMTA2IDguNzUzNiAxOC4xNTQxIDkuMjM3NzcgMTguMTUwOCA5LjcyMjg1QzE4LjE1MDggMTAuMjA0NSAxOC4xNTggMTEuNTAwOSAxOC4xNTggMTEuNTAwOVYxNi44MzcyQzE4LjE1NjIgMTYuOTc5MyAxOC4xODEzIDE3LjEyMDQgMTguMjMxNyAxNy4yNTIxQzE4LjI4MjEgMTcuMzgzOCAxOC4zNTY4IDE3LjUwMzQgMTguNDUxNiAxNy42MDQxQzE4LjU0NjMgMTcuNzA0NyAxOC42NTkgMTcuNzg0MyAxOC43ODMyIDE3LjgzODFDMTguOTA3MyAxNy44OTE5IDE5LjA0MDQgMTcuOTE4OSAxOS4xNzQ1IDE3LjkxNzRIMjAuODI0MUMyMC45NTY4IDE3LjkxNzEgMjEuMDg4MiAxNy44ODkxIDIxLjIxMDcgMTcuODM1QzIxLjMzMzIgMTcuNzgwOCAyMS40NDQ0IDE3LjcwMTYgMjEuNTM3OSAxNy42MDE5QzIxLjYzMTUgMTcuNTAyMiAyMS43MDU2IDE3LjM4MzkgMjEuNzU1OSAxNy4yNTM4QzIxLjgwNjMgMTcuMTIzNyAyMS44MzE5IDE2Ljk4NDQgMjEuODMxMyAxNi44NDM4QzIxLjgzMTMgMTQuNTAyMiAyMS44NDQ3IDExLjk2MjkgMjEuODI1MiA5LjYyMTI4IiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K" alt="Melnick" />
+                
             </a>
         </div>
 
-        <footer class="_footer">
-            <div class="footer-top container-fluid">
-                <div class="top-inner">
-                    <div class="row row-cols-1 row-cols-md-5">
-                        <div class="col about">
-                            <a class="footer-logo" href="/">
-                                <img src="/./media/images/Logo-colorida.b388bf13.svg" alt="melnick" />
-                            </a>
-                            <p class="address">
-                                Rua Carlos Trein Filho, 551 Auxiliadora<br />
-                                CEP: 90450-120 - Porto Alegre/RS
-                            </p>
+        <ul class="nav-menu center d-none d-md-flex px-2 flex-grow-1 justify-content-center mb-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/residencial">Residencial</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/comercial">Comercial</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/comercial">Terrenos</a>
+            </li>
+        </ul>
+        <ul class="nav-menu secondary px-2 mb-0 d-none d-md-flex">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/contato">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/acessibilidade">Acessibilidade</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/investidores">Relação com Investidores</a>
+            </li>
+        </ul>
+        <button class="search-toggler d-md-none" type="button" aria-label="Toggle search">
+            <span class="icon icon-search"></span>
+        </button>
+        <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+            <span class="icon icon-menu_black_24dp"></span>
+        </button>
+    </div>
+</nav>
+</header>
 
-                            <div class="_social-icons">
-                                <a class="social-icon" href="http://#">
-                                    <i class="icon icon-instagram"></i>
-                                </a>
 
-                                <a class="social-icon" href="http://#">
-                                    <i class="icon icon-linkedin"></i>
-                                </a>
 
-                                <a class="social-icon" href="http://#">
-                                    <i class="icon icon-facebook"></i>
-                                </a>
+<nav class="_nav-overlay fade-toggle hide">
+    <div class="collapse navbar-collapse d-flex align-items-center" id="main-nav-overlay">
+        <div class="brand flex-grow-1">
+            <a class="navbar-brand" href="#"><img src="/./media/images/Logo-PB.bc0eda4f.svg" alt="Melnick" /></a>
+        </div>
+        <ul class="nav-menu secondary d-flex px-2 mb-0">
+            <li class="nav-item">
+                <a class="nav-link" href="/contato">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/acessibilidade">Acessibilidade</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/investidores">Relação com Investidores</a>
+            </li>
+        </ul>
+        <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+            <span class="icon icon-close"></span>
+        </button>
+    </div>
+    <div class="bottom">
+        <div class="row">
+            <div class="col">
+                
 
-                                <a class="social-icon" href="http://#">
-                                    <i class="icon icon-youtube"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <nav class="_menu-list">
-                                <h2 class="menu-title">Sobre Nós</h2>
+<nav class="_menu-list ">
+    
+    <h2 class="menu-title">Sobre Nós</h2>
+    
 
-                                <ul class="menu">
-                                    <li class="menu-item">
-                                        <a href="sobre-nos" target="">
-                                            <span class="menu-label">A Melnick</span>
-                                        </a>
-                                    </li>
+    <ul class="menu">
+        
+        <li class="menu-item">
+            <a href="sobre-nos" target="">
+                
 
-                                    <li class="menu-item">
-                                        <a href="blog" target="">
-                                            <span class="menu-label">Blog</span>
-                                        </a>
-                                    </li>
+                <span class="menu-label">A Melnick</span>
 
-                                    <li class="menu-item">
-                                        <a href="contato" target="">
-                                            <span class="menu-label">Contato</span>
-                                        </a>
-                                    </li>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="blog" target="">
+                
 
-                                    <li class="menu-item">
-                                        <a href="acessibilidade" target="">
-                                            <span class="menu-label">Acessibilidade</span>
-                                        </a>
-                                    </li>
+                <span class="menu-label">Blog</span>
 
-                                    <li class="menu-item">
-                                        <a href="trabalhe-conosco" target="">
-                                            <span class="menu-label">Trabalhe Conosco</span>
-                                        </a>
-                                    </li>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="contato" target="">
+                
 
-                                    <li class="menu-item">
-                                        <a href="imprensa" target="">
-                                            <span class="menu-label">Imprensa</span>
-                                        </a>
-                                    </li>
+                <span class="menu-label">Contato</span>
 
-                                    <li class="menu-item">
-                                        <a href="revista-me" target="">
-                                            <span class="menu-label">Revista ME</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="col">
-                            <nav class="_menu-list">
-                                <h2 class="menu-title">Empreendimentos</h2>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="acessibilidade" target="">
+                
 
-                                <ul class="menu">
-                                    <li class="menu-item">
-                                        <a href="residencial" target="">
-                                            <span class="menu-label">Residencial</span>
-                                        </a>
-                                    </li>
+                <span class="menu-label">Acessibilidade</span>
 
-                                    <li class="menu-item">
-                                        <a href="comercial" target="">
-                                            <span class="menu-label">Comercial</span>
-                                        </a>
-                                    </li>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="trabalhe-conosco" target="">
+                
 
-                                    <li class="menu-item">
-                                        <a href="terrenos" target="">
-                                            <span class="menu-label">Terrenos</span>
-                                        </a>
-                                    </li>
+                <span class="menu-label">Trabalhe Conosco</span>
 
-                                    <li class="menu-item">
-                                        <a href="aluguel-reversivel" target="">
-                                            <span class="menu-label">Aluguel Reversível</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="col">
-                            <nav class="_menu-list">
-                                <h2 class="menu-title">Canais Melnick</h2>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="imprensa" target="">
+                
 
-                                <ul class="menu">
-                                    <li class="menu-item">
-                                        <a href="melnick-day" target="_blank">
-                                            <span class="menu-label">Melnick Day</span>
+                <span class="menu-label">Imprensa</span>
 
-                                            <i class="icon icon-after icon-external"></i>
-                                        </a>
-                                    </li>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="revista-me" target="">
+                
 
-                                    <li class="menu-item">
-                                        <a href="portal-do-cliente" target="_blank">
-                                            <span class="menu-label">Portal do Cliente</span>
+                <span class="menu-label">Revista ME</span>
 
-                                            <i class="icon icon-after icon-external"></i>
-                                        </a>
-                                    </li>
+                
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+            </div>
+            <div class="col">
+                
 
-                                    <li class="menu-item">
-                                        <a href="relacoes-com-investidores" target="_blank">
-                                            <span class="menu-label">Relações com Investidores</span>
+<nav class="_menu-list ">
+    
+    <h2 class="menu-title">Empreendimentos</h2>
+    
 
-                                            <i class="icon icon-after icon-external"></i>
-                                        </a>
-                                    </li>
+    <ul class="menu">
+        
+        <li class="menu-item">
+            <a href="residencial" target="">
+                
 
-                                    <li class="menu-item">
-                                        <a href="portal-do-corretor" target="_blank">
-                                            <span class="menu-label">Portal do Corretor</span>
+                <span class="menu-label">Residencial</span>
 
-                                            <i class="icon icon-after icon-external"></i>
-                                        </a>
-                                    </li>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="comercial" target="">
+                
 
-                                    <li class="menu-item">
-                                        <a href="projetista" target="_blank">
-                                            <span class="menu-label">Projetista</span>
+                <span class="menu-label">Comercial</span>
 
-                                            <i class="icon icon-after icon-external"></i>
-                                        </a>
-                                    </li>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="terrenos" target="">
+                
 
-                                    <li class="menu-item">
-                                        <a href="tramitacoes" target="_blank">
-                                            <span class="menu-label">Tramitações</span>
+                <span class="menu-label">Terrenos</span>
 
-                                            <i class="icon icon-after icon-external"></i>
-                                        </a>
-                                    </li>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="aluguel-reversivel" target="">
+                
 
-                                    <li class="menu-item">
-                                        <a href="melnick-vendas" target="_blank">
-                                            <span class="menu-label">Melnick Vendas</span>
+                <span class="menu-label">Aluguel Reversível</span>
 
-                                            <i class="icon icon-after icon-external"></i>
-                                        </a>
-                                    </li>
+                
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+            </div>
+            <div class="col">
+                
 
-                                    <li class="menu-item">
-                                        <a href="lojas-spot" target="_blank">
-                                            <span class="menu-label">Lojas Spot</span>
+<nav class="_menu-list ">
+    
+    <h2 class="menu-title">Canais Melnick</h2>
+    
 
-                                            <i class="icon icon-after icon-external"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="col">
-                            <nav class="_menu-list canal-de-vendas">
-                                <h2 class="menu-title">Canais de Venda</h2>
+    <ul class="menu">
+        
+        <li class="menu-item">
+            <a href="melnick-day" target="_blank">
+                
 
-                                <ul class="menu">
-                                    <li class="menu-item">
-                                        <a href="canal-email" target="">
-                                            <i class="icon icon-before icon-envelope"></i>
+                <span class="menu-label">Melnick Day</span>
 
-                                            <span class="menu-label">Fale por e-mail</span>
-                                        </a>
-                                    </li>
+                
+                <i class="icon icon-after icon-external"></i>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="portal-do-cliente" target="_blank">
+                
 
-                                    <li class="menu-item">
-                                        <a href="canal-telefones" target="">
-                                            <i class="icon icon-before icon-telephone"></i>
+                <span class="menu-label">Portal do Cliente</span>
 
-                                            <span class="menu-label">Telefones</span>
-                                        </a>
-                                    </li>
+                
+                <i class="icon icon-after icon-external"></i>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="relacoes-com-investidores" target="_blank">
+                
 
-                                    <li class="menu-item">
-                                        <a href="canal-mensagem" target="">
-                                            <i class="icon icon-before icon-chat-balloon"></i>
+                <span class="menu-label">Relações com Investidores</span>
 
-                                            <span class="menu-label">Fale por mensagem</span>
-                                        </a>
-                                    </li>
+                
+                <i class="icon icon-after icon-external"></i>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="portal-do-corretor" target="_blank">
+                
 
-                                    <li class="menu-item">
-                                        <a href="canal-ligamos" target="">
-                                            <i class="icon icon-before icon-telephone-2"></i>
+                <span class="menu-label">Portal do Corretor</span>
 
-                                            <span class="menu-label">Ligamos para você</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
+                
+                <i class="icon icon-after icon-external"></i>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="projetista" target="_blank">
+                
+
+                <span class="menu-label">Projetista</span>
+
+                
+                <i class="icon icon-after icon-external"></i>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="tramitacoes" target="_blank">
+                
+
+                <span class="menu-label">Tramitações</span>
+
+                
+                <i class="icon icon-after icon-external"></i>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="melnick-vendas" target="_blank">
+                
+
+                <span class="menu-label">Melnick Vendas</span>
+
+                
+                <i class="icon icon-after icon-external"></i>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="lojas-spot" target="_blank">
+                
+
+                <span class="menu-label">Lojas Spot</span>
+
+                
+                <i class="icon icon-after icon-external"></i>
+                
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="site-wrapper">
+    <section class="mb-5">
+        <div class="_hero container-fluid position-relative">
+  <div class="inner">
+    <div class="search-bar"><form class="_hero-search d-flex">
+    <div class="_select">
+        <div class="select-box">
+            <div class="options-container">
+                <div class="option selected">
+                    <input type="radio" class="radio" id="pa" name="place" />
+                    <label for="pa">Porto Alegre</label>
+                </div>
+
+                <div class="option">
+                    <input type="radio" class="radio" id="rj" name="place" />
+                    <label for="rj">Rio de Janeiro</label>
+                </div>
+
+                <div class="option">
+                    <input type="radio" class="radio" id="sp" name="place" />
+                    <label for="sp">São Paulo</label>
                 </div>
             </div>
-            <div class="footer-bottom container-fluid">
-                <div class="row row-cols-1 row-cols-md-2">
-                    <div class="col copy">
-                        <span class="copy-text">©2022 - Melnick Incorp. E Const. SA - Todos os direitos reservados.</span>
-                    </div>
 
-                    <div class="col policy">
-                        <a href="#">Política de privacidade</a> <span>•</span> <a href="#">Política de Cookies</a> <span>•</span> <a href="#">EGS</a>
-                        <span>•</span> <a href="#">Código de conduta e ética</a> <span>•</span> <a href="#">Uso de dados pessoais</a>
+            <div class="toggler">
+                <i class="icon icon-place"></i>
+                <span class="label">Região</span>
+                <i class="icon icon-arrow_down d-none d-md-block"></i>
+            </div>
+        </div>
+    </div>
+    <div class="search">
+        <i class="icon icon-search d-md-none"></i>
+
+        <input type="text" placeholder="Busque por bairro ou zona" />
+    </div>
+    <div class="submit">
+        
+
+
+<button type="button" class="_button _button-default variation-light ">
+    
+    
+    <span>Buscar</span>
+    
+</button>
+
+
+    </div>
+</form></div>
+    <div class="slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-1">
+          <div class="foreground flex-grow-1">
+            <div class="_hero-details text-white flex-grow-1 d-flex flex-column align-items-center">
+    <h2 class="title title-display text-center text-white">
+        Arte Country Club
+    </h2>
+
+    <div class="featues row g-custom">
+        <div class="feature-item col d-flex">
+            <i class="icon icon-bed"></i>
+            <span class="description">3 e 4 dorms</span>
+        </div>
+        <div class="feature-item col d-flex">
+            <i class="icon icon-straighten"></i>
+            <span class="description">256 a 321m²</span>
+        </div>
+        <div class="feature-item col d-flex">
+            <i class="icon icon-holiday_village"></i>
+            <span class="description">Boa Vista</span>
+        </div>
+    </div>
+</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide-2">
+          <div class="foreground flex-grow-1">
+            <div class="_hero-details text-white flex-grow-1 d-flex flex-column align-items-center">
+    <h2 class="title title-display text-center text-white">
+        Arte Country Club
+    </h2>
+
+    <div class="featues row g-custom">
+        <div class="feature-item col d-flex">
+            <i class="icon icon-bed"></i>
+            <span class="description">3 e 4 dorms</span>
+        </div>
+        <div class="feature-item col d-flex">
+            <i class="icon icon-straighten"></i>
+            <span class="description">256 a 321m²</span>
+        </div>
+        <div class="feature-item col d-flex">
+            <i class="icon icon-holiday_village"></i>
+            <span class="description">Boa Vista</span>
+        </div>
+    </div>
+</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+
+    </section>
+
+    <section class="mb-5">
+        <h1 class="title-display text-center mb-3">
+            Conheça nossos empreendimentos <strong>Residenciais</strong> <i class="icon icon-arrow_down text-16 align-middle mb-2"></i>
+        </h1>
+
+        
+
+<div class="_carousel-real-estate container-fluid">
+    <div class="carousel-tabs">
+        <ul class="d-flex justify-content-center nav nav-tabs" data-bs-tabs="tabs">
+            
+            <li><a class="" href="#pre-release" aria-current="false" data-bs-toggle="tab">Pré-lançamento</a></li>
+            
+            <li><a class="active" href="#releases" aria-current="true" data-bs-toggle="tab">Lançamentos</a></li>
+            
+            <li><a class="" href="#in-construction" aria-current="false" data-bs-toggle="tab">Em obras</a></li>
+            
+            <li><a class="" href="#ready-to-move" aria-current="false" data-bs-toggle="tab">Prontos para morar</a></li>
+            
+        </ul>
+    </div>
+    <div class="tab-content">
+        
+        
+
+        <div id="pre-release" class="tab-pane fade " role="tabpanel">
+            <div class="swiper leaked">
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">GO Carlos Gomes</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">Seu ritmo na cidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>1 e 2 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>25 a 50 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price">Consulte valores</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate-2.e126367e.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Nilo Square</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">Um novo conceito de modernidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>3 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>175 a 245 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price-label">A partir de</span>
+      <span class="price">R$ 690.000</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate-3.7b9dc9d4.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Arte Country Club</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">A leveza da vida no campo na cidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>3 a 4 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>246 a 321 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price">Consulte valores</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate-3.7b9dc9d4.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Arte Country Club</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">A leveza da vida no campo na cidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>3 a 4 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>246 a 321 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price">Consulte valores</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Bairro Cidade Baixa</h2>
+        <strong class="location text-10">Bairro Cidade Baixa</strong>
+        <div class="description">A cidade baixa no ritmo da sua vida.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>1, 2 e 3 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>46 a 90m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price-label">A partir de</span>
+      <span class="price">R$ 690.000</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate-2.e126367e.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Nilo Square</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">Um novo conceito de modernidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>3 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>175 a 245 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price-label">A partir de</span>
+      <span class="price">R$ 690.000</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Bairro Cidade Baixa</h2>
+        <strong class="location text-10">Bairro Cidade Baixa</strong>
+        <div class="description">A cidade baixa no ritmo da sua vida.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>1, 2 e 3 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>46 a 90m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price-label">A partir de</span>
+      <span class="price">R$ 690.000</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">GO Carlos Gomes</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">Seu ritmo na cidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>1 e 2 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>25 a 50 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price">Consulte valores</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
+        
+
+        <div id="releases" class="tab-pane fade show active" role="tabpanel">
+            <div class="swiper leaked">
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate-3.7b9dc9d4.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Arte Country Club</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">A leveza da vida no campo na cidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>3 a 4 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>246 a 321 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price">Consulte valores</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Bairro Cidade Baixa</h2>
+        <strong class="location text-10">Bairro Cidade Baixa</strong>
+        <div class="description">A cidade baixa no ritmo da sua vida.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>1, 2 e 3 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>46 a 90m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price-label">A partir de</span>
+      <span class="price">R$ 690.000</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate-2.e126367e.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Nilo Square</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">Um novo conceito de modernidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>3 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>175 a 245 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price-label">A partir de</span>
+      <span class="price">R$ 690.000</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate-2.e126367e.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Nilo Square</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">Um novo conceito de modernidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>3 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>175 a 245 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price-label">A partir de</span>
+      <span class="price">R$ 690.000</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">GO Carlos Gomes</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">Seu ritmo na cidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>1 e 2 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>25 a 50 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price">Consulte valores</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Bairro Cidade Baixa</h2>
+        <strong class="location text-10">Bairro Cidade Baixa</strong>
+        <div class="description">A cidade baixa no ritmo da sua vida.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>1, 2 e 3 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>46 a 90m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price-label">A partir de</span>
+      <span class="price">R$ 690.000</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">GO Carlos Gomes</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">Seu ritmo na cidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>1 e 2 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>25 a 50 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price">Consulte valores</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate-3.7b9dc9d4.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Arte Country Club</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">A leveza da vida no campo na cidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>3 a 4 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>246 a 321 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price">Consulte valores</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
+        
+
+        <div id="in-construction" class="tab-pane fade " role="tabpanel">
+            <div class="swiper leaked">
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate-2.e126367e.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Nilo Square</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">Um novo conceito de modernidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>3 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>175 a 245 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price-label">A partir de</span>
+      <span class="price">R$ 690.000</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Bairro Cidade Baixa</h2>
+        <strong class="location text-10">Bairro Cidade Baixa</strong>
+        <div class="description">A cidade baixa no ritmo da sua vida.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>1, 2 e 3 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>46 a 90m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price-label">A partir de</span>
+      <span class="price">R$ 690.000</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Bairro Cidade Baixa</h2>
+        <strong class="location text-10">Bairro Cidade Baixa</strong>
+        <div class="description">A cidade baixa no ritmo da sua vida.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>1, 2 e 3 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>46 a 90m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price-label">A partir de</span>
+      <span class="price">R$ 690.000</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">GO Carlos Gomes</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">Seu ritmo na cidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>1 e 2 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>25 a 50 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price">Consulte valores</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate-3.7b9dc9d4.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Arte Country Club</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">A leveza da vida no campo na cidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>3 a 4 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>246 a 321 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price">Consulte valores</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">GO Carlos Gomes</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">Seu ritmo na cidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>1 e 2 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>25 a 50 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price">Consulte valores</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate-2.e126367e.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Nilo Square</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">Um novo conceito de modernidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>3 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>175 a 245 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price-label">A partir de</span>
+      <span class="price">R$ 690.000</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate-3.7b9dc9d4.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Arte Country Club</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">A leveza da vida no campo na cidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>3 a 4 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>246 a 321 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price">Consulte valores</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
+        
+
+        <div id="ready-to-move" class="tab-pane fade " role="tabpanel">
+            <div class="swiper leaked">
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">GO Carlos Gomes</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">Seu ritmo na cidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>1 e 2 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>25 a 50 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price">Consulte valores</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate-3.7b9dc9d4.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Arte Country Club</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">A leveza da vida no campo na cidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>3 a 4 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>246 a 321 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price">Consulte valores</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate-2.e126367e.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Nilo Square</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">Um novo conceito de modernidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>3 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>175 a 245 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price-label">A partir de</span>
+      <span class="price">R$ 690.000</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Bairro Cidade Baixa</h2>
+        <strong class="location text-10">Bairro Cidade Baixa</strong>
+        <div class="description">A cidade baixa no ritmo da sua vida.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>1, 2 e 3 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>46 a 90m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price-label">A partir de</span>
+      <span class="price">R$ 690.000</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Bairro Cidade Baixa</h2>
+        <strong class="location text-10">Bairro Cidade Baixa</strong>
+        <div class="description">A cidade baixa no ritmo da sua vida.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>1, 2 e 3 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>46 a 90m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price-label">A partir de</span>
+      <span class="price">R$ 690.000</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate-3.7b9dc9d4.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Arte Country Club</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">A leveza da vida no campo na cidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>3 a 4 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>246 a 321 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price">Consulte valores</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate-2.e126367e.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">Nilo Square</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">Um novo conceito de modernidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>3 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>175 a 245 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price-label">A partir de</span>
+      <span class="price">R$ 690.000</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="_entry-real-estate">
+  
+  <div class="thumbnail thumb-1">
+    <a href="#"><img src="/./media/images/real-estate.c213f877.jpeg" /></a>
+  </div>
+  
+  <div class="inner bg-white">
+    <div class="top">
+      <a href="#">
+        <strong class="category text-10">Lançamentos</strong>
+        <h2 class="title">GO Carlos Gomes</h2>
+        <strong class="location text-10">Bairro boa vista</strong>
+        <div class="description">Seu ritmo na cidade.</div>
+      </a>
+    </div>
+
+    <div class="middle">
+      <div class="features row align-items-center g-3">
+        <div class="feature-item col">
+          <i class="icon icon-bed"></i> <span>1 e 2 dorms</span>
+        </div>
+        <div class="feature-item col">
+          <i class="icon icon-straighten"></i> <span>25 a 50 m²</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      
+      <span class="price">Consulte valores</span>
+      
+    </div>
+  </div>
+</div>                    </div>
+                    
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+        <div class="d-flex justify-content-md-center container-fluid">
+            
+
+
+<a href="#" class="_button _button-default variation-default flex-grow-1 flex-md-grow-0 justify-content-center">
+    
+    
+    <span>Ver mais empreendimentos</span>
+    
+</a>
+
+        </div>
+    </section>
+
+    
+
+
+<section class="_home-section-features container-fluid mb-5">
+    <h2 class="title-display text-center mb-3">
+        Confira o que a <strong>Melnick</strong> oferece
+    </h2>
+    <div class="swiper leaked">
+        <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+                
+
+<div class="_card-home ">
+    <a class="inner" href="">
+        
+        <div class="bg-image">
+            <img src="/./media/images/landscape.784403b0.jpeg" />
+        </div>
+        
+
+        <div class="inner-content">
+            <h2 class="title">Para Morar</h2>
+            <div class="description">Porque você merece<br> muito mais que morar.</div>
+        </div>
+    </a>
+</div>
+            </div>
+            
+            <div class="swiper-slide">
+                
+
+<div class="_card-home ">
+    <a class="inner" href="">
+        
+        <div class="bg-image">
+            <img src="/./media/images/mall.04e0beff.jpeg" />
+        </div>
+        
+
+        <div class="inner-content">
+            <h2 class="title">Para Investir</h2>
+            <div class="description">Oportunidades para<br> aumentar seu patrimônio.</div>
+        </div>
+    </a>
+</div>
+            </div>
+            
+            <div class="swiper-slide">
+                
+
+<div class="_card-home ">
+    <a class="inner" href="">
+        
+        <div class="bg-image">
+            <img src="/./media/images/office.5df6125e.jpeg" />
+        </div>
+        
+
+        <div class="inner-content">
+            <h2 class="title">Para Trabalhar</h2>
+            <div class="description">Os melhores ambientes de<br> trabalho para sua empresa.</div>
+        </div>
+    </a>
+</div>
+            </div>
+            
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+    
+
+
+<section class="_home-section-features-wide mx-md-n20 mb-5">
+    <div class="container-fluid">
+        <div class="row">
+            
+            <div class="col">
+                
+
+<div class="_card-cta-bg ">
+    
+    <div class="bg-image">
+        <img src="/./media/images/lobby.87f9f905.png" />
+    </div>
+    
+
+    
+
+<div class="_card-cta ">
+    <div class="inner-content">
+        
+        <h2 class="title mb-3">Melnick<br>Urbanizadora</h2>
+        <div class="description mb-3">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</div>
+
+        
+
+
+<a href="" class="_button _button-default variation-default ">
+    
+    
+    <span>Saiba Mais</span>
+    
+</a>
+
+    </div>
+</div>
+</div>
+            </div>
+            
+            <div class="col">
+                
+
+<div class="_card-cta-bg ">
+    
+    <div class="bg-image">
+        <img src="/./media/images/couple.62fa302a.jpeg" />
+    </div>
+    
+
+    
+
+<div class="_card-cta ">
+    <div class="inner-content">
+        
+        <h2 class="title mb-3">Open</h2>
+        <div class="description mb-3">A Open nasce para operar na faixa mais alta do Minha Casa Minha Vida  oferecendo projetos diferenciados para esta faixa de renda.</div>
+
+        
+
+
+<a href="" class="_button _button-default variation-default ">
+    
+    
+    <span>Conheça a Open</span>
+    
+</a>
+
+    </div>
+</div>
+</div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+    
+
+
+<section class="_home-section-initiative container-fluid mb-5">
+    <h2 class="title-display text-center mb-3">
+        Iniciativas <strong>Melnick</strong>
+    </h2>
+
+    <div class="_slider-cards">
+        <div class="shadow-container">
+            <div class="shadow-wrapper">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide">
+                            
+
+<div class="_card-cta-bg ">
+    
+    <div class="bg-image">
+        <img src="/./media/images/poa.bb0593b0.png" />
+    </div>
+    
+
+    
+
+<div class="_card-cta ">
+    <div class="inner-content">
+        
+        <span class="subtitle mb-2">Iniciativa social</span>
+        
+        <h2 class="title mb-3">I Love POA</h2>
+        <div class="description mb-3">O projeto I Love POA foi criado para levar arte aos espaços públicos e fazer com que desperte nos porto-alegrenses o desejo de cuidar da cidade. </div>
+
+        
+
+
+<a href="" class="_button _button-default variation-default ">
+    
+    
+    <span>Saiba Mais</span>
+    
+</a>
+
+    </div>
+</div>
+</div> </div>
+                        
+                        <div class="swiper-slide">
+                            
+
+<div class="_card-cta-bg ">
+    
+    <div class="bg-image">
+        <img src="/./media/images/office.5df6125e.jpeg" />
+    </div>
+    
+
+    
+
+<div class="_card-cta ">
+    <div class="inner-content">
+        
+        <span class="subtitle mb-2">Iniciativa social</span>
+        
+        <h2 class="title mb-3">Lorem Ipsum</h2>
+        <div class="description mb-3">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.</div>
+
+        
+
+
+<a href="" class="_button _button-default variation-default ">
+    
+    
+    <span>Saiba Mais</span>
+    
+</a>
+
+    </div>
+</div>
+</div> </div>
+                        
                     </div>
+                    <div class="swiper-nav-container">
+                        
+
+
+
+
+<button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-prev">
+    
+    
+    <span><i class="icon icon-chevron-left"></i></span>
+    
+</button>
+
+
+                        
+
+
+
+
+<button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
+    
+    
+    <span><i class="icon icon-chevron-right"></i></span>
+    
+</button>
+
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+
                 </div>
             </div>
-            <div class="footer-bottom-bar">
-                <nav class="_menu-list bottom-menu canal-de-vendas mx-n20">
-                    <h2 class="menu-title">Canais de venda</h2>
+        </div>
+    </div>
+</section>
 
-                    <ul class="menu">
-                        <li class="menu-item">
-                            <a href="canal-email" target="">
-                                <i class="icon icon-before icon-envelope"></i>
+    
 
-                                <span class="menu-label">Fale por e-mail</span>
-                            </a>
-                        </li>
+<section class="_home-section-blog container-fluid ">
 
-                        <li class="menu-item">
-                            <a href="canal-telefones" target="">
-                                <i class="icon icon-before icon-telephone"></i>
+    
 
-                                <span class="menu-label">Telefones</span>
-                            </a>
-                        </li>
+<div class="_card-home-cta ">
+    
+    <div class="bg-image">
+        <img src="/./media/images/seats-2.2714d75c.jpeg" />
+    </div>
+    
 
-                        <li class="menu-item">
-                            <a href="canal-mensagem" target="">
-                                <i class="icon icon-before icon-chat-balloon"></i>
+    <div class="inner-content">
+        <h2 class="title">Blog Melnick</h2>
+        <div class="description">Fique por dentro das novidades sobre a empresa, lançamentos e tendências do mercado.</div>
 
-                                <span class="menu-label">Fale por mensagem</span>
-                            </a>
-                        </li>
+        
 
-                        <li class="menu-item">
-                            <a href="canal-ligamos" target="">
-                                <i class="icon icon-before icon-telephone-2"></i>
 
-                                <span class="menu-label">Ligamos para você</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+<a href="/blog" class="_button _button-default variation-default ">
+    <i class="icon icon-chevron-right "></i>
+    
+    <span>Visite nosso blog</span>
+    
+</a>
+
+    </div>
+</div>
+</section>
+</main>
+
+
+
+<div class="_whatsapp-balloon ">
+    <a href="#">
+        <div class="inner">
+            <i class="icon icon-whatsapp"></i>
+        </div>
+    </a>
+</div>
+
+
+
+<footer class="_footer">
+    <div class="footer-top container-fluid">
+        <div class="top-inner">
+            <div class="row row-cols-1 row-cols-md-5">
+                <div class="col about">
+                    <a class="footer-logo" href="/">
+                        <img src="/./media/images/Logo-colorida.b388bf13.svg" alt="melnick" />
+                    </a>
+                    <p class="address">
+                        Rua Carlos Trein Filho, 551 Auxiliadora<br>
+                        CEP: 90450-120 - Porto Alegre/RS
+                    </p>
+
+                    
+
+
+<div class="_social-icons ">
+  
+  <a class="social-icon" href="http://#">
+    <i class="icon icon-instagram"></i>
+  </a>
+  
+  <a class="social-icon" href="http://#">
+    <i class="icon icon-linkedin"></i>
+  </a>
+  
+  <a class="social-icon" href="http://#">
+    <i class="icon icon-facebook"></i>
+  </a>
+  
+  <a class="social-icon" href="http://#">
+    <i class="icon icon-youtube"></i>
+  </a>
+  
+</div>
+                </div>
+                <div class="col">
+                    
+
+<nav class="_menu-list ">
+    
+    <h2 class="menu-title">Sobre Nós</h2>
+    
+
+    <ul class="menu">
+        
+        <li class="menu-item">
+            <a href="sobre-nos" target="">
+                
+
+                <span class="menu-label">A Melnick</span>
+
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="blog" target="">
+                
+
+                <span class="menu-label">Blog</span>
+
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="contato" target="">
+                
+
+                <span class="menu-label">Contato</span>
+
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="acessibilidade" target="">
+                
+
+                <span class="menu-label">Acessibilidade</span>
+
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="trabalhe-conosco" target="">
+                
+
+                <span class="menu-label">Trabalhe Conosco</span>
+
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="imprensa" target="">
+                
+
+                <span class="menu-label">Imprensa</span>
+
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="revista-me" target="">
+                
+
+                <span class="menu-label">Revista ME</span>
+
+                
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+                </div>
+                <div class="col">
+                    
+
+<nav class="_menu-list ">
+    
+    <h2 class="menu-title">Empreendimentos</h2>
+    
+
+    <ul class="menu">
+        
+        <li class="menu-item">
+            <a href="residencial" target="">
+                
+
+                <span class="menu-label">Residencial</span>
+
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="comercial" target="">
+                
+
+                <span class="menu-label">Comercial</span>
+
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="terrenos" target="">
+                
+
+                <span class="menu-label">Terrenos</span>
+
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="aluguel-reversivel" target="">
+                
+
+                <span class="menu-label">Aluguel Reversível</span>
+
+                
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+                </div>
+                <div class="col">
+                    
+
+<nav class="_menu-list ">
+    
+    <h2 class="menu-title">Canais Melnick</h2>
+    
+
+    <ul class="menu">
+        
+        <li class="menu-item">
+            <a href="melnick-day" target="_blank">
+                
+
+                <span class="menu-label">Melnick Day</span>
+
+                
+                <i class="icon icon-after icon-external"></i>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="portal-do-cliente" target="_blank">
+                
+
+                <span class="menu-label">Portal do Cliente</span>
+
+                
+                <i class="icon icon-after icon-external"></i>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="relacoes-com-investidores" target="_blank">
+                
+
+                <span class="menu-label">Relações com Investidores</span>
+
+                
+                <i class="icon icon-after icon-external"></i>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="portal-do-corretor" target="_blank">
+                
+
+                <span class="menu-label">Portal do Corretor</span>
+
+                
+                <i class="icon icon-after icon-external"></i>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="projetista" target="_blank">
+                
+
+                <span class="menu-label">Projetista</span>
+
+                
+                <i class="icon icon-after icon-external"></i>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="tramitacoes" target="_blank">
+                
+
+                <span class="menu-label">Tramitações</span>
+
+                
+                <i class="icon icon-after icon-external"></i>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="melnick-vendas" target="_blank">
+                
+
+                <span class="menu-label">Melnick Vendas</span>
+
+                
+                <i class="icon icon-after icon-external"></i>
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="lojas-spot" target="_blank">
+                
+
+                <span class="menu-label">Lojas Spot</span>
+
+                
+                <i class="icon icon-after icon-external"></i>
+                
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+                </div>
+                <div class="col">
+                    
+
+<nav class="_menu-list canal-de-vendas">
+    
+    <h2 class="menu-title">Canais de Venda</h2>
+    
+
+    <ul class="menu">
+        
+        <li class="menu-item">
+            <a href="canal-email" target="">
+                
+                <i class="icon icon-before icon-envelope"></i>
+                
+
+                <span class="menu-label">Fale por e-mail</span>
+
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="canal-telefones" target="">
+                
+                <i class="icon icon-before icon-telephone"></i>
+                
+
+                <span class="menu-label">Telefones</span>
+
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="canal-mensagem" target="">
+                
+                <i class="icon icon-before icon-chat-balloon"></i>
+                
+
+                <span class="menu-label">Fale por mensagem</span>
+
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="canal-ligamos" target="">
+                
+                <i class="icon icon-before icon-telephone-2"></i>
+                
+
+                <span class="menu-label">Ligamos para você</span>
+
+                
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+                </div>
             </div>
-        </footer>
-    </body>
+        </div>
+    </div>
+    <div class="footer-bottom container-fluid">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col copy">
+                <span class="copy-text">©2022 - Melnick Incorp. E Const. SA - Todos os direitos reservados.</span>
+            </div>
+
+            <div class="col policy">
+                <a href="#">Política de privacidade</a> <span>•</span> <a href="#">Política de Cookies</a> <span>•</span> <a href="#">EGS</a> <span>•</span> <a href="#">Código de conduta e ética</a> <span>•</span> <a href="#">Uso de dados pessoais</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom-bar">
+        
+
+<nav class="_menu-list bottom-menu canal-de-vendas mx-n20">
+    
+    <h2 class="menu-title">Canais de venda</h2>
+    
+
+    <ul class="menu">
+        
+        <li class="menu-item">
+            <a href="canal-email" target="">
+                
+                <i class="icon icon-before icon-envelope"></i>
+                
+
+                <span class="menu-label">Fale por e-mail</span>
+
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="canal-telefones" target="">
+                
+                <i class="icon icon-before icon-telephone"></i>
+                
+
+                <span class="menu-label">Telefones</span>
+
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="canal-mensagem" target="">
+                
+                <i class="icon icon-before icon-chat-balloon"></i>
+                
+
+                <span class="menu-label">Fale por mensagem</span>
+
+                
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="canal-ligamos" target="">
+                
+                <i class="icon icon-before icon-telephone-2"></i>
+                
+
+                <span class="menu-label">Ligamos para você</span>
+
+                
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+    </div>
+</footer>
+
+</body>
+
 </html>

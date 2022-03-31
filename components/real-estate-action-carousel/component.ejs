@@ -1,0 +1,20 @@
+<% 
+// Params
+var args = typeof args !== 'undefined' ? args : '';
+var cssClass = args.cssClass ?? '';
+
+%>
+
+<div class="_real-estate-action-carousel <%= cssClass %>">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <%- include('../real-estate-action/component.ejs', { args: { label: 'Book do Empreendimento', image: 'couple.jpeg' } } ); -%>
+            </div>
+
+            <div class="swiper-slide">
+                <%- include('../real-estate-action/component.ejs', { args: { label: 'Andamento da obra', image: 'couple.jpeg' } } ); -%>
+            </div>
+        </div>
+    </div>
+</div>

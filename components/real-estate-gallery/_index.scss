@@ -1,0 +1,44 @@
+._real-estate-gallery {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 273px);
+    gap: 20px;
+
+    .gallery-item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+
+        &.main {
+            grid-row: span 2;
+            height: 370px;
+        }
+
+        img {
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        &:not(.logo) img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba($azul-melnick, 65%);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $amarelo-melnick;
+            font-size: 36px;
+        }
+    }
+}

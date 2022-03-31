@@ -1,0 +1,30 @@
+<% 
+const realEstates = JSON.parse(include('../../data/real-estates/properties.json') )
+%>
+
+<%- include('../../components/header/component.ejs') %>
+
+<main class="site-wrapper" id="page-empreendimentos-interna">
+    <div class="page-inner">
+
+        <section class="gallery">
+            <%- include('../../components/real-estate-gallery/component.ejs', { args: { cssClass: 'mb-99' } } ); -%>
+        </section>
+
+        <section class="meta">
+            <%- include('../../components/real-estate-meta-actions/component.ejs') %>
+
+            <%- include('../../components/page-title/component.ejs', { args: { title: 'Nilo Square Residence Resort', description: 'Um lugar assim muda sua vida' } } ); -%>
+
+            <%- include('../../components/real-estate-props/component.ejs' ); -%>
+
+            <%- include('../../components/real-estate-action-carousel/component.ejs' ); -%>
+
+        </section>
+
+    </div>
+</main>
+
+<%- include( '../../components/whatsapp-balloon/component.ejs' ); %>
+
+<%- //include('../../components/footer/component.ejs') %>

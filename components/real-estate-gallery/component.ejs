@@ -1,0 +1,29 @@
+<% 
+// Params
+var args = typeof args !== 'undefined' ? args : '';
+let cssClass = args.cssClass ?? '';
+let title = args.title ?? '';
+let description = args.description ?? '';
+%>
+
+<div class="_real-estate-gallery <%= cssClass %>">
+    <div class="gallery-item main">
+        <img src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
+    </div>
+    <div class="gallery-item logo">
+        <img src="../../assets/img/real-estate-inner/gallery-2.png" />
+    </div>
+    <div class="gallery-item">
+        <img src="../../assets/img/real-estate-inner/gallery-3.jpeg" />
+    </div>
+    <div class="gallery-item">
+        <img src="../../assets/img/real-estate-inner/gallery-4.jpeg" />
+    </div>
+    <div class="gallery-item see-more">
+        <img src="../../assets/img/real-estate-inner/gallery-5.jpeg" />
+
+        <div class="overlay">
+            <span class="more-number">+25</span>
+        </div>
+    </div>
+</div>
