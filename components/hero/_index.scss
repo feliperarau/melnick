@@ -37,9 +37,7 @@
         padding-bottom: 24px;
 
         .slider {
-            display: flex;
-            flex: 1;
-            overflow: hidden;
+            overflow-x: hidden;
             border-radius: 4px;
 
             @include media-breakpoint-down(md) {
@@ -52,6 +50,8 @@
             background-repeat: no-repeat;
             background-size: cover;
             min-height: 577px;
+            border-radius: 4px;
+            overflow: hidden;
 
             &::before {
                 content: "";
