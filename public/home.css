@@ -12845,6 +12845,7 @@ button.swiper-pagination-bullet {
 ._button-default.variation-light {
   background: white;
   color: #002541;
+  border-color: white;
 }
 ._button-default.variation-light:hover {
   background: #f2f2f2;
@@ -13003,9 +13004,7 @@ button.swiper-pagination-bullet {
   padding-bottom: 24px;
 }
 ._hero .inner .slider {
-  display: flex;
-  flex: 1;
-  overflow: hidden;
+  overflow-x: hidden;
   border-radius: 4px;
 }
 @media (max-width: 767.98px) {
@@ -13019,6 +13018,8 @@ button.swiper-pagination-bullet {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 577px;
+  border-radius: 4px;
+  overflow: hidden;
 }
 ._hero .inner .swiper-slide::before {
   content: "";
@@ -13886,6 +13887,7 @@ button.swiper-pagination-bullet {
 ._button-default.variation-light {
   background: white;
   color: #002541;
+  border-color: white;
 }
 ._button-default.variation-light:hover {
   background: #f2f2f2;
@@ -13985,6 +13987,7 @@ button.swiper-pagination-bullet {
 ._button-default.variation-light {
   background: white;
   color: #002541;
+  border-color: white;
 }
 ._button-default.variation-light:hover {
   background: #f2f2f2;
@@ -14133,6 +14136,7 @@ button.swiper-pagination-bullet {
 ._button-default.variation-light {
   background: white;
   color: #002541;
+  border-color: white;
 }
 ._button-default.variation-light:hover {
   background: #f2f2f2;
@@ -14271,6 +14275,7 @@ button.swiper-pagination-bullet {
 ._button-default.variation-light {
   background: white;
   color: #002541;
+  border-color: white;
 }
 ._button-default.variation-light:hover {
   background: #f2f2f2;
@@ -14388,6 +14393,7 @@ button.swiper-pagination-bullet {
 ._button-default.variation-light {
   background: white;
   color: #002541;
+  border-color: white;
 }
 ._button-default.variation-light:hover {
   background: #f2f2f2;
