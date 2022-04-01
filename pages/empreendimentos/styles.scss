@@ -6,6 +6,7 @@
 @import "../../components/footer/";
 @import "../../components/real-estate-filters/";
 @import "../../components/entry-real-estate-list/";
+@import "../../components/list-map-default/";
 @import "../../components/page-title/";
 @import "../../components/button-default/";
 @import "../../components/whatsapp-balloon/";
@@ -33,11 +34,6 @@ body {
     }
     .map {
         margin-right: -20px;
-
-        iframe {
-            width: 100%;
-            border-radius: 15px 0px 0px 15px;
-        }
     }
     .real-estates {
         ._entry-real-estate-list {

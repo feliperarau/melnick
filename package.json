@@ -20,6 +20,7 @@
         "babel-loader": "^8.2.3",
         "browser-sync": "^2.27.7",
         "browser-sync-webpack-plugin": "^2.3.0",
+        "cross-env": "^7.0.3",
         "css-loader": "^6.6.0",
         "ejs-render-loader": "^1.0.0",
         "ejs-webpack-loader": "^2.2.2",
@@ -44,7 +45,8 @@
         "serve": "webpack-dev-server",
         "dev": "webpack --watch",
         "start": "npm-run-all --parallel dev serve",
-        "build": "webpack --mode=production",
+        "compile": "cross-env NODE_ENV=production webpack",
+        "build": "npm-run-all compile format-public",
         "format-public": "prettier --bracket-same-line --tab-width 4 --print-width 160 --write \"public/**/*.html\""
     },
     "license": "ISC"
