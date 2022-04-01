@@ -1,0 +1,38 @@
+@import "../button-icon/";
+
+._list-map-default {
+    display: flex;
+    justify-content: end;
+
+    img {
+        height: 627px;
+        width: 674px;
+    }
+
+    .map-inner {
+        position: relative;
+    }
+    .top-controls {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        font-size: 24px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+
+        .left {
+            margin-left: -20px;
+
+            .back {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+        }
+        .right {
+            display: flex;
+            gap: 10px;
+        }
+    }
+}

@@ -1,13 +1,14 @@
-/*!******************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/webfonts-loader/index.js!./node_modules/babel-loader/lib/index.js!./icons.font.js ***!
-  \******************************************************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/webfonts-loader/index.js??ruleSet[1].rules[0].use[2]!./node_modules/babel-loader/lib/index.js!./icons.font.js ***!
+  \**********************************************************************************************************************************************************************************************************/
 @font-face {
 	font-family: "icon";
-	src: url("/icons/icon.797db058abff70d777b6.eot?#iefix") format("embedded-opentype"),
-url("/icons/icon.797db058abff70d777b6.woff") format("woff"),
-url("/icons/icon.797db058abff70d777b6.woff2") format("woff2"),
-url("/icons/icon.797db058abff70d777b6.ttf") format("truetype"),
-url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
+	font-display: block;
+	src: url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.7be2585c153608b8c6ca.eot?#iefix") format("embedded-opentype"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.7be2585c153608b8c6ca.woff") format("woff"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.7be2585c153608b8c6ca.woff2") format("woff2"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.7be2585c153608b8c6ca.ttf") format("truetype"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.7be2585c153608b8c6ca.svg#icon") format("svg");
 }
 
 .icon {
@@ -24,89 +25,98 @@ url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
 .icon-360:before {
 	content: "\f101";
 }
-.icon-arrow_down:before {
+.icon-add:before {
 	content: "\f102";
 }
-.icon-bed:before {
+.icon-arrow_down:before {
 	content: "\f103";
 }
-.icon-camera:before {
+.icon-bed:before {
 	content: "\f104";
 }
-.icon-car:before {
+.icon-camera:before {
 	content: "\f105";
 }
-.icon-chat-balloon:before {
+.icon-car:before {
 	content: "\f106";
 }
-.icon-chevron_down:before {
+.icon-chat-balloon:before {
 	content: "\f107";
 }
-.icon-chevron-left:before {
+.icon-chevron_down:before {
 	content: "\f108";
 }
-.icon-chevron-right:before {
+.icon-chevron-left-2:before {
 	content: "\f109";
 }
-.icon-close:before {
+.icon-chevron-left:before {
 	content: "\f10a";
 }
-.icon-corporate-fare:before {
+.icon-chevron-right:before {
 	content: "\f10b";
 }
-.icon-download:before {
+.icon-close:before {
 	content: "\f10c";
 }
-.icon-envelope:before {
+.icon-corporate-fare:before {
 	content: "\f10d";
 }
-.icon-external:before {
+.icon-download:before {
 	content: "\f10e";
 }
-.icon-facebook:before {
+.icon-envelope:before {
 	content: "\f10f";
 }
-.icon-holiday_village:before {
+.icon-external:before {
 	content: "\f110";
 }
-.icon-instagram:before {
+.icon-facebook:before {
 	content: "\f111";
 }
-.icon-linkedin:before {
+.icon-holiday_village:before {
 	content: "\f112";
 }
-.icon-menu_black_24dp:before {
+.icon-instagram:before {
 	content: "\f113";
 }
-.icon-place_black:before {
+.icon-linkedin:before {
 	content: "\f114";
 }
-.icon-place:before {
+.icon-menu_black_24dp:before {
 	content: "\f115";
 }
-.icon-search:before {
+.icon-place_black:before {
 	content: "\f116";
 }
-.icon-share:before {
+.icon-place:before {
 	content: "\f117";
 }
-.icon-straighten:before {
+.icon-remove:before {
 	content: "\f118";
 }
-.icon-telephone-2:before {
+.icon-search:before {
 	content: "\f119";
 }
-.icon-telephone:before {
+.icon-share:before {
 	content: "\f11a";
 }
-.icon-video-library:before {
+.icon-straighten:before {
 	content: "\f11b";
 }
-.icon-whatsapp:before {
+.icon-telephone-2:before {
 	content: "\f11c";
 }
-.icon-youtube:before {
+.icon-telephone:before {
 	content: "\f11d";
+}
+.icon-video-library:before {
+	content: "\f11e";
+}
+.icon-whatsapp:before {
+	content: "\f11f";
+}
+.icon-youtube:before {
+	content: "\f120";
 }
 
 /*!********************************************************************************************!*\
@@ -114,8 +124,8 @@ url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
   \********************************************************************************************/
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url(/fonts/TTNormsPro-BlackItalic.woff2) format('woff2'),
-        url(/fonts/TTNormsPro-BlackItalic.woff) format('woff');
+    src: url(.././fonts/TTNormsPro-BlackItalic.woff2) format('woff2'),
+        url(.././fonts/TTNormsPro-BlackItalic.woff) format('woff');
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -123,8 +133,8 @@ url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url(/fonts/TTNormsPro-Black.woff2) format('woff2'),
-        url(/fonts/TTNormsPro-Black.woff) format('woff');
+    src: url(.././fonts/TTNormsPro-Black.woff2) format('woff2'),
+        url(.././fonts/TTNormsPro-Black.woff) format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -132,8 +142,8 @@ url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url(/fonts/TTNormsPro-BoldItalic.woff2) format('woff2'),
-        url(/fonts/TTNormsPro-BoldItalic.woff) format('woff');
+    src: url(.././fonts/TTNormsPro-BoldItalic.woff2) format('woff2'),
+        url(.././fonts/TTNormsPro-BoldItalic.woff) format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -141,8 +151,8 @@ url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url(/fonts/TTNormsPro-Bold.woff2) format('woff2'),
-        url(/fonts/TTNormsPro-Bold.woff) format('woff');
+    src: url(.././fonts/TTNormsPro-Bold.woff2) format('woff2'),
+        url(.././fonts/TTNormsPro-Bold.woff) format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -150,8 +160,8 @@ url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url(/fonts/TTNormsPro-ExtraBoldItalic.woff2) format('woff2'),
-        url(/fonts/TTNormsPro-ExtraBoldItalic.woff) format('woff');
+    src: url(.././fonts/TTNormsPro-ExtraBoldItalic.woff2) format('woff2'),
+        url(.././fonts/TTNormsPro-ExtraBoldItalic.woff) format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -159,8 +169,8 @@ url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url(/fonts/TTNormsPro-ExtraLightItalic.woff2) format('woff2'),
-        url(/fonts/TTNormsPro-ExtraLightItalic.woff) format('woff');
+    src: url(.././fonts/TTNormsPro-ExtraLightItalic.woff2) format('woff2'),
+        url(.././fonts/TTNormsPro-ExtraLightItalic.woff) format('woff');
     font-weight: 200;
     font-style: italic;
     font-display: swap;
@@ -168,8 +178,8 @@ url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
 
 @font-face {
     font-family: 'TT Norms Pro ExtraBlack';
-    src: url(/fonts/TTNormsPro-ExtraBlack.woff2) format('woff2'),
-        url(/fonts/TTNormsPro-ExtraBlack.woff) format('woff');
+    src: url(.././fonts/TTNormsPro-ExtraBlack.woff2) format('woff2'),
+        url(.././fonts/TTNormsPro-ExtraBlack.woff) format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -177,8 +187,8 @@ url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
 
 @font-face {
     font-family: 'TT Norms Pro ExtraBlack';
-    src: url(/fonts/TTNormsPro-ExtraBlackItalic.woff2) format('woff2'),
-        url(/fonts/TTNormsPro-ExtraBlackItalic.woff) format('woff');
+    src: url(.././fonts/TTNormsPro-ExtraBlackItalic.woff2) format('woff2'),
+        url(.././fonts/TTNormsPro-ExtraBlackItalic.woff) format('woff');
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -186,8 +196,8 @@ url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url(/fonts/TTNormsPro-ExtraBold.woff2) format('woff2'),
-        url(/fonts/TTNormsPro-ExtraBold.woff) format('woff');
+    src: url(.././fonts/TTNormsPro-ExtraBold.woff2) format('woff2'),
+        url(.././fonts/TTNormsPro-ExtraBold.woff) format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -195,8 +205,8 @@ url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url(/fonts/TTNormsPro-ExtraLight.woff2) format('woff2'),
-        url(/fonts/TTNormsPro-ExtraLight.woff) format('woff');
+    src: url(.././fonts/TTNormsPro-ExtraLight.woff2) format('woff2'),
+        url(.././fonts/TTNormsPro-ExtraLight.woff) format('woff');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -204,8 +214,8 @@ url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url(/fonts/TTNormsPro-LightItalic.woff2) format('woff2'),
-        url(/fonts/TTNormsPro-LightItalic.woff) format('woff');
+    src: url(.././fonts/TTNormsPro-LightItalic.woff2) format('woff2'),
+        url(.././fonts/TTNormsPro-LightItalic.woff) format('woff');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -213,8 +223,8 @@ url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url(/fonts/TTNormsPro-Italic.woff2) format('woff2'),
-        url(/fonts/TTNormsPro-Italic.woff) format('woff');
+    src: url(.././fonts/TTNormsPro-Italic.woff2) format('woff2'),
+        url(.././fonts/TTNormsPro-Italic.woff) format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -222,8 +232,8 @@ url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url(/fonts/TTNormsPro-Medium.woff2) format('woff2'),
-        url(/fonts/TTNormsPro-Medium.woff) format('woff');
+    src: url(.././fonts/TTNormsPro-Medium.woff2) format('woff2'),
+        url(.././fonts/TTNormsPro-Medium.woff) format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -231,8 +241,8 @@ url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url(/fonts/TTNormsPro-MediumItalic.woff2) format('woff2'),
-        url(/fonts/TTNormsPro-MediumItalic.woff) format('woff');
+    src: url(.././fonts/TTNormsPro-MediumItalic.woff2) format('woff2'),
+        url(.././fonts/TTNormsPro-MediumItalic.woff) format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -240,8 +250,8 @@ url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url(/fonts/TTNormsPro-Light.woff2) format('woff2'),
-        url(/fonts/TTNormsPro-Light.woff) format('woff');
+    src: url(.././fonts/TTNormsPro-Light.woff2) format('woff2'),
+        url(.././fonts/TTNormsPro-Light.woff) format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -249,8 +259,8 @@ url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url(/fonts/TTNormsPro-Thin.woff2) format('woff2'),
-        url(/fonts/TTNormsPro-Thin.woff) format('woff');
+    src: url(.././fonts/TTNormsPro-Thin.woff2) format('woff2'),
+        url(.././fonts/TTNormsPro-Thin.woff) format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -258,8 +268,8 @@ url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url(/fonts/TTNormsPro-ThinItalic.woff2) format('woff2'),
-        url(/fonts/TTNormsPro-ThinItalic.woff) format('woff');
+    src: url(.././fonts/TTNormsPro-ThinItalic.woff2) format('woff2'),
+        url(.././fonts/TTNormsPro-ThinItalic.woff) format('woff');
     font-weight: 100;
     font-style: italic;
     font-display: swap;
@@ -267,8 +277,8 @@ url("/icons/icon.797db058abff70d777b6.svg#icon") format("svg");
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url(/fonts/TTNormsPro-Regular.woff2) format('woff2'),
-        url(/fonts/TTNormsPro-Regular.woff) format('woff');
+    src: url(.././fonts/TTNormsPro-Regular.woff2) format('woff2'),
+        url(.././fonts/TTNormsPro-Regular.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -12369,7 +12379,7 @@ a:hover {
 }
 
 /**
- * Swiper 8.0.6
+ * Swiper 8.0.7
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -12377,7 +12387,7 @@ a:hover {
  *
  * Released under the MIT License
  *
- * Released on: February 14, 2022
+ * Released on: March 4, 2022
  */
 @font-face {
   font-family: swiper-icons;

@@ -1,0 +1,41 @@
+<% 
+// Params
+var args = typeof args !== 'undefined' ? args : '';
+let cssClass = args.cssClass ?? '';
+%>
+
+<div class="_list-map-default <%= cssClass %>">
+    <div class="map-inner">
+        <div class="top-controls">
+            <div class="left">
+                <%- 
+                include( '../button-icon/component.ejs', { args: {
+                    icon: 'chevron-left-2',
+                    cssClass: 'back',
+                } } );
+                %>
+            </div>
+            <div class="right">
+                <%- 
+                include( '../button-icon/component.ejs', { args: {
+                    icon: 'remove',
+                    cssClass: 'zoom-out',
+                } } );
+                %>
+                <%- 
+                include( '../button-icon/component.ejs', { args: {
+                    icon: 'add',
+                    cssClass: 'zoom-in',
+                } } );
+                %>
+            </div>
+        </div>
+
+        <img src="../../assets/img/map.png" alt="Melnick map" class="map">
+        <div class="bottom-controls">
+            <%- 
+            include( '../list-map-contact/component.ejs' );
+            %>
+        </div>
+    </div>
+</div>
