@@ -1,12 +1,17 @@
 export const entryRealEstateList = () => {
     const ref = document.querySelectorAll("._entry-real-estate-list");
 
-    if (!ref.length) return;
+    const handleHover = (event) => {
+        let entry = event.currentTarget;
 
-    // For every component on the page...
-    for (let c = 0; c < ref.length; c++) {
-        const component = ref[c];
-    }
+        entry.classList.toggle("active");
+    };
+
+    ref.forEach((component) => {
+        ["mouseenter", "mouseleave"].forEach(function (e) {
+            component.addEventListener(e, handleHover);
+        });
+    });
 };
 
-//entryRealEstateList();
+entryRealEstateList();
