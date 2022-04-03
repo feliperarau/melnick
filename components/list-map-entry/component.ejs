@@ -1,0 +1,35 @@
+<%
+var realEstate = typeof realEstate !== 'undefined' ? realEstate : {};
+%>
+
+<div class="_list-map-entry">
+    <% if ( realEstate.thumbnail ) { %>
+    <div class="thumbnail thumb-1">
+        <a href="#"><img src="../../assets/img/<%= realEstate.thumbnail %>" /></a>
+    </div>
+    <% } %>
+    <div class="inner bg-white">
+        <div class="top">
+            <a href="#">
+                <strong class="category text-10"><%= realEstate.category %></strong>
+                <h2 class="title"><%= realEstate.title %></h2>
+                <strong class="location text-10"><%= realEstate.location %></strong>
+                <div class="description"><%= realEstate.description %></div>
+            </a>
+        </div>
+
+        <div class="middle">
+            <div class="features row align-items-center g-3">
+                <div class="feature-item col">
+                    <i class="icon icon-bed"></i> <span><%= realEstate.dorms %></span>
+                </div>
+                <div class="feature-item col">
+                    <i class="icon icon-straighten"></i> <span><%= realEstate.size %></span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <%- include( '../button-default/component.ejs', { args: { label: 'Conheça' } } ); %>
+        </div>
+    </div>
+</div>

@@ -1,4 +1,7 @@
 @import "../button-icon/";
+@import "../list-map-button-contact/";
+@import "../list-map-button-pin/";
+@import "../list-map-entry/";
 
 ._list-map-default {
     display: flex;
@@ -34,5 +37,58 @@
             display: flex;
             gap: 10px;
         }
+    }
+
+    .bottom-controls {
+        position: absolute;
+        right: 0;
+        bottom: 52px;
+        right: 42px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    ._list-map-button-pin {
+        position: absolute;
+
+        &.pin-1 {
+            top: 29px;
+            right: 232px;
+        }
+        &.pin-2 {
+            top: 135px;
+            left: 82px;
+        }
+        &.pin-3 {
+            top: 262px;
+            left: 160px;
+        }
+        &.pin-4 {
+            top: 253px;
+            right: 63px;
+        }
+        &.pin-5 {
+            top: 322px;
+            right: 264px;
+        }
+        &.pin-6 {
+            top: 335px;
+            left: 40px;
+        }
+        &.pin-7 {
+            top: 440px;
+            left: 190px;
+        }
+        &.pin-8 {
+            top: 565px;
+            right: 146px;
+        }
+    }
+
+    ._list-map-entry {
+        position: absolute;
+        top: 138px;
+        right: 144px;
+        width: 293px;
+        min-height: 311px;
     }
 }

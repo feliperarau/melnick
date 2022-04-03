@@ -1,0 +1,16 @@
+._list-map-button-contact {
+    a {
+        text-decoration: none;
+    }
+    .inner {
+        display: inline-flex;
+        background-color: $amarelo-melnick;
+        color: $azul-melnick;
+        padding: 15px 15px 14px 14px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+        border-radius: 90px 90px 90px 10px;
+    }
+    .icon {
+        font-size: 24px;
+    }
+}

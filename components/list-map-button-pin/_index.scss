@@ -1,0 +1,26 @@
+._list-map-button-pin {
+    .inner {
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $azul-melnick;
+        color: $amarelo-melnick;
+        border-radius: 50%;
+        transition: 200ms all;
+    }
+    .icon {
+        font-size: 18px;
+    }
+
+    &.active,
+    &:hover {
+        .inner {
+            background-color: $amarelo-melnick;
+            color: $azul-melnick;
+            transform: scale(1.5);
+        }
+    }
+}

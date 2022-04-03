@@ -1,4 +1,7 @@
 <% 
+// Data
+const realEstates = JSON.parse(include('../../data/real-estates/properties.json') );
+
 // Params
 var args = typeof args !== 'undefined' ? args : '';
 let cssClass = args.cssClass ?? '';
@@ -30,12 +33,18 @@ let cssClass = args.cssClass ?? '';
                 %>
             </div>
         </div>
+        <div class="map-background">
+            <% for(let i = 0; i < 8; i++) { %>
+            <% let active = i === 2 ? 'active' : ''; %>
+            <%- include( '../list-map-button-pin/component.ejs', { args: { cssClass: `pin-${i + 1} ${active}` } } ); %>
+            <% } %>
 
-        <img src="../../assets/img/map.png" alt="Melnick map" class="map">
+            <%- include( '../list-map-entry/component.ejs', { realEstate: realEstates[2]} ); %>
+
+            <img src="../../assets/img/map.png" alt="Melnick map" class="map">
+        </div>
         <div class="bottom-controls">
-            <%- 
-            include( '../list-map-contact/component.ejs' );
-            %>
+            <%- include( '../list-map-button-contact/component.ejs' ); %>
         </div>
     </div>
 </div>
