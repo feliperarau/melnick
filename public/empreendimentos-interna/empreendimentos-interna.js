@@ -3249,12 +3249,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 var entryRealEstateList = function entryRealEstateList() {
   var ref = document.querySelectorAll("._entry-real-estate-list");
-  if (!ref.length) return; // For every component on the page...
 
-  for (var c = 0; c < ref.length; c++) {
-    var component = ref[c];
-  }
-}; //entryRealEstateList();
+  var handleHover = function handleHover(event) {
+    var entry = event.currentTarget;
+    entry.classList.toggle("active");
+  };
+
+  ref.forEach(function (component) {
+    ["mouseenter", "mouseleave"].forEach(function (e) {
+      component.addEventListener(e, handleHover);
+    });
+  });
+};
+entryRealEstateList();
 
 /***/ }),
 

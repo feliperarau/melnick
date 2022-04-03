@@ -12287,7 +12287,7 @@ a:hover {
 ._entry-real-estate-list .right ._button {
   opacity: 0;
 }
-._entry-real-estate-list:hover .right ._button {
+._entry-real-estate-list.active .right ._button {
   opacity: 1;
 }
 
