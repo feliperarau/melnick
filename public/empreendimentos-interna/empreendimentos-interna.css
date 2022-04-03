@@ -4,11 +4,11 @@
 @font-face {
 	font-family: "icon";
 	font-display: block;
-	src: url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.7be2585c153608b8c6ca.eot?#iefix") format("embedded-opentype"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.7be2585c153608b8c6ca.woff") format("woff"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.7be2585c153608b8c6ca.woff2") format("woff2"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.7be2585c153608b8c6ca.ttf") format("truetype"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.7be2585c153608b8c6ca.svg#icon") format("svg");
+	src: url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.6d61308d0eece8311030.eot?#iefix") format("embedded-opentype"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.6d61308d0eece8311030.woff") format("woff"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.6d61308d0eece8311030.woff2") format("woff2"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.6d61308d0eece8311030.ttf") format("truetype"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.6d61308d0eece8311030.svg#icon") format("svg");
 }
 
 .icon {
