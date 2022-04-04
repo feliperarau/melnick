@@ -8,10 +8,14 @@
 @import "../../components/real-estate-gallery/";
 @import "../../components/entry-real-estate-list/";
 @import "../../components/real-estate-meta-actions/";
-@import "../../components/real-estate-action-carousel/";
 @import "../../components/page-title/";
 @import "../../components/real-estate-props/";
 @import "../../components/whatsapp-balloon/";
+@import "../../components/real-estate-action-carousel/";
+@import "../../components/real-estate-form/";
+@import "../../components/real-estate-description/";
+@import "../../components/real-estate-features/";
+@import "../../components/real-estate-book/";
 
 body {
     background: #f6f6f6;
@@ -31,6 +35,39 @@ body {
     }
     ._real-estate-meta-actions {
         margin-bottom: 30px;
+    }
+    .meta {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 50px;
+
+        .left {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .right {
+            flex-basis: 435px;
+            position: relative;
+
+            ._real-estate-form {
+                position: absolute;
+            }
+        }
+    }
+    .description {
+        & + .features {
+            margin-top: -45px;
+            position: relative;
+        }
+    }
+    .features {
+        & + .book {
+            width: 758px;
+            margin-left: 23px;
+            position: relative;
+            top: -62px;
+        }
     }
 }
 .site-wrapper {

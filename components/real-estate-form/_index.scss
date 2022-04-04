@@ -1,0 +1,120 @@
+@import "../button-default/";
+
+._real-estate-form {
+    color: $sec-cinza-claro;
+
+    .form-features {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        margin-bottom: -20px;
+
+        .feature {
+            background-color: $azul-melnick;
+            border-radius: 50px;
+            color: #fff;
+            font-weight: 500;
+            padding: 4px 20px;
+            cursor: pointer;
+
+            &.highlight {
+                background-color: $amarelo-melnick;
+            }
+        }
+    }
+    hr {
+        max-width: 168px;
+        opacity: 1;
+        background: #c4c4c4;
+        margin: 20px auto;
+    }
+    .form-inner {
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 40px 45px;
+        box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.1);
+    }
+    .top {
+        text-align: center;
+    }
+    .title-1 {
+        font-size: 18px;
+    }
+    .title-2 {
+        text-align: center;
+        font-size: 18px;
+    }
+    .price-label {
+        font-size: 12px;
+    }
+    .price {
+        font-size: 24px;
+        font-weight: 400;
+        color: $azul-melnick;
+        margin: 8px 0px 5px 0px;
+    }
+    .size {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+            font-size: 24px;
+            color: $azul-melnick;
+            margin-right: 10px;
+        }
+    }
+    .cta-text {
+        text-align: center;
+    }
+    form {
+        input::placeholder {
+            color: $azul-melnick;
+        }
+    }
+    .form-control {
+        height: 40px;
+        font-size: 13px;
+        line-height: 13px;
+        font-weight: 500;
+        border-radius: 4px;
+        border-color: $sec-cinzinha;
+    }
+    .form-submit {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        ._button {
+            flex-basis: 164px;
+            justify-content: center;
+        }
+    }
+    .form-check {
+        margin-bottom: 0;
+
+        & + .form-check {
+            margin-top: 10px;
+        }
+    }
+    .form-check-label {
+        color: $sec-cinzinha;
+        font-size: 12px;
+        line-height: 14.4px;
+    }
+    .form-check-input {
+        border-radius: 5px;
+        border-color: $sec-cinzinha;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 8px;
+        margin-bottom: 20px;
+
+        .name {
+            grid-column: span 2;
+        }
+    }
+}

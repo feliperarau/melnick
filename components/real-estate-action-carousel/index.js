@@ -6,12 +6,19 @@ export const realEstateActionCarousel = () => {
 
     ref.forEach((component) => {
         const slider = component.querySelector(".swiper");
+        const navigationPrev = slider.querySelector(".swiper-prev");
+        const navigationNext = slider.querySelector(".swiper-next");
 
         var swiper = new Swiper(slider, {
-            spaceBetween: 10,
-            slidesPerView: 7,
+            spaceBetween: 20,
+            slidesPerView: "auto",
             freeMode: true,
             grabCursor: true,
+
+            navigation: {
+                nextEl: navigationNext,
+                prevEl: navigationPrev,
+            },
 
             /*breakpoints: {
                 // when window width is >= 320px

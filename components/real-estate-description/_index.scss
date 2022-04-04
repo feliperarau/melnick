@@ -1,0 +1,36 @@
+._real-estate-description {
+    padding-right: 195px;
+
+    .description-inner {
+        display: flex;
+        gap: 100px;
+    }
+    .text {
+        flex: 1;
+        padding: 70px 0;
+    }
+    .image {
+        height: 630px;
+        width: 630px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    }
+    .description-title {
+        font-size: 36px;
+        line-height: 43.2px;
+        margin-bottom: 25px;
+    }
+    .description-text {
+        color: $sec-cinza-claro;
+        line-height: 16.8px;
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+<% 
+// Params
+var args = typeof args !== 'undefined' ? args : '';
+var cssClass = args.cssClass ?? '';
+
+%>
+
+<div class="_real-estate-form <%= cssClass %>">
+    <div class="form-features">
+        <span class="feature">Em obras</span>
+        <span class="feature highlight">70% vendido</span>
+    </div>
+    <div class="form-inner">
+        <div class="top">
+            <h2 class="title-1">Apartamentos</h2>
+
+            <hr>
+
+            <div class="specifications">
+                <span class="price-label">A partir de</span>
+                <div class="price">R$ 690.000</div>
+                <span class="size"><i class="icon icon-straighten"></i> 176 e 216 m²</span>
+            </div>
+
+            <hr>
+        </div>
+        <div class="bottom">
+            <h3 class="title-2">Gostou deste empreendimento?</h3>
+            <p class="cta-text">Informe seus dados abaixo para entrarmos em contato.</p>
+
+            <form action="" class="interested">
+                <div class="grid">
+                    <input type="text" class="form-control name" name="first_name" aria-label="Nome" placeholder="Nome*" />
+                    <input type="email" class="form-control email" name="email" aria-label="E-mail" placeholder="E-mail*" />
+                    <input type="tel" class="form-control whatsapp" name="whatsapp" aria-label="Whatsapp" placeholder="Whatsapp*" />
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="real-estate-forms-news">
+                    <label class="form-check-label" for="real-estate-forms-news">
+                        Desejo receber informações sobre a Melnick e seus empreendimentos.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="real-estate-forms-terms">
+                    <label class="form-check-label" for="real-estate-forms-terms">
+                        Aceito a declaração de privacidade apresentados, autorizando o uso dos meus dados pessoais informados para o contato de um representante oficial da melnick, e afirmo ter mais de 18 anos. </label>
+                </div>
+
+                <div class="form-submit">
+                    <%- include( '../button-default/component.ejs', { args: { label: 'Enviar', tag: 'button'} } ); %>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

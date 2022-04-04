@@ -12,16 +12,31 @@ const realEstates = JSON.parse(include('../../data/real-estates/properties.json'
         </section>
 
         <section class="meta">
-            <%- include('../../components/real-estate-meta-actions/component.ejs') %>
+            <div class="left">
+                <%- include('../../components/real-estate-meta-actions/component.ejs') %>
 
-            <%- include('../../components/page-title/component.ejs', { args: { title: 'Nilo Square Residence Resort', description: 'Um lugar assim muda sua vida' } } ); -%>
+                <%- include('../../components/page-title/component.ejs', { args: { title: 'Nilo Square Residence Resort', description: 'Um lugar assim muda sua vida' } } ); -%>
 
-            <%- include('../../components/real-estate-props/component.ejs' ); -%>
+                <%- include('../../components/real-estate-props/component.ejs' ); -%>
 
-            <%- include('../../components/real-estate-action-carousel/component.ejs' ); -%>
-
+                <%- include('../../components/real-estate-action-carousel/component.ejs' ); -%>
+            </div>
+            <div class="right">
+                <%- include('../../components/real-estate-form/component.ejs' ); -%>
+            </div>
         </section>
 
+        <section class="description">
+            <%- include('../../components/real-estate-description/component.ejs' ); -%>
+        </section>
+
+        <section class="features">
+            <%- include('../../components/real-estate-features/component.ejs' ); -%>
+        </section>
+
+        <section class="book">
+            <%- include('../../components/real-estate-book/component.ejs' ); -%>
+        </section>
     </div>
 </main>
 

@@ -1,0 +1,16 @@
+<% 
+// Params
+var args = typeof args !== 'undefined' ? args : '';
+let cssClass = args.cssClass ?? '';
+%>
+
+<div class="_real-estate-book <%= cssClass %>">
+    <div class="inner">
+        <div class="book-left">
+            <i class="icon icon-file"></i>
+            <h3 class="book-title">Confira o Book<br>do empreendimento</h3>
+        </div>
+
+        <button class="download" type="button"><i class="icon icon-download"></i></button>
+    </div>
+</div>

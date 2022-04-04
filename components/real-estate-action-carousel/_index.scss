@@ -5,4 +5,32 @@
 @import "../real-estate-action/";
 
 ._real-estate-action-carousel {
+    .swiper-slide {
+        width: 97px;
+    }
+    .swiper-nav-container {
+        position: absolute;
+        right: 0;
+        top: 20px;
+        z-index: 20;
+
+        .icon {
+            font-size: 24px;
+        }
+    }
+    .swiper:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 170px;
+        background: linear-gradient(
+            270deg,
+            #f6f6f6 50%,
+            rgba(247, 247, 247, 0) 123.58%
+        );
+        z-index: 4;
+        pointer-events: none;
+    }
 }
