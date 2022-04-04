@@ -4,11 +4,11 @@
 @font-face {
 	font-family: "icon";
 	font-display: block;
-	src: url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.6d61308d0eece8311030.eot?#iefix") format("embedded-opentype"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.6d61308d0eece8311030.woff") format("woff"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.6d61308d0eece8311030.woff2") format("woff2"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.6d61308d0eece8311030.ttf") format("truetype"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.6d61308d0eece8311030.svg#icon") format("svg");
+	src: url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a25ffd200c0f20397ec8.eot?#iefix") format("embedded-opentype"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a25ffd200c0f20397ec8.woff") format("woff"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a25ffd200c0f20397ec8.woff2") format("woff2"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a25ffd200c0f20397ec8.ttf") format("truetype"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a25ffd200c0f20397ec8.svg#icon") format("svg");
 }
 
 .icon {
@@ -40,83 +40,134 @@ url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.6d61308d0eece8311030.s
 .icon-car:before {
 	content: "\f106";
 }
-.icon-chat-balloon:before {
+.icon-celebration:before {
 	content: "\f107";
 }
-.icon-chevron_down:before {
+.icon-chat-balloon:before {
 	content: "\f108";
 }
-.icon-chevron-left-2:before {
+.icon-chevron_down:before {
 	content: "\f109";
 }
-.icon-chevron-left:before {
+.icon-chevron-left-2:before {
 	content: "\f10a";
 }
-.icon-chevron-right:before {
+.icon-chevron-left:before {
 	content: "\f10b";
 }
-.icon-close:before {
+.icon-chevron-right:before {
 	content: "\f10c";
 }
-.icon-corporate-fare:before {
+.icon-close:before {
 	content: "\f10d";
 }
-.icon-download:before {
+.icon-compost:before {
 	content: "\f10e";
 }
-.icon-envelope:before {
+.icon-corporate-fare:before {
 	content: "\f10f";
 }
-.icon-external:before {
+.icon-download:before {
 	content: "\f110";
 }
-.icon-facebook:before {
+.icon-envelope:before {
 	content: "\f111";
 }
-.icon-holiday_village:before {
+.icon-external:before {
 	content: "\f112";
 }
-.icon-instagram:before {
+.icon-facebook:before {
 	content: "\f113";
 }
-.icon-linkedin:before {
+.icon-file:before {
 	content: "\f114";
 }
-.icon-menu_black_24dp:before {
+.icon-fitness-weight:before {
 	content: "\f115";
 }
-.icon-place_black:before {
+.icon-holiday_village:before {
 	content: "\f116";
 }
-.icon-place:before {
+.icon-hot-tub:before {
 	content: "\f117";
 }
-.icon-remove:before {
+.icon-instagram:before {
 	content: "\f118";
 }
-.icon-search:before {
+.icon-laptop:before {
 	content: "\f119";
 }
-.icon-share:before {
+.icon-linkedin:before {
 	content: "\f11a";
 }
-.icon-straighten:before {
+.icon-menu_black_24dp:before {
 	content: "\f11b";
 }
-.icon-telephone-2:before {
+.icon-person:before {
 	content: "\f11c";
 }
-.icon-telephone:before {
+.icon-pets:before {
 	content: "\f11d";
 }
-.icon-video-library:before {
+.icon-place_black:before {
 	content: "\f11e";
 }
-.icon-whatsapp:before {
+.icon-place:before {
 	content: "\f11f";
 }
-.icon-youtube:before {
+.icon-playground:before {
 	content: "\f120";
+}
+.icon-pool:before {
+	content: "\f121";
+}
+.icon-question-outline:before {
+	content: "\f122";
+}
+.icon-remove:before {
+	content: "\f123";
+}
+.icon-search:before {
+	content: "\f124";
+}
+.icon-share:before {
+	content: "\f125";
+}
+.icon-spa:before {
+	content: "\f126";
+}
+.icon-sports-esports:before {
+	content: "\f127";
+}
+.icon-sports-tennis:before {
+	content: "\f128";
+}
+.icon-straighten:before {
+	content: "\f129";
+}
+.icon-telephone-2:before {
+	content: "\f12a";
+}
+.icon-telephone:before {
+	content: "\f12b";
+}
+.icon-toys:before {
+	content: "\f12c";
+}
+.icon-video-library:before {
+	content: "\f12d";
+}
+.icon-water-drop:before {
+	content: "\f12e";
+}
+.icon-waves:before {
+	content: "\f12f";
+}
+.icon-whatsapp:before {
+	content: "\f130";
+}
+.icon-youtube:before {
+	content: "\f131";
 }
 
 /*!********************************************************************************************!*\

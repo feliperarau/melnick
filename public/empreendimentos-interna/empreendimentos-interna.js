@@ -3374,11 +3374,17 @@ var realEstateActionCarousel = function realEstateActionCarousel() {
   var ref = document.querySelectorAll("._real-estate-action-carousel");
   ref.forEach(function (component) {
     var slider = component.querySelector(".swiper");
+    var navigationPrev = slider.querySelector(".swiper-prev");
+    var navigationNext = slider.querySelector(".swiper-next");
     var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
-      spaceBetween: 10,
-      slidesPerView: 7,
+      spaceBetween: 20,
+      slidesPerView: "auto",
       freeMode: true,
-      grabCursor: true
+      grabCursor: true,
+      navigation: {
+        nextEl: navigationNext,
+        prevEl: navigationPrev
+      }
       /*breakpoints: {
           // when window width is >= 320px
           767: {
