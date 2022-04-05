@@ -1,0 +1,22 @@
+._button {
+    height: 28px;
+    padding: 0 12px;
+    border-radius: 8px;
+
+    .icon {
+        font-size: 18px;
+        margin-right: 0px;
+
+        & + span {
+            margin-left: 6px;
+        }
+    }
+
+    &.variation-outline {
+        border-color: $sec-cinzinha;
+
+        &:hover {
+            border-color: $azul-melnick;
+        }
+    }
+}

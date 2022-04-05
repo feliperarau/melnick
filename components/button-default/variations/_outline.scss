@@ -2,6 +2,10 @@
     background: none;
     color: $azul-melnick;
 
+    .icon {
+        color: $sec-cinzinha;
+    }
+
     &:hover {
         color: white;
         background-color: $azul-melnick;

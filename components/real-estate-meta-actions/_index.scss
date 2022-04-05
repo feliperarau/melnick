@@ -5,19 +5,5 @@
     flex-wrap: wrap;
     gap: 10px;
 
-    ._button {
-        height: 28px;
-        padding: 0 12px;
-        border-radius: 8px;
-
-        .icon {
-            font-size: 18px;
-            color: $amarelo-melnick;
-            margin-right: 0px;
-
-            & + span {
-                margin-left: 6px;
-            }
-        }
-    }
+    @import "./button";
 }

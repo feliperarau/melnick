@@ -1,0 +1,17 @@
+<% 
+// Data
+const realEstates = JSON.parse(include('../../data/real-estates/related.json') );
+
+// Params
+var args = typeof args !== 'undefined' ? args : '';
+let cssClass = args.cssClass ?? '';
+%>
+
+<div class="_real-estate-related <%= cssClass %>">
+    <h2 class="related-title title-display">CONHEÇA TAMBÉM ESSES EMPREENDIMENTOS</h2>
+    <div class="entries">
+        <% realEstates.forEach(function(realEstate) { %>
+        <%- include('../entry-real-estate/component.ejs', {realEstate}) -%>
+        <% }); %>
+    </div>
+</div>

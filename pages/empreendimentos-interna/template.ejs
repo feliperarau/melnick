@@ -37,9 +37,25 @@ const realEstates = JSON.parse(include('../../data/real-estates/properties.json'
         <section class="book">
             <%- include('../../components/real-estate-book/component.ejs' ); -%>
         </section>
+
+        <section class="plants">
+            <%- include('../../components/real-estate-plants/component.ejs' ); -%>
+        </section>
+
+        <section class="testimonies">
+            <%- include('../../components/real-estate-testimonies/component.ejs' ); -%>
+        </section>
+
+        <section class="map">
+            <%- include('../../components/real-estate-map/component.ejs' ); -%>
+        </section>
+
+        <section class="related">
+            <%- include('../../components/real-estate-related/component.ejs' ); -%>
+        </section>
     </div>
 </main>
 
 <%- include( '../../components/whatsapp-balloon/component.ejs' ); %>
 
-<%- //include('../../components/footer/component.ejs') %>
+<%- include('../../components/footer/component.ejs') %>

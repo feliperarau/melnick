@@ -16,12 +16,16 @@
 @import "../../components/real-estate-description/";
 @import "../../components/real-estate-features/";
 @import "../../components/real-estate-book/";
+@import "../../components/real-estate-plants/";
+@import "../../components/real-estate-testimonies/";
+@import "../../components/real-estate-map/";
+@import "../../components/real-estate-related/";
 
 body {
     background: #f6f6f6;
 }
 #page-empreendimentos-interna {
-    padding-bottom: 150px;
+    margin-top: 97px;
 
     ._page-title {
         margin-top: 10px;
@@ -69,7 +73,10 @@ body {
             top: -62px;
         }
     }
-}
-.site-wrapper {
-    margin-top: 97px;
+    .map {
+        margin-bottom: 80px;
+    }
+    .related {
+        margin-bottom: 60px;
+    }
 }

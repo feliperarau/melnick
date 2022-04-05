@@ -1,0 +1,72 @@
+._real-estate-map {
+    @import "../real-estate-meta-actions/button";
+
+    position: relative;
+    margin-left: -20px;
+    margin-right: -20px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 193px;
+        pointer-events: none;
+        background: linear-gradient(360deg, #090909 0%, rgba(9, 9, 9, 0) 100%);
+        mix-blend-mode: normal;
+        opacity: 0.25;
+        transform: rotate(-180deg);
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .map-controls {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        left: 108px;
+        right: 108px;
+        top: 45px;
+        height: 120px;
+        background: #fff;
+        padding: 30px 20px;
+        border-radius: 4px;
+        box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.1);
+
+        .left {
+            padding-left: 8px;
+
+            .place {
+                text-transform: uppercase;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 120%;
+                letter-spacing: 0.05em;
+            }
+            .place-name {
+                color: $sec-cinza-claro;
+                font-size: 16px;
+            }
+        }
+        .right {
+            .label {
+                display: block;
+                margin-bottom: 10px;
+                font-size: 16px;
+                line-height: 20.48px;
+                color: $azul-melnick;
+            }
+        }
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    }
+}

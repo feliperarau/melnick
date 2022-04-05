@@ -1,0 +1,74 @@
+._real-estate-plants {
+    @import "../real-estate-meta-actions/button";
+
+    .features-title {
+        font-size: 24px;
+    }
+
+    .top-section {
+        display: flex;
+        justify-content: space-between;
+        max-width: 868px;
+        padding-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    .bottom-section {
+        background-color: #fff;
+        margin-left: -20px;
+        margin-right: -40px;
+
+        .bottom-inner {
+            max-width: 888px;
+        }
+    }
+    .swiper-slide {
+        position: relative;
+
+        .slide-label {
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            font-size: 12px;
+            font-weight: 500;
+            color: $azul-melnick;
+        }
+    }
+    .fullscreen {
+        position: absolute;
+        z-index: 10;
+        top: 30px;
+        right: 0;
+        width: 32px;
+        height: 32px;
+
+        .icon {
+            font-size: 24px;
+        }
+    }
+    .swiper-nav-container {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        z-index: 20;
+        pointer-events: none;
+
+        .next-slide {
+            pointer-events: all;
+            background: none;
+            border: none;
+            color: $azul-melnick;
+        }
+        .icon {
+            font-size: 28px;
+        }
+    }
+
+    .actions {
+        display: flex;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,52 @@
+._real-estate-testimonies {
+    margin-left: -20px;
+    margin-right: -20px;
+    background-color: $azul-melnick;
+    color: #fff;
+    padding: 80px 40px 90px;
+
+    .inner {
+        max-width: 868px;
+    }
+
+    .title {
+        color: #fff;
+        font-size: 24px;
+        line-height: 120%;
+        margin-bottom: 42px;
+    }
+    .quotes {
+        display: flex;
+        gap: 25px;
+    }
+    .quote {
+        .circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $amarelo-melnick;
+            margin-bottom: 10px;
+        }
+        .quote-title {
+            color: #fff;
+            font-size: 18px;
+            line-height: 21.6px;
+            margin-bottom: 11px;
+        }
+        .quote-body {
+            color: $sec-cinzinha;
+            font-size: 16px;
+            line-height: 20.48px;
+            font-style: italic;
+            position: relative;
+            padding-left: 18px;
+
+            .icon {
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-size: 11px;
+            }
+        }
+    }
+}
