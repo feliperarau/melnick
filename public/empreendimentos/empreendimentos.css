@@ -4,11 +4,11 @@
 @font-face {
 	font-family: "icon";
 	font-display: block;
-	src: url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a25ffd200c0f20397ec8.eot?#iefix") format("embedded-opentype"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a25ffd200c0f20397ec8.woff") format("woff"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a25ffd200c0f20397ec8.woff2") format("woff2"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a25ffd200c0f20397ec8.ttf") format("truetype"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a25ffd200c0f20397ec8.svg#icon") format("svg");
+	src: url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1b6f9053083260ff9745.eot?#iefix") format("embedded-opentype"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1b6f9053083260ff9745.woff") format("woff"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1b6f9053083260ff9745.woff2") format("woff2"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1b6f9053083260ff9745.ttf") format("truetype"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1b6f9053083260ff9745.svg#icon") format("svg");
 }
 
 .icon {
@@ -31,143 +31,173 @@ url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a25ffd200c0f20397ec8.s
 .icon-arrow_down:before {
 	content: "\f103";
 }
-.icon-bed:before {
+.icon-band-aid:before {
 	content: "\f104";
 }
-.icon-camera:before {
+.icon-bank:before {
 	content: "\f105";
 }
-.icon-car:before {
+.icon-bed:before {
 	content: "\f106";
 }
-.icon-celebration:before {
+.icon-camera:before {
 	content: "\f107";
 }
-.icon-chat-balloon:before {
+.icon-car:before {
 	content: "\f108";
 }
-.icon-chevron_down:before {
+.icon-celebration:before {
 	content: "\f109";
 }
-.icon-chevron-left-2:before {
+.icon-chat-balloon:before {
 	content: "\f10a";
 }
-.icon-chevron-left:before {
+.icon-chevron_down:before {
 	content: "\f10b";
 }
-.icon-chevron-right:before {
+.icon-chevron-left-2:before {
 	content: "\f10c";
 }
-.icon-close:before {
+.icon-chevron-left:before {
 	content: "\f10d";
 }
-.icon-compost:before {
+.icon-chevron-right-2:before {
 	content: "\f10e";
 }
-.icon-corporate-fare:before {
+.icon-chevron-right:before {
 	content: "\f10f";
 }
-.icon-download:before {
+.icon-close:before {
 	content: "\f110";
 }
-.icon-envelope:before {
+.icon-compost:before {
 	content: "\f111";
 }
-.icon-external:before {
+.icon-corporate-fare:before {
 	content: "\f112";
 }
-.icon-facebook:before {
+.icon-download:before {
 	content: "\f113";
 }
-.icon-file:before {
+.icon-envelope:before {
 	content: "\f114";
 }
-.icon-fitness-weight:before {
+.icon-external:before {
 	content: "\f115";
 }
-.icon-holiday_village:before {
+.icon-facebook:before {
 	content: "\f116";
 }
-.icon-hot-tub:before {
+.icon-file:before {
 	content: "\f117";
 }
-.icon-instagram:before {
+.icon-fitness-weight:before {
 	content: "\f118";
 }
-.icon-laptop:before {
+.icon-fullscreen:before {
 	content: "\f119";
 }
-.icon-linkedin:before {
+.icon-grocery-cart:before {
 	content: "\f11a";
 }
-.icon-menu_black_24dp:before {
+.icon-holiday_village:before {
 	content: "\f11b";
 }
-.icon-person:before {
+.icon-hot-tub:before {
 	content: "\f11c";
 }
-.icon-pets:before {
+.icon-instagram:before {
 	content: "\f11d";
 }
-.icon-place_black:before {
+.icon-laptop:before {
 	content: "\f11e";
 }
-.icon-place:before {
+.icon-linkedin:before {
 	content: "\f11f";
 }
-.icon-playground:before {
+.icon-medication:before {
 	content: "\f120";
 }
-.icon-pool:before {
+.icon-menu_black_24dp:before {
 	content: "\f121";
 }
-.icon-question-outline:before {
+.icon-open-quotes:before {
 	content: "\f122";
 }
-.icon-remove:before {
+.icon-person:before {
 	content: "\f123";
 }
-.icon-search:before {
+.icon-pets:before {
 	content: "\f124";
 }
-.icon-share:before {
+.icon-place_black:before {
 	content: "\f125";
 }
-.icon-spa:before {
+.icon-place:before {
 	content: "\f126";
 }
-.icon-sports-esports:before {
+.icon-plant:before {
 	content: "\f127";
 }
-.icon-sports-tennis:before {
+.icon-playground:before {
 	content: "\f128";
 }
-.icon-straighten:before {
+.icon-pool:before {
 	content: "\f129";
 }
-.icon-telephone-2:before {
+.icon-question-outline:before {
 	content: "\f12a";
 }
-.icon-telephone:before {
+.icon-remove:before {
 	content: "\f12b";
 }
-.icon-toys:before {
+.icon-school:before {
 	content: "\f12c";
 }
-.icon-video-library:before {
+.icon-search:before {
 	content: "\f12d";
 }
-.icon-water-drop:before {
+.icon-share:before {
 	content: "\f12e";
 }
-.icon-waves:before {
+.icon-spa:before {
 	content: "\f12f";
 }
-.icon-whatsapp:before {
+.icon-sports-esports:before {
 	content: "\f130";
 }
-.icon-youtube:before {
+.icon-sports-tennis:before {
 	content: "\f131";
+}
+.icon-store:before {
+	content: "\f132";
+}
+.icon-straighten:before {
+	content: "\f133";
+}
+.icon-telephone-2:before {
+	content: "\f134";
+}
+.icon-telephone:before {
+	content: "\f135";
+}
+.icon-toys:before {
+	content: "\f136";
+}
+.icon-video-library:before {
+	content: "\f137";
+}
+.icon-water-drop:before {
+	content: "\f138";
+}
+.icon-waves:before {
+	content: "\f139";
+}
+.icon-whatsapp:before {
+	content: "\f13a";
+}
+.icon-youtube:before {
+	content: "\f13b";
 }
 
 /*!********************************************************************************************!*\
@@ -12145,6 +12175,7 @@ a:hover {
 }
 ._button-default._button .icon {
   margin-right: 10px;
+  color: #f8a63e;
 }
 ._button-default.variation-light {
   background: white;
@@ -12157,6 +12188,9 @@ a:hover {
 ._button-default.variation-outline {
   background: none;
   color: #002541;
+}
+._button-default.variation-outline .icon {
+  color: #a8a8a8;
 }
 ._button-default.variation-outline:hover {
   color: white;
@@ -12200,6 +12234,7 @@ a:hover {
 }
 ._button-default._button .icon {
   margin-right: 10px;
+  color: #f8a63e;
 }
 ._button-default.variation-light {
   background: white;
@@ -12212,6 +12247,9 @@ a:hover {
 ._button-default.variation-outline {
   background: none;
   color: #002541;
+}
+._button-default.variation-outline .icon {
+  color: #a8a8a8;
 }
 ._button-default.variation-outline:hover {
   color: white;
@@ -12338,6 +12376,7 @@ a:hover {
 }
 ._button-default._button .icon {
   margin-right: 10px;
+  color: #f8a63e;
 }
 ._button-default.variation-light {
   background: white;
@@ -12350,6 +12389,9 @@ a:hover {
 ._button-default.variation-outline {
   background: none;
   color: #002541;
+}
+._button-default.variation-outline .icon {
+  color: #a8a8a8;
 }
 ._button-default.variation-outline:hover {
   color: white;
@@ -12602,6 +12644,7 @@ a:hover {
 }
 ._button-default._button .icon {
   margin-right: 10px;
+  color: #f8a63e;
 }
 ._button-default.variation-light {
   background: white;
@@ -12614,6 +12657,9 @@ a:hover {
 ._button-default.variation-outline {
   background: none;
   color: #002541;
+}
+._button-default.variation-outline .icon {
+  color: #a8a8a8;
 }
 ._button-default.variation-outline:hover {
   color: white;
