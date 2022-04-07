@@ -21513,18 +21513,18 @@ var __webpack_exports__ = {};
 (() => {
 "use strict";
 var __webpack_exports__ = {};
-/*!**************************************************!*\
-  !*** ./pages/empreendimentos-interna/scripts.js ***!
-  \**************************************************/
+/*!********************************************************!*\
+  !*** ./pages/empreendimentos-interna-modal/scripts.js ***!
+  \********************************************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "empreendimentosInterna": () => (/* binding */ empreendimentosInterna)
+/* harmony export */   "empreendimentosInternaModal": () => (/* binding */ empreendimentosInternaModal)
 /* harmony export */ });
 /* harmony import */ var _assets_js_main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/js/main */ "./assets/js/main.js");
 /* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/header */ "./components/header/index.js");
 /* harmony import */ var _components_real_estate_gallery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/real-estate-gallery */ "./components/real-estate-gallery/index.js");
-/* harmony import */ var _components_real_estate_meta_actions___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/real-estate-meta-actions/ */ "./components/real-estate-meta-actions/index.js");
-/* harmony import */ var _components_real_estate_action_carousel___WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/real-estate-action-carousel/ */ "./components/real-estate-action-carousel/index.js");
+/* harmony import */ var _components_real_estate_meta_actions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/real-estate-meta-actions */ "./components/real-estate-meta-actions/index.js");
+/* harmony import */ var _components_real_estate_action_carousel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/real-estate-action-carousel */ "./components/real-estate-action-carousel/index.js");
 /* harmony import */ var _components_entry_real_estate_list__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/entry-real-estate-list */ "./components/entry-real-estate-list/index.js");
 /* harmony import */ var _components_real_estate_plants__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/real-estate-plants */ "./components/real-estate-plants/index.js");
 /* harmony import */ var _components_real_estate_modal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/real-estate-modal */ "./components/real-estate-modal/index.js");
@@ -21538,17 +21538,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var empreendimentosInterna = function empreendimentosInterna() {//console.log("");
+var empreendimentosInternaModal = function empreendimentosInternaModal() {//console.log("");
 };
-empreendimentosInterna();
+empreendimentosInternaModal();
 })();
 
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
-/*!***************************************************!*\
-  !*** ./pages/empreendimentos-interna/styles.scss ***!
-  \***************************************************/
+/*!*********************************************************!*\
+  !*** ./pages/empreendimentos-interna-modal/styles.scss ***!
+  \*********************************************************/
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 

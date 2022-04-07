@@ -366,9 +366,9 @@ url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1b6f9053083260ff9745.s
 }
 
 
-/*!************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./pages/empreendimentos-interna/styles.scss ***!
-  \************************************************************************************************************************************/
+/*!******************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./pages/empreendimentos-interna-modal/styles.scss ***!
+  \******************************************************************************************************************************************/
 @charset "UTF-8";
 .fade-toggle {
   opacity: 1;
@@ -14197,51 +14197,51 @@ body {
   background: #f6f6f6;
 }
 
-#page-empreendimentos-interna {
+#page-empreendimentos-interna-modal {
   margin-top: 97px;
 }
-#page-empreendimentos-interna ._page-title {
+#page-empreendimentos-interna-modal ._page-title {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-#page-empreendimentos-interna .page-inner {
+#page-empreendimentos-interna-modal .page-inner {
   margin-top: 20px;
 }
-#page-empreendimentos-interna ._real-estate-gallery {
+#page-empreendimentos-interna-modal ._real-estate-gallery {
   margin-bottom: 46px;
 }
-#page-empreendimentos-interna ._real-estate-meta-actions {
+#page-empreendimentos-interna-modal ._real-estate-meta-actions {
   margin-bottom: 30px;
 }
-#page-empreendimentos-interna .meta {
+#page-empreendimentos-interna-modal .meta {
   display: flex;
   gap: 40px;
   margin-bottom: 50px;
 }
-#page-empreendimentos-interna .meta .left {
+#page-empreendimentos-interna-modal .meta .left {
   flex: 1;
   min-width: 0;
 }
-#page-empreendimentos-interna .meta .right {
+#page-empreendimentos-interna-modal .meta .right {
   flex-basis: 435px;
   position: relative;
 }
-#page-empreendimentos-interna .meta .right ._real-estate-form {
+#page-empreendimentos-interna-modal .meta .right ._real-estate-form {
   position: absolute;
 }
-#page-empreendimentos-interna .description + .features {
+#page-empreendimentos-interna-modal .description + .features {
   margin-top: -45px;
   position: relative;
 }
-#page-empreendimentos-interna .features + .book {
+#page-empreendimentos-interna-modal .features + .book {
   width: 758px;
   margin-left: 23px;
   position: relative;
   top: -62px;
 }
-#page-empreendimentos-interna .map {
+#page-empreendimentos-interna-modal .map {
   margin-bottom: 80px;
 }
-#page-empreendimentos-interna .related {
+#page-empreendimentos-interna-modal .related {
   margin-bottom: 60px;
 }
