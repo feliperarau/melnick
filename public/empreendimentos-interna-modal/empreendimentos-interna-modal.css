@@ -4,11 +4,11 @@
 @font-face {
 	font-family: "icon";
 	font-display: block;
-	src: url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1b6f9053083260ff9745.eot?#iefix") format("embedded-opentype"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1b6f9053083260ff9745.woff") format("woff"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1b6f9053083260ff9745.woff2") format("woff2"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1b6f9053083260ff9745.ttf") format("truetype"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1b6f9053083260ff9745.svg#icon") format("svg");
+	src: url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.5b36314876f6807c26eb.eot?#iefix") format("embedded-opentype"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.5b36314876f6807c26eb.woff") format("woff"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.5b36314876f6807c26eb.woff2") format("woff2"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.5b36314876f6807c26eb.ttf") format("truetype"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.5b36314876f6807c26eb.svg#icon") format("svg");
 }
 
 .icon {
@@ -124,80 +124,86 @@ url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1b6f9053083260ff9745.s
 .icon-open-quotes:before {
 	content: "\f122";
 }
-.icon-person:before {
+.icon-pause:before {
 	content: "\f123";
 }
-.icon-pets:before {
+.icon-person:before {
 	content: "\f124";
 }
-.icon-place_black:before {
+.icon-pets:before {
 	content: "\f125";
 }
-.icon-place:before {
+.icon-place_black:before {
 	content: "\f126";
 }
-.icon-plant:before {
+.icon-place:before {
 	content: "\f127";
 }
-.icon-playground:before {
+.icon-plant:before {
 	content: "\f128";
 }
-.icon-pool:before {
+.icon-play:before {
 	content: "\f129";
 }
-.icon-question-outline:before {
+.icon-playground:before {
 	content: "\f12a";
 }
-.icon-remove:before {
+.icon-pool:before {
 	content: "\f12b";
 }
-.icon-school:before {
+.icon-question-outline:before {
 	content: "\f12c";
 }
-.icon-search:before {
+.icon-remove:before {
 	content: "\f12d";
 }
-.icon-share:before {
+.icon-school:before {
 	content: "\f12e";
 }
-.icon-spa:before {
+.icon-search:before {
 	content: "\f12f";
 }
-.icon-sports-esports:before {
+.icon-share:before {
 	content: "\f130";
 }
-.icon-sports-tennis:before {
+.icon-spa:before {
 	content: "\f131";
 }
-.icon-store:before {
+.icon-sports-esports:before {
 	content: "\f132";
 }
-.icon-straighten:before {
+.icon-sports-tennis:before {
 	content: "\f133";
 }
-.icon-telephone-2:before {
+.icon-store:before {
 	content: "\f134";
 }
-.icon-telephone:before {
+.icon-straighten:before {
 	content: "\f135";
 }
-.icon-toys:before {
+.icon-telephone-2:before {
 	content: "\f136";
 }
-.icon-video-library:before {
+.icon-telephone:before {
 	content: "\f137";
 }
-.icon-water-drop:before {
+.icon-toys:before {
 	content: "\f138";
 }
-.icon-waves:before {
+.icon-video-library:before {
 	content: "\f139";
 }
-.icon-whatsapp:before {
+.icon-water-drop:before {
 	content: "\f13a";
 }
-.icon-youtube:before {
+.icon-waves:before {
 	content: "\f13b";
+}
+.icon-whatsapp:before {
+	content: "\f13c";
+}
+.icon-youtube:before {
+	content: "\f13d";
 }
 
 /*!********************************************************************************************!*\
