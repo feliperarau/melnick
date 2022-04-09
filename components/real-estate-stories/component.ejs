@@ -1,0 +1,270 @@
+<% 
+// Params
+var args = typeof args !== 'undefined' ? args : '';
+let cssClass = args.cssClass ?? '';
+%>
+
+<div class="_real-estate-stories <%= cssClass %>">
+    <!-- Modal -->
+    <div class="modal fade in show d-block" id="real-estate-stories" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-inner">
+            <div class="swiper stories-carousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide carousel-slide">
+                        <div class="stories-slider portrait">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper">
+                                <div class="swiper-controls">
+                                    <button type="button" class="pause"><i class="icon icon-pause"></i><i class="icon icon-play"></i></button>
+                                    <button type="button" class="close"><i class="icon icon-close"></i></button>
+                                </div>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide book">
+                                        <span class="slide-caption">Book do empreendimento</span>
+                                        <img class="thumbnail" src="../../assets/img/book.jpeg" />
+
+                                        <div class="book-inner <%= cssClass %>">
+                                            <div class="inner">
+                                                <div class="book-left">
+                                                    <i class="icon icon-file"></i>
+                                                    <h3 class="book-title">Confira o Book<br>do empreendimento</h3>
+                                                </div>
+
+                                                <button class="download" type="button"><i class="icon icon-download"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <span class="slide-caption">Conheça o Bairro</span>
+                                        <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <span class="slide-caption">Conheça o Bairro</span>
+                                        <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <span class="slide-caption">Conheça o Bairro</span>
+                                        <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-nav-container">
+                                <%- 
+                                include( '../button-icon/component.ejs', { args: {
+                                    icon: 'chevron-left',
+                                    cssClass: 'swiper-nav swiper-prev'
+                                } } );
+                                %>
+                                <%- 
+                                include( '../button-icon/component.ejs', { args: {
+                                    icon: 'chevron-right',
+                                    cssClass: 'swiper-nav swiper-next'
+                                } } );
+                                %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide carousel-slide">
+                        <div class="carousel-item-inner">
+                            <div class="stories-slider portrait">
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper">
+                                    <div class="swiper-controls">
+                                        <button type="button" class="pause"><i class="icon icon-pause"></i><i class="icon icon-play"></i></button>
+                                        <button type="button" class="close"><i class="icon icon-close"></i></button>
+                                    </div>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide cronograma">
+                                            <span class="slide-caption">Andamento da obra</span>
+                                            <img class="thumbnail" src="../../assets/img/cronograma.jpeg" />
+
+                                            <div class="cronograma-badge">
+                                                <span class="label">Cronograma geral</span>
+                                                <span class="percentage">29%</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide book">
+                                            <span class="slide-caption">Book do empreendimento</span>
+                                            <img class="thumbnail" src="../../assets/img/book.jpeg" />
+
+                                            <div class="book-inner <%= cssClass %>">
+                                                <div class="inner">
+                                                    <div class="book-left">
+                                                        <i class="icon icon-file"></i>
+                                                        <h3 class="book-title">Confira o Book<br>do empreendimento</h3>
+                                                    </div>
+
+                                                    <button class="download" type="button"><i class="icon icon-download"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <span class="slide-caption">Conheça o Bairro</span>
+                                            <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <span class="slide-caption">Conheça o Bairro</span>
+                                            <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <span class="slide-caption">Conheça o Bairro</span>
+                                            <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-nav-container">
+                                    <%- 
+                                include( '../button-icon/component.ejs', { args: {
+                                    icon: 'chevron-left',
+                                    cssClass: 'swiper-nav swiper-prev'
+                                } } );
+                                %>
+                                    <%- 
+                                include( '../button-icon/component.ejs', { args: {
+                                    icon: 'chevron-right',
+                                    cssClass: 'swiper-nav swiper-next'
+                                } } );
+                                %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide carousel-slide">
+                        <div class="carousel-item-inner">
+                            <div class="stories-slider portrait">
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper">
+                                    <div class="swiper-controls">
+                                        <button type="button" class="pause"><i class="icon icon-pause"></i><i class="icon icon-play"></i></button>
+                                        <button type="button" class="close"><i class="icon icon-close"></i></button>
+                                    </div>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide cronograma">
+                                            <span class="slide-caption">Andamento da obra</span>
+                                            <img class="thumbnail" src="../../assets/img/cronograma.jpeg" />
+
+                                            <div class="cronograma-badge">
+                                                <span class="label">Cronograma geral</span>
+                                                <span class="percentage">29%</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide book">
+                                            <span class="slide-caption">Book do empreendimento</span>
+                                            <img class="thumbnail" src="../../assets/img/book.jpeg" />
+
+                                            <div class="book-inner <%= cssClass %>">
+                                                <div class="inner">
+                                                    <div class="book-left">
+                                                        <i class="icon icon-file"></i>
+                                                        <h3 class="book-title">Confira o Book<br>do empreendimento</h3>
+                                                    </div>
+
+                                                    <button class="download" type="button"><i class="icon icon-download"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <span class="slide-caption">Conheça o Bairro</span>
+                                            <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <span class="slide-caption">Conheça o Bairro</span>
+                                            <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <span class="slide-caption">Conheça o Bairro</span>
+                                            <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-nav-container">
+                                    <%- 
+                                include( '../button-icon/component.ejs', { args: {
+                                    icon: 'chevron-left',
+                                    cssClass: 'swiper-nav swiper-prev'
+                                } } );
+                                %>
+                                    <%- 
+                                include( '../button-icon/component.ejs', { args: {
+                                    icon: 'chevron-right',
+                                    cssClass: 'swiper-nav swiper-next'
+                                } } );
+                                %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide carousel-slide">
+                        <div class="carousel-item-inner">
+                            <div class="stories-slider portrait">
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper">
+                                    <div class="swiper-controls">
+                                        <button type="button" class="pause"><i class="icon icon-pause"></i><i class="icon icon-play"></i></button>
+                                        <button type="button" class="close"><i class="icon icon-close"></i></button>
+                                    </div>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide cronograma">
+                                            <span class="slide-caption">Andamento da obra</span>
+                                            <img class="thumbnail" src="../../assets/img/cronograma.jpeg" />
+
+                                            <div class="cronograma-badge">
+                                                <span class="label">Cronograma geral</span>
+                                                <span class="percentage">29%</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide book">
+                                            <span class="slide-caption">Book do empreendimento</span>
+                                            <img class="thumbnail" src="../../assets/img/book.jpeg" />
+
+                                            <div class="book-inner <%= cssClass %>">
+                                                <div class="inner">
+                                                    <div class="book-left">
+                                                        <i class="icon icon-file"></i>
+                                                        <h3 class="book-title">Confira o Book<br>do empreendimento</h3>
+                                                    </div>
+
+                                                    <button class="download" type="button"><i class="icon icon-download"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <span class="slide-caption">Conheça o Bairro</span>
+                                            <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <span class="slide-caption">Conheça o Bairro</span>
+                                            <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <span class="slide-caption">Conheça o Bairro</span>
+                                            <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-nav-container">
+                                    <%- 
+                                include( '../button-icon/component.ejs', { args: {
+                                    icon: 'chevron-left',
+                                    cssClass: 'swiper-nav swiper-prev'
+                                } } );
+                                %>
+                                    <%- 
+                                include( '../button-icon/component.ejs', { args: {
+                                    icon: 'chevron-right',
+                                    cssClass: 'swiper-nav swiper-next'
+                                } } );
+                                %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

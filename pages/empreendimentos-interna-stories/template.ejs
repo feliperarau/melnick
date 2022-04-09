@@ -1,0 +1,62 @@
+<% 
+const realEstates = JSON.parse(include('../../data/real-estates/properties.json') )
+%>
+
+<%- include('../../components/header/component.ejs') %>
+
+<main class="site-wrapper" id="page-empreendimentos-interna-stories">
+    <%- include('../../components/real-estate-stories/component.ejs' ); -%>
+    <div class="page-inner">
+
+        <section class="gallery">
+            <%- include('../../components/real-estate-gallery/component.ejs', { args: { cssClass: 'mb-99' } } ); -%>
+        </section>
+
+        <section class="meta">
+            <div class="left">
+                <%- include('../../components/real-estate-meta-actions/component.ejs') %>
+
+                <%- include('../../components/page-title/component.ejs', { args: { title: 'Nilo Square Residence Resort', description: 'Um lugar assim muda sua vida' } } ); -%>
+
+                <%- include('../../components/real-estate-props/component.ejs' ); -%>
+
+                <%- include('../../components/real-estate-action-carousel/component.ejs' ); -%>
+            </div>
+            <div class="right">
+                <%- include('../../components/real-estate-form/component.ejs' ); -%>
+            </div>
+        </section>
+
+        <section class="description">
+            <%- include('../../components/real-estate-description/component.ejs' ); -%>
+        </section>
+
+        <section class="features">
+            <%- include('../../components/real-estate-features/component.ejs' ); -%>
+        </section>
+
+        <section class="book">
+            <%- include('../../components/real-estate-book/component.ejs' ); -%>
+        </section>
+
+        <section class="plants">
+            <%- include('../../components/real-estate-plants/component.ejs' ); -%>
+        </section>
+
+        <section class="testimonies">
+            <%- include('../../components/real-estate-testimonies/component.ejs' ); -%>
+        </section>
+
+        <section class="map">
+            <%- include('../../components/real-estate-map/component.ejs' ); -%>
+        </section>
+
+        <section class="related">
+            <%- include('../../components/real-estate-related/component.ejs' ); -%>
+        </section>
+    </div>
+</main>
+
+<%- include( '../../components/whatsapp-balloon/component.ejs' ); %>
+
+<%- include('../../components/footer/component.ejs') %>
