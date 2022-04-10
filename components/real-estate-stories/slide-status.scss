@@ -1,0 +1,19 @@
+.slide-inner.status {
+    padding: 45px 40px;
+    background-color: $sec-cinza-claro;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+        display: none;
+    }
+
+    .status-bars {
+        margin-top: auto;
+    }
+    ._progress-bar {
+        margin-bottom: 8px;
+        background-color: #fff;
+    }
+}

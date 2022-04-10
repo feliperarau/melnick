@@ -1,0 +1,67 @@
+.book {
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(
+            19.39deg,
+            #090909 1.17%,
+            rgba(9, 9, 9, 0) 119.84%
+        );
+        mix-blend-mode: normal;
+        opacity: 0.75;
+        border-radius: 4px;
+    }
+    .book-inner {
+        position: absolute;
+        bottom: 48px;
+        left: 30px;
+        right: 30px;
+        border-radius: 4px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+
+        .inner {
+            display: flex;
+            position: relative;
+            z-index: 20;
+            flex: 1;
+            align-items: end;
+        }
+
+        .book-left {
+            flex: 1;
+
+            .icon {
+                color: $amarelo-melnick;
+                font-size: 44px;
+                margin-bottom: 25px;
+            }
+            .book-title {
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #fff;
+                margin-bottom: 0;
+            }
+        }
+        .download {
+            border: 0;
+            padding: 0;
+            border-radius: 4px;
+            color: $azul-melnick;
+            cursor: pointer;
+            background: #fff;
+            width: 32px;
+            height: 32px;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

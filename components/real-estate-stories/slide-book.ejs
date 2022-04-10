@@ -1,0 +1,30 @@
+<% 
+// Params
+var args = typeof args !== 'undefined' ? args : '';
+let caption = args.caption ?? '';
+let bg = args.bg ?? '';
+%>
+
+<div class="slide-inner book">
+    <span class="slide-caption"><%- caption %></span>
+    <% if( bg ) { %>
+    <img class="thumbnail" src="../../assets/img/<%= bg %>" />
+    <% } %>
+
+    <div class="book-inner">
+        <div class="inner">
+            <div class="book-left">
+                <i class="icon icon-file"></i>
+                <h3 class="book-title">Confira o Book<br>do empreendimento</h3>
+            </div>
+
+            <button class="download" type="button"><i class="icon icon-download"></i></button>
+        </div>
+    </div>
+
+    <div class="inactive-wrap">
+        <div class="inner">
+            <%- include('../real-estate-action/component.ejs', { args: { label: 'Book do <br> Empreendimento', image: 'mall.jpeg' } } ); -%>
+        </div>
+    </div>
+</div>

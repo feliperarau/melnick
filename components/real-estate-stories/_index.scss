@@ -1,3 +1,5 @@
+@import "../progress-bar/";
+
 ._real-estate-stories {
     .modal {
         background-color: $sec-cinza-escuro;
@@ -11,6 +13,7 @@
         justify-content: center;
     }
 
+    /** Inner Slider */
     .stories-slider {
         position: relative;
 
@@ -41,12 +44,14 @@
                 }
             }
         }
-        &.portrait {
-            max-width: 370px;
 
-            .swiper-slide {
-                height: 603px;
-                border-radius: 4px;
+        .swiper-slide {
+            height: 603px;
+            border-radius: 4px;
+            display: flex;
+
+            .slide-inner {
+                flex: 1;
 
                 &:before {
                     content: "";
@@ -65,34 +70,30 @@
                     opacity: 0.65;
                     border-radius: 4px 4px 0px 0px;
                 }
-                .slide-inner {
-                    position: relative;
-                    z-index: 2;
-                }
+            }
 
-                .slide-caption {
-                    position: absolute;
-                    z-index: 5;
-                    color: #fff;
-                    top: 25px;
-                    left: 20px;
-                    font-size: 12px;
-                    font-weight: 500;
-                }
+            .slide-caption {
+                position: absolute;
+                z-index: 5;
+                color: #fff;
+                top: 25px;
+                left: 20px;
+                font-size: 12px;
+                font-weight: 500;
+            }
 
-                .thumbnail {
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
-                    border-radius: 4px;
-                }
+            .thumbnail {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 4px;
             }
         }
 
         &.paused {
             .swiper-pagination-bullet.swiper-pagination-bullet-active {
                 &:before {
-                    animation-play-state: paused;
+                    animation-play-state: paused !important;
                 }
             }
             .swiper-controls {
@@ -105,6 +106,7 @@
             }
         }
     }
+
     .swiper-pagination {
         margin-top: 0;
         margin-bottom: 18px;
@@ -118,7 +120,6 @@
             background-color: white;
             opacity: 1;
             margin: 0;
-            //transition: 200ms all;
             position: relative;
             overflow: hidden;
 
@@ -130,6 +131,7 @@
                 bottom: 0;
                 background-color: white;
                 border-radius: 50px;
+                animation-play-state: paused;
             }
 
             @keyframes progress {
@@ -184,144 +186,115 @@
             }
         }
     }
-    .book {
-        &:after {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            background: linear-gradient(
-                19.39deg,
-                #090909 1.17%,
-                rgba(9, 9, 9, 0) 119.84%
-            );
-            mix-blend-mode: normal;
-            opacity: 0.75;
-            border-radius: 4px;
-        }
-        .book-inner {
-            position: absolute;
-            bottom: 48px;
-            left: 30px;
-            right: 30px;
-            border-radius: 4px;
-            background-size: cover;
-            background-position: center;
-            display: flex;
 
-            .inner {
-                display: flex;
-                position: relative;
-                z-index: 20;
-                flex: 1;
-                align-items: end;
-            }
+    .inactive-wrap {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.65);
+        z-index: 10;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-            .book-left {
-                flex: 1;
+        .inner {
+            transform: scale(1.66);
 
-                .icon {
-                    color: $amarelo-melnick;
-                    font-size: 44px;
-                    margin-bottom: 25px;
-                }
-                .book-title {
-                    font-size: 24px;
-                    line-height: 24px;
-                    font-weight: 400;
+            ._real-estate-action {
+                p {
+                    line-height: 14px;
                     color: #fff;
-                    margin-bottom: 0;
                 }
             }
-            .download {
-                border: 0;
-                padding: 0;
-                border-radius: 4px;
-                color: $azul-melnick;
-                cursor: pointer;
-                background: #fff;
-                width: 32px;
-                height: 32px;
-                font-size: 16px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-    }
-    .cronograma {
-        &:after {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 213px;
-            background: #ffffff;
-            opacity: 0.75;
-            border-radius: 4px;
-        }
-        .cronograma-badge {
-            position: absolute;
-            margin-left: auto;
-            margin-right: auto;
-            left: 0;
-            right: 0;
-            top: 189px;
-            width: 225px;
-            height: 225px;
-            z-index: 10;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            flex-direction: column;
-            background-color: $amarelo-melnick;
-            color: $azul-melnick;
-
-            .label {
-                font-size: 14px;
-            }
-            .percentage {
-                font-weight: 400;
-                font-size: 72px;
-                line-height: 1;
-            }
         }
     }
 
+    @import "./slide-book";
+    @import "./slide-cronograma";
+    @import "./slide-status";
+
+    /** Outer Carousel */
     .stories-carousel {
         flex: 1;
+        //margin-left: -35px;
+        //margin-right: -35px;
+
+        &.landscape {
+            .carousel-slide {
+                &.swiper-slide-active {
+                    width: 100%;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+            }
+        }
+
+        & > {
+            .swiper-wrapper {
+                transition-duration: 200ms !important;
+            }
+        }
 
         .carousel-slide {
             width: 370px;
-            transition: 500ms all;
-            margin-left: -80px;
+            transition: 200ms all;
+            margin-left: -58px;
+            margin-right: -58px;
+            will-change: transform;
+            transform: scale(0.6) translateZ(0);
 
-            & ~ .swiper-slide-active {
-                margin-left: 0;
-            }
-            &.swiper-slide-active {
-                & ~ .carousel-slide {
-                    margin-left: 0;
-                    margin-right: -80px;
+            .swiper-pagination-bullet {
+                &:before {
+                    animation-play-state: paused;
                 }
+            }
+
+            &.swiper-slide-active {
+                margin-left: 35px;
+                margin-right: 35px;
+                transform: scale(1) translateZ(0);
+
+                .swiper-pagination-bullet {
+                    &:before {
+                        animation-play-state: running;
+                    }
+                }
+            }
+            .swiper-controls,
+            .swiper-pagination,
+            .swiper-nav-container,
+            .slide-caption,
+            .inactive-wrap,
+            .book-inner {
+                transition: 200ms all;
             }
 
             &:not(.swiper-slide-active) {
-                opacity: 0.65 !important;
-                transform: scale(0.6) !important;
-                pointer-events: none;
-
                 .swiper-controls,
-                .swiper-pagination,
+                //.swiper-pagination,
                 .swiper-nav-container,
-                .slide-caption {
+                .slide-caption,
+                .book-inner {
                     opacity: 0;
                     visibility: hidden;
                 }
+                .inactive-wrap {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
             }
         }
     }

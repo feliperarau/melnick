@@ -1,0 +1,23 @@
+<% 
+// Params
+var args = typeof args !== 'undefined' ? args : '';
+let caption = args.caption ?? '';
+let bg = args.bg ?? '';
+%>
+
+<div class="slide-inner cronograma">
+    <span class="slide-caption"><%- caption %></span>
+    <% if( bg ) { %>
+    <img class="thumbnail" src="../../assets/img/<%= bg %>" />
+    <% } %>
+
+    <div class="cronograma-badge">
+        <span class="label">Cronograma geral</span>
+        <span class="percentage">29%</span>
+    </div>
+    <div class="inactive-wrap">
+        <div class="inner">
+            <%- include('../real-estate-action/component.ejs', { args: { label: 'Andamento<br> da obra', image: 'hero-bg-2.jpeg' } } ); -%>
+        </div>
+    </div>
+</div>

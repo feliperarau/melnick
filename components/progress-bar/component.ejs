@@ -1,0 +1,26 @@
+<%
+// Defaults
+var args = typeof args !== 'undefined' ? args : {};
+var percent = args.percent ?? 0;
+var icon = args.icon ?? 0;
+var label = args.label ?? '';
+%>
+
+<div class="_progress-bar">
+    <div class="inner">
+        <% if( icon ) { %>
+        <i class="icon icon-<%=icon %>"></i>
+        <% } %>
+
+        <span class="progress-label">
+            <%- label %>
+        </span>
+
+        <span class="progress-percent">
+            <%- percent %>%
+        </span>
+    </div>
+
+    <span class="bar" style="width: <%= percent %>%">
+    </span>
+</div>

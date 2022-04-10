@@ -1,0 +1,40 @@
+.cronograma {
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 213px;
+        background: #ffffff;
+        opacity: 0.75;
+        border-radius: 4px;
+    }
+    .cronograma-badge {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 189px;
+        width: 225px;
+        height: 225px;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        flex-direction: column;
+        background-color: $amarelo-melnick;
+        color: $azul-melnick;
+
+        .label {
+            font-size: 14px;
+        }
+        .percentage {
+            font-weight: 400;
+            font-size: 72px;
+            line-height: 1;
+        }
+    }
+}

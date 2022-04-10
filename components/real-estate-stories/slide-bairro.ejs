@@ -1,0 +1,19 @@
+<% 
+// Params
+var args = typeof args !== 'undefined' ? args : '';
+let caption = args.caption ?? '';
+let bg = args.bg ?? '';
+%>
+
+<div class="slide-inner bairro">
+    <span class="slide-caption"><%- caption %></span>
+    <% if( bg ) { %>
+    <img class="thumbnail" src="../../assets/img/<%= bg %>" />
+    <% } %>
+
+    <div class="inactive-wrap">
+        <div class="inner">
+            <%- include('../real-estate-action/component.ejs', { args: { label: 'Conheça o<br> Bairro', image: 'real-estate-3.jpeg' } } ); -%>
+        </div>
+    </div>
+</div>

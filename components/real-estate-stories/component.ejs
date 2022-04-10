@@ -8,259 +8,110 @@ let cssClass = args.cssClass ?? '';
     <!-- Modal -->
     <div class="modal fade in show d-block" id="real-estate-stories" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-inner">
-            <div class="swiper stories-carousel">
+            <div class="swiper stories-carousel portrait">
                 <div class="swiper-wrapper">
+
+                    <!-- Book -->
                     <div class="swiper-slide carousel-slide">
                         <div class="stories-slider portrait">
                             <div class="swiper-pagination"></div>
                             <div class="swiper">
-                                <div class="swiper-controls">
-                                    <button type="button" class="pause"><i class="icon icon-pause"></i><i class="icon icon-play"></i></button>
-                                    <button type="button" class="close"><i class="icon icon-close"></i></button>
-                                </div>
+                                <%- include( './swiper-controls.ejs' ); %>
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide book">
-                                        <span class="slide-caption">Book do empreendimento</span>
-                                        <img class="thumbnail" src="../../assets/img/book.jpeg" />
-
-                                        <div class="book-inner <%= cssClass %>">
-                                            <div class="inner">
-                                                <div class="book-left">
-                                                    <i class="icon icon-file"></i>
-                                                    <h3 class="book-title">Confira o Book<br>do empreendimento</h3>
-                                                </div>
-
-                                                <button class="download" type="button"><i class="icon icon-download"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                     <div class="swiper-slide">
-                                        <span class="slide-caption">Conheça o Bairro</span>
-                                        <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
+                                        <%- include( './slide-book.ejs', { args: { caption: 'Book do empreendimento', bg: 'book.jpeg' } } ); %>
                                     </div>
                                     <div class="swiper-slide">
-                                        <span class="slide-caption">Conheça o Bairro</span>
-                                        <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
+                                        <%- include( './slide-book.ejs', { args: { caption: 'Book do empreendimento 2', bg: 'landscape.jpeg' } } ); %>
+                                    </div>
+                                </div>
+                            </div>
+                            <%- include( './swiper-nav.ejs' ); %>
+                        </div>
+                    </div>
+
+                    <!-- Status -->
+                    <div class="swiper-slide carousel-slide">
+                        <div class="stories-slider portrait">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper">
+                                <%- include( './swiper-controls.ejs' ); %>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <%- include( './slide-cronograma.ejs', { args: { caption: 'Andamento da Obra', bg: 'cronograma.jpeg' } } ); %>
                                     </div>
                                     <div class="swiper-slide">
-                                        <span class="slide-caption">Conheça o Bairro</span>
-                                        <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
+                                        <%- include( './slide-status.ejs', { args: { caption: 'Andamento da Obra' } } ); %>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-nav-container">
-                                <%- 
-                                include( '../button-icon/component.ejs', { args: {
-                                    icon: 'chevron-left',
-                                    cssClass: 'swiper-nav swiper-prev'
-                                } } );
-                                %>
-                                <%- 
-                                include( '../button-icon/component.ejs', { args: {
-                                    icon: 'chevron-right',
-                                    cssClass: 'swiper-nav swiper-next'
-                                } } );
-                                %>
-                            </div>
+                            <%- include( './swiper-nav.ejs' ); %>
                         </div>
                     </div>
+
+                    <!-- Bairro -->
                     <div class="swiper-slide carousel-slide">
-                        <div class="carousel-item-inner">
-                            <div class="stories-slider portrait">
-                                <div class="swiper-pagination"></div>
-                                <div class="swiper">
-                                    <div class="swiper-controls">
-                                        <button type="button" class="pause"><i class="icon icon-pause"></i><i class="icon icon-play"></i></button>
-                                        <button type="button" class="close"><i class="icon icon-close"></i></button>
+                        <div class="stories-slider ">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper">
+                                <%- include( './swiper-controls.ejs' ); %>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro', bg: 'bairro.jpeg' } } ); %>
                                     </div>
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide cronograma">
-                                            <span class="slide-caption">Andamento da obra</span>
-                                            <img class="thumbnail" src="../../assets/img/cronograma.jpeg" />
-
-                                            <div class="cronograma-badge">
-                                                <span class="label">Cronograma geral</span>
-                                                <span class="percentage">29%</span>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide book">
-                                            <span class="slide-caption">Book do empreendimento</span>
-                                            <img class="thumbnail" src="../../assets/img/book.jpeg" />
-
-                                            <div class="book-inner <%= cssClass %>">
-                                                <div class="inner">
-                                                    <div class="book-left">
-                                                        <i class="icon icon-file"></i>
-                                                        <h3 class="book-title">Confira o Book<br>do empreendimento</h3>
-                                                    </div>
-
-                                                    <button class="download" type="button"><i class="icon icon-download"></i></button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <span class="slide-caption">Conheça o Bairro</span>
-                                            <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <span class="slide-caption">Conheça o Bairro</span>
-                                            <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <span class="slide-caption">Conheça o Bairro</span>
-                                            <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
-                                        </div>
+                                    <div class="swiper-slide wide">
+                                        <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro 2', bg: 'office.jpeg' } } ); %>
                                     </div>
-                                </div>
-                                <div class="swiper-nav-container">
-                                    <%- 
-                                include( '../button-icon/component.ejs', { args: {
-                                    icon: 'chevron-left',
-                                    cssClass: 'swiper-nav swiper-prev'
-                                } } );
-                                %>
-                                    <%- 
-                                include( '../button-icon/component.ejs', { args: {
-                                    icon: 'chevron-right',
-                                    cssClass: 'swiper-nav swiper-next'
-                                } } );
-                                %>
+                                    <div class="swiper-slide">
+                                        <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro 3', bg: 'mall.jpeg' } } ); %>
+                                    </div>
                                 </div>
                             </div>
+                            <%- include( './swiper-nav.ejs' ); %>
                         </div>
                     </div>
+
+                    <!-- Bairro -->
                     <div class="swiper-slide carousel-slide">
-                        <div class="carousel-item-inner">
-                            <div class="stories-slider portrait">
-                                <div class="swiper-pagination"></div>
-                                <div class="swiper">
-                                    <div class="swiper-controls">
-                                        <button type="button" class="pause"><i class="icon icon-pause"></i><i class="icon icon-play"></i></button>
-                                        <button type="button" class="close"><i class="icon icon-close"></i></button>
+                        <div class="stories-slider ">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper">
+                                <%- include( './swiper-controls.ejs' ); %>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro', bg: 'bairro.jpeg' } } ); %>
                                     </div>
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide cronograma">
-                                            <span class="slide-caption">Andamento da obra</span>
-                                            <img class="thumbnail" src="../../assets/img/cronograma.jpeg" />
-
-                                            <div class="cronograma-badge">
-                                                <span class="label">Cronograma geral</span>
-                                                <span class="percentage">29%</span>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide book">
-                                            <span class="slide-caption">Book do empreendimento</span>
-                                            <img class="thumbnail" src="../../assets/img/book.jpeg" />
-
-                                            <div class="book-inner <%= cssClass %>">
-                                                <div class="inner">
-                                                    <div class="book-left">
-                                                        <i class="icon icon-file"></i>
-                                                        <h3 class="book-title">Confira o Book<br>do empreendimento</h3>
-                                                    </div>
-
-                                                    <button class="download" type="button"><i class="icon icon-download"></i></button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <span class="slide-caption">Conheça o Bairro</span>
-                                            <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <span class="slide-caption">Conheça o Bairro</span>
-                                            <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <span class="slide-caption">Conheça o Bairro</span>
-                                            <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
-                                        </div>
+                                    <div class="swiper-slide wide">
+                                        <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro 2', bg: 'office.jpeg' } } ); %>
                                     </div>
-                                </div>
-                                <div class="swiper-nav-container">
-                                    <%- 
-                                include( '../button-icon/component.ejs', { args: {
-                                    icon: 'chevron-left',
-                                    cssClass: 'swiper-nav swiper-prev'
-                                } } );
-                                %>
-                                    <%- 
-                                include( '../button-icon/component.ejs', { args: {
-                                    icon: 'chevron-right',
-                                    cssClass: 'swiper-nav swiper-next'
-                                } } );
-                                %>
+                                    <div class="swiper-slide">
+                                        <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro 3', bg: 'mall.jpeg' } } ); %>
+                                    </div>
                                 </div>
                             </div>
+                            <%- include( './swiper-nav.ejs' ); %>
                         </div>
                     </div>
+
+                    <!-- Bairro -->
                     <div class="swiper-slide carousel-slide">
-                        <div class="carousel-item-inner">
-                            <div class="stories-slider portrait">
-                                <div class="swiper-pagination"></div>
-                                <div class="swiper">
-                                    <div class="swiper-controls">
-                                        <button type="button" class="pause"><i class="icon icon-pause"></i><i class="icon icon-play"></i></button>
-                                        <button type="button" class="close"><i class="icon icon-close"></i></button>
+                        <div class="stories-slider ">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper">
+                                <%- include( './swiper-controls.ejs' ); %>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro', bg: 'bairro.jpeg' } } ); %>
                                     </div>
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide cronograma">
-                                            <span class="slide-caption">Andamento da obra</span>
-                                            <img class="thumbnail" src="../../assets/img/cronograma.jpeg" />
-
-                                            <div class="cronograma-badge">
-                                                <span class="label">Cronograma geral</span>
-                                                <span class="percentage">29%</span>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide book">
-                                            <span class="slide-caption">Book do empreendimento</span>
-                                            <img class="thumbnail" src="../../assets/img/book.jpeg" />
-
-                                            <div class="book-inner <%= cssClass %>">
-                                                <div class="inner">
-                                                    <div class="book-left">
-                                                        <i class="icon icon-file"></i>
-                                                        <h3 class="book-title">Confira o Book<br>do empreendimento</h3>
-                                                    </div>
-
-                                                    <button class="download" type="button"><i class="icon icon-download"></i></button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <span class="slide-caption">Conheça o Bairro</span>
-                                            <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <span class="slide-caption">Conheça o Bairro</span>
-                                            <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <span class="slide-caption">Conheça o Bairro</span>
-                                            <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
-                                        </div>
+                                    <div class="swiper-slide wide">
+                                        <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro 2', bg: 'office.jpeg' } } ); %>
                                     </div>
-                                </div>
-                                <div class="swiper-nav-container">
-                                    <%- 
-                                include( '../button-icon/component.ejs', { args: {
-                                    icon: 'chevron-left',
-                                    cssClass: 'swiper-nav swiper-prev'
-                                } } );
-                                %>
-                                    <%- 
-                                include( '../button-icon/component.ejs', { args: {
-                                    icon: 'chevron-right',
-                                    cssClass: 'swiper-nav swiper-next'
-                                } } );
-                                %>
+                                    <div class="swiper-slide">
+                                        <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro 3', bg: 'mall.jpeg' } } ); %>
+                                    </div>
                                 </div>
                             </div>
+                            <%- include( './swiper-nav.ejs' ); %>
                         </div>
                     </div>
                 </div>

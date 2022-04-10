@@ -1,0 +1,28 @@
+<% 
+// Params
+var args = typeof args !== 'undefined' ? args : '';
+let caption = args.caption ?? '';
+let bg = args.bg ?? '';
+%>
+
+<div class="slide-inner status">
+    <span class="slide-caption"><%- caption %></span>
+
+    <div class="status-bars">
+        <%- include('../progress-bar/component.ejs', { args: { percent: 95, icon: 'file-2', label: 'Projetos' } } ); -%>
+        <%- include('../progress-bar/component.ejs', { args: { percent: 100, icon: 'agriculture', label: 'Preparo terreno' } } ); -%>
+        <%- include('../progress-bar/component.ejs', { args: { percent: 100, icon: 'area-chart', label: 'Conteções sub-solo' } } ); -%>
+        <%- include('../progress-bar/component.ejs', { args: { percent: 100, icon: 'candlestick', label: 'Fundações' } } ); -%>
+        <%- include('../progress-bar/component.ejs', { args: { percent: 86, icon: 'grid', label: 'Estrutura' } } ); -%>
+        <%- include('../progress-bar/component.ejs', { args: { percent: 61, icon: 'noise-aware', label: 'Vedações' } } ); -%>
+        <%- include('../progress-bar/component.ejs', { args: { percent: 9, icon: 'electricity', label: 'Instalações' } } ); -%>
+        <%- include('../progress-bar/component.ejs', { args: { percent: 0, icon: 'corporate-fare', label: 'Fachada' } } ); -%>
+        <%- include('../progress-bar/component.ejs', { args: { percent: 0, icon: 'paint-roller', label: 'Acabamento' } } ); -%>
+    </div>
+
+    <div class="inactive-wrap">
+        <div class="inner">
+            <%- include('../real-estate-action/component.ejs', { args: { label: 'Andamento<br> da obra', image: 'hero-bg-2.jpeg' } } ); -%>
+        </div>
+    </div>
+</div>
