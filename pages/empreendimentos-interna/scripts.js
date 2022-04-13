@@ -9,6 +9,7 @@ import "../../components/real-estate-action-carousel/";
 import "../../components/entry-real-estate-list";
 import "../../components/real-estate-plants";
 import "../../components/real-estate-modal";
+import "../../components/real-estate-features";
 
 export const empreendimentosInterna = () => {
     //console.log("");

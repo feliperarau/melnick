@@ -26,17 +26,83 @@
         display: flex;
         gap: 12px;
         font-size: 16px;
+        cursor: default;
+        position: relative;
 
-        &:first-child {
-            .label {
-                font-weight: 500;
-            }
-        }
         .icon {
             font-size: 24px;
         }
         .question {
             color: $amarelo-melnick;
+            opacity: 0;
+            visibility: hidden;
+            transition: 200ms all;
+            cursor: pointer;
+        }
+
+        &:hover {
+            .label {
+                font-weight: 500;
+            }
+            .question {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        .tip-wrapper {
+            position: relative;
+        }
+        .tip {
+            position: absolute;
+            top: 11px;
+            transform: translate(0px, -50%);
+            left: 100%;
+            z-index: 400;
+            min-width: 385px;
+            padding-left: 16px;
+            border-left: 20px solid transparent;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 200ms;
+
+            &.visible {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .inner {
+                padding: 30px;
+                background: $azul-melnick;
+                box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.1);
+                border-radius: 4px;
+                color: #fff;
+
+                &:before {
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    background-color: $azul-melnick;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 8px;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    transform: rotate(45deg);
+                }
+
+                .title {
+                    color: $amarelo-melnick;
+                    font-size: 16px;
+                    line-height: 120%;
+                    margin-bottom: 8px;
+                    font-weight: 500;
+                }
+                .body {
+                    line-height: 120%;
+                    font-size: 14px;
+                }
+            }
         }
     }
 }
