@@ -7,52 +7,105 @@ let cssClass = args.cssClass ?? '';
 <div class="_real-estate-plants <%= cssClass %>">
     <div class="top-section">
         <h2 class="features-title title-display">Plantas</h2>
-        <div class="actions">
-            <%- 
-            include( '../button-default/component.ejs', { args: {
-                icon: 'plant',
-                label: 'Unidades',
-            } } );
-            %>
-            <%-
-            include( '../button-default/component.ejs', { args: {
-                icon: 'plant',
-                label: 'Infraestrutura',
-                variation: 'outline',
-            } } );
-            %>
-            <%-
-            include( '../button-default/component.ejs', { args: {
-                icon: 'plant',
-                label: 'Áreas comuns',
-                variation: 'outline',
-            } } );
-            %>
-        </div>
+        <ul class="nav" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="_button _button-default variation-outline active" id="unidades-tab" data-bs-toggle="tab" data-bs-target="#unidades" type="button" role="tab" aria-controls="unidades" aria-selected="true"><i class="icon icon-plant mr-4"></i> Unidades</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="_button _button-default variation-outline" id="infra-tab" data-bs-toggle="tab" data-bs-target="#infra" type="button" role="tab" aria-controls="infra" aria-selected="true"><i class="icon icon-plant mr-4"></i> Infraestrutura</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="_button _button-default variation-outline" id="areascomuns-tab" data-bs-toggle="tab" data-bs-target="#areascomuns" type="button" role="tab" aria-controls="areascomuns" aria-selected="true"><i class="icon icon-plant mr-4"></i> Áreas comuns</button>
+            </li>
+        </ul>
     </div>
+
     <div class="bottom-section">
         <div class="bottom-inner">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <span class="slide-label">Unidade 241m²</span>
-                        <img class="image" src="../../assets/img/real-estate-inner/plant-1.png" />
-                    </div>
-                    <div class="swiper-slide">
-                        <span class="slide-label">Unidade 300m²</span>
-                        <img class="image" src="../../assets/img/real-estate-inner/plant-1.png" />
+            <div id="plants-tab" class="tab-content">
+                <div class="tab-pane fade show active" id="unidades" role="tabpanel" aria-labelledby="unidades-tab">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <span class="slide-label">Tab 1 - Unidade 241m²</span>
+                                <img class="image" src="../../assets/img/real-estate-inner/plant-1.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <span class="slide-label">Tab 1 - Unidade 300m²</span>
+                                <img class="image" src="../../assets/img/real-estate-inner/plant-1.png" />
+                            </div>
+                        </div>
+                        <%- 
+                        include( '../button-icon/component.ejs', { args: {
+                            icon: 'fullscreen',
+                            cssClass: 'fullscreen'
+                        } } );
+                        %>
+                        <div class="swiper-nav-container">
+                            <button type="button" class="prev-slide">
+                                <i class="icon icon-chevron-right-2"></i>
+                            </button>
+                            <button type="button" class="next-slide">
+                                <i class="icon icon-chevron-right-2"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <%- 
-                include( '../button-icon/component.ejs', { args: {
-                    icon: 'fullscreen',
-                    cssClass: 'fullscreen'
-                } } );
-                %>
-                <div class="swiper-nav-container">
-                    <button type="button" class="next-slide">
-                        <i class="icon icon-chevron-right-2"></i>
-                    </button>
+                <div class="tab-pane fade" id="infra" role="tabpanel" aria-labelledby="infra-tab">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <span class="slide-label">Tab 2 - Unidade 241m²</span>
+                                <img class="image" src="../../assets/img/real-estate-inner/plant-1.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <span class="slide-label">Tab 2 - Unidade 300m²</span>
+                                <img class="image" src="../../assets/img/real-estate-inner/plant-1.png" />
+                            </div>
+                        </div>
+                        <%- 
+                        include( '../button-icon/component.ejs', { args: {
+                            icon: 'fullscreen',
+                            cssClass: 'fullscreen'
+                        } } );
+                        %>
+                        <div class="swiper-nav-container">
+                            <button type="button" class="prev-slide">
+                                <i class="icon icon-chevron-right-2"></i>
+                            </button>
+                            <button type="button" class="next-slide">
+                                <i class="icon icon-chevron-right-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="areascomuns" role="tabpanel" aria-labelledby="areascomuns-tab">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <span class="slide-label">Tab 3 - Unidade 241m²</span>
+                                <img class="image" src="../../assets/img/real-estate-inner/plant-1.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <span class="slide-label">Tab 3 - Unidade 300m²</span>
+                                <img class="image" src="../../assets/img/real-estate-inner/plant-1.png" />
+                            </div>
+                        </div>
+                        <%- 
+                        include( '../button-icon/component.ejs', { args: {
+                            icon: 'fullscreen',
+                            cssClass: 'fullscreen'
+                        } } );
+                        %>
+                        <div class="swiper-nav-container">
+                            <button type="button" class="prev-slide">
+                                <i class="icon icon-chevron-right-2"></i>
+                            </button>
+                            <button type="button" class="next-slide">
+                                <i class="icon icon-chevron-right-2"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
