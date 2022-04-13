@@ -9,15 +9,90 @@
         flex: 1;
         padding: 70px 0;
     }
-    .image {
+    .media {
         height: 630px;
         width: 630px;
+        position: relative;
 
-        img {
+        .swiper {
             height: 100%;
-            width: 100%;
-            object-fit: cover;
+        }
+
+        .swiper-slide {
+            overflow: hidden;
             border-radius: 4px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .swiper-nav-container {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            z-index: 20;
+            pointer-events: none;
+
+            .prev,
+            .next {
+                width: 100px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    border-radius: 4px;
+                    opacity: 0.5;
+                }
+            }
+            .next {
+                &:before {
+                    background: linear-gradient(
+                        270deg,
+                        #000000 0%,
+                        rgba(0, 37, 65, 0) 100%
+                    );
+                }
+            }
+            .prev {
+                &:before {
+                    background: linear-gradient(
+                        270deg,
+                        rgba(0, 37, 65, 0) 0%,
+                        #000000 100%
+                    );
+                }
+            }
+
+            button {
+                pointer-events: all;
+                background: none;
+                border: none;
+                color: #fff;
+                position: relative;
+
+                .icon {
+                    display: block;
+                    font-size: 32px;
+                }
+            }
+            .prev-slide {
+                transform: rotate(180deg);
+            }
         }
     }
     .description-title {

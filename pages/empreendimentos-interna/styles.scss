@@ -54,6 +54,7 @@ body {
         .right {
             flex-basis: 435px;
             position: relative;
+            z-index: 50;
 
             ._real-estate-form {
                 position: absolute;
