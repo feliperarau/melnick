@@ -65,6 +65,7 @@ body {
         & + .features {
             margin-top: -45px;
             position: relative;
+            z-index: 50;
         }
     }
     .features {
@@ -72,6 +73,7 @@ body {
             width: 758px;
             margin-left: 23px;
             position: relative;
+            z-index: 60;
             top: -62px;
         }
     }
