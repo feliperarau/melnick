@@ -19,6 +19,9 @@
         .bottom-inner {
             max-width: 888px;
         }
+        .tab-pane {
+            padding-left: 40px;
+        }
     }
     .swiper-slide {
         position: relative;
@@ -26,7 +29,7 @@
         .slide-label {
             position: absolute;
             top: 20px;
-            left: 40px;
+            left: 0px;
             font-size: 12px;
             font-weight: 500;
             color: $azul-melnick;
