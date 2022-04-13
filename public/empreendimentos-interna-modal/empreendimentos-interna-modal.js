@@ -3529,20 +3529,23 @@ __webpack_require__.r(__webpack_exports__);
 var realEstatePlants = function realEstatePlants() {
   var ref = document.querySelectorAll("._real-estate-plants");
   ref.forEach(function (component) {
-    var slider = component.querySelector(".swiper");
-    var navigationNext = slider.querySelector(".next-slide");
-    var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
-      grabCursor: true,
-      slidesPerView: 1,
-      freeMode: true,
-      loop: true,
-      effect: "fade",
-      fadeEffect: {
-        crossFade: true
-      },
-      navigation: {
-        nextEl: navigationNext
-      }
+    var tabs = component.querySelectorAll(".tab-pane");
+    tabs.forEach(function (tab) {
+      var slider = tab.querySelector(".swiper");
+      var navigationPrev = tab.querySelector(".prev-slide");
+      var navigationNext = tab.querySelector(".next-slide");
+      var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
+        grabCursor: true,
+        slidesPerView: 1,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true
+        },
+        navigation: {
+          prevEl: navigationPrev,
+          nextEl: navigationNext
+        }
+      });
     });
   });
 };

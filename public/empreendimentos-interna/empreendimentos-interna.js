@@ -3400,6 +3400,85 @@ realEstateActionCarousel();
 
 /***/ }),
 
+/***/ "./components/real-estate-description/index.js":
+/*!*****************************************************!*\
+  !*** ./components/real-estate-description/index.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "realEstateDescription": () => (/* binding */ realEstateDescription)
+/* harmony export */ });
+/* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.esm.js");
+// Modules
+
+var realEstateDescription = function realEstateDescription() {
+  var ref = document.querySelectorAll("._real-estate-description");
+  ref.forEach(function (component) {
+    var slider = component.querySelector(".swiper");
+    var navigationPrev = component.querySelector(".prev button");
+    var navigationNext = component.querySelector(".next button");
+    var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
+      spaceBetween: 30,
+      effect: "fade",
+      loop: true,
+      fadeEffect: {
+        crossFade: true
+      },
+      navigation: {
+        nextEl: navigationNext,
+        prevEl: navigationPrev
+      }
+    });
+  });
+};
+realEstateDescription();
+
+/***/ }),
+
+/***/ "./components/real-estate-features/index.js":
+/*!**************************************************!*\
+  !*** ./components/real-estate-features/index.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "realEstateFeatures": () => (/* binding */ realEstateFeatures)
+/* harmony export */ });
+var realEstateFeatures = function realEstateFeatures() {
+  var ref = document.querySelectorAll("._real-estate-features");
+  ref.forEach(function (component) {
+    var featureItems = component.querySelectorAll(".feature-item");
+    featureItems.forEach(function (featureItem) {
+      var tipToggler = featureItem.querySelector(".tip-wrapper");
+
+      if (!tipToggler) {
+        return;
+      }
+
+      tipToggler.addEventListener("mouseenter", function (e) {
+        var toggler = this;
+        var tip = toggler.querySelector(".tip");
+        tip.classList.toggle("visible");
+        toggler.classList.add("tip-visible");
+      });
+      tipToggler.addEventListener("mouseleave", function (e) {
+        var toggler = this;
+        var tip = toggler.querySelector(".tip");
+        toggler.classList.remove("tip-visible");
+        tip.classList.remove("visible");
+      });
+    });
+  });
+};
+realEstateFeatures();
+
+/***/ }),
+
 /***/ "./components/real-estate-gallery/index.js":
 /*!*************************************************!*\
   !*** ./components/real-estate-gallery/index.js ***!
@@ -3529,20 +3608,23 @@ __webpack_require__.r(__webpack_exports__);
 var realEstatePlants = function realEstatePlants() {
   var ref = document.querySelectorAll("._real-estate-plants");
   ref.forEach(function (component) {
-    var slider = component.querySelector(".swiper");
-    var navigationNext = slider.querySelector(".next-slide");
-    var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
-      grabCursor: true,
-      slidesPerView: 1,
-      freeMode: true,
-      loop: true,
-      effect: "fade",
-      fadeEffect: {
-        crossFade: true
-      },
-      navigation: {
-        nextEl: navigationNext
-      }
+    var tabs = component.querySelectorAll(".tab-pane");
+    tabs.forEach(function (tab) {
+      var slider = tab.querySelector(".swiper");
+      var navigationPrev = tab.querySelector(".prev-slide");
+      var navigationNext = tab.querySelector(".next-slide");
+      var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
+        grabCursor: true,
+        slidesPerView: 1,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true
+        },
+        navigation: {
+          prevEl: navigationPrev,
+          nextEl: navigationNext
+        }
+      });
     });
   });
 };
@@ -21528,8 +21610,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_entry_real_estate_list__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/entry-real-estate-list */ "./components/entry-real-estate-list/index.js");
 /* harmony import */ var _components_real_estate_plants__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/real-estate-plants */ "./components/real-estate-plants/index.js");
 /* harmony import */ var _components_real_estate_modal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/real-estate-modal */ "./components/real-estate-modal/index.js");
+/* harmony import */ var _components_real_estate_features__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/real-estate-features */ "./components/real-estate-features/index.js");
+/* harmony import */ var _components_real_estate_description__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/real-estate-description */ "./components/real-estate-description/index.js");
 // Assets
  // Components
+
+
 
 
 
