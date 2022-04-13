@@ -7,11 +7,11 @@ const realEstates = JSON.parse(include('../../data/real-estates/properties.json'
 <main class="site-wrapper" id="page-empreendimentos-interna">
     <div class="page-inner">
 
-        <section class="gallery">
+        <section class="gallery container-fluid">
             <%- include('../../components/real-estate-gallery/component.ejs', { args: { cssClass: 'mb-99' } } ); -%>
         </section>
 
-        <section class="meta">
+        <section class="meta container-fluid">
             <div class="left">
                 <%- include('../../components/real-estate-meta-actions/component.ejs') %>
 
@@ -26,7 +26,7 @@ const realEstates = JSON.parse(include('../../data/real-estates/properties.json'
             </div>
         </section>
 
-        <section class="description">
+        <section class="description container-fluid">
             <%- include('../../components/real-estate-description/component.ejs' ); -%>
         </section>
 
