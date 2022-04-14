@@ -12252,9 +12252,19 @@ a:hover {
   grid-row: span 2;
   height: 370px;
 }
+._real-estate-gallery .gallery-item a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
 ._real-estate-gallery .gallery-item img {
   border-radius: 4px;
   cursor: pointer;
+}
+._real-estate-gallery .gallery-item.logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 ._real-estate-gallery .gallery-item:not(.logo) img {
   height: 100%;
@@ -13582,7 +13592,10 @@ button.swiper-pagination-bullet {
   gap: 8px;
   margin-bottom: 20px;
 }
-._real-estate-form .grid .name {
+._real-estate-form .grid br {
+  display: none;
+}
+._real-estate-form .grid .name, ._real-estate-form .grid > .wpcf7-form-control-wrap:first-child {
   grid-column: span 2;
 }
 
@@ -13732,7 +13745,7 @@ button.swiper-pagination-bullet {
   top: 11px;
   transform: translate(0px, -50%);
   left: 100%;
-  z-index: 400;
+  z-index: 800;
   min-width: 385px;
   padding-left: 16px;
   border-left: 20px solid transparent;
