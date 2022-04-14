@@ -15,11 +15,21 @@
             height: 370px;
         }
 
+        a {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
         img {
             border-radius: 4px;
             cursor: pointer;
         }
 
+        &.logo a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         &:not(.logo) img {
             height: 100%;
             width: 100%;

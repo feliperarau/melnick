@@ -113,7 +113,12 @@
         gap: 8px;
         margin-bottom: 20px;
 
-        .name {
+        br {
+            display: none;
+        }
+
+        .name,
+        & > .wpcf7-form-control-wrap:first-child {
             grid-column: span 2;
         }
     }
