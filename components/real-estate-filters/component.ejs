@@ -7,16 +7,160 @@ var args = typeof args !== 'undefined' ? args : '';
 var cssClass = args.cssClass ?? '';
 %>
 
-<div class="_real-estate-filters <%= cssClass %>">
-    <% filters.forEach(function(filter) { %>
+<form id="real-estate-filters" action="" class="_real-estate-filters <%= cssClass %>">
+    <% filters.forEach(function(filter, i) { %>
+    <div class="dropdown">
         <%- 
         include( '../button-default/component.ejs', { args: {
+            tag: 'button',
+            type: 'button',
+            dropdown: true,
+            id: `dropdownMenuButton-${filter.slug}`,
             icon: filter.icon ?? '',
             iconClass: 'color-amarelo-melnick text-24',
-            cssClass: 'fw-normal',
+            cssClass: 'fw-normal dropdown-toggle',
             variation: filter.variation ?? '',
             label: filter.label ?? '',
         } } );
         %>
+
+        <div class="dropdown-menu" aria-labelledby="<%= `dropdownMenuButton-${filter.slug}` %>">
+            <fieldset action="fields-<%= filter.slug %>" class="filter">
+                <div class="inner">
+                    <%- include( '../checkbox/component.ejs', { args: { label: 'Porto Alegre', name: 'porto-alegre' } } ); %>
+                    <%- include( '../checkbox/component.ejs', { args: { label: 'Canoas', name: 'canoas' } } ); %>
+                    <%- include( '../checkbox/component.ejs', { args: { label: 'Lorem Ipsum', name: 'lorem-ipsum' } } ); %>
+                    <%- include( '../checkbox/component.ejs', { args: { label: 'Lorem Ipsum', name: 'lorem-ipsum-2' } } ); %>
+                </div>
+                <div class="bottom">
+                    <button type="button" class="btn btn-link clear">Limpar</button>
+                    <%-
+                    include( '../button-default/component.ejs', { args: {
+                        tag: 'button',
+                        type: 'button',
+                        cssClass: 'save',
+                        label: 'Salvar',
+                    } } );
+                    %>
+                </div>
+            </fieldset>
+        </div>
+    </div>
     <% }); %>
-</div>
+
+    <div class="more-filters">
+        <%- 
+        include( '../button-default/component.ejs', { args: {
+            tag: 'button',
+            type: 'button',
+            modal: true,
+            iconClass: 'color-amarelo-melnick text-24',
+            target: '#more-filters-modal',
+            cssClass: 'fw-normal',
+            variation: 'outline',
+            label: 'Mais filtros',
+        } } );
+        %>
+        <div class="modal fade" id="more-filters-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Mais filtros</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="filter-row">
+                            <%- 
+                            include( './radio.ejs', { args: {
+                                title: 'Dormitórios',
+                                name: 'dormitorios',
+                            } } );
+                            %>
+                        </div>
+                        <div class="filter-row">
+                            <%- 
+                            include( './radio.ejs', { args: {
+                                title: 'Banheiros',
+                                name: 'banheiros',
+                            } } );
+                            %>
+                        </div>
+
+                        <div class="filter-row">
+                            <%- 
+                            include( './radio.ejs', { args: {
+                                title: 'Vagas',
+                                name: 'vagas',
+                            } } );
+                            %>
+                        </div>
+
+                        <div class="filter-row wide">
+                            <div class="left">
+                                Metragem
+                            </div>
+
+                            <div class="slider"></div>
+                            <div class="slider-controls">
+                                <div class="input-wrap">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control min" aria-label="Área mínima">
+                                        <span class="input-group-text">m²</span>
+                                    </div>
+                                    <span class="tip">Mínimo 50m²</span>
+                                </div>
+
+                                <div class="input-wrap">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control max" aria-label="Área máxima">
+                                        <span class="input-group-text">m²</span>
+                                    </div>
+                                    <span class="tip">Máximo 800m²</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="bottom">
+                        <button type="button" class="btn btn-link clear">Limpar</button>
+                        <%-
+                        include( '../button-default/component.ejs', { args: {
+                            tag: 'button',
+                            type: 'button',
+                            cssClass: 'save',
+                            label: 'Salvar',
+                        } } );
+                        %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="orderby dropdown">
+        <%- 
+        include( '../button-default/component.ejs', { args: {
+            tag: 'button',
+            type: 'button',
+            dropdown: true,
+            id: 'orderby-toggler',
+            iconClass: 'color-amarelo-melnick text-24',
+            cssClass: 'fw-normal dropdown-toggle',
+            variation: 'outline',
+            label: 'Ordenar Por',
+        } } );
+        %>
+
+        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="orderby-toggler">
+            <div class="inner">
+                <ul>
+                    <li><a href="#">Novidades</a></li>
+                    <li><a href="#">Maior preço</a></li>
+                    <li><a href="#">Menor preço</a></li>
+                    <li><a href="#">Maior área</a></li>
+                    <li><a href="#">Menor área</a></li>
+                    <li><a href="#">Proximidade</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</form>

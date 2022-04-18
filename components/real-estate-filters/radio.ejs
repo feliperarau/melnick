@@ -1,0 +1,32 @@
+<%
+// Params
+var args = typeof args !== 'undefined' ? args : '';
+var title = args.title ?? '';
+var name = args.name ?? '';
+%>
+
+<span class="left">
+    <%= title %>
+</span>
+<div class="right">
+    <label class="radio">
+        <input type="radio" name="<%= name %>" value="1">
+        <span class="inner-label">Qualquer um</span>
+    </label>
+    <label class="radio">
+        <input type="radio" name="<%= name %>" value="2">
+        <span class="inner-label">+1</span>
+    </label>
+    <label class="radio">
+        <input type="radio" name="<%= name %>" value="3">
+        <span class="inner-label">+2</span>
+    </label>
+    <label class="radio">
+        <input type="radio" name="<%= name %>" value="4">
+        <span class="inner-label">+3</span>
+    </label>
+    <label class="radio">
+        <input type="radio" name="<%= name %>" value="5">
+        <span class="inner-label">+4</span>
+    </label>
+</div>

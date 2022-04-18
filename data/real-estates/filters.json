@@ -1,37 +1,32 @@
 [
     {
-        "label": "Porto Alegre",
+        "label": "Cidade",
+        "slug": "cidade",
         "icon": "place",
-        "variation": "default"
+        "variation": "outline"
     },
     {
-        "label": "Zona sul, região",
+        "label": "Zona",
+        "slug": "zona",
         "icon": "place",
-        "variation": "default"
-    },
-    {
-        "label": "Dormitórios",
-        "icon": "",
         "variation": "outline"
     },
     {
-        "label": "Estágio do empreendimento",
+        "label": "Bairro",
+        "slug": "bairro",
+        "icon": "place",
         "variation": "outline"
     },
     {
-        "label": "Valor",
+        "label": "Tipo de empreendimento",
+        "slug": "tipo",
+        "icon": "place",
         "variation": "outline"
     },
     {
-        "label": "Metragem",
-        "variation": "outline"
-    },
-    {
-        "label": "Características",
-        "variation": "outline"
-    },
-    {
-        "label": "Mais filtros",
+        "label": "Estágio da obra",
+        "slug": "stage",
+        "icon": "place",
         "variation": "outline"
     }
 ]

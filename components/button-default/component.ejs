@@ -2,6 +2,7 @@
 // Defaults
 var args = typeof args !== 'undefined' ? args : {};
 
+var id = args.id ?? '';
 var cssClass = args.cssClass ?? '';
 var tag = args.tag ?? 'a';
 var type = args.type ?? 'button';
@@ -9,24 +10,17 @@ var label = args.label ?? '';
 var link = args.link ?? '#';
 var icon = args.icon ?? '';
 var iconClass = args.iconClass ?? '';
+var dropdown = args.dropdown ?? false;
+var target = args.target ?? '';
+var modal = args.modal ?? false;
 var variation = args.variation ?? 'default';
 
 var btnIcon = ! icon ? '' : `<i class="icon icon-${icon} ${iconClass}"></i>`;
 %>
 
-<% if( tag === 'button' ) { %>
-<<%= tag %> type="<%= tag %>" class="_button _button-default variation-<%= variation %> <%= cssClass %>">
+<<%= tag %> <%- ( tag === 'button' ? `type="${type}"` : `href="${link}"` )%> id="<%= id %>" <%- dropdown || modal ? `data-bs-toggle="${ modal ? 'modal' : 'dropdown'}" aria-expanded="false"`: '' %> <%= target ? `data-bs-target=${target}` : '' %> class="_button _button-default variation-<%= variation %> <%= cssClass %>">
     <%- btnIcon %>
     <% if ( label ) { %>
     <span><%- label %></span>
     <% } %>
 </<%= tag %>>
-
-<% } else { %>
-<<%= tag %> href="<%= link %>" class="_button _button-default variation-<%= variation %> <%= cssClass %>">
-    <%- btnIcon %>
-    <% if ( label ) { %>
-    <span><%- label %></span>
-    <% } %>
-</<%= tag %>>
-<% } %>

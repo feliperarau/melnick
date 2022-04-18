@@ -1,0 +1,12 @@
+<% 
+// Params
+var args = typeof args !== 'undefined' ? args : '';
+let cssClass = args.cssClass ?? '';
+let name = args.name ?? '';
+let label = args.label ?? '';
+let checked = args.checked ?? false;
+%>
+
+<div class="_checkbox <%= cssClass %>">
+    <label><input type="checkbox" name="<%= name %>" value="1" <%= checked ? 'checked' : '' %>> <span class="label"><%= label %></span></label>
+</div>
