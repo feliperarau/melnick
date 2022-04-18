@@ -233,43 +233,370 @@
         </nav>
 
         <main class="site-wrapper" id="page-empreendimentos">
-            <div class="_real-estate-filters">
-                <a href="#" class="_button _button-default variation-default fw-normal">
-                    <i class="icon icon-place color-amarelo-melnick text-24"></i>
+            <form id="real-estate-filters" action="" class="_real-estate-filters">
+                <div class="dropdown">
+                    <button
+                        type="button"
+                        id="dropdownMenuButton-cidade"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        class="_button _button-default variation-outline fw-normal dropdown-toggle">
+                        <i class="icon icon-place color-amarelo-melnick text-24"></i>
 
-                    <span>Porto Alegre</span>
-                </a>
+                        <span>Cidade</span>
+                    </button>
 
-                <a href="#" class="_button _button-default variation-default fw-normal">
-                    <i class="icon icon-place color-amarelo-melnick text-24"></i>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-cidade">
+                        <fieldset action="fields-cidade" class="filter">
+                            <div class="inner">
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="porto-alegre" value="1" /> <span class="label">Porto Alegre</span></label>
+                                </div>
 
-                    <span>Zona sul, região</span>
-                </a>
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="canoas" value="1" /> <span class="label">Canoas</span></label>
+                                </div>
 
-                <a href="#" class="_button _button-default variation-outline fw-normal">
-                    <span>Dormitórios</span>
-                </a>
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="lorem-ipsum" value="1" /> <span class="label">Lorem Ipsum</span></label>
+                                </div>
 
-                <a href="#" class="_button _button-default variation-outline fw-normal">
-                    <span>Estágio do empreendimento</span>
-                </a>
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="lorem-ipsum-2" value="1" /> <span class="label">Lorem Ipsum</span></label>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <button type="button" class="btn btn-link clear">Limpar</button>
 
-                <a href="#" class="_button _button-default variation-outline fw-normal">
-                    <span>Valor</span>
-                </a>
+                                <button type="button" id="" class="_button _button-default variation-default save">
+                                    <span>Salvar</span>
+                                </button>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
 
-                <a href="#" class="_button _button-default variation-outline fw-normal">
-                    <span>Metragem</span>
-                </a>
+                <div class="dropdown">
+                    <button
+                        type="button"
+                        id="dropdownMenuButton-zona"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        class="_button _button-default variation-outline fw-normal dropdown-toggle">
+                        <i class="icon icon-place color-amarelo-melnick text-24"></i>
 
-                <a href="#" class="_button _button-default variation-outline fw-normal">
-                    <span>Características</span>
-                </a>
+                        <span>Zona</span>
+                    </button>
 
-                <a href="#" class="_button _button-default variation-outline fw-normal">
-                    <span>Mais filtros</span>
-                </a>
-            </div>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-zona">
+                        <fieldset action="fields-zona" class="filter">
+                            <div class="inner">
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="porto-alegre" value="1" /> <span class="label">Porto Alegre</span></label>
+                                </div>
+
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="canoas" value="1" /> <span class="label">Canoas</span></label>
+                                </div>
+
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="lorem-ipsum" value="1" /> <span class="label">Lorem Ipsum</span></label>
+                                </div>
+
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="lorem-ipsum-2" value="1" /> <span class="label">Lorem Ipsum</span></label>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <button type="button" class="btn btn-link clear">Limpar</button>
+
+                                <button type="button" id="" class="_button _button-default variation-default save">
+                                    <span>Salvar</span>
+                                </button>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button
+                        type="button"
+                        id="dropdownMenuButton-bairro"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        class="_button _button-default variation-outline fw-normal dropdown-toggle">
+                        <i class="icon icon-place color-amarelo-melnick text-24"></i>
+
+                        <span>Bairro</span>
+                    </button>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-bairro">
+                        <fieldset action="fields-bairro" class="filter">
+                            <div class="inner">
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="porto-alegre" value="1" /> <span class="label">Porto Alegre</span></label>
+                                </div>
+
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="canoas" value="1" /> <span class="label">Canoas</span></label>
+                                </div>
+
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="lorem-ipsum" value="1" /> <span class="label">Lorem Ipsum</span></label>
+                                </div>
+
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="lorem-ipsum-2" value="1" /> <span class="label">Lorem Ipsum</span></label>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <button type="button" class="btn btn-link clear">Limpar</button>
+
+                                <button type="button" id="" class="_button _button-default variation-default save">
+                                    <span>Salvar</span>
+                                </button>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button
+                        type="button"
+                        id="dropdownMenuButton-tipo"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        class="_button _button-default variation-outline fw-normal dropdown-toggle">
+                        <i class="icon icon-place color-amarelo-melnick text-24"></i>
+
+                        <span>Tipo de empreendimento</span>
+                    </button>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-tipo">
+                        <fieldset action="fields-tipo" class="filter">
+                            <div class="inner">
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="porto-alegre" value="1" /> <span class="label">Porto Alegre</span></label>
+                                </div>
+
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="canoas" value="1" /> <span class="label">Canoas</span></label>
+                                </div>
+
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="lorem-ipsum" value="1" /> <span class="label">Lorem Ipsum</span></label>
+                                </div>
+
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="lorem-ipsum-2" value="1" /> <span class="label">Lorem Ipsum</span></label>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <button type="button" class="btn btn-link clear">Limpar</button>
+
+                                <button type="button" id="" class="_button _button-default variation-default save">
+                                    <span>Salvar</span>
+                                </button>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button
+                        type="button"
+                        id="dropdownMenuButton-stage"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        class="_button _button-default variation-outline fw-normal dropdown-toggle">
+                        <i class="icon icon-place color-amarelo-melnick text-24"></i>
+
+                        <span>Estágio da obra</span>
+                    </button>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-stage">
+                        <fieldset action="fields-stage" class="filter">
+                            <div class="inner">
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="porto-alegre" value="1" /> <span class="label">Porto Alegre</span></label>
+                                </div>
+
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="canoas" value="1" /> <span class="label">Canoas</span></label>
+                                </div>
+
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="lorem-ipsum" value="1" /> <span class="label">Lorem Ipsum</span></label>
+                                </div>
+
+                                <div class="_checkbox">
+                                    <label><input type="checkbox" name="lorem-ipsum-2" value="1" /> <span class="label">Lorem Ipsum</span></label>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <button type="button" class="btn btn-link clear">Limpar</button>
+
+                                <button type="button" id="" class="_button _button-default variation-default save">
+                                    <span>Salvar</span>
+                                </button>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="more-filters">
+                    <button
+                        type="button"
+                        id=""
+                        data-bs-toggle="modal"
+                        aria-expanded="false"
+                        data-bs-target="#more-filters-modal"
+                        class="_button _button-default variation-outline fw-normal">
+                        <span>Mais filtros</span>
+                    </button>
+                    <div class="modal fade" id="more-filters-modal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Mais filtros</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="filter-row">
+                                        <span class="left"> Dormitórios </span>
+                                        <div class="right">
+                                            <label class="radio">
+                                                <input type="radio" name="dormitorios" value="1" />
+                                                <span class="inner-label">Qualquer um</span>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="dormitorios" value="2" />
+                                                <span class="inner-label">+1</span>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="dormitorios" value="3" />
+                                                <span class="inner-label">+2</span>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="dormitorios" value="4" />
+                                                <span class="inner-label">+3</span>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="dormitorios" value="5" />
+                                                <span class="inner-label">+4</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="filter-row">
+                                        <span class="left"> Banheiros </span>
+                                        <div class="right">
+                                            <label class="radio">
+                                                <input type="radio" name="banheiros" value="1" />
+                                                <span class="inner-label">Qualquer um</span>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="banheiros" value="2" />
+                                                <span class="inner-label">+1</span>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="banheiros" value="3" />
+                                                <span class="inner-label">+2</span>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="banheiros" value="4" />
+                                                <span class="inner-label">+3</span>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="banheiros" value="5" />
+                                                <span class="inner-label">+4</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter-row">
+                                        <span class="left"> Vagas </span>
+                                        <div class="right">
+                                            <label class="radio">
+                                                <input type="radio" name="vagas" value="1" />
+                                                <span class="inner-label">Qualquer um</span>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="vagas" value="2" />
+                                                <span class="inner-label">+1</span>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="vagas" value="3" />
+                                                <span class="inner-label">+2</span>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="vagas" value="4" />
+                                                <span class="inner-label">+3</span>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="vagas" value="5" />
+                                                <span class="inner-label">+4</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter-row wide">
+                                        <div class="left">Metragem</div>
+
+                                        <div class="slider"></div>
+                                        <div class="slider-controls">
+                                            <div class="input-wrap">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control min" aria-label="Área mínima" />
+                                                    <span class="input-group-text">m²</span>
+                                                </div>
+                                                <span class="tip">Mínimo 50m²</span>
+                                            </div>
+
+                                            <div class="input-wrap">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control max" aria-label="Área máxima" />
+                                                    <span class="input-group-text">m²</span>
+                                                </div>
+                                                <span class="tip">Máximo 800m²</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <button type="button" class="btn btn-link clear">Limpar</button>
+
+                                    <button type="button" id="" class="_button _button-default variation-default save">
+                                        <span>Salvar</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderby dropdown">
+                    <button
+                        type="button"
+                        id="orderby-toggler"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        class="_button _button-default variation-outline fw-normal dropdown-toggle">
+                        <span>Ordenar Por</span>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="orderby-toggler">
+                        <div class="inner">
+                            <ul>
+                                <li><a href="#">Novidades</a></li>
+                                <li><a href="#">Maior preço</a></li>
+                                <li><a href="#">Menor preço</a></li>
+                                <li><a href="#">Maior área</a></li>
+                                <li><a href="#">Menor área</a></li>
+                                <li><a href="#">Proximidade</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </form>
 
             <div class="page-inner">
                 <div class="left">
@@ -302,7 +629,7 @@
                                         </div>
                                     </div>
                                     <div class="right">
-                                        <button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
+                                        <button type="button" id="" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
                                             <span><i class="icon icon-chevron-right"></i></span>
                                         </button>
                                     </div>
@@ -332,7 +659,7 @@
                                         </div>
                                     </div>
                                     <div class="right">
-                                        <button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
+                                        <button type="button" id="" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
                                             <span><i class="icon icon-chevron-right"></i></span>
                                         </button>
                                     </div>
@@ -362,7 +689,7 @@
                                         </div>
                                     </div>
                                     <div class="right">
-                                        <button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
+                                        <button type="button" id="" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
                                             <span><i class="icon icon-chevron-right"></i></span>
                                         </button>
                                     </div>
@@ -392,7 +719,7 @@
                                         </div>
                                     </div>
                                     <div class="right">
-                                        <button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
+                                        <button type="button" id="" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
                                             <span><i class="icon icon-chevron-right"></i></span>
                                         </button>
                                     </div>
@@ -422,7 +749,7 @@
                                         </div>
                                     </div>
                                     <div class="right">
-                                        <button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
+                                        <button type="button" id="" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
                                             <span><i class="icon icon-chevron-right"></i></span>
                                         </button>
                                     </div>
@@ -452,7 +779,7 @@
                                         </div>
                                     </div>
                                     <div class="right">
-                                        <button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
+                                        <button type="button" id="" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
                                             <span><i class="icon icon-chevron-right"></i></span>
                                         </button>
                                     </div>
@@ -482,7 +809,7 @@
                                         </div>
                                     </div>
                                     <div class="right">
-                                        <button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
+                                        <button type="button" id="" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
                                             <span><i class="icon icon-chevron-right"></i></span>
                                         </button>
                                     </div>
@@ -512,7 +839,7 @@
                                         </div>
                                     </div>
                                     <div class="right">
-                                        <button type="button" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
+                                        <button type="button" id="" class="_button _button-default variation-default _button-icon swiper-nav swiper-next">
                                             <span><i class="icon icon-chevron-right"></i></span>
                                         </button>
                                     </div>
@@ -522,7 +849,7 @@
                     </div>
 
                     <div class="d-flex justify-content-center see-more">
-                        <a href="#" class="_button _button-default variation-default">
+                        <a href="#" id="" class="_button _button-default variation-default">
                             <span>Ver mais</span>
                         </a>
                     </div>
@@ -532,16 +859,16 @@
                         <div class="map-inner">
                             <div class="top-controls">
                                 <div class="left">
-                                    <button type="button" class="_button _button-default variation-default _button-icon back">
+                                    <button type="button" id="" class="_button _button-default variation-default _button-icon back">
                                         <span><i class="icon icon-chevron-left-2"></i></span>
                                     </button>
                                 </div>
                                 <div class="right">
-                                    <button type="button" class="_button _button-default variation-default _button-icon zoom-out">
+                                    <button type="button" id="" class="_button _button-default variation-default _button-icon zoom-out">
                                         <span><i class="icon icon-remove"></i></span>
                                     </button>
 
-                                    <button type="button" class="_button _button-default variation-default _button-icon zoom-in">
+                                    <button type="button" id="" class="_button _button-default variation-default _button-icon zoom-in">
                                         <span><i class="icon icon-add"></i></span>
                                     </button>
                                 </div>
@@ -617,7 +944,7 @@
                                             </div>
                                         </div>
                                         <div class="bottom">
-                                            <a href="#" class="_button _button-default variation-default">
+                                            <a href="#" id="" class="_button _button-default variation-default">
                                                 <span>Conheça</span>
                                             </a>
                                         </div>

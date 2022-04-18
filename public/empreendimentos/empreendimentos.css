@@ -4,11 +4,11 @@
 @font-face {
 	font-family: "icon";
 	font-display: block;
-	src: url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a53e3b16eca303e32eef.eot?#iefix") format("embedded-opentype"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a53e3b16eca303e32eef.woff") format("woff"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a53e3b16eca303e32eef.woff2") format("woff2"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a53e3b16eca303e32eef.ttf") format("truetype"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a53e3b16eca303e32eef.svg#icon") format("svg");
+	src: url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1cee544673c9b0625a67.eot?#iefix") format("embedded-opentype"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1cee544673c9b0625a67.woff") format("woff"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1cee544673c9b0625a67.woff2") format("woff2"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1cee544673c9b0625a67.ttf") format("truetype"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1cee544673c9b0625a67.svg#icon") format("svg");
 }
 
 .icon {
@@ -23,220 +23,226 @@ url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a53e3b16eca303e32eef.s
 }
 
 .icon-360:before {
-	content: "\f101";
-}
-.icon-add:before {
-	content: "\f102";
-}
-.icon-agriculture:before {
 	content: "\f103";
 }
-.icon-area-chart:before {
+.icon-01-chevron-down:before {
+	content: "\f101";
+}
+.icon-02-check:before {
+	content: "\f102";
+}
+.icon-add:before {
 	content: "\f104";
 }
-.icon-arrow_down:before {
+.icon-agriculture:before {
 	content: "\f105";
 }
-.icon-band-aid:before {
+.icon-area-chart:before {
 	content: "\f106";
 }
-.icon-bank:before {
+.icon-arrow_down:before {
 	content: "\f107";
 }
-.icon-bed:before {
+.icon-band-aid:before {
 	content: "\f108";
 }
-.icon-camera:before {
+.icon-bank:before {
 	content: "\f109";
 }
-.icon-candlestick:before {
+.icon-bed:before {
 	content: "\f10a";
 }
-.icon-car:before {
+.icon-camera:before {
 	content: "\f10b";
 }
-.icon-celebration:before {
+.icon-candlestick:before {
 	content: "\f10c";
 }
-.icon-chat-balloon:before {
+.icon-car:before {
 	content: "\f10d";
 }
-.icon-chevron_down:before {
+.icon-celebration:before {
 	content: "\f10e";
 }
-.icon-chevron-left-2:before {
+.icon-chat-balloon:before {
 	content: "\f10f";
 }
-.icon-chevron-left:before {
+.icon-chevron_down:before {
 	content: "\f110";
 }
-.icon-chevron-right-2:before {
+.icon-chevron-left-2:before {
 	content: "\f111";
 }
-.icon-chevron-right:before {
+.icon-chevron-left:before {
 	content: "\f112";
 }
-.icon-close:before {
+.icon-chevron-right-2:before {
 	content: "\f113";
 }
-.icon-compost:before {
+.icon-chevron-right:before {
 	content: "\f114";
 }
-.icon-corporate-fare:before {
+.icon-close:before {
 	content: "\f115";
 }
-.icon-download:before {
+.icon-compost:before {
 	content: "\f116";
 }
-.icon-electricity:before {
+.icon-corporate-fare:before {
 	content: "\f117";
 }
-.icon-envelope:before {
+.icon-download:before {
 	content: "\f118";
 }
-.icon-external:before {
+.icon-electricity:before {
 	content: "\f119";
 }
-.icon-facebook-2:before {
+.icon-envelope:before {
 	content: "\f11a";
 }
-.icon-facebook:before {
+.icon-external:before {
 	content: "\f11b";
 }
-.icon-file-2:before {
+.icon-facebook-2:before {
 	content: "\f11c";
 }
-.icon-file:before {
+.icon-facebook:before {
 	content: "\f11d";
 }
-.icon-fitness-weight:before {
+.icon-file-2:before {
 	content: "\f11e";
 }
-.icon-fullscreen:before {
+.icon-file:before {
 	content: "\f11f";
 }
-.icon-grid:before {
+.icon-fitness-weight:before {
 	content: "\f120";
 }
-.icon-grocery-cart:before {
+.icon-fullscreen:before {
 	content: "\f121";
 }
-.icon-holiday_village:before {
+.icon-grid:before {
 	content: "\f122";
 }
-.icon-hot-tub:before {
+.icon-grocery-cart:before {
 	content: "\f123";
 }
-.icon-instagram:before {
+.icon-holiday_village:before {
 	content: "\f124";
 }
-.icon-laptop:before {
+.icon-hot-tub:before {
 	content: "\f125";
 }
-.icon-link:before {
+.icon-instagram:before {
 	content: "\f126";
 }
-.icon-linkedin-2:before {
+.icon-laptop:before {
 	content: "\f127";
 }
-.icon-linkedin:before {
+.icon-link:before {
 	content: "\f128";
 }
-.icon-medication:before {
+.icon-linkedin-2:before {
 	content: "\f129";
 }
-.icon-menu_black_24dp:before {
+.icon-linkedin:before {
 	content: "\f12a";
 }
-.icon-noise-aware:before {
+.icon-medication:before {
 	content: "\f12b";
 }
-.icon-open-quotes:before {
+.icon-menu_black_24dp:before {
 	content: "\f12c";
 }
-.icon-paint-roller:before {
+.icon-noise-aware:before {
 	content: "\f12d";
 }
-.icon-pause:before {
+.icon-open-quotes:before {
 	content: "\f12e";
 }
-.icon-person:before {
+.icon-paint-roller:before {
 	content: "\f12f";
 }
-.icon-pets:before {
+.icon-pause:before {
 	content: "\f130";
 }
-.icon-place_black:before {
+.icon-person:before {
 	content: "\f131";
 }
-.icon-place:before {
+.icon-pets:before {
 	content: "\f132";
 }
-.icon-plant:before {
+.icon-place_black:before {
 	content: "\f133";
 }
-.icon-play:before {
+.icon-place:before {
 	content: "\f134";
 }
-.icon-playground:before {
+.icon-plant:before {
 	content: "\f135";
 }
-.icon-pool:before {
+.icon-play:before {
 	content: "\f136";
 }
-.icon-question-outline:before {
+.icon-playground:before {
 	content: "\f137";
 }
-.icon-remove:before {
+.icon-pool:before {
 	content: "\f138";
 }
-.icon-school:before {
+.icon-question-outline:before {
 	content: "\f139";
 }
-.icon-search:before {
+.icon-remove:before {
 	content: "\f13a";
 }
-.icon-share:before {
+.icon-school:before {
 	content: "\f13b";
 }
-.icon-spa:before {
+.icon-search:before {
 	content: "\f13c";
 }
-.icon-sports-esports:before {
+.icon-share:before {
 	content: "\f13d";
 }
-.icon-sports-tennis:before {
+.icon-spa:before {
 	content: "\f13e";
 }
-.icon-store:before {
+.icon-sports-esports:before {
 	content: "\f13f";
 }
-.icon-straighten:before {
+.icon-sports-tennis:before {
 	content: "\f140";
 }
-.icon-telephone-2:before {
+.icon-store:before {
 	content: "\f141";
 }
-.icon-telephone:before {
+.icon-straighten:before {
 	content: "\f142";
 }
-.icon-toys:before {
+.icon-telephone-2:before {
 	content: "\f143";
 }
-.icon-video-library:before {
+.icon-telephone:before {
 	content: "\f144";
 }
-.icon-water-drop:before {
+.icon-toys:before {
 	content: "\f145";
 }
-.icon-waves:before {
+.icon-video-library:before {
 	content: "\f146";
 }
-.icon-whatsapp:before {
+.icon-water-drop:before {
 	content: "\f147";
 }
-.icon-youtube:before {
+.icon-waves:before {
 	content: "\f148";
+}
+.icon-whatsapp:before {
+	content: "\f149";
+}
+.icon-youtube:before {
+	content: "\f14a";
 }
 
 /*!********************************************************************************************!*\
@@ -404,6 +410,314 @@ url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a53e3b16eca303e32eef.s
     font-display: swap;
 }
 
+
+/*!***********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/nouislider/dist/nouislider.css ***!
+  \***********************************************************************************************/
+/* Functional styling;
+ * These styles are required for noUiSlider to function.
+ * You don't need to change these rules to apply your design.
+ */
+.noUi-target,
+.noUi-target * {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.noUi-target {
+  position: relative;
+}
+.noUi-base,
+.noUi-connects {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+/* Wrapper for all connect elements.
+ */
+.noUi-connects {
+  overflow: hidden;
+  z-index: 0;
+}
+.noUi-connect,
+.noUi-origin {
+  will-change: transform;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -webkit-transform-style: preserve-3d;
+  transform-origin: 0 0;
+  transform-style: flat;
+}
+/* Offset direction
+ */
+.noUi-txt-dir-rtl.noUi-horizontal .noUi-origin {
+  left: 0;
+  right: auto;
+}
+/* Give origins 0 height/width so they don't interfere with clicking the
+ * connect elements.
+ */
+.noUi-vertical .noUi-origin {
+  top: -100%;
+  width: 0;
+}
+.noUi-horizontal .noUi-origin {
+  height: 0;
+}
+.noUi-handle {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+.noUi-touch-area {
+  height: 100%;
+  width: 100%;
+}
+.noUi-state-tap .noUi-connect,
+.noUi-state-tap .noUi-origin {
+  -webkit-transition: transform 0.3s;
+  transition: transform 0.3s;
+}
+.noUi-state-drag * {
+  cursor: inherit !important;
+}
+/* Slider size and handle placement;
+ */
+.noUi-horizontal {
+  height: 18px;
+}
+.noUi-horizontal .noUi-handle {
+  width: 34px;
+  height: 28px;
+  right: -17px;
+  top: -6px;
+}
+.noUi-vertical {
+  width: 18px;
+}
+.noUi-vertical .noUi-handle {
+  width: 28px;
+  height: 34px;
+  right: -6px;
+  bottom: -17px;
+}
+.noUi-txt-dir-rtl.noUi-horizontal .noUi-handle {
+  left: -17px;
+  right: auto;
+}
+/* Styling;
+ * Giving the connect element a border radius causes issues with using transform: scale
+ */
+.noUi-target {
+  background: #FAFAFA;
+  border-radius: 4px;
+  border: 1px solid #D3D3D3;
+  box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
+}
+.noUi-connects {
+  border-radius: 3px;
+}
+.noUi-connect {
+  background: #3FB8AF;
+}
+/* Handles and cursors;
+ */
+.noUi-draggable {
+  cursor: ew-resize;
+}
+.noUi-vertical .noUi-draggable {
+  cursor: ns-resize;
+}
+.noUi-handle {
+  border: 1px solid #D9D9D9;
+  border-radius: 3px;
+  background: #FFF;
+  cursor: default;
+  box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
+}
+.noUi-active {
+  box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB;
+}
+/* Handle stripes;
+ */
+.noUi-handle:before,
+.noUi-handle:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 14px;
+  width: 1px;
+  background: #E8E7E6;
+  left: 14px;
+  top: 6px;
+}
+.noUi-handle:after {
+  left: 17px;
+}
+.noUi-vertical .noUi-handle:before,
+.noUi-vertical .noUi-handle:after {
+  width: 14px;
+  height: 1px;
+  left: 6px;
+  top: 14px;
+}
+.noUi-vertical .noUi-handle:after {
+  top: 17px;
+}
+/* Disabled state;
+ */
+[disabled] .noUi-connect {
+  background: #B8B8B8;
+}
+[disabled].noUi-target,
+[disabled].noUi-handle,
+[disabled] .noUi-handle {
+  cursor: not-allowed;
+}
+/* Base;
+ *
+ */
+.noUi-pips,
+.noUi-pips * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.noUi-pips {
+  position: absolute;
+  color: #999;
+}
+/* Values;
+ *
+ */
+.noUi-value {
+  position: absolute;
+  white-space: nowrap;
+  text-align: center;
+}
+.noUi-value-sub {
+  color: #ccc;
+  font-size: 10px;
+}
+/* Markings;
+ *
+ */
+.noUi-marker {
+  position: absolute;
+  background: #CCC;
+}
+.noUi-marker-sub {
+  background: #AAA;
+}
+.noUi-marker-large {
+  background: #AAA;
+}
+/* Horizontal layout;
+ *
+ */
+.noUi-pips-horizontal {
+  padding: 10px 0;
+  height: 80px;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+.noUi-value-horizontal {
+  -webkit-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+}
+.noUi-rtl .noUi-value-horizontal {
+  -webkit-transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
+}
+.noUi-marker-horizontal.noUi-marker {
+  margin-left: -1px;
+  width: 2px;
+  height: 5px;
+}
+.noUi-marker-horizontal.noUi-marker-sub {
+  height: 10px;
+}
+.noUi-marker-horizontal.noUi-marker-large {
+  height: 15px;
+}
+/* Vertical layout;
+ *
+ */
+.noUi-pips-vertical {
+  padding: 0 10px;
+  height: 100%;
+  top: 0;
+  left: 100%;
+}
+.noUi-value-vertical {
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding-left: 25px;
+}
+.noUi-rtl .noUi-value-vertical {
+  -webkit-transform: translate(0, 50%);
+  transform: translate(0, 50%);
+}
+.noUi-marker-vertical.noUi-marker {
+  width: 5px;
+  height: 2px;
+  margin-top: -1px;
+}
+.noUi-marker-vertical.noUi-marker-sub {
+  width: 10px;
+}
+.noUi-marker-vertical.noUi-marker-large {
+  width: 15px;
+}
+.noUi-tooltip {
+  display: block;
+  position: absolute;
+  border: 1px solid #D9D9D9;
+  border-radius: 3px;
+  background: #fff;
+  color: #000;
+  padding: 5px;
+  text-align: center;
+  white-space: nowrap;
+}
+.noUi-horizontal .noUi-tooltip {
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  left: 50%;
+  bottom: 120%;
+}
+.noUi-vertical .noUi-tooltip {
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  top: 50%;
+  right: 120%;
+}
+.noUi-horizontal .noUi-origin > .noUi-tooltip {
+  -webkit-transform: translate(50%, 0);
+  transform: translate(50%, 0);
+  left: auto;
+  bottom: 10px;
+}
+.noUi-vertical .noUi-origin > .noUi-tooltip {
+  -webkit-transform: translate(0, -18px);
+  transform: translate(0, -18px);
+  top: auto;
+  right: 28px;
+}
 
 /*!****************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./pages/empreendimentos/styles.scss ***!
@@ -12236,6 +12550,56 @@ a:hover {
   background-color: #002541;
 }
 
+._checkbox {
+  line-height: 1;
+}
+._checkbox input {
+  position: relative;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #a8a8a8;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: 120ms all ease-in-out;
+}
+._checkbox input:before {
+  content: "\f102";
+  font-family: "icon";
+  width: 10px;
+  height: 14px;
+  position: absolute;
+  color: #fff;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  line-height: 1;
+  font-size: 11px;
+  transform: scale(0);
+  transition: 120ms 150ms transform ease-in-out;
+}
+._checkbox input:checked {
+  border-color: #002541;
+  background: #002541;
+}
+._checkbox input:checked::before {
+  transform: scale(1);
+}
+._checkbox .label {
+  margin-left: 5px;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 120%;
+  color: #002541;
+  font-weight: 400;
+}
+
 ._real-estate-filters {
   display: flex;
   flex-wrap: wrap;
@@ -12243,7 +12607,158 @@ a:hover {
 }
 ._real-estate-filters ._button {
   height: 40px;
-  padding: 0 23px;
+  padding: 0 20px;
+  font-size: 13px;
+}
+._real-estate-filters ._button .icon {
+  display: none;
+}
+._real-estate-filters ._button.variation-outline {
+  border-color: #a8a8a8;
+}
+._real-estate-filters ._button.variation-outline:hover {
+  border-color: #002541;
+}
+._real-estate-filters ._button.variation-outline:hover:after {
+  color: white;
+}
+._real-estate-filters ._button.dropdown-toggle:after {
+  content: "\f101";
+  border: 0;
+  position: relative;
+  font-size: 14px;
+  top: -2px;
+  margin: 0;
+  margin-left: 10px;
+  color: #a8a8a8;
+  font-family: "icon";
+}
+._real-estate-filters .dropdown-menu {
+  margin-top: 20px !important;
+  min-width: 238px;
+  padding: 0;
+  border: 0;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+._real-estate-filters .dropdown-menu .inner {
+  padding: 20px;
+}
+._real-estate-filters .dropdown-menu ._checkbox + ._checkbox {
+  margin-top: 20px;
+}
+._real-estate-filters .bottom {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #dadada;
+}
+._real-estate-filters .bottom .btn-link {
+  text-decoration: none;
+  color: #a8a8a8;
+  font-weight: 500;
+  padding-left: 0;
+  padding-right: 0;
+}
+._real-estate-filters .bottom ._button {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+._real-estate-filters .bottom .btn-link,
+._real-estate-filters .bottom ._button {
+  font-size: 14px;
+  height: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+._real-estate-filters .dropdown.filter-enabled .dropdown-toggle::after {
+  color: #fff;
+}
+._real-estate-filters .dropdown.filter-enabled .dropdown-toggle .icon {
+  display: block;
+}
+._real-estate-filters .orderby {
+  margin-left: auto;
+}
+._real-estate-filters .modal {
+  overflow: hidden;
+}
+._real-estate-filters .modal .modal-dialog {
+  max-width: 630px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+._real-estate-filters .modal .radio {
+  cursor: pointer;
+}
+._real-estate-filters .modal .radio input[type=radio] {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+._real-estate-filters .modal .radio input[type=radio]:checked + .inner-label {
+  background-color: #002541;
+  border-color: #002541;
+  color: white;
+}
+._real-estate-filters .modal .radio .inner-label {
+  line-height: 1;
+  min-width: 53px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  border-radius: 50px;
+  color: #002541;
+  border: 1px solid #a8a8a8;
+  transition: 150ms all;
+}
+._real-estate-filters .modal .filter-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+._real-estate-filters .modal .filter-row + .filter-row {
+  border-top: 1px solid #a8a8a8;
+}
+._real-estate-filters .modal .filter-row.wide {
+  display: block;
+}
+._real-estate-filters .modal .filter-row.wide .left {
+  margin-bottom: 20px;
+}
+._real-estate-filters .modal .filter-row .left {
+  text-transform: uppercase;
+  color: #002541;
+  font-size: 10px;
+  font-weight: 500;
+}
+._real-estate-filters .modal .filter-row .right {
+  display: flex;
+  gap: 10px;
+}
+._real-estate-filters .modal .filter-row .slider {
+  margin-bottom: 30px;
+}
+._real-estate-filters .modal .filter-row .slider-controls {
+  display: flex;
+  justify-content: space-between;
+}
+._real-estate-filters .modal .filter-row .slider-controls .input-group {
+  max-width: 175px;
+  margin-bottom: 5px;
 }
 
 ._button {

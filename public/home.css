@@ -4,11 +4,11 @@
 @font-face {
 	font-family: "icon";
 	font-display: block;
-	src: url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a53e3b16eca303e32eef.eot?#iefix") format("embedded-opentype"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a53e3b16eca303e32eef.woff") format("woff"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a53e3b16eca303e32eef.woff2") format("woff2"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a53e3b16eca303e32eef.ttf") format("truetype"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a53e3b16eca303e32eef.svg#icon") format("svg");
+	src: url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1cee544673c9b0625a67.eot?#iefix") format("embedded-opentype"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1cee544673c9b0625a67.woff") format("woff"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1cee544673c9b0625a67.woff2") format("woff2"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1cee544673c9b0625a67.ttf") format("truetype"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.1cee544673c9b0625a67.svg#icon") format("svg");
 }
 
 .icon {
@@ -23,220 +23,226 @@ url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.a53e3b16eca303e32eef.s
 }
 
 .icon-360:before {
-	content: "\f101";
-}
-.icon-add:before {
-	content: "\f102";
-}
-.icon-agriculture:before {
 	content: "\f103";
 }
-.icon-area-chart:before {
+.icon-01-chevron-down:before {
+	content: "\f101";
+}
+.icon-02-check:before {
+	content: "\f102";
+}
+.icon-add:before {
 	content: "\f104";
 }
-.icon-arrow_down:before {
+.icon-agriculture:before {
 	content: "\f105";
 }
-.icon-band-aid:before {
+.icon-area-chart:before {
 	content: "\f106";
 }
-.icon-bank:before {
+.icon-arrow_down:before {
 	content: "\f107";
 }
-.icon-bed:before {
+.icon-band-aid:before {
 	content: "\f108";
 }
-.icon-camera:before {
+.icon-bank:before {
 	content: "\f109";
 }
-.icon-candlestick:before {
+.icon-bed:before {
 	content: "\f10a";
 }
-.icon-car:before {
+.icon-camera:before {
 	content: "\f10b";
 }
-.icon-celebration:before {
+.icon-candlestick:before {
 	content: "\f10c";
 }
-.icon-chat-balloon:before {
+.icon-car:before {
 	content: "\f10d";
 }
-.icon-chevron_down:before {
+.icon-celebration:before {
 	content: "\f10e";
 }
-.icon-chevron-left-2:before {
+.icon-chat-balloon:before {
 	content: "\f10f";
 }
-.icon-chevron-left:before {
+.icon-chevron_down:before {
 	content: "\f110";
 }
-.icon-chevron-right-2:before {
+.icon-chevron-left-2:before {
 	content: "\f111";
 }
-.icon-chevron-right:before {
+.icon-chevron-left:before {
 	content: "\f112";
 }
-.icon-close:before {
+.icon-chevron-right-2:before {
 	content: "\f113";
 }
-.icon-compost:before {
+.icon-chevron-right:before {
 	content: "\f114";
 }
-.icon-corporate-fare:before {
+.icon-close:before {
 	content: "\f115";
 }
-.icon-download:before {
+.icon-compost:before {
 	content: "\f116";
 }
-.icon-electricity:before {
+.icon-corporate-fare:before {
 	content: "\f117";
 }
-.icon-envelope:before {
+.icon-download:before {
 	content: "\f118";
 }
-.icon-external:before {
+.icon-electricity:before {
 	content: "\f119";
 }
-.icon-facebook-2:before {
+.icon-envelope:before {
 	content: "\f11a";
 }
-.icon-facebook:before {
+.icon-external:before {
 	content: "\f11b";
 }
-.icon-file-2:before {
+.icon-facebook-2:before {
 	content: "\f11c";
 }
-.icon-file:before {
+.icon-facebook:before {
 	content: "\f11d";
 }
-.icon-fitness-weight:before {
+.icon-file-2:before {
 	content: "\f11e";
 }
-.icon-fullscreen:before {
+.icon-file:before {
 	content: "\f11f";
 }
-.icon-grid:before {
+.icon-fitness-weight:before {
 	content: "\f120";
 }
-.icon-grocery-cart:before {
+.icon-fullscreen:before {
 	content: "\f121";
 }
-.icon-holiday_village:before {
+.icon-grid:before {
 	content: "\f122";
 }
-.icon-hot-tub:before {
+.icon-grocery-cart:before {
 	content: "\f123";
 }
-.icon-instagram:before {
+.icon-holiday_village:before {
 	content: "\f124";
 }
-.icon-laptop:before {
+.icon-hot-tub:before {
 	content: "\f125";
 }
-.icon-link:before {
+.icon-instagram:before {
 	content: "\f126";
 }
-.icon-linkedin-2:before {
+.icon-laptop:before {
 	content: "\f127";
 }
-.icon-linkedin:before {
+.icon-link:before {
 	content: "\f128";
 }
-.icon-medication:before {
+.icon-linkedin-2:before {
 	content: "\f129";
 }
-.icon-menu_black_24dp:before {
+.icon-linkedin:before {
 	content: "\f12a";
 }
-.icon-noise-aware:before {
+.icon-medication:before {
 	content: "\f12b";
 }
-.icon-open-quotes:before {
+.icon-menu_black_24dp:before {
 	content: "\f12c";
 }
-.icon-paint-roller:before {
+.icon-noise-aware:before {
 	content: "\f12d";
 }
-.icon-pause:before {
+.icon-open-quotes:before {
 	content: "\f12e";
 }
-.icon-person:before {
+.icon-paint-roller:before {
 	content: "\f12f";
 }
-.icon-pets:before {
+.icon-pause:before {
 	content: "\f130";
 }
-.icon-place_black:before {
+.icon-person:before {
 	content: "\f131";
 }
-.icon-place:before {
+.icon-pets:before {
 	content: "\f132";
 }
-.icon-plant:before {
+.icon-place_black:before {
 	content: "\f133";
 }
-.icon-play:before {
+.icon-place:before {
 	content: "\f134";
 }
-.icon-playground:before {
+.icon-plant:before {
 	content: "\f135";
 }
-.icon-pool:before {
+.icon-play:before {
 	content: "\f136";
 }
-.icon-question-outline:before {
+.icon-playground:before {
 	content: "\f137";
 }
-.icon-remove:before {
+.icon-pool:before {
 	content: "\f138";
 }
-.icon-school:before {
+.icon-question-outline:before {
 	content: "\f139";
 }
-.icon-search:before {
+.icon-remove:before {
 	content: "\f13a";
 }
-.icon-share:before {
+.icon-school:before {
 	content: "\f13b";
 }
-.icon-spa:before {
+.icon-search:before {
 	content: "\f13c";
 }
-.icon-sports-esports:before {
+.icon-share:before {
 	content: "\f13d";
 }
-.icon-sports-tennis:before {
+.icon-spa:before {
 	content: "\f13e";
 }
-.icon-store:before {
+.icon-sports-esports:before {
 	content: "\f13f";
 }
-.icon-straighten:before {
+.icon-sports-tennis:before {
 	content: "\f140";
 }
-.icon-telephone-2:before {
+.icon-store:before {
 	content: "\f141";
 }
-.icon-telephone:before {
+.icon-straighten:before {
 	content: "\f142";
 }
-.icon-toys:before {
+.icon-telephone-2:before {
 	content: "\f143";
 }
-.icon-video-library:before {
+.icon-telephone:before {
 	content: "\f144";
 }
-.icon-water-drop:before {
+.icon-toys:before {
 	content: "\f145";
 }
-.icon-waves:before {
+.icon-video-library:before {
 	content: "\f146";
 }
-.icon-whatsapp:before {
+.icon-water-drop:before {
 	content: "\f147";
 }
-.icon-youtube:before {
+.icon-waves:before {
 	content: "\f148";
+}
+.icon-whatsapp:before {
+	content: "\f149";
+}
+.icon-youtube:before {
+	content: "\f14a";
 }
 
 /*!********************************************************************************************!*\
