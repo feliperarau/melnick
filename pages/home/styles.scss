@@ -5,13 +5,16 @@
 @import "../../components/header-alt/";
 @import "../../components/footer/";
 @import "../../components/hero/";
-@import "../../components/carousel-real-estate";
 @import "../../components/button-default/";
+@import "../../components/home-section-real-estate-tabs/";
 @import "../../components/home-section-features/";
 @import "../../components/home-section-features-wide/";
 @import "../../components/home-section-initiative/";
 @import "../../components/home-section-blog/";
 @import "../../components/whatsapp-balloon/";
+
+// Modules
+@import "../../assets/scss/modules/dropdown";
 
 body {
     background-color: $bg-color;

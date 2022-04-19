@@ -5,17 +5,7 @@
         <%- include('../../components/hero/component.ejs') %>
     </section>
 
-    <section class="mb-5">
-        <h1 class="title-display text-center mb-3">
-            Conheça nossos empreendimentos <strong>Residenciais</strong> <i class="icon icon-arrow_down text-16 align-middle mb-2"></i>
-        </h1>
-
-        <%- include('../../components/carousel-real-estate/component.ejs') %>
-
-        <div class="d-flex justify-content-md-center container-fluid">
-            <%- include('../../components/button-default/component.ejs', {args: { label: 'Ver mais empreendimentos', cssClass: 'flex-grow-1 flex-md-grow-0 justify-content-center' }}) %>
-        </div>
-    </section>
+    <%- include('../../components/home-section-real-estate-tabs/component.ejs', {args: { cssClass: 'mb-5'}}) %>
 
     <%- include('../../components/home-section-features/component.ejs', {args: { cssClass: 'mb-5' }}) %>
 

@@ -4,7 +4,7 @@ import "../../assets/js/main";
 // Components
 import "../../components/header-alt";
 import "../../components/hero";
-import "../../components/carousel-real-estate";
+import "../../components/home-section-real-estate-tabs";
 import "../../components/home-section-features";
 import "../../components/home-section-initiative";
 

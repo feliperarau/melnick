@@ -1,0 +1,40 @@
+<%
+var args = typeof args !== 'undefined' ? args : {};
+
+var cssClass = args.cssClass ?? ''
+%>
+
+<section class="_home-section-real-estate-tabs container-fluid mb-5 <%= cssClass %>">
+    <div class="property-type dropdown dropdown-dark">
+        <div class="top">
+            <h1 class="title-display text-center mb-3">
+                Conheça nossos empreendimentos
+            </h1>
+
+            <div class="selector">
+                <a class="title-display toggler" href="#" role="button" id="typeDropdown" data-bs-toggle="dropdown" aria-expanded="false"><span class="label">Residenciais</span><i class="icon icon-arrow_down text-22 align-middle mb-2"></i></a>
+
+                <ul class="nav dropdown-menu" role="tablist">
+                    <li><a class="dropdown-item active" id="residential-tab" href="#" data-bs-toggle="tab" data-bs-target="#residential" role="tab" aria-controls="residential" aria-selected="true">Residenciais</a><i class="icon check icon-02-check"></i></li>
+                    <li><a class="dropdown-item" id="commercial-tab" href="#" data-bs-toggle="tab" data-bs-target="#commercial" role="tab" aria-controls="commercial" aria-selected="false">Comerciais</a><i class="icon check icon-02-check"></i></li>
+                    <li><a class="dropdown-item" id="lot-tab" href="#" data-bs-toggle="tab" data-bs-target="#lot" role="tab" aria-controls="lot" aria-selected="false">Terrenos</a><i class="icon check icon-02-check"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="residential" role="tabpanel" aria-labelledby="residential-tab">
+                <%- include('../../components/carousel-real-estate/component.ejs', { args: { slug: 'residential' } }); %>
+            </div>
+            <div class="tab-pane fade" id="commercial" role="tabpanel" aria-labelledby="commercial-tab">
+                <%- include('../../components/carousel-real-estate/component.ejs', { args: { slug: 'commercial' } }); %>
+            </div>
+            <div class="tab-pane fade" id="lot" role="tabpanel" aria-labelledby="lot-tab">
+                <%- include('../../components/carousel-real-estate/component.ejs', { args: { slug: 'lot' } }); %>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-md-center container-fluid">
+            <%- include('../../components/button-default/component.ejs', {args: { label: 'Ver mais empreendimentos', cssClass: 'flex-grow-1 flex-md-grow-0 justify-content-center' }}) %>
+        </div>
+    </div>
+</section>

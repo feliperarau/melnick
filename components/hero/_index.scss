@@ -13,9 +13,6 @@
     @include media-breakpoint-down(md) {
         padding: 0 !important;
     }
-    @include media-breakpoint-up(md) {
-        margin-top: 40px;
-    }
 
     .search-bar {
         position: absolute;
@@ -23,7 +20,7 @@
         justify-content: center;
         left: 0;
         right: 0;
-        top: 120px;
+        top: 97px;
         z-index: 100;
     }
 
@@ -38,11 +35,6 @@
 
         .slider {
             overflow-x: hidden;
-            border-radius: 4px;
-
-            @include media-breakpoint-down(md) {
-                border-radius: 0;
-            }
         }
         .swiper-slide {
             display: flex;
@@ -50,7 +42,6 @@
             background-repeat: no-repeat;
             background-size: cover;
             min-height: 577px;
-            border-radius: 4px;
             overflow: hidden;
 
             &::before {
@@ -62,7 +53,6 @@
                 right: 0%;
                 z-index: 5;
                 background: rgba(black, 0.4);
-                border-radius: 4px;
 
                 @include media-breakpoint-down(md) {
                     border-radius: 0;
@@ -86,5 +76,8 @@
     }
     .slide-2 {
         background-image: url("./../../assets/img/hero-bg-2.jpeg");
+    }
+    .swiper-pagination {
+        margin-top: 10px;
     }
 }

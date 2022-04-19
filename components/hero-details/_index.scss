@@ -1,12 +1,22 @@
 ._hero-details {
-  .feature-item {
-    align-items: center;
-  }
-  .description {
-    white-space: nowrap;
-  }
-  .icon {
-    font-size: 24px;
-    margin-right: 12px;
-  }
+    .title {
+        margin-bottom: 0;
+    }
+    .subtitle {
+        margin-bottom: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 10px;
+        line-height: 120%;
+    }
+    .feature-item {
+        align-items: center;
+    }
+    .description {
+        white-space: nowrap;
+    }
+    .icon {
+        font-size: 24px;
+        margin-right: 12px;
+    }
 }
