@@ -3550,6 +3550,44 @@ homeSectionInitiative();
 
 /***/ }),
 
+/***/ "./components/home-section-real-estate-tabs/index.js":
+/*!***********************************************************!*\
+  !*** ./components/home-section-real-estate-tabs/index.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "homeSectionRealEstateTabs": () => (/* binding */ homeSectionRealEstateTabs)
+/* harmony export */ });
+/* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.esm.js");
+/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
+/* harmony import */ var _components_carousel_real_estate__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/carousel-real-estate */ "./components/carousel-real-estate/index.js");
+// Modules
+
+
+
+var homeSectionRealEstateTabs = function homeSectionRealEstateTabs() {
+  var ref = document.querySelectorAll("._home-section-real-estate-tabs");
+  ref.forEach(function (component) {
+    var selector = component.querySelector(".selector");
+    var toggler = selector.querySelector(".toggler");
+    var togglerLabel = toggler.querySelector(".label");
+    var dropdown = selector.querySelector(".dropdown-menu");
+    var dropdownItems = dropdown.querySelectorAll(".dropdown-item");
+    dropdownItems.forEach(function (dropdownItem) {
+      dropdownItem.addEventListener("click", function (e) {
+        var item = e.currentTarget;
+        togglerLabel.textContent = item.textContent;
+      });
+    });
+  });
+};
+homeSectionRealEstateTabs();
+
+/***/ }),
+
 /***/ "./components/nav-overlay/index.js":
 /*!*****************************************!*\
   !*** ./components/nav-overlay/index.js ***!
@@ -21575,7 +21613,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_js_main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/js/main */ "./assets/js/main.js");
 /* harmony import */ var _components_header_alt__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/header-alt */ "./components/header-alt/index.js");
 /* harmony import */ var _components_hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/hero */ "./components/hero/index.js");
-/* harmony import */ var _components_carousel_real_estate__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/carousel-real-estate */ "./components/carousel-real-estate/index.js");
+/* harmony import */ var _components_home_section_real_estate_tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/home-section-real-estate-tabs */ "./components/home-section-real-estate-tabs/index.js");
 /* harmony import */ var _components_home_section_features__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/home-section-features */ "./components/home-section-features/index.js");
 /* harmony import */ var _components_home_section_initiative__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/home-section-initiative */ "./components/home-section-initiative/index.js");
 // Assets

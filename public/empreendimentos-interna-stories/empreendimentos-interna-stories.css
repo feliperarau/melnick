@@ -12507,16 +12507,16 @@ a:hover {
 ._real-estate-meta-actions ._button.variation-outline:hover {
   border-color: #002541;
 }
-._real-estate-meta-actions .share {
+._real-estate-meta-actions .dropdown-dark {
   position: relative;
 }
-._real-estate-meta-actions .share ._button .icon {
+._real-estate-meta-actions .dropdown-dark ._button .icon {
   margin-right: 0;
 }
-._real-estate-meta-actions .share .dropdown-toggle:after {
+._real-estate-meta-actions .dropdown-dark .dropdown-toggle:after {
   display: none;
 }
-._real-estate-meta-actions .share .dropdown-menu {
+._real-estate-meta-actions .dropdown-dark .dropdown-menu {
   background: #002541;
   color: #fff;
   border: 0;
@@ -12526,25 +12526,38 @@ a:hover {
   min-width: 280px;
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.05);
 }
-._real-estate-meta-actions .share .dropdown-menu li + li {
+._real-estate-meta-actions .dropdown-dark .dropdown-menu li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+._real-estate-meta-actions .dropdown-dark .dropdown-menu li + li {
   margin-top: 18px;
 }
-._real-estate-meta-actions .share .dropdown-menu .dropdown-item {
+._real-estate-meta-actions .dropdown-dark .dropdown-menu .dropdown-item {
   padding: 0;
   color: #fff;
   display: flex;
   align-items: center;
   font-size: 14px;
 }
-._real-estate-meta-actions .share .dropdown-menu .dropdown-item .icon {
-  color: #f8a63e;
-  font-size: 18px;
-  margin-right: 5px;
-}
-._real-estate-meta-actions .share .dropdown-menu .dropdown-item:hover {
+._real-estate-meta-actions .dropdown-dark .dropdown-menu .dropdown-item:hover, ._real-estate-meta-actions .dropdown-dark .dropdown-menu .dropdown-item.active {
   font-weight: 500;
   background: none;
   text-decoration: none;
+}
+._real-estate-meta-actions .dropdown-dark .dropdown-menu .dropdown-item + .check {
+  display: none;
+  font-size: 11px;
+  margin-right: 0;
+}
+._real-estate-meta-actions .dropdown-dark .dropdown-menu .dropdown-item.active + .check {
+  display: block;
+}
+._real-estate-meta-actions .dropdown-dark .dropdown-menu .icon {
+  color: #f8a63e;
+  font-size: 18px;
+  margin-right: 5px;
 }
 
 ._page-title {
@@ -12666,6 +12679,7 @@ a:hover {
   border-radius: 20px;
   height: 4px;
   background-color: rgba(0, 37, 65, 0.5);
+  opacity: 1;
 }
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #002541;
