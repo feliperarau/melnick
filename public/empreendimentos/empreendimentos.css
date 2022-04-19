@@ -12680,14 +12680,44 @@ a:hover {
 ._real-estate-filters .orderby {
   margin-left: auto;
 }
+._real-estate-filters .orderby ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+._real-estate-filters .orderby ul li + li {
+  margin-top: 14px;
+}
+._real-estate-filters .orderby ul a {
+  text-decoration: none;
+  font-size: 14px;
+}
+._real-estate-filters .orderby ul a:hover, ._real-estate-filters .orderby ul a.active {
+  font-weight: 500;
+}
 ._real-estate-filters .modal {
   overflow: hidden;
+}
+._real-estate-filters .modal .modal-content {
+  border: 0;
+  border-radius: 4px;
+}
+._real-estate-filters .modal .modal-header {
+  border-color: #dadada;
+}
+._real-estate-filters .modal .modal-body {
+  padding: 0 20px;
 }
 ._real-estate-filters .modal .modal-dialog {
   max-width: 630px;
   height: 100%;
   display: flex;
   align-items: center;
+}
+._real-estate-filters .modal .modal-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4a4a4a;
 }
 ._real-estate-filters .modal .radio {
   cursor: pointer;
@@ -12722,6 +12752,11 @@ a:hover {
   border: 1px solid #a8a8a8;
   transition: 150ms all;
 }
+._real-estate-filters .modal .radio .inner-label:hover {
+  background-color: #002541;
+  border-color: #002541;
+  color: white;
+}
 ._real-estate-filters .modal .filter-row {
   display: flex;
   align-items: center;
@@ -12731,13 +12766,13 @@ a:hover {
   padding-bottom: 20px;
 }
 ._real-estate-filters .modal .filter-row + .filter-row {
-  border-top: 1px solid #a8a8a8;
+  border-top: 1px solid #dadada;
 }
 ._real-estate-filters .modal .filter-row.wide {
   display: block;
 }
 ._real-estate-filters .modal .filter-row.wide .left {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 ._real-estate-filters .modal .filter-row .left {
   text-transform: uppercase;
@@ -12751,6 +12786,34 @@ a:hover {
 }
 ._real-estate-filters .modal .filter-row .slider {
   margin-bottom: 30px;
+  height: 4px;
+  border: none;
+  box-shadow: none;
+  background: #c4c4c4;
+  border-radius: 0;
+}
+._real-estate-filters .modal .filter-row .slider .noUi-connect {
+  background: #002541;
+}
+._real-estate-filters .modal .filter-row .slider .noUi-handle {
+  background: #002541;
+  box-shadow: none;
+  border-radius: 50%;
+  width: 30px;
+  border: 0;
+  height: 30px;
+  right: -15px;
+  top: -13px;
+}
+._real-estate-filters .modal .filter-row .slider .noUi-handle:before, ._real-estate-filters .modal .filter-row .slider .noUi-handle:after {
+  background: white;
+  width: 2px;
+  left: 11px;
+  top: 9px;
+  height: 12px;
+}
+._real-estate-filters .modal .filter-row .slider .noUi-handle:after {
+  left: 17px;
 }
 ._real-estate-filters .modal .filter-row .slider-controls {
   display: flex;
@@ -12759,6 +12822,29 @@ a:hover {
 ._real-estate-filters .modal .filter-row .slider-controls .input-group {
   max-width: 175px;
   margin-bottom: 5px;
+}
+._real-estate-filters .modal .filter-row .slider-controls .input-group .form-control {
+  border-right: 0;
+  font-size: 13px;
+  color: #002541;
+  font-weight: 500;
+  height: 40px;
+  padding-left: 18px;
+  border-color: #a8a8a8;
+  border-radius: 4px 0px 0px 4px;
+}
+._real-estate-filters .modal .filter-row .slider-controls .tip {
+  font-size: 12px;
+  font-weight: 400;
+  color: #a8a8a8;
+}
+._real-estate-filters .modal .filter-row .slider-controls .input-group-text {
+  background: none;
+  border-left: 0;
+  font-size: 13px;
+  font-weight: 400;
+  border-color: #a8a8a8;
+  color: #a8a8a8;
 }
 
 ._button {
