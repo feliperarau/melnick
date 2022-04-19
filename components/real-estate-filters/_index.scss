@@ -99,15 +99,51 @@
     }
     .orderby {
         margin-left: auto;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                & + li {
+                    margin-top: 14px;
+                }
+            }
+            a {
+                text-decoration: none;
+                font-size: 14px;
+
+                &:hover,
+                &.active {
+                    font-weight: 500;
+                }
+            }
+        }
     }
     .modal {
         overflow: hidden;
 
+        .modal-content {
+            border: 0;
+            border-radius: 4px;
+        }
+        .modal-header {
+            border-color: #dadada;
+        }
+        .modal-body {
+            padding: 0 20px;
+        }
         .modal-dialog {
             max-width: 630px;
             height: 100%;
             display: flex;
             align-items: center;
+        }
+        .modal-title {
+            font-size: 18px;
+            font-weight: 500;
+            color: $sec-cinza-escuro;
         }
         .radio {
             cursor: pointer;
@@ -142,6 +178,12 @@
                 color: $azul-melnick;
                 border: 1px solid $sec-cinzinha;
                 transition: 150ms all;
+
+                &:hover {
+                    background-color: $azul-melnick;
+                    border-color: $azul-melnick;
+                    color: white;
+                }
             }
         }
 
@@ -154,14 +196,14 @@
             padding-bottom: 20px;
 
             & + .filter-row {
-                border-top: 1px solid $sec-cinzinha;
+                border-top: 1px solid #dadada;
             }
 
             &.wide {
                 display: block;
 
                 .left {
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                 }
             }
 
@@ -178,11 +220,37 @@
             }
             .slider {
                 margin-bottom: 30px;
+                height: 4px;
+                border: none;
+                box-shadow: none;
+                background: #c4c4c4;
+                border-radius: 0;
+
+                .noUi-connect {
+                    background: $azul-melnick;
+                }
 
                 .noUi-handle {
-                    //border-radius: 50%;
-                    //width: 30px;
-                    //height: 30px;
+                    background: $azul-melnick;
+                    box-shadow: none;
+                    border-radius: 50%;
+                    width: 30px;
+                    border: 0;
+                    height: 30px;
+                    right: -15px;
+                    top: -13px;
+
+                    &:before,
+                    &:after {
+                        background: white;
+                        width: 2px;
+                        left: 11px;
+                        top: 9px;
+                        height: 12px;
+                    }
+                    &:after {
+                        left: 17px;
+                    }
                 }
             }
             .slider-controls {
@@ -191,8 +259,31 @@
 
                 .input-group {
                     max-width: 175px;
-
                     margin-bottom: 5px;
+
+                    .form-control {
+                        border-right: 0;
+                        font-size: 13px;
+                        color: $azul-melnick;
+                        font-weight: 500;
+                        height: 40px;
+                        padding-left: 18px;
+                        border-color: $sec-cinzinha;
+                        border-radius: 4px 0px 0px 4px;
+                    }
+                }
+                .tip {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: $sec-cinzinha;
+                }
+                .input-group-text {
+                    background: none;
+                    border-left: 0;
+                    font-size: 13px;
+                    font-weight: 400;
+                    border-color: $sec-cinzinha;
+                    color: $sec-cinzinha;
                 }
             }
         }

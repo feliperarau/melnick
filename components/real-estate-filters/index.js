@@ -1,5 +1,6 @@
 import { Dropdown } from "bootstrap";
 import noUiSlider from "nouislider";
+import wNumb from "wnumb";
 
 export const realEstateFilters = () => {
     const ref = document.querySelectorAll("._real-estate-filters");
@@ -73,23 +74,59 @@ export const realEstateFilters = () => {
         toggler.classList.remove("variation-outline");
     };
 
+    const cleanModalFilters = (modal) => {
+        const radios = modal.querySelectorAll('input[type="radio"]:checked');
+        const sliders = modal.querySelectorAll(".slider");
+
+        radios.forEach((radio) => {
+            radio.checked = false;
+        });
+
+        sliders.forEach((slider) => {
+            slider.noUiSlider.reset();
+        });
+        console.log(modal);
+    };
+
     ref.forEach((component) => {
         const dropdowns = component.querySelectorAll(".dropdown");
-        const sliders = component.querySelectorAll(".modal .slider");
+        const modal = component.querySelector(".modal");
+        const sliders = modal.querySelectorAll(".slider");
+        const modalClean = modal.querySelector(".bottom .clear");
+
+        modalClean.addEventListener("click", () => cleanModalFilters(modal));
 
         sliders.forEach((slider) => {
             const controls =
                 slider.parentElement.querySelector(".slider-controls");
 
-            noUiSlider.create(slider, {
-                start: [80, 650],
-                connect: true,
-                step: 50,
-                range: {
-                    min: 50,
-                    max: 800,
-                },
-            });
+            if (slider.classList.contains("area")) {
+                noUiSlider.create(slider, {
+                    start: [80, 650],
+                    connect: true,
+                    step: 50,
+                    range: {
+                        min: 50,
+                        max: 800,
+                    },
+                    format: wNumb({
+                        decimals: 0,
+                    }),
+                });
+            } else if (slider.classList.contains("price")) {
+                noUiSlider.create(slider, {
+                    start: [140, 240],
+                    connect: true,
+                    step: 1,
+                    range: {
+                        min: 120,
+                        max: 280,
+                    },
+                    format: wNumb({
+                        decimals: 3,
+                    }),
+                });
+            }
 
             slider.noUiSlider.on("update", function (values, handle) {
                 var valueControls = [
