@@ -1,4 +1,5 @@
 // Modules
+import { Modal } from "bootstrap";
 import Swiper from "swiper/bundle";
 
 //Components
@@ -113,9 +114,13 @@ export const realEstateStories = () => {
             on: {
                 slideChange: function (swiper) {
                     const currentSlide = swiper.slides[swiper.activeIndex];
-                    const container = currentSlide.closest(".stories-carousel");
+                    const container =
+                        currentSlide?.closest(".stories-carousel");
                     const containerSlider = container?.swiper;
-                    console.log(swiper.el);
+
+                    if (!containerSlider) {
+                        return;
+                    }
 
                     if (currentSlide.classList.contains("wide")) {
                         if (!container.classList.contains("landscape")) {
@@ -146,6 +151,12 @@ export const realEstateStories = () => {
 
         storyPause.addEventListener("click", function (e) {
             pauseStory(storyIns);
+        });
+        storyClose.addEventListener("click", function (e) {
+            const modal = this.closest(".modal");
+            const modalControl = Modal.getOrCreateInstance(modal);
+
+            modalControl.hide();
         });
     };
 

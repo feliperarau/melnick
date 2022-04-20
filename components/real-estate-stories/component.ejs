@@ -6,112 +6,114 @@ let cssClass = args.cssClass ?? '';
 
 <div class="_real-estate-stories <%= cssClass %>">
     <!-- Modal -->
-    <div class="modal fade in show d-block" id="real-estate-stories" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-inner">
-            <div class="swiper stories-carousel portrait">
-                <div class="swiper-wrapper">
+    <div class="modal fade" id="real-estate-stories" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-inner">
+                <div class="swiper stories-carousel portrait">
+                    <div class="swiper-wrapper">
 
-                    <!-- Book -->
-                    <div class="swiper-slide carousel-slide">
-                        <div class="stories-slider portrait">
-                            <div class="swiper-pagination"></div>
-                            <div class="swiper">
-                                <%- include( './swiper-controls.ejs' ); %>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <%- include( './slide-book.ejs', { args: { caption: 'Book do empreendimento', bg: 'book.jpeg' } } ); %>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <%- include( './slide-book.ejs', { args: { caption: 'Book do empreendimento 2', bg: 'landscape.jpeg' } } ); %>
+                        <!-- Book -->
+                        <div class="swiper-slide carousel-slide">
+                            <div class="stories-slider portrait">
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper">
+                                    <%- include( './swiper-controls.ejs' ); %>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <%- include( './slide-book.ejs', { args: { caption: 'Book do empreendimento', bg: 'book.jpeg' } } ); %>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <%- include( './slide-book.ejs', { args: { caption: 'Book do empreendimento 2', bg: 'landscape.jpeg' } } ); %>
+                                        </div>
                                     </div>
                                 </div>
+                                <%- include( './swiper-nav.ejs' ); %>
                             </div>
-                            <%- include( './swiper-nav.ejs' ); %>
                         </div>
-                    </div>
 
-                    <!-- Status -->
-                    <div class="swiper-slide carousel-slide">
-                        <div class="stories-slider portrait">
-                            <div class="swiper-pagination"></div>
-                            <div class="swiper">
-                                <%- include( './swiper-controls.ejs' ); %>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <%- include( './slide-cronograma.ejs', { args: { caption: 'Andamento da Obra', bg: 'cronograma.jpeg' } } ); %>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <%- include( './slide-status.ejs', { args: { caption: 'Andamento da Obra' } } ); %>
+                        <!-- Status -->
+                        <div class="swiper-slide carousel-slide">
+                            <div class="stories-slider portrait">
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper">
+                                    <%- include( './swiper-controls.ejs' ); %>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <%- include( './slide-cronograma.ejs', { args: { caption: 'Andamento da Obra', bg: 'cronograma.jpeg' } } ); %>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <%- include( './slide-status.ejs', { args: { caption: 'Andamento da Obra' } } ); %>
+                                        </div>
                                     </div>
                                 </div>
+                                <%- include( './swiper-nav.ejs' ); %>
                             </div>
-                            <%- include( './swiper-nav.ejs' ); %>
                         </div>
-                    </div>
 
-                    <!-- Bairro -->
-                    <div class="swiper-slide carousel-slide">
-                        <div class="stories-slider ">
-                            <div class="swiper-pagination"></div>
-                            <div class="swiper">
-                                <%- include( './swiper-controls.ejs' ); %>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro', bg: 'bairro.jpeg' } } ); %>
-                                    </div>
-                                    <div class="swiper-slide wide">
-                                        <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro 2', bg: 'office.jpeg' } } ); %>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro 3', bg: 'mall.jpeg' } } ); %>
+                        <!-- Bairro -->
+                        <div class="swiper-slide carousel-slide">
+                            <div class="stories-slider ">
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper">
+                                    <%- include( './swiper-controls.ejs' ); %>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro', bg: 'bairro.jpeg' } } ); %>
+                                        </div>
+                                        <div class="swiper-slide wide">
+                                            <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro 2', bg: 'office.jpeg' } } ); %>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro 3', bg: 'mall.jpeg' } } ); %>
+                                        </div>
                                     </div>
                                 </div>
+                                <%- include( './swiper-nav.ejs' ); %>
                             </div>
-                            <%- include( './swiper-nav.ejs' ); %>
                         </div>
-                    </div>
 
-                    <!-- Bairro -->
-                    <div class="swiper-slide carousel-slide">
-                        <div class="stories-slider ">
-                            <div class="swiper-pagination"></div>
-                            <div class="swiper">
-                                <%- include( './swiper-controls.ejs' ); %>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro', bg: 'bairro.jpeg' } } ); %>
-                                    </div>
-                                    <div class="swiper-slide wide">
-                                        <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro 2', bg: 'office.jpeg' } } ); %>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro 3', bg: 'mall.jpeg' } } ); %>
+                        <!-- Bairro -->
+                        <div class="swiper-slide carousel-slide">
+                            <div class="stories-slider ">
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper">
+                                    <%- include( './swiper-controls.ejs' ); %>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro', bg: 'bairro.jpeg' } } ); %>
+                                        </div>
+                                        <div class="swiper-slide wide">
+                                            <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro 2', bg: 'office.jpeg' } } ); %>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro 3', bg: 'mall.jpeg' } } ); %>
+                                        </div>
                                     </div>
                                 </div>
+                                <%- include( './swiper-nav.ejs' ); %>
                             </div>
-                            <%- include( './swiper-nav.ejs' ); %>
                         </div>
-                    </div>
 
-                    <!-- Bairro -->
-                    <div class="swiper-slide carousel-slide">
-                        <div class="stories-slider ">
-                            <div class="swiper-pagination"></div>
-                            <div class="swiper">
-                                <%- include( './swiper-controls.ejs' ); %>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro', bg: 'bairro.jpeg' } } ); %>
-                                    </div>
-                                    <div class="swiper-slide wide">
-                                        <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro 2', bg: 'office.jpeg' } } ); %>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro 3', bg: 'mall.jpeg' } } ); %>
+                        <!-- Bairro -->
+                        <div class="swiper-slide carousel-slide">
+                            <div class="stories-slider ">
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper">
+                                    <%- include( './swiper-controls.ejs' ); %>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro', bg: 'bairro.jpeg' } } ); %>
+                                        </div>
+                                        <div class="swiper-slide wide">
+                                            <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro 2', bg: 'office.jpeg' } } ); %>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <%- include( './slide-bairro.ejs', { args: { caption: 'Conheça o Bairro 3', bg: 'mall.jpeg' } } ); %>
+                                        </div>
                                     </div>
                                 </div>
+                                <%- include( './swiper-nav.ejs' ); %>
                             </div>
-                            <%- include( './swiper-nav.ejs' ); %>
                         </div>
                     </div>
                 </div>

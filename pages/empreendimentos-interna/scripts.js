@@ -12,13 +12,16 @@ import "../../components/real-estate-action-carousel/";
 import "../../components/entry-real-estate-list";
 import "../../components/real-estate-plants";
 import "../../components/real-estate-modal";
+import "../../components/real-estate-stories";
 import "../../components/real-estate-features";
 import "../../components/real-estate-description";
 
 export const empreendimentosInterna = () => {
     const page = document.getElementById("page-empreendimentos-interna");
     const realEstateModal = document.getElementById("real-estate-modal");
+    const realEstateStories = document.getElementById("real-estate-stories");
     const modal = new Modal(realEstateModal, {});
+    const storiesModal = new Modal(realEstateStories, {});
 
     const showTab = (tabId) => {
         const tabElement = document.getElementById(tabId);
@@ -47,21 +50,14 @@ export const empreendimentosInterna = () => {
             });
         }
     }
-    /*
-    page.addEventListener("galleryOpenModal", function (e) {
-        modal.show();
+    page.addEventListener("openStories", function (e) {
+        storiesModal.show();
+        const storyIndex = e.detail.storyToOpen;
+        const outerSlider =
+            realEstateStories.querySelector(".stories-carousel");
 
-        realEstateModal.addEventListener("shown.bs.modal", (e) => {
-            showTab("imagens-tab");
-        });
+        const outerSwiper = outerSlider.swiper;
+        outerSwiper.slideTo(storyIndex);
     });
-
-    page.addEventListener("plantsOpenModal", function (e) {
-        modal.show();
-
-        realEstateModal.addEventListener("shown.bs.modal", (e) => {
-            showTab("plantas-tab");
-        });
-    });*/
 };
 empreendimentosInterna();
