@@ -14206,16 +14206,11 @@ button.swiper-pagination-bullet {
 
 ._real-estate-modal .modal {
   background-color: #4a4a4a;
-  height: 100vh;
-  overflow: hidden;
 }
-._real-estate-modal .modal-wrapper {
-  height: 100%;
-  display: flex;
-}
-._real-estate-modal .modal-inner {
-  flex: 1;
+._real-estate-modal .modal-content {
+  background: none;
   min-width: 0;
+  overflow: hidden;
 }
 ._real-estate-modal .modal-header {
   border-bottom: 0;
@@ -14291,6 +14286,10 @@ button.swiper-pagination-bullet {
 }
 ._real-estate-modal .gallery-slider {
   position: relative;
+  height: 100%;
+}
+._real-estate-modal .gallery-slider .swiper {
+  height: 100%;
 }
 ._real-estate-modal .gallery-slider .slide-caption {
   position: absolute;
@@ -14310,6 +14309,7 @@ button.swiper-pagination-bullet {
 ._real-estate-modal .gallery-slider .swiper-slide .thumbnail {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 ._real-estate-modal .gallery-slider .swiper-nav-container {
   position: absolute;
@@ -14359,6 +14359,11 @@ button.swiper-pagination-bullet {
 ._real-estate-modal .tab-content {
   border-radius: 4px;
   overflow: hidden;
+  height: 100%;
+}
+._real-estate-modal .tab-content .tab-pane,
+._real-estate-modal .tab-content .tab-inner {
+  height: 100%;
 }
 ._real-estate-modal .modal-body {
   position: static;

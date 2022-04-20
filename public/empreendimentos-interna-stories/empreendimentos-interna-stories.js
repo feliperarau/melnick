@@ -3429,10 +3429,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "realEstateGallery": () => (/* binding */ realEstateGallery)
 /* harmony export */ });
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 var realEstateGallery = function realEstateGallery() {
   var ref = document.querySelectorAll("._real-estate-gallery");
   ref.forEach(function (component) {
-    console.log(component);
+    var galleryItems = component.querySelectorAll(".gallery-item");
+    galleryItems.forEach(function (galleryItem) {
+      galleryItem.addEventListener("click", function (e) {
+        var index = _toConsumableArray(galleryItems).indexOf(galleryItem);
+
+        var root = galleryItem.closest(".site-wrapper");
+        var event = new CustomEvent("galleryOpenModal", {
+          detail: {
+            itemIndex: index
+          }
+        });
+        root.dispatchEvent(event);
+      });
+    });
   });
 };
 realEstateGallery();
@@ -3453,9 +3478,34 @@ __webpack_require__.r(__webpack_exports__);
 var realEstateMetaActions = function realEstateMetaActions() {
   var ref = document.querySelectorAll("._real-estate-meta-actions");
   ref.forEach(function (component) {
-    console.log(component);
+    var togglers = component.querySelectorAll(".modal-toggler");
+    togglers.forEach(function (toggler) {
+      toggler.addEventListener("click", function (e) {
+        var cls = e.currentTarget.classList;
+        var eventName = "galleryOpenModal";
+
+        switch (true) {
+          case cls.contains("plantas-toggler"):
+            eventName = "plantsOpenModal";
+            break;
+
+          case cls.contains("videos-toggler"):
+            eventName = "videosOpenModal";
+            break;
+
+          case cls.contains("tour-toggler"):
+            eventName = "tourOpenModal";
+            break;
+        }
+
+        var root = e.target.closest(".site-wrapper");
+        var event = new CustomEvent(eventName, {});
+        root.dispatchEvent(event);
+      });
+    });
   });
-}; //realEstateMetaActions();
+};
+realEstateMetaActions();
 
 /***/ }),
 
@@ -3477,6 +3527,12 @@ var realEstatePlants = function realEstatePlants() {
   var ref = document.querySelectorAll("._real-estate-plants");
   ref.forEach(function (component) {
     var tabs = component.querySelectorAll(".tab-pane");
+    var fullscreen = component.querySelector(".fullscreen");
+    fullscreen.addEventListener("click", function (e) {
+      var root = e.target.closest(".site-wrapper");
+      var event = new CustomEvent("plantsOpenModal", {});
+      root.dispatchEvent(event);
+    });
     tabs.forEach(function (tab) {
       var slider = tab.querySelector(".swiper");
       var navigationPrev = tab.querySelector(".prev-slide");
