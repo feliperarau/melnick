@@ -3356,6 +3356,24 @@ navbar();
 
 /***/ }),
 
+/***/ "./components/progress-bar/index.js":
+/*!******************************************!*\
+  !*** ./components/progress-bar/index.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "progressBar": () => (/* binding */ progressBar)
+/* harmony export */ });
+var progressBar = function progressBar() {
+  var ref = document.querySelectorAll("._progress-bar");
+  ref.forEach(function (component) {});
+}; //progressBar();
+
+/***/ }),
+
 /***/ "./components/real-estate-action-carousel/index.js":
 /*!*********************************************************!*\
   !*** ./components/real-estate-action-carousel/index.js ***!
@@ -3368,6 +3386,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "realEstateActionCarousel": () => (/* binding */ realEstateActionCarousel)
 /* harmony export */ });
 /* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.esm.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 // Modules
 
 var realEstateActionCarousel = function realEstateActionCarousel() {
@@ -3376,6 +3406,22 @@ var realEstateActionCarousel = function realEstateActionCarousel() {
     var slider = component.querySelector(".swiper");
     var navigationPrev = slider.querySelector(".swiper-prev");
     var navigationNext = slider.querySelector(".swiper-next");
+    var cards = slider.querySelectorAll("._real-estate-action"); // console.log(cards);
+
+    cards.forEach(function (card) {
+      //console.log(card);
+      card.addEventListener("click", function (e) {
+        var index = _toConsumableArray(cards).indexOf(card);
+
+        var root = e.target.closest(".site-wrapper");
+        var event = new CustomEvent("openStories", {
+          detail: {
+            storyToOpen: index
+          }
+        });
+        root.dispatchEvent(event);
+      });
+    });
     var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
       spaceBetween: 20,
       slidesPerView: "auto",
@@ -3385,14 +3431,6 @@ var realEstateActionCarousel = function realEstateActionCarousel() {
         nextEl: navigationNext,
         prevEl: navigationPrev
       }
-      /*breakpoints: {
-          // when window width is >= 320px
-          767: {
-              spaceBetween: 20,
-              slidesPerView: 3,
-          },
-      },*/
-
     });
   });
 };
@@ -3685,6 +3723,190 @@ var realEstatePlants = function realEstatePlants() {
   });
 };
 realEstatePlants();
+
+/***/ }),
+
+/***/ "./components/real-estate-stories/index.js":
+/*!*************************************************!*\
+  !*** ./components/real-estate-stories/index.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "realEstateStories": () => (/* binding */ realEstateStories)
+/* harmony export */ });
+/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
+/* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.esm.js");
+/* harmony import */ var _progress_bar___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../progress-bar/ */ "./components/progress-bar/index.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+// Modules
+
+ //Components
+
+
+var realEstateStories = function realEstateStories() {
+  var ref = document.querySelectorAll("._real-estate-stories");
+
+  var pauseStory = function pauseStory(slider) {
+    var sliderEl = slider.el.closest(".stories-slider");
+
+    if (sliderEl.classList.contains("paused")) {
+      slider.autoplay.start();
+      sliderEl.classList.remove("paused");
+    } else {
+      slider.autoplay.stop();
+      sliderEl.classList.add("paused");
+    }
+  };
+
+  var setupStoryCarousel = function setupStoryCarousel(component) {
+    var storyCarousel = component.querySelector(".stories-carousel");
+    var carouselItems = component.querySelectorAll(".carousel-slide");
+    var next = storyCarousel === null || storyCarousel === void 0 ? void 0 : storyCarousel.querySelectorAll(".swiper-next");
+    carouselItems.forEach(function (carouselItem, i) {
+      setupStorySlider(carouselItem, i);
+      carouselItem.addEventListener("click", function (e) {
+        var button = e.target.closest(".swiper-nav");
+        var parentSlider = e.currentTarget.closest(".stories-carousel").swiper;
+
+        var parent = _toConsumableArray(e.currentTarget.parentNode.children);
+
+        var index = parent.indexOf(e.currentTarget);
+
+        if (button) {
+          if (button.classList.contains("swiper-next")) {
+            parentSlider.slideNext();
+          } else if (button.classList.contains("swiper-prev")) {
+            parentSlider.slidePrev();
+          }
+
+          return;
+        }
+
+        carousel.slideTo(index);
+      });
+    });
+    var carousel = new swiper_bundle__WEBPACK_IMPORTED_MODULE_1__["default"](storyCarousel, {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      prevEl: storyCarousel === null || storyCarousel === void 0 ? void 0 : storyCarousel.querySelectorAll(".swiper-prev"),
+      nextEl: storyCarousel === null || storyCarousel === void 0 ? void 0 : storyCarousel.querySelectorAll(".swiper-next"),
+      allowTouchMove: false,
+      on: {
+        slideChange: function slideChange(swiper) {
+          var currentSlide = swiper.slides[swiper.activeIndex];
+          var slides = swiper.slides;
+          slides.forEach(function (slide) {
+            var _slide$querySelector;
+
+            var childSlider = slide === null || slide === void 0 ? void 0 : (_slide$querySelector = slide.querySelector(".swiper")) === null || _slide$querySelector === void 0 ? void 0 : _slide$querySelector.swiper;
+
+            if (slide === currentSlide) {
+              childSlider.autoplay.start();
+            } else {
+              childSlider.autoplay.stop();
+            }
+          });
+
+          if (swiper.el.classList.contains("landscape")) {
+            swiper.el.classList.remove("landscape");
+            setTimeout(function () {
+              swiper.update();
+            }, 200);
+          }
+        }
+      }
+    });
+  };
+
+  var setupStorySlider = function setupStorySlider(component, i) {
+    var storyInner = component.querySelector(".stories-slider");
+    var storyControls = component.querySelector(".swiper-controls");
+    var storySlider = storyInner.querySelector(".swiper");
+    var storyPause = storyControls.querySelector(".pause");
+    var storyClose = storyControls.querySelector(".close");
+    var storyIns = new swiper_bundle__WEBPACK_IMPORTED_MODULE_1__["default"](storySlider, {
+      spaceBetween: 10,
+      slidesPerView: 1,
+      autoplay: {
+        delay: 2000,
+        stopOnLastSlide: true
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+      allowTouchMove: false,
+      pagination: {
+        el: storyInner === null || storyInner === void 0 ? void 0 : storyInner.querySelector(".swiper-pagination"),
+        clickable: true
+      },
+      effect: "fade",
+      speed: 800,
+      fadeEffect: {
+        crossFade: true
+      },
+      on: {
+        slideChange: function slideChange(swiper) {
+          var currentSlide = swiper.slides[swiper.activeIndex];
+          var container = currentSlide === null || currentSlide === void 0 ? void 0 : currentSlide.closest(".stories-carousel");
+          var containerSlider = container === null || container === void 0 ? void 0 : container.swiper;
+
+          if (!containerSlider) {
+            return;
+          }
+
+          if (currentSlide.classList.contains("wide")) {
+            if (!container.classList.contains("landscape")) {
+              container.classList.add("landscape");
+              swiper.el.classList.add("wide-active");
+              setTimeout(function () {
+                containerSlider.update();
+              }, 200);
+            }
+          } else {
+            if (container.classList.contains("landscape")) {
+              container.classList.remove("landscape");
+              swiper.el.classList.remove("wide-active");
+              setTimeout(function () {
+                containerSlider.update();
+              }, 200);
+            }
+          }
+        }
+      }
+    });
+
+    if (i !== 0) {
+      storyIns.autoplay.stop();
+    }
+
+    storyPause.addEventListener("click", function (e) {
+      pauseStory(storyIns);
+    });
+    storyClose.addEventListener("click", function (e) {
+      var modal = this.closest(".modal");
+      var modalControl = bootstrap__WEBPACK_IMPORTED_MODULE_0__.Modal.getOrCreateInstance(modal);
+      modalControl.hide();
+    });
+  };
+
+  ref.forEach(function (component) {
+    setupStoryCarousel(component);
+  });
+};
+realEstateStories();
 
 /***/ }),
 
@@ -21667,8 +21889,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_entry_real_estate_list__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/entry-real-estate-list */ "./components/entry-real-estate-list/index.js");
 /* harmony import */ var _components_real_estate_plants__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/real-estate-plants */ "./components/real-estate-plants/index.js");
 /* harmony import */ var _components_real_estate_modal__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/real-estate-modal */ "./components/real-estate-modal/index.js");
-/* harmony import */ var _components_real_estate_features__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/real-estate-features */ "./components/real-estate-features/index.js");
-/* harmony import */ var _components_real_estate_description__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/real-estate-description */ "./components/real-estate-description/index.js");
+/* harmony import */ var _components_real_estate_stories__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/real-estate-stories */ "./components/real-estate-stories/index.js");
+/* harmony import */ var _components_real_estate_features__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/real-estate-features */ "./components/real-estate-features/index.js");
+/* harmony import */ var _components_real_estate_description__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../components/real-estate-description */ "./components/real-estate-description/index.js");
 // Modules
  // Assets
 
@@ -21683,10 +21906,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var empreendimentosInterna = function empreendimentosInterna() {
   var page = document.getElementById("page-empreendimentos-interna");
   var realEstateModal = document.getElementById("real-estate-modal");
+  var realEstateStories = document.getElementById("real-estate-stories");
   var modal = new bootstrap__WEBPACK_IMPORTED_MODULE_0__.Modal(realEstateModal, {});
+  var storiesModal = new bootstrap__WEBPACK_IMPORTED_MODULE_0__.Modal(realEstateStories, {});
 
   var showTab = function showTab(tabId) {
     var tabElement = document.getElementById(tabId);
@@ -21714,20 +21940,14 @@ var empreendimentosInterna = function empreendimentosInterna() {
       })();
     }
   }
-  /*
-  page.addEventListener("galleryOpenModal", function (e) {
-      modal.show();
-       realEstateModal.addEventListener("shown.bs.modal", (e) => {
-          showTab("imagens-tab");
-      });
-  });
-   page.addEventListener("plantsOpenModal", function (e) {
-      modal.show();
-       realEstateModal.addEventListener("shown.bs.modal", (e) => {
-          showTab("plantas-tab");
-      });
-  });*/
 
+  page.addEventListener("openStories", function (e) {
+    storiesModal.show();
+    var storyIndex = e.detail.storyToOpen;
+    var outerSlider = realEstateStories.querySelector(".stories-carousel");
+    var outerSwiper = outerSlider.swiper;
+    outerSwiper.slideTo(storyIndex);
+  });
 };
 empreendimentosInterna();
 })();
