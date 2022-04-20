@@ -14825,6 +14825,7 @@ button.swiper-pagination-bullet {
   transition: 200ms all;
 }
 ._real-estate-stories .stories-carousel .carousel-slide:not(.swiper-slide-active) .swiper-controls,
+._real-estate-stories .stories-carousel .carousel-slide:not(.swiper-slide-active) .swiper-pagination,
 ._real-estate-stories .stories-carousel .carousel-slide:not(.swiper-slide-active) .swiper-nav-container,
 ._real-estate-stories .stories-carousel .carousel-slide:not(.swiper-slide-active) .slide-caption,
 ._real-estate-stories .stories-carousel .carousel-slide:not(.swiper-slide-active) .book-inner {
