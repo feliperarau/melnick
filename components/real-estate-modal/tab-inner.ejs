@@ -1,0 +1,58 @@
+<div class="tab-inner">
+    <div class="gallery-slider">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <% for ( let i=1; i<=10; i++) { %>
+                <div class="swiper-slide">
+                    <span class="slide-caption">Fachada <%= i %></span>
+                    <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-<%= i %>.jpeg" />
+                </div>
+                <% } %>
+            </div>
+        </div>
+
+        <div class="swiper-nav-container">
+            <button class="swiper-nav swiper-prev">
+                <i class="icon icon-chevron-left"></i>
+            </button>
+
+            <button class="swiper-nav swiper-next">
+                <i class="icon icon-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="slider-thumbnails">
+        <%- 
+        include( '../button-icon/component.ejs', { args: {
+            icon: 'chevron-right',
+            cssClass: 'thumbnails-toggler'
+        } } );
+        %>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <% for ( let i=1; i<=10; i++) { %>
+
+                <div class="swiper-slide">
+                    <img class="thumbnail" src="../../assets/img/real-estate-inner/gallery-<%= i %>.jpeg" />
+                </div>
+                <% } %>
+            </div>
+        </div>
+
+        <div class="swiper-nav-container">
+            <%- 
+            include( '../button-icon/component.ejs', { args: {
+                icon: 'chevron-left',
+                cssClass: 'swiper-nav swiper-prev'
+            } } );
+            %>
+            <%- 
+            include( '../button-icon/component.ejs', { args: {
+                icon: 'chevron-right',
+                cssClass: 'swiper-nav swiper-next'
+            } } );
+            %>
+        </div>
+    </div>
+</div>
