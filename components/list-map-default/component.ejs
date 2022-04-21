@@ -34,14 +34,14 @@ let cssClass = args.cssClass ?? '';
             </div>
         </div>
         <div class="map-background">
+            <img src="../../assets/img/map.png" alt="Melnick map" class="map">
+
             <% for(let i = 0; i < 8; i++) { %>
             <% let active = i === 2 ? 'active' : ''; %>
             <%- include( '../list-map-button-pin/component.ejs', { args: { cssClass: `pin-${i + 1} ${active}` } } ); %>
             <% } %>
 
             <%- include( '../list-map-entry/component.ejs', { realEstate: realEstates[2]} ); %>
-
-            <img src="../../assets/img/map.png" alt="Melnick map" class="map">
         </div>
         <div class="bottom-controls">
             <%- include( '../list-map-button-contact/component.ejs' ); %>

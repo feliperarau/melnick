@@ -34,6 +34,14 @@ body {
     }
     .map {
         margin-right: -20px;
+        position: relative;
+
+        ._list-map-default {
+            @include media-breakpoint-up(md) {
+                top: 40px;
+                position: sticky;
+            }
+        }
     }
     .real-estates {
         ._entry-real-estate-list {
