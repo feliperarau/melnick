@@ -14869,6 +14869,9 @@ body {
 #page-empreendimentos-interna ._real-estate-meta-actions {
   margin-bottom: 30px;
 }
+#page-empreendimentos-interna .form-scrollable {
+  position: relative;
+}
 #page-empreendimentos-interna .meta {
   display: flex;
   gap: 40px;
@@ -14880,11 +14883,19 @@ body {
 }
 #page-empreendimentos-interna .meta .right {
   flex-basis: 435px;
-  position: relative;
   z-index: 50;
 }
+@media (min-width: 768px) {
+  #page-empreendimentos-interna .meta .right .rail {
+    position: absolute;
+    height: 100%;
+    padding-bottom: 40px;
+    padding-right: 20px;
+  }
+}
 #page-empreendimentos-interna .meta .right ._real-estate-form {
-  position: absolute;
+  position: sticky;
+  top: 40px;
 }
 #page-empreendimentos-interna .description + .features {
   margin-top: -45px;
