@@ -12928,7 +12928,7 @@ a:hover {
 }
 ._entry-real-estate-list .thumbnail {
   width: 182px;
-  height: 100%;
+  height: 182px;
 }
 ._entry-real-estate-list .thumbnail img {
   width: 100%;
@@ -13172,6 +13172,7 @@ a:hover {
 }
 ._list-map-default .top-controls {
   position: absolute;
+  z-index: 100;
   left: 0;
   right: 0;
   top: 0;
@@ -13344,6 +13345,13 @@ body {
 }
 #page-empreendimentos .map {
   margin-right: -20px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  #page-empreendimentos .map ._list-map-default {
+    top: 40px;
+    position: sticky;
+  }
 }
 #page-empreendimentos .real-estates ._entry-real-estate-list {
   margin-top: 20px;
