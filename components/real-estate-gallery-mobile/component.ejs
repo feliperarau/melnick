@@ -1,0 +1,40 @@
+<% 
+// Params
+var args = typeof args !== 'undefined' ? args : '';
+let cssClass = args.cssClass ?? '';
+let title = args.title ?? '';
+let description = args.description ?? '';
+%>
+
+<div class="_real-estate-gallery-mobile <%= cssClass %>">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide ">
+                <a href="#">
+                    <img src="../../assets/img/real-estate-inner/gallery-1.jpeg" />
+                </a>
+            </div>
+            <div class="swiper-slide ">
+                <a href="#">
+                    <img src="../../assets/img/real-estate-inner/gallery-2.png" />
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="../../assets/img/real-estate-inner/gallery-3.jpeg" />
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="../../assets/img/real-estate-inner/gallery-4.jpeg" />
+                </a>
+            </div>
+            <div class="swiper-slide ">
+                <a href="#">
+                    <img src="../../assets/img/real-estate-inner/gallery-5.jpeg" />
+                </a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>

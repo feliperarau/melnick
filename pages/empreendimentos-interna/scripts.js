@@ -7,6 +7,7 @@ import "../../assets/js/main";
 // Components
 import "../../components/header";
 import "../../components/real-estate-gallery";
+import "../../components/real-estate-gallery-mobile";
 import "../../components/real-estate-meta-actions/";
 import "../../components/real-estate-action-carousel/";
 import "../../components/entry-real-estate-list";
@@ -14,6 +15,7 @@ import "../../components/real-estate-plants";
 import "../../components/real-estate-modal";
 import "../../components/real-estate-stories";
 import "../../components/real-estate-features";
+import "../../components/real-estate-features-mobile";
 import "../../components/real-estate-description";
 
 export const empreendimentosInterna = () => {

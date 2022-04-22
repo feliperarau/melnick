@@ -6,10 +6,19 @@
         font-size: 28px;
         letter-spacing: 0.05em;
         line-height: 100%;
+        font-weight: 400;
+
+        @include media-breakpoint-down(lg) {
+            font-size: 18px;
+        }
     }
     .description {
         color: $sec-cinza-escuro;
         font-size: 16px;
         margin-bottom: 0;
+
+        @include media-breakpoint-down(lg) {
+            font-size: 14px;
+        }
     }
 }

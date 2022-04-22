@@ -1,12 +1,13 @@
 ._real-estate-testimonies {
-    margin-left: -20px;
-    margin-right: -20px;
     background-color: $azul-melnick;
     color: #fff;
-    padding: 80px 40px 90px;
+    padding-top: 80px;
+    padding-bottom: 90px;
 
-    .inner {
-        max-width: 868px;
+    @include media-breakpoint-down(lg) {
+        box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.1);
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .title {
@@ -15,7 +16,11 @@
         line-height: 120%;
         margin-bottom: 42px;
     }
+    .quotes-wrap {
+        overflow-y: scroll;
+    }
     .quotes {
+        width: 868px;
         display: flex;
         gap: 25px;
     }

@@ -4,23 +4,19 @@
     }
 
     .top-section {
-        display: flex;
-        justify-content: space-between;
-        max-width: 868px;
-        padding-left: 20px;
         margin-bottom: 30px;
+
+        @include media-breakpoint-up(lg) {
+            max-width: 868px;
+            display: flex;
+            justify-content: space-between;
+        }
     }
 
     .bottom-section {
         background-color: #fff;
-        margin-left: -20px;
-        margin-right: -40px;
-
         .bottom-inner {
-            max-width: 888px;
-        }
-        .tab-pane {
-            padding-left: 40px;
+            max-width: 890px;
         }
     }
     .swiper-slide {
@@ -90,8 +86,12 @@
 
         display: flex;
         gap: 10px;
+        flex-wrap: nowrap;
+        overflow-y: scroll;
 
         ._button {
+            white-space: nowrap;
+
             .icon {
                 margin-right: 4px;
             }

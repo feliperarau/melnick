@@ -5,65 +5,69 @@ let cssClass = args.cssClass ?? '';
 %>
 
 <div class="_real-estate-map <%= cssClass %>">
-    <img src="../../assets/img/real-estate-inner/map.jpeg" />
+    <div class="container-fluid">
+        <div class="map-controls">
+            <div class="left">
 
-    <div class="map-controls">
-        <div class="left">
-
-            <h3 class="place">Localização</h3>
-            <span class="place-name">Rua Pedro Chaves Barcelos, 714</span>
-        </div>
-        <div class="right">
-            <span class="label">Comodidades próximas ao empreendimento:</span>
-            <div class="action-wrapper">
-                <div class="actions">
-                    <%- 
+                <h3 class="place">Localização</h3>
+                <span class="place-name">Rua Pedro Chaves Barcelos, 714</span>
+            </div>
+            <div class="right">
+                <span class="label">Comodidades próximas ao empreendimento:</span>
+                <div class="action-wrapper">
+                    <div class="actions remove-scrollbar leaked">
+                        <%- 
                 include( '../button-default/component.ejs', { args: {
                     icon: 'fitness-weight',
                     label: 'Academias',
                 } } );
                 %>
-                    <%-
+                        <%-
                 include( '../button-default/component.ejs', { args: {
                     icon: 'bank',
                     label: 'bancos',
                 } } );
                 %>
-                    <%-
+                        <%-
                 include( '../button-default/component.ejs', { args: {
                     icon: 'school',
                     label: 'Educação',
                     variation: 'outline',
                 } } );
                 %>
-                    <%-
+                        <%-
                 include( '../button-default/component.ejs', { args: {
                     icon: 'band-aid',
                     label: 'Farmácias',
                     variation: 'outline',
                 } } );
                 %>
-                    <%-
+                        <%-
                 include( '../button-default/component.ejs', { args: {
                     icon: 'medication',
                     label: 'Saúde',
                 } } );
                 %>
-                    <%-
+                        <%-
                 include( '../button-default/component.ejs', { args: {
                     icon: 'store',
                     label: 'Comércio',
                     variation: 'outline',
                 } } );
                 %>
-                    <%-
+                        <%-
                 include( '../button-default/component.ejs', { args: {
                     icon: 'grocery-cart',
                     label: 'Mercados',
                 } } );
                 %>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div class="map-container mx-n20">
+            <img src="../../assets/img/real-estate-inner/map.jpeg" />
         </div>
     </div>
 </div>

@@ -4,23 +4,25 @@ var args = typeof args !== 'undefined' ? args : '';
 let cssClass = args.cssClass ?? '';
 %>
 
-<div class="_real-estate-testimonies <%= cssClass %>">
+<div class="_real-estate-testimonies px-20 px-lg-40 <%= cssClass %>">
     <div class="inner">
         <h2 class="title title-display">Por que comprar um Melnick?</h2>
 
-        <div class="quotes">
-            <% for( let i = 0; i < 3; i++ ) { %>
-            <div class="quote">
-                <div class="circle"></div>
-                <h3 class="quote-title">Lorem Ipsum</h3>
-                <div class="quote-body">
-                    <i class="icon icon-open-quotes"></i>
-                    <span class="text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada, nisl eget viverra tincidunt."
-                    </span>
+        <div class="quotes-wrap leaked remove-scrollbar">
+            <div class="quotes">
+                <% for( let i = 0; i < 3; i++ ) { %>
+                <div class="quote">
+                    <div class="circle"></div>
+                    <h3 class="quote-title">Lorem Ipsum</h3>
+                    <div class="quote-body">
+                        <i class="icon icon-open-quotes"></i>
+                        <span class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada, nisl eget viverra tincidunt."
+                        </span>
+                    </div>
                 </div>
+                <% } %>
             </div>
-            <% } %>
         </div>
     </div>
 </div>

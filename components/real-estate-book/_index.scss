@@ -9,6 +9,11 @@
     position: relative;
     display: flex;
 
+    @include media-breakpoint-down(lg) {
+        padding: 0 13px 0 17px;
+        height: 55px;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -35,16 +40,28 @@
         align-items: center;
         gap: 19px;
 
+        @include media-breakpoint-down(lg) {
+            gap: 10px;
+        }
+
         .icon {
             color: $amarelo-melnick;
             font-size: 44px;
+
+            @include media-breakpoint-down(lg) {
+                font-size: 20px;
+            }
         }
         .book-title {
             font-size: 18px;
-            line-height: 18px;
+            line-height: 1;
             font-weight: 400;
             color: #fff;
             margin-bottom: 0;
+
+            @include media-breakpoint-down(lg) {
+                font-size: 13px;
+            }
         }
     }
     .download {

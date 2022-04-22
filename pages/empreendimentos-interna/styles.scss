@@ -6,6 +6,7 @@
 @import "../../components/header/";
 @import "../../components/footer/";
 @import "../../components/real-estate-gallery/";
+@import "../../components/real-estate-gallery-mobile/";
 @import "../../components/entry-real-estate-list/";
 @import "../../components/real-estate-meta-actions/";
 @import "../../components/page-title/";
@@ -15,6 +16,7 @@
 @import "../../components/real-estate-form/";
 @import "../../components/real-estate-description/";
 @import "../../components/real-estate-features/";
+@import "../../components/real-estate-features-mobile/";
 @import "../../components/real-estate-book/";
 @import "../../components/real-estate-plants/";
 @import "../../components/real-estate-testimonies/";
@@ -31,11 +33,18 @@ body {
         padding-top: 43px;
     }
 }
+
+._footer {
+    ._whatsapp-balloon {
+        @include media-breakpoint-down(lg) {
+            position: absolute;
+        }
+    }
+}
 #page-empreendimentos-interna {
     margin-top: 110px;
 
     ._page-title {
-        margin-top: 10px;
         margin-bottom: 20px;
     }
     .page-inner {
@@ -43,6 +52,17 @@ body {
     }
     ._real-estate-gallery {
         margin-bottom: 46px;
+
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+    }
+    ._real-estate-gallery-mobile {
+        margin-bottom: 20px;
+
+        @include media-breakpoint-up(lg) {
+            display: none;
+        }
     }
     ._real-estate-meta-actions {
         margin-bottom: 30px;
@@ -51,20 +71,28 @@ body {
         position: relative;
     }
     .meta {
-        display: flex;
-        gap: 40px;
         margin-bottom: 50px;
+
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            gap: 40px;
+        }
 
         .left {
             flex: 1;
             min-width: 0;
+            margin-bottom: 40px;
+
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 0;
+            }
         }
 
         .right {
             flex-basis: 435px;
             z-index: 50;
 
-            @include media-breakpoint-up(md) {
+            @include media-breakpoint-up(xxl) {
                 .rail {
                     position: absolute;
                     height: 100%;
@@ -73,29 +101,67 @@ body {
                 }
             }
             ._real-estate-form {
-                position: sticky;
-                top: 40px;
+                @include media-breakpoint-up(lg) {
+                    position: absolute;
+                }
+
+                @include media-breakpoint-up(xxl) {
+                    position: sticky;
+                    top: 40px;
+                }
             }
         }
     }
     .description {
-        & + .features {
-            margin-top: -45px;
-            position: relative;
-            z-index: 50;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 50px;
+        }
+        @include media-breakpoint-up(lg) {
+            & ~ .features {
+                margin-top: -45px;
+                position: relative;
+                z-index: 50;
+            }
         }
     }
     .features {
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+
         & + .book {
-            width: 758px;
-            margin-left: 23px;
-            position: relative;
-            z-index: 60;
-            top: -62px;
+            @include media-breakpoint-up(lg) {
+                top: -62px;
+                position: relative;
+                z-index: 60;
+                margin-left: 23px;
+                width: 758px;
+            }
+        }
+    }
+    .book {
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 60px;
+        }
+    }
+    .features-mobile {
+        margin-bottom: 50px;
+
+        @include media-breakpoint-up(lg) {
+            display: none;
+        }
+    }
+    .testimonies {
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 50px;
         }
     }
     .map {
         margin-bottom: 80px;
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 50px;
+        }
     }
     .related {
         margin-bottom: 60px;

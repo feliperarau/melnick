@@ -7,6 +7,10 @@ const realEstates = JSON.parse(include('../../data/real-estates/properties.json'
 <main class="site-wrapper" id="page-empreendimentos-interna">
     <div class="page-inner">
 
+        <section class="mobile-gallery">
+            <%- include('../../components/real-estate-gallery-mobile/component.ejs' ); -%>
+        </section>
+
         <section class="gallery container-fluid">
             <%- include('../../components/real-estate-gallery/component.ejs', { args: { cssClass: 'mb-99' } } ); -%>
         </section>
@@ -33,24 +37,28 @@ const realEstates = JSON.parse(include('../../data/real-estates/properties.json'
                 <%- include('../../components/real-estate-description/component.ejs' ); -%>
             </section>
 
+            <section class="features-mobile container-fluid">
+                <%- include('../../components/real-estate-features-mobile/component.ejs' ); -%>
+            </section>
+
             <section class="features">
                 <%- include('../../components/real-estate-features/component.ejs' ); -%>
             </section>
 
-            <section class="book">
+            <section class="book container-fluid">
                 <%- include('../../components/real-estate-book/component.ejs' ); -%>
             </section>
 
-            <section class="plants">
+            <section class="plants container-fluid">
                 <%- include('../../components/real-estate-plants/component.ejs' ); -%>
             </section>
 
-            <section class="testimonies">
+            <section class="testimonies mx-lg-n20">
                 <%- include('../../components/real-estate-testimonies/component.ejs' ); -%>
             </section>
         </div>
 
-        <section class="map">
+        <section class="map mx-lg-n20">
             <%- include('../../components/real-estate-map/component.ejs' ); -%>
         </section>
 
@@ -63,7 +71,5 @@ const realEstates = JSON.parse(include('../../data/real-estates/properties.json'
 
     <%- include('../../components/real-estate-stories/component.ejs' ); -%>
 </main>
-
-<%- include( '../../components/whatsapp-balloon/component.ejs' ); %>
 
 <%- include('../../components/footer/component.ejs') %>

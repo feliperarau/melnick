@@ -14,11 +14,39 @@
     --bs-gutter-y: 1.25rem;
 }
 
+.mx-n20 {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.mx-n40 {
+    margin-left: -40px;
+    margin-right: -40px;
+}
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.px-n40 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
 @each $bp, $width in $grid-breakpoints {
     @include media-breakpoint-up($bp) {
         .mx-#{$bp}-n20 {
             margin-left: -20px;
             margin-right: -20px;
+        }
+        .mx-#{$bp}-n40 {
+            margin-left: -40px;
+            margin-right: -40px;
+        }
+        .px-#{$bp}-20 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .px-#{$bp}-40 {
+            padding-left: 40px;
+            padding-right: 40px;
         }
     }
 }
@@ -27,8 +55,17 @@
     overflow-x: hidden;
 }
 .leaked {
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
         margin-right: -20px !important;
+        margin-left: -20px !important;
+        padding-left: 20px !important;
+    }
+}
+.remove-scrollbar {
+    scrollbar-width: 0;
+
+    &::-webkit-scrollbar {
+        display: none;
     }
 }
 ._slider-cards {

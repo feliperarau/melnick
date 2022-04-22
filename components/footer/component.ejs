@@ -8,7 +8,7 @@ const menu4 = JSON.parse(include('../../data/menus/footer-4.json') );
 <footer class="_footer">
     <div class="footer-top container-fluid">
         <div class="top-inner">
-            <div class="row row-cols-1 row-cols-md-5">
+            <div class="row row-cols-1 row-cols-lg-5">
                 <div class="col about">
                     <a class="footer-logo" href="/">
                         <img src="../../assets/img/Logo-colorida.svg" alt="melnick" />
@@ -20,16 +20,16 @@ const menu4 = JSON.parse(include('../../data/menus/footer-4.json') );
 
                     <%- include( '../social-icons/component.ejs' ); %>
                 </div>
-                <div class="col">
+                <div class="col menu">
                     <%- include( '../menu-list/component.ejs', { title: 'Sobre Nós', menuItems: menu1} ); %>
                 </div>
-                <div class="col">
+                <div class="col menu">
                     <%- include( '../menu-list/component.ejs', { title: 'Empreendimentos', menuItems: menu2} ); %>
                 </div>
-                <div class="col">
+                <div class="col menu">
                     <%- include( '../menu-list/component.ejs', { title: 'Canais Melnick', menuItems: menu3} ); %>
                 </div>
-                <div class="col">
+                <div class="col menu-highlight">
                     <%- 
                     include( '../menu-list/component.ejs', { 
                         cssClass: 'canal-de-vendas',
@@ -53,9 +53,10 @@ const menu4 = JSON.parse(include('../../data/menus/footer-4.json') );
         </div>
     </div>
     <div class="footer-bottom-bar">
+        <%- include( '../whatsapp-balloon/component.ejs' ); %>
         <%- 
         include( '../menu-list/component.ejs', { 
-            cssClass: 'bottom-menu canal-de-vendas mx-n20',
+            cssClass: 'bottom-menu canal-de-vendas mx-lg-n20',
             title: 'Canais de venda',
             menuItems: menu4
         }); 

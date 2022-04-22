@@ -7,10 +7,31 @@
     .related-title {
         font-size: 28px;
         margin-bottom: 12px;
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
     }
     .entries {
-        display: grid;
+        display: flex;
         gap: 20px;
-        grid-template-columns: repeat(4, 1fr);
+        padding-bottom: 20px;
+        overflow-y: scroll;
+        scrollbar-width: 0;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        @include media-breakpoint-up(lg) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        ._entry-real-estate {
+            flex-basis: 280px;
+            flex-shrink: 0;
+        }
     }
 }

@@ -1,18 +1,39 @@
 ._real-estate-description {
-    padding-right: 195px;
+    @include media-breakpoint-up(xxl) {
+        padding-right: 195px;
+    }
 
     .description-inner {
         display: flex;
-        gap: 100px;
+        flex-direction: column;
+
+        @include media-breakpoint-up(lg) {
+            flex-direction: row;
+            gap: 100px;
+        }
     }
     .text {
         flex: 1;
-        padding: 70px 0;
+        padding-top: 20px;
+
+        @include media-breakpoint-up(lg) {
+            padding: 70px 0;
+        }
     }
     .media {
-        height: 630px;
-        width: 630px;
+        height: 140px;
         position: relative;
+        order: -1;
+
+        @include media-breakpoint-up(lg) {
+            order: initial;
+            height: 530px;
+            width: 530px;
+        }
+        @include media-breakpoint-up(xl) {
+            height: 630px;
+            width: 630px;
+        }
 
         .swiper {
             height: 100%;
@@ -96,13 +117,28 @@
         }
     }
     .description-title {
-        font-size: 36px;
-        line-height: 43.2px;
+        display: none;
         margin-bottom: 25px;
+        font-size: 36px;
+        line-height: 120%;
+
+        @include media-breakpoint-up(lg) {
+            display: block;
+        }
+    }
+    .mobile-title {
+        order: -1;
+        font-size: 18px;
+        line-height: 144%;
+        margin-bottom: 5px;
+
+        @include media-breakpoint-up(lg) {
+            display: none;
+        }
     }
     .description-text {
         color: $sec-cinza-claro;
-        line-height: 16.8px;
+        line-height: 120%;
 
         p:last-child {
             margin-bottom: 0;

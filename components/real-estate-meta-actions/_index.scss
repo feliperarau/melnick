@@ -1,11 +1,30 @@
 @import "../button-default/";
 
 ._real-estate-meta-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    .inner {
+        display: flex;
+        //flex-wrap: wrap;
+        gap: 10px;
+        overflow-y: scroll;
 
-    @import "./button";
+        @import "./button";
 
-    @import "../../assets/scss/modules/dropdown";
+        @import "../../assets/scss/modules/dropdown";
+
+        .action {
+            flex-shrink: 0;
+        }
+        .share {
+            .dropdown-menu {
+                display: block !important;
+                visibility: hidden;
+                opacity: 0;
+
+                &.show {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
 }

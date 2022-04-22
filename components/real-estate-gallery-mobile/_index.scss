@@ -1,0 +1,50 @@
+._real-estate-gallery-mobile {
+    .swiper {
+        height: 200px;
+
+        &::before {
+            content: "";
+            height: 101px;
+            pointer-events: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: linear-gradient(
+                360deg,
+                #090909 0%,
+                rgba(9, 9, 9, 0) 100%
+            );
+            mix-blend-mode: normal;
+            opacity: 0.75;
+        }
+    }
+    .swiper-pagination {
+        position: absolute !important;
+        margin-bottom: 0;
+        z-index: 120;
+        bottom: 0;
+        right: 0;
+        left: auto;
+        width: auto;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        color: #f6f6f6;
+        font-weight: 500;
+    }
+    .swiper-slide {
+        display: flex;
+
+        a {
+            flex: 1;
+            display: flex;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

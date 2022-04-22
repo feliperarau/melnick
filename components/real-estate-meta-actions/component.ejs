@@ -5,52 +5,54 @@ var cssClass = args.cssClass ?? '';
 %>
 
 <div class="_real-estate-meta-actions <%= cssClass %>">
-    <div>
-        <%- 
-        include( '../button-default/component.ejs', { args: {
-            icon: 'camera',
-            label: 'Imagens',
-            cssClass: 'modal-toggler imagens-toggler',
-        } } );
-        %>
-    </div>
-    <div>
-        <%-
-        include( '../button-default/component.ejs', { args: {
-            icon: 'corporate-fare',
-            label: 'Plantas',
-            cssClass: 'modal-toggler plantas-toggler',
-        } } );
-        %>
-    </div>
-    <div>
-        <%-
-        include( '../button-default/component.ejs', { args: {
-            icon: '360',
-            label: 'Tour 360°',
-            cssClass: 'modal-toggler tour-toggler',
-        } } );
-        %>
-    </div>
-    <div>
-        <%-
-        include( '../button-default/component.ejs', { args: {
-            icon: 'video-library',
-            label: 'Vídeos',
-            cssClass: 'modal-toggler videos-toggler',
-        } } );
-        %>
-    </div>
-    <div class="share dropdown dropdown-dark">
-        <a class="_button _button-default dropdown-toggle" href="#" role="button" id="shareDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="icon icon-share"></i>
-        </a>
+    <div class="inner leaked remove-scrollbar">
+        <div class="action">
+            <%- 
+            include( '../button-default/component.ejs', { args: {
+                icon: 'camera',
+                label: 'Imagens',
+                cssClass: 'modal-toggler imagens-toggler',
+            } } );
+            %>
+        </div>
+        <div class="action">
+            <%-
+            include( '../button-default/component.ejs', { args: {
+                icon: 'corporate-fare',
+                label: 'Plantas',
+                cssClass: 'modal-toggler plantas-toggler',
+            } } );
+            %>
+        </div>
+        <div class="action">
+            <%-
+            include( '../button-default/component.ejs', { args: {
+                icon: '360',
+                label: 'Tour 360°',
+                cssClass: 'modal-toggler tour-toggler',
+            } } );
+            %>
+        </div>
+        <div class="action">
+            <%-
+            include( '../button-default/component.ejs', { args: {
+                icon: 'video-library',
+                label: 'Vídeos',
+                cssClass: 'modal-toggler videos-toggler',
+            } } );
+            %>
+        </div>
+        <div class="action share dropdown dropdown-dark">
+            <a class="_button _button-default dropdown-toggle" href="#" role="button" id="shareDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icon icon-share"></i>
+            </a>
 
-        <ul class="dropdown-menu" aria-labelledby="shareDropdown">
-            <li><a class="dropdown-item" href="#"><i class="icon icon-link"></i>Copiar link</a></li>
-            <li><a class="dropdown-item" href="#"><i class="icon icon-whatsapp"></i>Enviar por whatsapp</a></li>
-            <li><a class="dropdown-item" href="#"><i class="icon icon-facebook-2"></i>Compartilhar no Facebook</a></li>
-            <li><a class="dropdown-item" href="#"><i class="icon icon-linkedin-2"></i>Compartilhar no Linkedin</a></li>
-        </ul>
+            <ul class="dropdown-menu" aria-labelledby="shareDropdown">
+                <li><a class="dropdown-item" href="#"><i class="icon icon-link"></i>Copiar link</a></li>
+                <li><a class="dropdown-item" href="#"><i class="icon icon-whatsapp"></i>Enviar por whatsapp</a></li>
+                <li><a class="dropdown-item" href="#"><i class="icon icon-facebook-2"></i>Compartilhar no Facebook</a></li>
+                <li><a class="dropdown-item" href="#"><i class="icon icon-linkedin-2"></i>Compartilhar no Linkedin</a></li>
+            </ul>
+        </div>
     </div>
 </div>

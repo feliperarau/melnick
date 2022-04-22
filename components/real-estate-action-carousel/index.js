@@ -31,7 +31,6 @@ export const realEstateActionCarousel = () => {
             slidesPerView: "auto",
             freeMode: true,
             grabCursor: true,
-
             navigation: {
                 nextEl: navigationNext,
                 prevEl: navigationPrev,

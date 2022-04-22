@@ -2,7 +2,7 @@
 @import "../social-icons/";
 
 ._footer {
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
         text-align: center;
     }
     /** Footer Top */
@@ -15,10 +15,16 @@
             .row {
                 flex-wrap: wrap;
             }
+
+            .menu-highlight {
+                @include media-breakpoint-down(lg) {
+                    margin-top: 20px;
+                }
+            }
         }
     }
     ._social-icons {
-        @include media-breakpoint-down("md") {
+        @include media-breakpoint-down(lg) {
             justify-content: center;
         }
     }
@@ -35,9 +41,17 @@
         border-radius: 4px;
         color: #fff;
         padding: 40px;
-        margin-top: -40px;
+
+        @include media-breakpoint-up(lg) {
+            margin-top: -40px;
+
+            .menu-title {
+                text-align: center;
+            }
+        }
 
         .menu-title {
+            text-align: left;
             color: #fff;
         }
 
@@ -89,19 +103,24 @@
     }
     /** Footer Bottom Bar */
     .footer-bottom-bar {
-        position: fixed;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 500;
+        position: relative;
 
         ._menu-list {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 500;
             margin-top: auto;
             border-radius: 0;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
+
+            @include media-breakpoint-down(lg) {
+                position: static !important;
+            }
 
             .menu-title {
                 margin-bottom: 0px;
@@ -110,7 +129,7 @@
                 font-size: 18px;
                 font-weight: 300;
 
-                @include media-breakpoint-down(md) {
+                @include media-breakpoint-down(lg) {
                     display: none;
                 }
             }
@@ -123,7 +142,7 @@
                     margin-bottom: 10px;
                 }
                 .menu-label {
-                    @include media-breakpoint-down(md) {
+                    @include media-breakpoint-down(lg) {
                         display: none;
                     }
                 }

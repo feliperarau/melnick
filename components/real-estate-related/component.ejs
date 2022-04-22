@@ -9,7 +9,7 @@ let cssClass = args.cssClass ?? '';
 
 <div class="_real-estate-related <%= cssClass %>">
     <h2 class="related-title title-display">CONHEÇA TAMBÉM ESSES EMPREENDIMENTOS</h2>
-    <div class="entries">
+    <div class="entries leaked">
         <% realEstates.forEach(function(realEstate) { %>
         <%- include('../entry-real-estate/component.ejs', {realEstate}) -%>
         <% }); %>
