@@ -8,7 +8,7 @@ const menu4 = JSON.parse(include('../../data/menus/footer-4.json') );
 <footer class="_footer">
     <div class="footer-top container-fluid">
         <div class="top-inner">
-            <div class="row row-cols-1 row-cols-lg-5">
+            <div class="row row-cols-1 row-cols-lg-5 accordion" id="accordionExample">
                 <div class="col about">
                     <a class="footer-logo" href="/">
                         <img src="../../assets/img/Logo-colorida.svg" alt="melnick" />
@@ -21,13 +21,46 @@ const menu4 = JSON.parse(include('../../data/menus/footer-4.json') );
                     <%- include( '../social-icons/component.ejs' ); %>
                 </div>
                 <div class="col menu">
-                    <%- include( '../menu-list/component.ejs', { title: 'Sobre Nós', menuItems: menu1} ); %>
+                    <div class="accordion-content">
+                        <h2 class="accordion-header" id="footerMenuAccordionHeading1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#footerMenuAccordion1" aria-expanded="false" aria-controls="footerMenuAccordion1">
+                                Sobre Nós
+                            </button>
+                        </h2>
+                        <div id="footerMenuAccordion1" class="accordion-collapse collapse" aria-labelledby="footerMenuAccordionHeading1">
+                            <div class="accordion-body">
+                                <%- include( '../menu-list/component.ejs', { title: 'Sobre Nós', menuItems: menu1} ); %>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col menu">
-                    <%- include( '../menu-list/component.ejs', { title: 'Empreendimentos', menuItems: menu2} ); %>
+                    <div class="accordion-content">
+                        <h2 class="accordion-header" id="footerMenuAccordionHeading2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#footerMenuAccordion2" aria-expanded="false" aria-controls="footerMenuAccordion2">
+                                Empreendimentos
+                            </button>
+                        </h2>
+                        <div id="footerMenuAccordion2" class="accordion-collapse collapse" aria-labelledby="footerMenuAccordionHeading2">
+                            <div class="accordion-body">
+                                <%- include( '../menu-list/component.ejs', { title: 'Empreendimentos', menuItems: menu2} ); %>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col menu">
-                    <%- include( '../menu-list/component.ejs', { title: 'Canais Melnick', menuItems: menu3} ); %>
+                    <div class="accordion-content">
+                        <h2 class="accordion-header" id="footerMenuAccordionHeading3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#footerMenuAccordion3" aria-expanded="false" aria-controls="footerMenuAccordion3">
+                                Canais Melnick
+                            </button>
+                        </h2>
+                        <div id="footerMenuAccordion3" class="accordion-collapse collapse" aria-labelledby="footerMenuAccordionHeading3">
+                            <div class="accordion-body">
+                                <%- include( '../menu-list/component.ejs', { title: 'Canais Melnick', menuItems: menu3} ); %>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col menu-highlight">
                     <%- 

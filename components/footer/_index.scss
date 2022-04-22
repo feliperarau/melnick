@@ -8,9 +8,13 @@
     /** Footer Top */
     .footer-top {
         .top-inner {
-            padding-top: 40px;
-            padding-bottom: 35px;
-            border-bottom: 1px solid rgba($sec-cinzinha, 0.25);
+            padding-top: 50px;
+
+            @include media-breakpoint-up(lg) {
+                padding-top: 40px;
+                border-bottom: 1px solid rgba($sec-cinzinha, 0.25);
+                padding-bottom: 35px;
+            }
 
             .row {
                 flex-wrap: wrap;
@@ -19,6 +23,66 @@
             .menu-highlight {
                 @include media-breakpoint-down(lg) {
                     margin-top: 20px;
+                }
+            }
+
+            .about {
+                @include media-breakpoint-down(lg) {
+                    margin-bottom: 40px;
+                }
+            }
+
+            .col.menu {
+                @include media-breakpoint-down(lg) {
+                    margin-bottom: 10px;
+                }
+            }
+            ._menu-list {
+                .menu-title {
+                    @include media-breakpoint-down(lg) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .accordion {
+        .accordion-content {
+            .accordion-button {
+                background: none;
+                border-radius: 4px;
+                border: 1px solid $sec-cinzinha;
+                font-weight: 500;
+                padding: 12px 17px 12px 19px;
+                font-size: 13px;
+                line-height: 100%;
+
+                &::after {
+                    width: 15px;
+                    height: 15px;
+                    background-size: 15px;
+                }
+
+                &[aria-expanded="true"] {
+                    background: $azul-melnick;
+                    color: #fff;
+                    border-color: $azul-melnick;
+
+                    &:after {
+                        filter: brightness(5.5);
+                    }
+                }
+            }
+            @include media-breakpoint-up(lg) {
+                .accordion-collapse {
+                    display: block;
+                }
+
+                .accordion-body {
+                    padding: 0;
+                }
+                .accordion-header {
+                    display: none;
                 }
             }
         }
@@ -47,6 +111,7 @@
 
             .menu-title {
                 text-align: center;
+                display: block;
             }
         }
 
@@ -80,6 +145,10 @@
         padding-bottom: 30px;
         margin-bottom: 60px;
 
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 0px;
+        }
+
         .copy {
             color: $sec-cinzinha;
         }
@@ -95,6 +164,7 @@
                     display: none;
                 }
                 & > a {
+                    font-weight: 400;
                     margin-bottom: 16px;
                     display: inline-flex;
                 }
@@ -115,11 +185,13 @@
             border-radius: 0;
             display: flex;
             align-items: center;
-            justify-content: center;
             padding: 20px;
 
             @include media-breakpoint-down(lg) {
                 position: static !important;
+            }
+            @include media-breakpoint-up(lg) {
+                justify-content: center;
             }
 
             .menu-title {
