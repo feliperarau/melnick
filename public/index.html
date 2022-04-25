@@ -23,7 +23,7 @@
                         </a>
                     </div>
 
-                    <ul class="nav-menu center d-none d-md-flex px-2 flex-grow-1 justify-content-center mb-0">
+                    <ul class="nav-menu center d-none d-lg-flex px-2 flex-grow-1 justify-content-center mb-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="/residencial">Residencial</a>
                         </li>
@@ -34,7 +34,7 @@
                             <a class="nav-link" href="/comercial">Terrenos</a>
                         </li>
                     </ul>
-                    <ul class="nav-menu secondary px-2 mb-0 d-none d-md-flex">
+                    <ul class="nav-menu secondary px-2 mb-0 d-none d-lg-flex">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="/contato">Contato</a>
                         </li>
@@ -45,7 +45,7 @@
                             <a class="nav-link" href="/investidores">Relação com Investidores</a>
                         </li>
                     </ul>
-                    <button class="search-toggler d-md-none" type="button" aria-label="Toggle search">
+                    <button class="search-toggler d-lg-none" type="button" aria-label="Toggle search">
                         <span class="icon icon-search"></span>
                     </button>
                     <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
@@ -3809,7 +3809,7 @@
         <footer class="_footer">
             <div class="footer-top container-fluid">
                 <div class="top-inner">
-                    <div class="row row-cols-1 row-cols-lg-5">
+                    <div class="row row-cols-1 row-cols-lg-5 accordion" id="accordionExample">
                         <div class="col about">
                             <a class="footer-logo" href="/">
                                 <img src="./media/images/Logo-colorida.b388bf13.svg" alt="melnick" />
@@ -3838,155 +3838,206 @@
                             </div>
                         </div>
                         <div class="col menu">
-                            <nav class="_menu-list">
-                                <h2 class="menu-title">Sobre Nós</h2>
+                            <div class="accordion-content">
+                                <h2 class="accordion-header" id="footerMenuAccordionHeading1">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#footerMenuAccordion1"
+                                        aria-expanded="false"
+                                        aria-controls="footerMenuAccordion1">
+                                        Sobre Nós
+                                    </button>
+                                </h2>
+                                <div id="footerMenuAccordion1" class="accordion-collapse collapse" aria-labelledby="footerMenuAccordionHeading1">
+                                    <div class="accordion-body">
+                                        <nav class="_menu-list">
+                                            <h2 class="menu-title">Sobre Nós</h2>
 
-                                <ul class="menu">
-                                    <li class="menu-item">
-                                        <a href="sobre-nos" target="">
-                                            <span class="menu-label">A Melnick</span>
-                                        </a>
-                                    </li>
+                                            <ul class="menu">
+                                                <li class="menu-item">
+                                                    <a href="sobre-nos" target="">
+                                                        <span class="menu-label">A Melnick</span>
+                                                    </a>
+                                                </li>
 
-                                    <li class="menu-item">
-                                        <a href="blog" target="">
-                                            <span class="menu-label">Blog</span>
-                                        </a>
-                                    </li>
+                                                <li class="menu-item">
+                                                    <a href="blog" target="">
+                                                        <span class="menu-label">Blog</span>
+                                                    </a>
+                                                </li>
 
-                                    <li class="menu-item">
-                                        <a href="contato" target="">
-                                            <span class="menu-label">Contato</span>
-                                        </a>
-                                    </li>
+                                                <li class="menu-item">
+                                                    <a href="contato" target="">
+                                                        <span class="menu-label">Contato</span>
+                                                    </a>
+                                                </li>
 
-                                    <li class="menu-item">
-                                        <a href="acessibilidade" target="">
-                                            <span class="menu-label">Acessibilidade</span>
-                                        </a>
-                                    </li>
+                                                <li class="menu-item">
+                                                    <a href="acessibilidade" target="">
+                                                        <span class="menu-label">Acessibilidade</span>
+                                                    </a>
+                                                </li>
 
-                                    <li class="menu-item">
-                                        <a href="trabalhe-conosco" target="">
-                                            <span class="menu-label">Trabalhe Conosco</span>
-                                        </a>
-                                    </li>
+                                                <li class="menu-item">
+                                                    <a href="trabalhe-conosco" target="">
+                                                        <span class="menu-label">Trabalhe Conosco</span>
+                                                    </a>
+                                                </li>
 
-                                    <li class="menu-item">
-                                        <a href="imprensa" target="">
-                                            <span class="menu-label">Imprensa</span>
-                                        </a>
-                                    </li>
+                                                <li class="menu-item">
+                                                    <a href="imprensa" target="">
+                                                        <span class="menu-label">Imprensa</span>
+                                                    </a>
+                                                </li>
 
-                                    <li class="menu-item">
-                                        <a href="revista-me" target="">
-                                            <span class="menu-label">Revista ME</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
+                                                <li class="menu-item">
+                                                    <a href="revista-me" target="">
+                                                        <span class="menu-label">Revista ME</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col menu">
-                            <nav class="_menu-list">
-                                <h2 class="menu-title">Empreendimentos</h2>
+                            <div class="accordion-content">
+                                <h2 class="accordion-header" id="footerMenuAccordionHeading2">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#footerMenuAccordion2"
+                                        aria-expanded="false"
+                                        aria-controls="footerMenuAccordion2">
+                                        Empreendimentos
+                                    </button>
+                                </h2>
+                                <div id="footerMenuAccordion2" class="accordion-collapse collapse" aria-labelledby="footerMenuAccordionHeading2">
+                                    <div class="accordion-body">
+                                        <nav class="_menu-list">
+                                            <h2 class="menu-title">Empreendimentos</h2>
 
-                                <ul class="menu">
-                                    <li class="menu-item">
-                                        <a href="residencial" target="">
-                                            <span class="menu-label">Residencial</span>
-                                        </a>
-                                    </li>
+                                            <ul class="menu">
+                                                <li class="menu-item">
+                                                    <a href="residencial" target="">
+                                                        <span class="menu-label">Residencial</span>
+                                                    </a>
+                                                </li>
 
-                                    <li class="menu-item">
-                                        <a href="comercial" target="">
-                                            <span class="menu-label">Comercial</span>
-                                        </a>
-                                    </li>
+                                                <li class="menu-item">
+                                                    <a href="comercial" target="">
+                                                        <span class="menu-label">Comercial</span>
+                                                    </a>
+                                                </li>
 
-                                    <li class="menu-item">
-                                        <a href="terrenos" target="">
-                                            <span class="menu-label">Terrenos</span>
-                                        </a>
-                                    </li>
+                                                <li class="menu-item">
+                                                    <a href="terrenos" target="">
+                                                        <span class="menu-label">Terrenos</span>
+                                                    </a>
+                                                </li>
 
-                                    <li class="menu-item">
-                                        <a href="aluguel-reversivel" target="">
-                                            <span class="menu-label">Aluguel Reversível</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
+                                                <li class="menu-item">
+                                                    <a href="aluguel-reversivel" target="">
+                                                        <span class="menu-label">Aluguel Reversível</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col menu">
-                            <nav class="_menu-list">
-                                <h2 class="menu-title">Canais Melnick</h2>
+                            <div class="accordion-content">
+                                <h2 class="accordion-header" id="footerMenuAccordionHeading3">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#footerMenuAccordion3"
+                                        aria-expanded="false"
+                                        aria-controls="footerMenuAccordion3">
+                                        Canais Melnick
+                                    </button>
+                                </h2>
+                                <div id="footerMenuAccordion3" class="accordion-collapse collapse" aria-labelledby="footerMenuAccordionHeading3">
+                                    <div class="accordion-body">
+                                        <nav class="_menu-list">
+                                            <h2 class="menu-title">Canais Melnick</h2>
 
-                                <ul class="menu">
-                                    <li class="menu-item">
-                                        <a href="melnick-day" target="_blank">
-                                            <span class="menu-label">Melnick Day</span>
+                                            <ul class="menu">
+                                                <li class="menu-item">
+                                                    <a href="melnick-day" target="_blank">
+                                                        <span class="menu-label">Melnick Day</span>
 
-                                            <i class="icon icon-after icon-external"></i>
-                                        </a>
-                                    </li>
+                                                        <i class="icon icon-after icon-external"></i>
+                                                    </a>
+                                                </li>
 
-                                    <li class="menu-item">
-                                        <a href="portal-do-cliente" target="_blank">
-                                            <span class="menu-label">Portal do Cliente</span>
+                                                <li class="menu-item">
+                                                    <a href="portal-do-cliente" target="_blank">
+                                                        <span class="menu-label">Portal do Cliente</span>
 
-                                            <i class="icon icon-after icon-external"></i>
-                                        </a>
-                                    </li>
+                                                        <i class="icon icon-after icon-external"></i>
+                                                    </a>
+                                                </li>
 
-                                    <li class="menu-item">
-                                        <a href="relacoes-com-investidores" target="_blank">
-                                            <span class="menu-label">Relações com Investidores</span>
+                                                <li class="menu-item">
+                                                    <a href="relacoes-com-investidores" target="_blank">
+                                                        <span class="menu-label">Relações com Investidores</span>
 
-                                            <i class="icon icon-after icon-external"></i>
-                                        </a>
-                                    </li>
+                                                        <i class="icon icon-after icon-external"></i>
+                                                    </a>
+                                                </li>
 
-                                    <li class="menu-item">
-                                        <a href="portal-do-corretor" target="_blank">
-                                            <span class="menu-label">Portal do Corretor</span>
+                                                <li class="menu-item">
+                                                    <a href="portal-do-corretor" target="_blank">
+                                                        <span class="menu-label">Portal do Corretor</span>
 
-                                            <i class="icon icon-after icon-external"></i>
-                                        </a>
-                                    </li>
+                                                        <i class="icon icon-after icon-external"></i>
+                                                    </a>
+                                                </li>
 
-                                    <li class="menu-item">
-                                        <a href="projetista" target="_blank">
-                                            <span class="menu-label">Projetista</span>
+                                                <li class="menu-item">
+                                                    <a href="projetista" target="_blank">
+                                                        <span class="menu-label">Projetista</span>
 
-                                            <i class="icon icon-after icon-external"></i>
-                                        </a>
-                                    </li>
+                                                        <i class="icon icon-after icon-external"></i>
+                                                    </a>
+                                                </li>
 
-                                    <li class="menu-item">
-                                        <a href="tramitacoes" target="_blank">
-                                            <span class="menu-label">Tramitações</span>
+                                                <li class="menu-item">
+                                                    <a href="tramitacoes" target="_blank">
+                                                        <span class="menu-label">Tramitações</span>
 
-                                            <i class="icon icon-after icon-external"></i>
-                                        </a>
-                                    </li>
+                                                        <i class="icon icon-after icon-external"></i>
+                                                    </a>
+                                                </li>
 
-                                    <li class="menu-item">
-                                        <a href="melnick-vendas" target="_blank">
-                                            <span class="menu-label">Melnick Vendas</span>
+                                                <li class="menu-item">
+                                                    <a href="melnick-vendas" target="_blank">
+                                                        <span class="menu-label">Melnick Vendas</span>
 
-                                            <i class="icon icon-after icon-external"></i>
-                                        </a>
-                                    </li>
+                                                        <i class="icon icon-after icon-external"></i>
+                                                    </a>
+                                                </li>
 
-                                    <li class="menu-item">
-                                        <a href="lojas-spot" target="_blank">
-                                            <span class="menu-label">Lojas Spot</span>
+                                                <li class="menu-item">
+                                                    <a href="lojas-spot" target="_blank">
+                                                        <span class="menu-label">Lojas Spot</span>
 
-                                            <i class="icon icon-after icon-external"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
+                                                        <i class="icon icon-after icon-external"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col menu-highlight">
                             <nav class="_menu-list canal-de-vendas">
