@@ -2,14 +2,29 @@
 @import "../nav-overlay/";
 
 ._header-alt {
-    position: absolute;
+    position: fixed;
     left: 0px;
     right: 0px;
     top: 0px;
     z-index: 40;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    transition: 300ms all;
+    //background: #f6f6f6;
 
-    @include media-breakpoint-up(md) {
-        left: 40px;
-        right: 40px;
+    &.sticky {
+        @include media-breakpoint-down(lg) {
+            box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        height: 92px;
+    }
+
+    & ~ .site-wrapper {
+        margin-top: 0;
     }
 }

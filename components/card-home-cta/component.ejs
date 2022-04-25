@@ -6,6 +6,7 @@ var  description = args.description ?? '';
 var  bgImage = args.bgImage ?? '';
 var  btnLabel = args.btnLabel ?? '';
 var  btnLink = args.btnLink ?? '';
+var  icon = args.icon ?? false;
 %>
 
 <div class="_card-home-cta <%= cssClass %>">
@@ -21,7 +22,7 @@ var  btnLink = args.btnLink ?? '';
 
         <%- 
         include( '../button-default/component.ejs', { args: {
-            icon: 'chevron-right',
+            icon: icon ? 'chevron-right' : '',
             cssClass: '',
             link: btnLink,
             label: btnLabel,

@@ -6,17 +6,23 @@
     left: 0px;
     right: 0px;
     top: 0px;
-    z-index: 40;
+    z-index: 999;
     height: 64px;
     display: flex;
     align-items: center;
     transition: 300ms all;
     background: #f6f6f6;
 
+    &.light {
+        background: none;
+    }
+
     &.sticky {
         @include media-breakpoint-down(lg) {
             box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
             background-color: #fff;
+
+            @import "../navbar/variations/_dark.scss";
         }
     }
     @include media-breakpoint-up(lg) {

@@ -8,13 +8,15 @@ var scheme = args.scheme ?? 'light';
     <div class="collapse navbar-collapse d-flex align-items-center" id="main-nav">
         <div class="navbar-brand">
             <a href="/">
-                <% if( 'light' === scheme ) { %>
-                <img class="logo-desktop d-none d-md-block" src="../../assets/img/Logo-PB.svg" alt="Melnick" />
-                <img class="logo-mobile d-md-none" src="../../assets/img/Logo-mobile.svg" alt="Melnick" />
-                <% } else { %>
-                <img class="logo-desktop d-none d-md-block" src="../../assets/img/Logo-colorida.svg" alt="Melnick" />
-                <img class="logo-mobile d-md-none" src="../../assets/img/Logo-mobile-colorida.svg" alt="Melnick" />
-                <% } %>
+                <span class="light">
+                    <img class="logo-desktop d-none d-md-block light" src="../../assets/img/Logo-PB.svg" alt="Melnick" />
+                    <img class="logo-mobile d-md-none light" src="../../assets/img/Logo-mobile.svg" alt="Melnick" />
+                </span>
+
+                <span class="dark">
+                    <img class="logo-desktop d-none d-md-block dark" src="../../assets/img/Logo-colorida.svg" alt="Melnick" />
+                    <img class="logo-mobile d-md-none dark" src="../../assets/img/Logo-mobile-colorida.svg" alt="Melnick" />
+                </span>
             </a>
         </div>
 
@@ -28,6 +30,9 @@ var scheme = args.scheme ?? 'light';
             <li class="nav-item">
                 <a class="nav-link" href="/comercial">Terrenos</a>
             </li>
+        </ul>
+        <ul class="center-mobile d-lg-none">
+            Residencial <i class="icon icon-arrow_down"></i>
         </ul>
         <ul class="nav-menu secondary px-2 mb-0 d-none d-lg-flex">
             <li class="nav-item">

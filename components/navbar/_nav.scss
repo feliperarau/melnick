@@ -8,7 +8,6 @@
         @include nav-decoration;
     }
     .navbar-brand {
-        flex: 1;
         padding: 0;
 
         a {
@@ -16,6 +15,32 @@
         }
         img {
             display: block;
+        }
+
+        .dark {
+            display: none;
+        }
+        .light {
+            display: block;
+        }
+    }
+    .center-mobile {
+        padding: 0;
+        margin: 0;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        color: white;
+
+        .icon {
+            margin-bottom: 2px;
+            margin-left: 4px;
+
+            &:before {
+                display: block;
+            }
         }
     }
     .navbar-toggler,

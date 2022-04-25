@@ -22,6 +22,19 @@
         right: 0;
         top: 97px;
         z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+        transition: 200ms all;
+
+        &.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        @include media-breakpoint-up(lg) {
+            opacity: 1;
+            visibility: visible;
+        }
     }
 
     .inner {
@@ -31,18 +44,25 @@
         flex-direction: column;
         position: relative;
 
-        padding-bottom: 24px;
+        @include media-breakpoint-up(lg) {
+            padding-bottom: 24px;
+        }
 
         .slider {
             overflow-x: hidden;
+            position: relative;
         }
         .swiper-slide {
             display: flex;
             align-items: flex-end;
             background-repeat: no-repeat;
             background-size: cover;
-            min-height: 577px;
+            min-height: 460px;
             overflow: hidden;
+
+            @include media-breakpoint-up(lg) {
+                min-height: 577px;
+            }
 
             &::before {
                 content: "";
@@ -54,7 +74,7 @@
                 z-index: 5;
                 background: rgba(black, 0.4);
 
-                @include media-breakpoint-down(md) {
+                @include media-breakpoint-down(lg) {
                     border-radius: 0;
                 }
             }
@@ -70,6 +90,10 @@
             rgba(#090909, 0.75) 0%,
             rgba(9, 9, 9, 0) 100%
         );
+
+        @include media-breakpoint-down(lg) {
+            padding-bottom: 50px;
+        }
     }
     .slide-1 {
         background-image: url("./../../assets/img/hero-bg.jpeg");
@@ -79,5 +103,21 @@
     }
     .swiper-pagination {
         margin-top: 10px;
+
+        @include media-breakpoint-down(lg) {
+            margin-top: 0;
+            margin-bottom: 0;
+            position: absolute !important;
+            bottom: 20px !important;
+
+            .swiper-pagination-bullet {
+                background: #fff;
+                opacity: 0.5;
+
+                &.swiper-pagination-bullet-active {
+                    opacity: 1;
+                }
+            }
+        }
     }
 }

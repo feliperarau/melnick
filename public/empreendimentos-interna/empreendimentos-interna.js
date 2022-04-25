@@ -3295,8 +3295,13 @@ var header = function header() {
   };
 
   ref.forEach(function (component) {
+    var navSearchToggle = component.querySelector(".search-toggler");
     var navbar = component.querySelector("._navbar");
     var navOverlay = component.nextElementSibling;
+    navSearchToggle.addEventListener("click", function (e) {
+      var event = new CustomEvent("toggleSearch");
+      document.dispatchEvent(event);
+    });
 
     if (!navOverlay.classList.contains("_nav-overlay")) {
       return;

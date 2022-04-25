@@ -1,7 +1,13 @@
+<%
+// Defaults
+var args = typeof args !== 'undefined' ? args : {};
+var scheme = args.scheme ?? 'dark';
+
+%>
 <%- include('../head/component.ejs') %>
 
-<header class="_header overlay px-20 px-lg-40">
-    <%- include('../navbar/component.ejs', {args: { scheme: 'dark'}}) %>
+<header class="_header overlay px-20 px-lg-40 <%= scheme %>">
+    <%- include('../navbar/component.ejs', {args: { scheme: scheme}}) %>
 </header>
 
 <%- include('../nav-overlay/component.ejs') %>

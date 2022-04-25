@@ -15,8 +15,15 @@ export const header = () => {
     };
 
     ref.forEach((component) => {
+        const navSearchToggle = component.querySelector(".search-toggler");
         const navbar = component.querySelector("._navbar");
         const navOverlay = component.nextElementSibling;
+
+        navSearchToggle.addEventListener("click", (e) => {
+            const event = new CustomEvent("toggleSearch");
+
+            document.dispatchEvent(event);
+        });
 
         if (!navOverlay.classList.contains("_nav-overlay")) {
             return;

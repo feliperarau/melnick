@@ -14,6 +14,8 @@ export const homeSectionInitiative = () => {
         const navigationNext = slider.querySelector(".swiper-next");
         const sliderPagination = slider.querySelector(".swiper-pagination");
 
+        console.log(navigationPrev);
+
         var swiper = new Swiper(slider, {
             grabCursor: true,
             spaceBetween: 10,

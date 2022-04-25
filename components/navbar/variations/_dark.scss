@@ -10,4 +10,15 @@
     .search-toggler {
         color: $azul-melnick;
     }
+    .center-mobile {
+        color: $azul-melnick;
+    }
+    .navbar-brand {
+        .light {
+            display: none;
+        }
+        .dark {
+            display: block;
+        }
+    }
 }

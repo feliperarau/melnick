@@ -6,20 +6,23 @@ var args = typeof args !== 'undefined' ? args : '';
 let slug = args.slug ?? 'slider';
 %>
 
-<div class="_carousel-real-estate container-fluid">
+<div class="_carousel-real-estate">
     <div class="carousel-tabs">
-        <ul class="d-flex justify-content-center nav nav-tabs" data-bs-tabs="tabs">
-            <% tabs.forEach(function(tab) { %>
-            <li><a class="<%= tab.active ? 'active': '' %>" href="#<%= `${slug}-${tab.id}` %>" aria-current="<%= tab.active %>" data-bs-toggle="tab"><%= tab.label %></a></li>
-            <% }); %>
-        </ul>
+        <div class="swiper nav-slider">
+
+            <ul class="d-lg-flex justify-content-lg-center nav nav-tabs swiper-wrapper" data-bs-tabs="tabs">
+                <% tabs.forEach(function(tab) { %>
+                <li class="swiper-slide"><a class="<%= tab.active ? 'active': '' %>" href="#<%= `${slug}-${tab.id}` %>" aria-current="<%= tab.active %>" data-bs-toggle="tab"><%= tab.label %></a></li>
+                <% }); %>
+            </ul>
+        </div>
     </div>
     <div class="tab-content">
         <% tabs.forEach(function(tab) { %>
         <% const realEstates = JSON.parse(include('../../data/real-estates/carousel/'+ tab.id +'.json') ) %>
 
         <div id="<%= `${slug}-${tab.id}` %>" class="tab-pane fade <%= tab.active ? 'show active': '' %>" role="tabpanel">
-            <div class="swiper leaked">
+            <div class="swiper property-slider leaked">
                 <div class="swiper-wrapper">
                     <% realEstates.forEach(function(realEstate) { %>
                     <div class="swiper-slide">

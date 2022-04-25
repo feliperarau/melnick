@@ -5,30 +5,44 @@ import Swiper from "swiper/bundle";
 import "../entry-real-estate";
 
 export const carouselRealEstate = () => {
-  const ref = document.querySelectorAll("._carousel-real-estate");
+    const ref = document.querySelectorAll("._carousel-real-estate");
 
-  if (!ref.length) return;
+    ref.forEach((component) => {
+        const mainSliders = component.querySelectorAll(".property-slider");
+        const navSlider = component.querySelectorAll(".nav-slider");
 
-  // For every component on the page...
-  for (let c = 0; c < ref.length; c++) {
-    const component = ref[c];
-    const sliderContainer = component.querySelectorAll(".swiper");
+        //console.log(component);
+        navSlider.forEach((slider) => {
+            var swiper = new Swiper(slider, {
+                slidesPerView: 3,
+                //spaceBetween: 20,
+                freeMode: true,
+                //grabCursor: true,
+                //loop: true,
 
-    sliderContainer.forEach((slider) => {
-      const sliderPagination = slider.querySelector(".swiper-pagination");
+                breakpoints: {
+                    992: {
+                        slidesPerView: "auto",
+                    },
+                },
+            });
+        });
 
-      var swiper = new Swiper(slider, {
-        slidesPerView: "auto",
-        spaceBetween: 20,
-        freeMode: true,
-        grabCursor: true,
-        pagination: {
-          el: sliderPagination,
-          clickable: true,
-        },
-      });
+        mainSliders.forEach((slider) => {
+            const sliderPagination = slider.querySelector(".swiper-pagination");
+
+            var swiper = new Swiper(slider, {
+                slidesPerView: "auto",
+                spaceBetween: 20,
+                freeMode: true,
+                grabCursor: true,
+                pagination: {
+                    el: sliderPagination,
+                    clickable: true,
+                },
+            });
+        });
     });
-  }
 };
 
 carouselRealEstate();

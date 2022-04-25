@@ -3,9 +3,8 @@
 ._nav-overlay {
     @import "../navbar/nav";
 
-    padding: 68px 105px;
+    padding: 30px;
     background: rgba($azul-melnick, 0.96);
-
     position: fixed;
     z-index: 2000;
     left: 0;
@@ -13,21 +12,74 @@
     top: 0;
     bottom: 0;
 
+    @include media-breakpoint-down(lg) {
+        overflow-x: scroll;
+    }
+    @include media-breakpoint-up(lg) {
+        padding: 68px 105px;
+    }
+    .brand {
+        @include media-breakpoint-down(lg) {
+            width: 100%;
+        }
+    }
+
+    .navbar-collapse {
+        flex-wrap: wrap;
+    }
+
     .nav-menu {
         margin-right: 45px;
+
+        &.secondary {
+            @include media-breakpoint-down(lg) {
+                padding-left: 0 !important;
+                flex-direction: column;
+                margin-bottom: 40px !important;
+            }
+
+            @include media-breakpoint-down(lg) {
+                .nav-link {
+                    padding-left: 0;
+                }
+            }
+        }
     }
     .nav-link {
         font-size: 16px;
     }
+    .navbar-toggler {
+        @include media-breakpoint-down(lg) {
+            position: absolute;
+            right: 30px;
+            top: 30px;
+        }
+    }
 
     .bottom {
-        margin-top: 100px;
-        height: 100%;
-        overflow: auto;
+        @include media-breakpoint-up(lg) {
+            margin-top: 100px;
+            height: 100%;
+            overflow: auto;
+        }
 
+        .row {
+            @include media-breakpoint-down(lg) {
+                flex-direction: column;
+            }
+            .col {
+                @include media-breakpoint-down(lg) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
         .menu-title {
             color: $sec-azul-claro;
-            margin-bottom: 42px;
+
+            margin-bottom: 20px;
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 42px;
+            }
         }
 
         .menu {

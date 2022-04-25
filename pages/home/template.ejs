@@ -1,13 +1,13 @@
-<%- include('../../components/header-alt/component.ejs') %>
+<%- include('../../components/header/component.ejs', {args: {scheme: 'light'}}) %>
 
-<main class="site-wrapper">
-    <section class="mb-5">
+<main id="page-home" class="site-wrapper">
+    <section class="hero-section">
         <%- include('../../components/hero/component.ejs') %>
     </section>
 
     <%- include('../../components/home-section-real-estate-tabs/component.ejs', {args: { cssClass: 'mb-5'}}) %>
 
-    <%- include('../../components/home-section-features/component.ejs', {args: { cssClass: 'mb-5' }}) %>
+    <%- include('../../components/home-section-features/component.ejs', {args: { cssClass: 'mb-lg-5' }}) %>
 
     <%- include('../../components/home-section-features-wide/component.ejs', {args: { cssClass: 'mb-5'}}) %>
 

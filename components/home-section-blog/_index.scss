@@ -2,4 +2,21 @@
 
 ._home-section-blog {
     margin-bottom: 60px;
+
+    ._card-home-cta {
+        .inner-content {
+            @include media-breakpoint-down(lg) {
+                justify-content: end;
+                max-width: 100%;
+                min-height: 330px;
+                margin: 0;
+                padding: 30px;
+
+                ._button {
+                    justify-content: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
