@@ -31,8 +31,12 @@
     .form-inner {
         background-color: #fff;
         border-radius: 4px;
-        padding: 40px 45px;
+        padding: 30px;
         box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.1);
+
+        @include media-breakpoint-up(lg) {
+            padding: 40px 45px;
+        }
     }
     .top {
         text-align: center;

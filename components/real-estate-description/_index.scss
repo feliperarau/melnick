@@ -63,11 +63,15 @@
 
             .prev,
             .next {
-                width: 100px;
+                width: 70px;
                 position: relative;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                @include media-breakpoint-up(lg) {
+                    width: 100px;
+                }
 
                 &:before {
                     content: "";
@@ -108,7 +112,12 @@
 
                 .icon {
                     display: block;
-                    font-size: 32px;
+
+                    font-size: 24px;
+
+                    @include media-breakpoint-up(lg) {
+                        font-size: 32px;
+                    }
                 }
             }
             .prev-slide {

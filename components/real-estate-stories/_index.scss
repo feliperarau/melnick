@@ -244,8 +244,8 @@
         .carousel-slide {
             width: 370px;
             transition: 200ms all;
-            margin-left: -58px;
-            margin-right: -58px;
+            //margin-left: -58px;
+            //margin-right: -58px;
             will-change: transform;
             transform: scale(0.6) translateZ(0);
 
@@ -256,8 +256,8 @@
             }
 
             &.swiper-slide-active {
-                margin-left: 35px;
-                margin-right: 35px;
+                //margin-left: 35px;
+                //margin-right: 35px;
                 transform: scale(1) translateZ(0);
 
                 .swiper-pagination-bullet {
@@ -291,11 +291,16 @@
             }
 
             &:first-child {
-                margin-left: 0;
+                .swiper-prev {
+                    opacity: 0;
+                    visibility: hidden;
+                }
             }
-
             &:last-child {
-                margin-right: 0;
+                .swiper-next {
+                    opacity: 0;
+                    visibility: hidden;
+                }
             }
         }
     }

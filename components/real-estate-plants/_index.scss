@@ -15,12 +15,19 @@
 
     .bottom-section {
         background-color: #fff;
+
         .bottom-inner {
             max-width: 890px;
+
+            @include media-breakpoint-up(lg) {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
         }
     }
     .swiper-slide {
         position: relative;
+        min-height: 200px;
 
         .slide-label {
             position: absolute;
@@ -29,18 +36,31 @@
             font-size: 12px;
             font-weight: 500;
             color: $azul-melnick;
+
+            @include media-breakpoint-down(lg) {
+                display: none;
+            }
         }
     }
     .fullscreen {
-        position: absolute;
-        z-index: 10;
-        top: 30px;
-        right: 0;
-        width: 32px;
-        height: 32px;
+        &._button {
+            position: absolute;
+            z-index: 10;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
 
-        .icon {
-            font-size: 24px;
+            @include media-breakpoint-up(lg) {
+                top: 30px;
+                right: 0px;
+                width: 32px;
+                height: 32px;
+            }
+
+            .icon {
+                font-size: 24px;
+            }
         }
     }
     .swiper-nav-container {
@@ -50,19 +70,61 @@
         top: 0;
         bottom: 0;
         display: flex;
-        align-items: center;
         justify-content: space-between;
         z-index: 20;
         pointer-events: none;
 
+        .nav-control {
+            position: relative;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+
+            &.swiper-button-disabled {
+                &::before,
+                button {
+                    opacity: 0;
+                }
+            }
+
+            &::before {
+                transition: 200ms all;
+
+                @include media-breakpoint-down(lg) {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    opacity: 0.34;
+                    background: linear-gradient(
+                        270deg,
+                        #000000 0%,
+                        rgba(0, 37, 65, 0) 100%
+                    );
+                }
+            }
+            &.prev {
+                &:before {
+                    transform: rotate(180deg);
+                }
+            }
+        }
         button {
             pointer-events: all;
             background: none;
             border: none;
-            color: $azul-melnick;
+            color: #fff;
             transition: 200ms all;
             visibility: visible;
             opacity: 1;
+            position: relative;
+            z-index: 5;
+
+            @include media-breakpoint-up(lg) {
+                color: $azul-melnick;
+            }
 
             .icon {
                 display: block;
@@ -73,11 +135,15 @@
                 visibility: hidden;
             }
         }
-        .prev-slide {
-            transform: rotate(180deg);
-        }
+
         .icon {
-            font-size: 28px;
+            font-size: 24px;
+        }
+
+        .prev,
+        .next {
+            display: flex;
+            align-items: center;
         }
     }
 

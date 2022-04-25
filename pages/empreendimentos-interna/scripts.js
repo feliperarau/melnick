@@ -25,6 +25,8 @@ export const empreendimentosInterna = () => {
     const modal = new Modal(realEstateModal, {});
     const storiesModal = new Modal(realEstateStories, {});
 
+    console.log("called");
+
     const showTab = (tabId) => {
         const tabElement = document.getElementById(tabId);
         const tab = Tab.getOrCreateInstance(tabElement);
@@ -62,4 +64,7 @@ export const empreendimentosInterna = () => {
         outerSwiper.slideTo(storyIndex);
     });
 };
+
+window.empreendimentosInterna = empreendimentosInterna;
+
 empreendimentosInterna();

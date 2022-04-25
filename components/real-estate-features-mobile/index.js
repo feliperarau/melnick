@@ -1,7 +1,11 @@
+import Swiper from "swiper/bundle";
+
 export const realEstateFeaturesMobile = () => {
     const ref = document.querySelectorAll("._real-estate-features-mobile");
 
     ref.forEach((component) => {
+        const slider = component.querySelector(".swiper");
+        const pagination = slider.querySelector(".swiper-pagination");
         const featureItems = component.querySelectorAll(".feature-item");
 
         featureItems.forEach((featureItem) => {
@@ -25,6 +29,12 @@ export const realEstateFeaturesMobile = () => {
                 toggler.classList.remove("tip-visible");
                 tip.classList.remove("visible");
             });
+        });
+
+        const featureSlider = new Swiper(slider, {
+            pagination: {
+                el: pagination,
+            },
         });
     });
 };

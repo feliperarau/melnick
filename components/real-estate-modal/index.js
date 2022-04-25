@@ -63,4 +63,6 @@ export const realEstateModal = () => {
     });
 };
 
+window.realEstateModal = realEstateModal;
+
 realEstateModal();

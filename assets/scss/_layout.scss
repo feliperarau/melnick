@@ -51,8 +51,12 @@
     }
 }
 
-.sitw-wrapper {
-    overflow-x: hidden;
+.site-wrapper {
+    margin-top: 64px;
+
+    @include media-breakpoint-up(lg) {
+        margin-top: 92px;
+    }
 }
 .leaked {
     @include media-breakpoint-down(lg) {

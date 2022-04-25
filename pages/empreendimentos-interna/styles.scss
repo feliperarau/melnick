@@ -28,9 +28,9 @@
 body {
     background: #f6f6f6;
 }
-._navbar {
-    @include media-breakpoint-up(md) {
-        padding-top: 43px;
+._header {
+    @include media-breakpoint-up(lg) {
+        margin-top: 10px;
     }
 }
 
@@ -42,7 +42,9 @@ body {
     }
 }
 #page-empreendimentos-interna {
-    margin-top: 110px;
+    @include media-breakpoint-up(lg) {
+        margin-top: 102px;
+    }
 
     ._page-title {
         margin-bottom: 20px;

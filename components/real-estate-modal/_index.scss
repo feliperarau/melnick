@@ -25,6 +25,8 @@
     .nav-tabs {
         //gap: 10px;
         border-bottom: 0;
+        flex-wrap: nowrap;
+        overflow-y: scroll;
 
         .nav-item {
             &:not(.group) {
@@ -80,6 +82,7 @@
             font-weight: 500;
             display: flex;
             align-items: center;
+            white-space: nowrap;
 
             .icon {
                 color: $amarelo-melnick;
@@ -142,10 +145,15 @@
                 background: none;
                 padding: 0;
                 border: 0;
-                width: 178px;
-                font-size: 57px;
+                width: 90px;
+                font-size: 38px;
                 color: #fff;
                 transition: 200ms all;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 57px;
+                    width: 178px;
+                }
 
                 &.swiper-button-disabled {
                     opacity: 0;
