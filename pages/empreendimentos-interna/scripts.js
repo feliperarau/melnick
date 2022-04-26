@@ -17,51 +17,30 @@ import "../../components/real-estate-stories";
 import "../../components/real-estate-features";
 import "../../components/real-estate-features-mobile";
 import "../../components/real-estate-description";
+import { openGalleryModal } from "./galleryModalController";
+import { openStoriesModal } from "./storiesModalController";
 
 export const empreendimentosInterna = () => {
     const page = document.getElementById("page-empreendimentos-interna");
-    const realEstateModal = document.getElementById("real-estate-modal");
-    const realEstateStories = document.getElementById("real-estate-stories");
-    const modal = new Modal(realEstateModal, {});
-    const storiesModal = new Modal(realEstateStories, {});
 
-    console.log("called");
+    Array.from(Array(30).keys()).forEach((i) => {
+        const modalTogglerClass = `.gallery-toggler-${i}`;
+        const storiesTogglerClass = `.stories-toggler-${i}`;
 
-    const showTab = (tabId) => {
-        const tabElement = document.getElementById(tabId);
-        const tab = Tab.getOrCreateInstance(tabElement);
+        const modalTogglers = document.querySelectorAll(modalTogglerClass);
+        const storiesTogglers = document.querySelectorAll(storiesTogglerClass);
 
-        tab?.show();
-    };
-
-    const galleryModalOpenHooks = {
-        galleryOpenModal: "imagens-tab",
-        plantsOpenModal: "plantas-tab",
-        videosOpenModal: "videos-tab",
-        tourOpenModal: "tour-tab",
-    };
-
-    for (const key in galleryModalOpenHooks) {
-        if (Object.hasOwnProperty.call(galleryModalOpenHooks, key)) {
-            const tabId = galleryModalOpenHooks[key];
-
-            page.addEventListener(key, function (e) {
-                modal.show();
-
-                realEstateModal.addEventListener("shown.bs.modal", (e) => {
-                    showTab(tabId);
-                });
+        modalTogglers.forEach((toggler) => {
+            toggler.addEventListener("click", (e) => {
+                openGalleryModal(i);
             });
-        }
-    }
-    page.addEventListener("openStories", function (e) {
-        storiesModal.show();
-        const storyIndex = e.detail.storyToOpen;
-        const outerSlider =
-            realEstateStories.querySelector(".stories-carousel");
+        });
 
-        const outerSwiper = outerSlider.swiper;
-        outerSwiper.slideTo(storyIndex);
+        storiesTogglers.forEach((toggler) => {
+            toggler.addEventListener("click", (e) => {
+                openStoriesModal(i);
+            });
+        });
     });
 };
 
