@@ -4,11 +4,11 @@
 @font-face {
 	font-family: "icon";
 	font-display: block;
-	src: url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.d47152ec22e39da58a8b.eot?#iefix") format("embedded-opentype"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.d47152ec22e39da58a8b.woff") format("woff"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.d47152ec22e39da58a8b.woff2") format("woff2"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.d47152ec22e39da58a8b.ttf") format("truetype"),
-url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.d47152ec22e39da58a8b.svg#icon") format("svg");
+	src: url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.d30345e7755f52c4e2f4.eot?#iefix") format("embedded-opentype"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.d30345e7755f52c4e2f4.woff") format("woff"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.d30345e7755f52c4e2f4.woff2") format("woff2"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.d30345e7755f52c4e2f4.ttf") format("truetype"),
+url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.d30345e7755f52c4e2f4.svg#icon") format("svg");
 }
 
 .icon {
@@ -148,104 +148,107 @@ url("/Volumes/Projetos/Frontend/Melnick/public/icons/icon.d47152ec22e39da58a8b.s
 .icon-linkedin:before {
 	content: "\f12a";
 }
-.icon-map:before {
+.icon-listing:before {
 	content: "\f12b";
 }
-.icon-medication:before {
+.icon-map:before {
 	content: "\f12c";
 }
-.icon-menu_black_24dp:before {
+.icon-medication:before {
 	content: "\f12d";
 }
-.icon-noise-aware:before {
+.icon-menu_black_24dp:before {
 	content: "\f12e";
 }
-.icon-open-quotes:before {
+.icon-noise-aware:before {
 	content: "\f12f";
 }
-.icon-paint-roller:before {
+.icon-open-quotes:before {
 	content: "\f130";
 }
-.icon-pause:before {
+.icon-paint-roller:before {
 	content: "\f131";
 }
-.icon-person:before {
+.icon-pause:before {
 	content: "\f132";
 }
-.icon-pets:before {
+.icon-person:before {
 	content: "\f133";
 }
-.icon-place_black:before {
+.icon-pets:before {
 	content: "\f134";
 }
-.icon-place:before {
+.icon-place_black:before {
 	content: "\f135";
 }
-.icon-plant:before {
+.icon-place:before {
 	content: "\f136";
 }
-.icon-play:before {
+.icon-plant:before {
 	content: "\f137";
 }
-.icon-playground:before {
+.icon-play:before {
 	content: "\f138";
 }
-.icon-pool:before {
+.icon-playground:before {
 	content: "\f139";
 }
-.icon-question-outline:before {
+.icon-pool:before {
 	content: "\f13a";
 }
-.icon-remove:before {
+.icon-question-outline:before {
 	content: "\f13b";
 }
-.icon-school:before {
+.icon-remove:before {
 	content: "\f13c";
 }
-.icon-search:before {
+.icon-school:before {
 	content: "\f13d";
 }
-.icon-share:before {
+.icon-search:before {
 	content: "\f13e";
 }
-.icon-spa:before {
+.icon-share:before {
 	content: "\f13f";
 }
-.icon-sports-esports:before {
+.icon-spa:before {
 	content: "\f140";
 }
-.icon-sports-tennis:before {
+.icon-sports-esports:before {
 	content: "\f141";
 }
-.icon-store:before {
+.icon-sports-tennis:before {
 	content: "\f142";
 }
-.icon-straighten:before {
+.icon-store:before {
 	content: "\f143";
 }
-.icon-telephone-2:before {
+.icon-straighten:before {
 	content: "\f144";
 }
-.icon-telephone:before {
+.icon-telephone-2:before {
 	content: "\f145";
 }
-.icon-toys:before {
+.icon-telephone:before {
 	content: "\f146";
 }
-.icon-video-library:before {
+.icon-toys:before {
 	content: "\f147";
 }
-.icon-water-drop:before {
+.icon-video-library:before {
 	content: "\f148";
 }
-.icon-waves:before {
+.icon-water-drop:before {
 	content: "\f149";
 }
-.icon-whatsapp:before {
+.icon-waves:before {
 	content: "\f14a";
 }
-.icon-youtube:before {
+.icon-whatsapp:before {
 	content: "\f14b";
+}
+.icon-youtube:before {
+	content: "\f14c";
 }
 
 /*!********************************************************************************************!*\
