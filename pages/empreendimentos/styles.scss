@@ -90,5 +90,7 @@ body {
     }
 }
 .site-wrapper {
-    margin-top: 97px;
+    @include media-breakpoint-up(lg) {
+        margin-top: 97px;
+    }
 }

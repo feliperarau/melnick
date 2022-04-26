@@ -7,7 +7,7 @@
     display: flex;
 
     @include media-breakpoint-down(lg) {
-        height: 100vh;
+        height: 100%;
     }
     @include media-breakpoint-up(lg) {
         justify-content: end;
@@ -68,6 +68,10 @@
         right: 42px;
         display: flex;
         justify-content: flex-end;
+
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
     }
     ._list-map-button-pin {
         position: absolute;
