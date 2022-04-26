@@ -6,7 +6,9 @@
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.05);
 
     .entry-inner {
-        display: flex;
+        @include media-breakpoint-up(lg) {
+            display: flex;
+        }
     }
 
     &:hover {
@@ -21,8 +23,12 @@
     }
 
     .thumbnail {
-        width: 182px;
-        height: 182px;
+        height: 150px;
+
+        @include media-breakpoint-up(lg) {
+            width: 182px;
+            height: 182px;
+        }
 
         img {
             width: 100%;
@@ -32,10 +38,38 @@
         }
     }
     .inner {
-        padding: 20px;
+        padding: 30px;
         flex: 1;
         display: flex;
         align-items: center;
+        position: relative;
+
+        @include media-breakpoint-up(lg) {
+            padding: 20px;
+        }
+        .map-button {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -15px;
+            display: flex;
+            justify-content: center;
+
+            @include media-breakpoint-up(lg) {
+                display: none;
+            }
+
+            ._button {
+                padding: 0 15px;
+                height: 30px;
+                border-radius: 8px;
+
+                .icon {
+                    font-size: 18px;
+                    margin-right: 5px;
+                }
+            }
+        }
     }
     .category {
         text-transform: uppercase;

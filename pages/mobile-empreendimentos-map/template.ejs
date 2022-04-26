@@ -4,7 +4,7 @@ const realEstates = JSON.parse(include('../../data/real-estates/properties.json'
 
 <%- include('../../components/header/component.ejs') %>
 
-<main class="site-wrapper" id="page-empreendimentos">
+<main class="site-wrapper" id="page-mobile-empreendimentos-map">
 
     <%- include('../../components/real-estate-filters/component.ejs') %>
 
@@ -21,7 +21,7 @@ const realEstates = JSON.parse(include('../../data/real-estates/properties.json'
             <div class="d-flex justify-content-center see-more">
                 <%- 
                 include( '../../components/button-default/component.ejs', { args: {
-                    label: 'Ver mais empreendimentos',
+                    label: 'Ver mais',
                 } } );
                 %>
             </div>

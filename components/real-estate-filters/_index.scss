@@ -3,14 +3,25 @@
 @import "~nouislider/dist/nouislider.css";
 
 ._real-estate-filters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+    }
+
+    .filter-inner {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+        overflow-y: scroll;
+        padding-bottom: 100vh;
+        margin-bottom: -100vh;
+    }
 
     ._button {
         height: 40px;
         padding: 0 20px;
         font-size: 13px;
+        white-space: nowrap;
 
         .icon {
             display: none;
@@ -127,18 +138,22 @@
         .modal-content {
             border: 0;
             border-radius: 4px;
+            height: 100%;
         }
         .modal-header {
             border-color: #dadada;
         }
         .modal-body {
             padding: 0 20px;
+            height: 100%;
+            overflow: hidden scroll;
         }
         .modal-dialog {
             max-width: 630px;
             height: 100%;
             display: flex;
             align-items: center;
+            padding-bottom: 58px;
         }
         .modal-title {
             font-size: 18px;
@@ -189,11 +204,7 @@
 
         .filter-row {
             display: flex;
-            align-items: center;
-            gap: 20px;
-            justify-content: space-between;
-            padding-top: 20px;
-            padding-bottom: 20px;
+            flex-direction: column;
 
             & + .filter-row {
                 border-top: 1px solid #dadada;
@@ -202,8 +213,17 @@
             &.wide {
                 display: block;
 
-                .left {
-                    margin-bottom: 30px;
+                .right .right-inner {
+                    padding-top: 15px;
+                }
+            }
+
+            &:not(.wide) {
+                .right .right-inner {
+                    padding-bottom: 20px;
+                    display: flex;
+                    gap: 10px;
+                    flex-wrap: wrap;
                 }
             }
 
@@ -212,12 +232,11 @@
                 color: $azul-melnick;
                 font-size: 10px;
                 font-weight: 500;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                cursor: pointer;
             }
 
-            .right {
-                display: flex;
-                gap: 10px;
-            }
             .slider {
                 margin-bottom: 30px;
                 height: 4px;

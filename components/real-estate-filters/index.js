@@ -1,6 +1,7 @@
-import { Dropdown } from "bootstrap";
+import { Collapse, Dropdown } from "bootstrap";
 import noUiSlider from "nouislider";
 import wNumb from "wnumb";
+import { collapseSection, expandSection } from "./collapse";
 
 export const realEstateFilters = () => {
     const ref = document.querySelectorAll("._real-estate-filters");
@@ -93,6 +94,21 @@ export const realEstateFilters = () => {
         const modal = component.querySelector(".modal");
         const sliders = modal.querySelectorAll(".slider");
         const modalClean = modal.querySelector(".bottom .clear");
+        const rows = modal.querySelectorAll(".filter-row");
+
+        rows.forEach((row) => {
+            const toggler = row.querySelector(".left");
+            const target = row.querySelector(".right");
+            var bsCollapse = new Collapse(target, {
+                toggle: false,
+            });
+
+            toggler.addEventListener("click", (e) => {
+                console.log(e);
+
+                bsCollapse.toggle();
+            });
+        });
 
         modalClean.addEventListener("click", () => cleanModalFilters(modal));
 

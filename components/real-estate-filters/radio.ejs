@@ -6,27 +6,57 @@ var name = args.name ?? '';
 %>
 
 <span class="left">
-    <%= title %>
+    <%= title %> <i class="icon icon-arrow_down"></i>
 </span>
-<div class="right">
-    <label class="radio">
-        <input type="radio" name="<%= name %>" value="1">
-        <span class="inner-label">Qualquer um</span>
-    </label>
-    <label class="radio">
-        <input type="radio" name="<%= name %>" value="2">
-        <span class="inner-label">+1</span>
-    </label>
-    <label class="radio">
-        <input type="radio" name="<%= name %>" value="3">
-        <span class="inner-label">+2</span>
-    </label>
-    <label class="radio">
-        <input type="radio" name="<%= name %>" value="4">
-        <span class="inner-label">+3</span>
-    </label>
-    <label class="radio">
-        <input type="radio" name="<%= name %>" value="5">
-        <span class="inner-label">+4</span>
-    </label>
+<div class="right collapse" aria-expanded="false">
+    <div class="right-inner">
+        <label class="radio">
+            <input type="radio" name="<%= name %>" value="1">
+            <span class="inner-label">Qualquer um</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="<%= name %>" value="2">
+            <span class="inner-label">+1</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="<%= name %>" value="3">
+            <span class="inner-label">+2</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="<%= name %>" value="4">
+            <span class="inner-label">+3</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="<%= name %>" value="5">
+            <span class="inner-label">+4</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="<%= name %>" value="6">
+            <span class="inner-label">+5</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="<%= name %>" value="7">
+            <span class="inner-label">+6</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="<%= name %>" value="8">
+            <span class="inner-label">+7</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="<%= name %>" value="9">
+            <span class="inner-label">+8</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="<%= name %>" value="10">
+            <span class="inner-label">+9</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="<%= name %>" value="11">
+            <span class="inner-label">+10</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="<%= name %>" value="12">
+            <span class="inner-label">+11</span>
+        </label>
+    </div>
 </div>

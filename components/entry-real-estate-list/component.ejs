@@ -6,6 +6,9 @@
         </div>
         <% } %>
         <div class="inner bg-white">
+            <div class="map-button">
+                <%- include('../button-default/component.ejs', { args: { label: 'Mapa', cssClass: 'map-action', tag: 'button', icon: 'map' } } ); %>
+            </div>
             <div class="left">
                 <div class="top">
                     <strong class="category text-10"><%= realEstate.category %></strong>

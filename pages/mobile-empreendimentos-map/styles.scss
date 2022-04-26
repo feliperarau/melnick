@@ -14,30 +14,11 @@
 body {
     background: #f6f6f6;
 }
-#page-empreendimentos {
+#page-mobile-empreendimentos-map {
     padding-bottom: 150px;
 
     ._page-title {
         margin-top: 10px;
-
-        @include media-breakpoint-down(lg) {
-            margin-top: 0;
-            margin-bottom: 20px;
-
-            .headline {
-                padding-left: 50px;
-                padding-right: 50px;
-                text-transform: none;
-                font-weight: 300;
-                text-align: center;
-                letter-spacing: normal;
-                line-height: 144%;
-                margin-bottom: 0;
-            }
-            .description {
-                display: none;
-            }
-        }
     }
     .page-inner {
         gap: 40px;
@@ -66,7 +47,7 @@ body {
         position: relative;
 
         @include media-breakpoint-down(lg) {
-            display: none;
+            margin-right: 0;
         }
 
         ._list-map-default {
