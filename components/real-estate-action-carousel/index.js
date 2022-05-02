@@ -10,22 +10,6 @@ export const realEstateActionCarousel = () => {
         const navigationNext = slider.querySelector(".swiper-next");
         const cards = slider.querySelectorAll("._real-estate-action");
 
-        // console.log(cards);
-
-        cards.forEach((card) => {
-            //console.log(card);
-
-            card.addEventListener("click", (e) => {
-                const index = [...cards].indexOf(card);
-                const root = e.target.closest(".site-wrapper");
-                const event = new CustomEvent("openStories", {
-                    detail: { storyToOpen: index },
-                });
-
-                root.dispatchEvent(event);
-            });
-        });
-
         var swiper = new Swiper(slider, {
             spaceBetween: 20,
             slidesPerView: "auto",

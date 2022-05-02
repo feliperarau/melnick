@@ -167,4 +167,4 @@ export const realEstateStories = () => {
 
 window.realEstateStories = realEstateStories;
 
-realEstateStories();
+//realEstateStories();

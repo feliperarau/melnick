@@ -10,8 +10,11 @@ export const openStoriesModal = (index) => {
 
     const outerSlider = realEstateStories.querySelector(".stories-carousel");
 
-    const outerSwiper = outerSlider.swiper;
-    outerSwiper.slideTo(index);
+    if (!outerSlider.swiper) {
+        window.realEstateStories();
+    }
+
+    outerSlider.swiper.slideTo(index);
 };
 
 window.openStoriesModal = openStoriesModal;

@@ -8,15 +8,6 @@ export const realEstatePlants = () => {
         const tabs = component.querySelectorAll(".tab-pane");
         const fullscreenButtons = component.querySelectorAll(".fullscreen");
 
-        fullscreenButtons.forEach((button) => {
-            button.addEventListener("click", (e) => {
-                const root = e.target.closest(".site-wrapper");
-                const event = new CustomEvent("plantsOpenModal", {});
-
-                root.dispatchEvent(event);
-            });
-        });
-
         tabs.forEach((tab) => {
             const slider = tab.querySelector(".swiper");
             const navigationPrev = tab.querySelector(".prev");
