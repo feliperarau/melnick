@@ -3406,18 +3406,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "realEstateActionCarousel": () => (/* binding */ realEstateActionCarousel)
 /* harmony export */ });
 /* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.esm.js");
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
 // Modules
 
 var realEstateActionCarousel = function realEstateActionCarousel() {
@@ -3426,22 +3414,7 @@ var realEstateActionCarousel = function realEstateActionCarousel() {
     var slider = component.querySelector(".swiper");
     var navigationPrev = slider.querySelector(".swiper-prev");
     var navigationNext = slider.querySelector(".swiper-next");
-    var cards = slider.querySelectorAll("._real-estate-action"); // console.log(cards);
-
-    cards.forEach(function (card) {
-      //console.log(card);
-      card.addEventListener("click", function (e) {
-        var index = _toConsumableArray(cards).indexOf(card);
-
-        var root = e.target.closest(".site-wrapper");
-        var event = new CustomEvent("openStories", {
-          detail: {
-            storyToOpen: index
-          }
-        });
-        root.dispatchEvent(event);
-      });
-    });
+    var cards = slider.querySelectorAll("._real-estate-action");
     var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
       spaceBetween: 20,
       slidesPerView: "auto",
@@ -3797,13 +3770,6 @@ var realEstatePlants = function realEstatePlants() {
   ref.forEach(function (component) {
     var tabs = component.querySelectorAll(".tab-pane");
     var fullscreenButtons = component.querySelectorAll(".fullscreen");
-    fullscreenButtons.forEach(function (button) {
-      button.addEventListener("click", function (e) {
-        var root = e.target.closest(".site-wrapper");
-        var event = new CustomEvent("plantsOpenModal", {});
-        root.dispatchEvent(event);
-      });
-    });
     tabs.forEach(function (tab) {
       var slider = tab.querySelector(".swiper");
       var navigationPrev = tab.querySelector(".prev");
@@ -4007,8 +3973,7 @@ var realEstateStories = function realEstateStories() {
     setupStoryCarousel(component);
   });
 };
-window.realEstateStories = realEstateStories;
-realEstateStories();
+window.realEstateStories = realEstateStories; //realEstateStories();
 
 /***/ }),
 
@@ -4080,8 +4045,12 @@ var openStoriesModal = function openStoriesModal(index) {
   }
 
   var outerSlider = realEstateStories.querySelector(".stories-carousel");
-  var outerSwiper = outerSlider.swiper;
-  outerSwiper.slideTo(index);
+
+  if (!outerSlider.swiper) {
+    window.realEstateStories();
+  }
+
+  outerSlider.swiper.slideTo(index);
 };
 window.openStoriesModal = openStoriesModal;
 
