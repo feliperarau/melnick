@@ -3908,10 +3908,11 @@ var realEstateStories = function realEstateStories() {
     var storyIns = new swiper_bundle__WEBPACK_IMPORTED_MODULE_1__["default"](storySlider, {
       spaceBetween: 10,
       slidesPerView: 1,
-      autoplay: {
-        delay: 2000,
-        stopOnLastSlide: true
-      },
+
+      /*autoplay: {
+          delay: 2000,
+          stopOnLastSlide: true,
+      },*/
       preventClicks: false,
       preventClicksPropagation: false,
       allowTouchMove: false,

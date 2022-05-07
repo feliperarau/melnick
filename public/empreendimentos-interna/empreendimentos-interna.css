@@ -15354,6 +15354,9 @@ button.swiper-pagination-bullet {
 ._real-estate-stories .stories-slider .swiper-controls button:hover {
   opacity: 1;
 }
+._real-estate-stories .stories-slider .swiper-controls .pause {
+  display: none;
+}
 ._real-estate-stories .stories-slider .swiper-controls .pause .icon-play {
   display: none;
 }
@@ -15378,6 +15381,9 @@ button.swiper-pagination-bullet {
   opacity: 0.65;
   border-radius: 4px 4px 0px 0px;
 }
+._real-estate-stories .stories-slider .swiper-slide .slide-inner.video::before {
+  display: none;
+}
 ._real-estate-stories .stories-slider .swiper-slide .slide-caption {
   position: absolute;
   z-index: 5;
@@ -15392,6 +15398,10 @@ button.swiper-pagination-bullet {
   width: 100%;
   object-fit: cover;
   border-radius: 4px;
+}
+._real-estate-stories .stories-slider .swiper-slide iframe {
+  height: 100%;
+  width: 100%;
 }
 ._real-estate-stories .stories-slider.paused .swiper-pagination-bullet.swiper-pagination-bullet-active:before {
   animation-play-state: paused !important;
@@ -15412,7 +15422,7 @@ button.swiper-pagination-bullet {
 ._real-estate-stories .swiper-pagination .swiper-pagination-bullet {
   height: 5px;
   flex: 1;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   opacity: 1;
   margin: 0;
   position: relative;
@@ -15437,17 +15447,13 @@ button.swiper-pagination-bullet {
   }
 }
 ._real-estate-stories .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #fff;
 }
 ._real-estate-stories .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:before {
-  animation-name: progress;
   animation-timing-function: linear;
   animation-duration: 2s;
   animation-play-state: running;
   animation-fill-mode: forwards;
-}
-._real-estate-stories .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active ~ .swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.5);
 }
 ._real-estate-stories .swiper-nav-container {
   position: absolute;
