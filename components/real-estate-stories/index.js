@@ -94,10 +94,10 @@ export const realEstateStories = () => {
         let storyIns = new Swiper(storySlider, {
             spaceBetween: 10,
             slidesPerView: 1,
-            autoplay: {
+            /*autoplay: {
                 delay: 2000,
                 stopOnLastSlide: true,
-            },
+            },*/
             preventClicks: false,
             preventClicksPropagation: false,
             allowTouchMove: false,

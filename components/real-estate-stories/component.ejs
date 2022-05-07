@@ -20,6 +20,9 @@ let cssClass = args.cssClass ?? '';
                                     <%- include( './swiper-controls.ejs' ); %>
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
+                                            <%- include( './slide-video.ejs' ); %>
+                                        </div>
+                                        <div class="swiper-slide">
                                             <%- include( './slide-book.ejs', { args: { caption: 'Book do empreendimento', bg: 'book.jpeg' } } ); %>
                                         </div>
                                         <div class="swiper-slide">
