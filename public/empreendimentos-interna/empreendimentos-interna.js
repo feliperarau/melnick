@@ -3831,10 +3831,10 @@ var realEstateStories = function realEstateStories() {
     var sliderEl = slider.el.closest(".stories-slider");
 
     if (sliderEl.classList.contains("paused")) {
-      slider.autoplay.start();
+      //slider.autoplay.start();
       sliderEl.classList.remove("paused");
     } else {
-      slider.autoplay.stop();
+      //slider.autoplay.stop();
       sliderEl.classList.add("paused");
     }
   };
@@ -3881,10 +3881,8 @@ var realEstateStories = function realEstateStories() {
 
             var childSlider = slide === null || slide === void 0 ? void 0 : (_slide$querySelector = slide.querySelector(".swiper")) === null || _slide$querySelector === void 0 ? void 0 : _slide$querySelector.swiper;
 
-            if (slide === currentSlide) {
-              childSlider.autoplay.start();
-            } else {
-              childSlider.autoplay.stop();
+            if (slide === currentSlide) {//childSlider.autoplay.start();
+            } else {//childSlider.autoplay.stop();
             }
           });
 
