@@ -12,10 +12,10 @@ export const realEstateStories = () => {
         const sliderEl = slider.el.closest(".stories-slider");
 
         if (sliderEl.classList.contains("paused")) {
-            slider.autoplay.start();
+            //slider.autoplay.start();
             sliderEl.classList.remove("paused");
         } else {
-            slider.autoplay.stop();
+            //slider.autoplay.stop();
             sliderEl.classList.add("paused");
         }
     };
@@ -66,9 +66,9 @@ export const realEstateStories = () => {
                             slide?.querySelector(".swiper")?.swiper;
 
                         if (slide === currentSlide) {
-                            childSlider.autoplay.start();
+                            //childSlider.autoplay.start();
                         } else {
-                            childSlider.autoplay.stop();
+                            //childSlider.autoplay.stop();
                         }
                     });
 
